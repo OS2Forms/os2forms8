@@ -25,7 +25,7 @@
         "drupal/core": "^8.7.1",
         "drupal/fontyourface": "^3.2",
         "drush/drush": "^9.0.0",
-        "os2forms/os2forms": "~2.0.3",
+        "os2forms/os2forms": "~2.0.4",
         "os2web/os2web": "~1.0",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
