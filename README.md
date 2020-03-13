@@ -2,16 +2,25 @@
 
 ## Usage
 
+* Clone the repository
+
 ```
 git clone git@github.com:OS2Forms/os2forms8.git
 ```
+* Rename your installation if needed
 
-Follow the regular install process, select ```OS2Web``` as install profile.
-
-After installation is done, enabled OS2Forms by:
+* Go to the installation and start composer
 
 ```
-drush en os2forms
+composer install
+```
+
+* Follow the regular install process, select ```OS2Web``` as install profile.
+
+* After installation is done, enable OS2Forms by:
+
+```
+drush en os2forms, os2forms_nemid, os2forms_dawa, os2forms_sbsys
 ```
 
 ## Contribution
