@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "58b6179ea751c9402def77f6ee4e52bc",
+    "content-hash": "8f9a624e7fba476a3a263c57104b610c",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2538,6 +2538,167 @@
             }
         },
         {
+            "name": "drupal/chosen",
+            "version": "2.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/chosen.git",
+                "reference": "8.x-2.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/chosen-8.x-2.9.zip",
+                "reference": "8.x-2.9",
+                "shasum": "28f3ce08a96bb9fd0190ad9579b3b4a9d9be79c9"
+            },
+            "require": {
+                "drupal/chosen_lib": "*",
+                "drupal/core": "^8 || ^9",
+                "harvesthq/chosen": "^1.8.7"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.9",
+                    "datestamp": "1576963005",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Cyclodex",
+                    "homepage": "https://www.drupal.org/user/1305230"
+                },
+                {
+                    "name": "Dave Reid",
+                    "homepage": "https://www.drupal.org/user/53892"
+                },
+                {
+                    "name": "Hydra",
+                    "homepage": "https://www.drupal.org/user/647364"
+                },
+                {
+                    "name": "Pol",
+                    "homepage": "https://www.drupal.org/user/47194"
+                },
+                {
+                    "name": "aidanlis",
+                    "homepage": "https://www.drupal.org/user/502018"
+                },
+                {
+                    "name": "arshadcn",
+                    "homepage": "https://www.drupal.org/user/571032"
+                },
+                {
+                    "name": "kalman.hosszu",
+                    "homepage": "https://www.drupal.org/user/267481"
+                },
+                {
+                    "name": "nagy.balint",
+                    "homepage": "https://www.drupal.org/user/1763952"
+                },
+                {
+                    "name": "supercabbageuk",
+                    "homepage": "https://www.drupal.org/user/235438"
+                }
+            ],
+            "description": "Makes select elements more friendly using the Chosen jQuery plugin",
+            "homepage": "https://www.drupal.org/project/chosen",
+            "keywords": [
+                "Chosen",
+                "Drupal"
+            ],
+            "support": {
+                "source": "https://drupal.org/project/chosen",
+                "issues": "https://drupal.org/project/issues/chosen"
+            }
+        },
+        {
+            "name": "drupal/chosen_lib",
+            "version": "2.9.0",
+            "require": {
+                "drupal/chosen": "self.version",
+                "drupal/core": "^8 || ^9",
+                "php": ">=5.6.0"
+            },
+            "type": "metapackage",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.9",
+                    "datestamp": "1576963005",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Cyclodex",
+                    "homepage": "https://www.drupal.org/user/1305230"
+                },
+                {
+                    "name": "Dave Reid",
+                    "homepage": "https://www.drupal.org/user/53892"
+                },
+                {
+                    "name": "Hydra",
+                    "homepage": "https://www.drupal.org/user/647364"
+                },
+                {
+                    "name": "Pol",
+                    "homepage": "https://www.drupal.org/user/47194"
+                },
+                {
+                    "name": "aidanlis",
+                    "homepage": "https://www.drupal.org/user/502018"
+                },
+                {
+                    "name": "arshadcn",
+                    "homepage": "https://www.drupal.org/user/571032"
+                },
+                {
+                    "name": "kalman.hosszu",
+                    "homepage": "https://www.drupal.org/user/267481"
+                },
+                {
+                    "name": "nagy.balint",
+                    "homepage": "https://www.drupal.org/user/1763952"
+                },
+                {
+                    "name": "supercabbageuk",
+                    "homepage": "https://www.drupal.org/user/235438"
+                }
+            ],
+            "description": "This module provides the basic integration with the Chosen jQuery plugin.",
+            "homepage": "https://www.drupal.org/project/chosen",
+            "support": {
+                "source": "https://git.drupalcode.org/project/chosen"
+            }
+        },
+        {
             "name": "drupal/ckeditor_a11ychecker",
             "version": "1.0.0",
             "source": {
@@ -2658,6 +2819,53 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/ckeditor_balloonpanel",
                 "issues": "http://drupal.org/project/issues/ckeditor_balloonpanel"
+            }
+        },
+        {
+            "name": "drupal/ckeditor_entity_link",
+            "version": "1.0.0-alpha2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/ckeditor_entity_link.git",
+                "reference": "8.x-1.0-alpha2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ckeditor_entity_link-8.x-1.0-alpha2.zip",
+                "reference": "8.x-1.0-alpha2",
+                "shasum": "8d483b5a8a18eb119e8a4a316404ce99436ae6b6"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha2",
+                    "datestamp": "1490814183",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "dealancer",
+                    "homepage": "https://www.drupal.org/user/243418"
+                }
+            ],
+            "description": "Allows to insert entity links in CKEditor.",
+            "homepage": "https://www.drupal.org/project/ckeditor_entity_link",
+            "support": {
+                "source": "https://git.drupalcode.org/project/ckeditor_entity_link"
             }
         },
         {
@@ -6679,6 +6887,55 @@
             "time": "2019-07-01T23:21:34+00:00"
         },
         {
+            "name": "harvesthq/chosen",
+            "version": "v1.8.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/harvesthq/chosen-package.git",
+                "reference": "ad86732b668627c131e61ee8f0e6e9ed52e4db8d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/harvesthq/chosen-package/zipball/ad86732b668627c131e61ee8f0e6e9ed52e4db8d",
+                "reference": "ad86732b668627c131e61ee8f0e6e9ed52e4db8d",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Koen Punt",
+                    "homepage": "https://github.com/koenpunt"
+                },
+                {
+                    "name": "Patrick Filler",
+                    "homepage": "https://github.com/pfiller"
+                },
+                {
+                    "name": "Christophe Coevoet",
+                    "homepage": "https://github.com/stof"
+                },
+                {
+                    "name": "Ken Earley",
+                    "homepage": "https://github.com/kenearley"
+                }
+            ],
+            "description": "Chosen is a JavaScript plugin that makes select boxes user-friendly. It is currently available in both jQuery and Prototype flavors.",
+            "homepage": "https://harvesthq.github.io/chosen/",
+            "keywords": [
+                "dropdown",
+                "form",
+                "input",
+                "multiselect",
+                "select",
+                "ui"
+            ],
+            "time": "2018-06-28T20:32:51+00:00"
+        },
+        {
             "name": "league/container",
             "version": "2.4.1",
             "source": {
@@ -6861,6 +7118,69 @@
                 "php"
             ],
             "time": "2020-04-10T16:34:50+00:00"
+        },
+        {
+            "name": "os2core/os2core",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bellcom/os2core.git",
+                "reference": "d9d7f84655f1e953942729dabf3b9db98a964f79"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bellcom/os2core/zipball/d9d7f84655f1e953942729dabf3b9db98a964f79",
+                "reference": "d9d7f84655f1e953942729dabf3b9db98a964f79",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/address": "^1.7",
+                "drupal/admin_toolbar": "^2.0",
+                "drupal/better_exposed_filters": "^4.0@alpha",
+                "drupal/chosen": "^2.9",
+                "drupal/ckeditor_a11ychecker": "^1.0",
+                "drupal/ckeditor_entity_link": "^1.0@alpha",
+                "drupal/config_ignore": "^2.1",
+                "drupal/config_split": "^1.4",
+                "drupal/core": "^8",
+                "drupal/crop": "^2.0.0-rc1",
+                "drupal/ctools": "^3.2",
+                "drupal/easy_breadcrumb": "^1.12",
+                "drupal/editor_advanced_link": "^1.4",
+                "drupal/embed": "^1.0",
+                "drupal/entity": "^1.0-rc3",
+                "drupal/entity_browser": "2.2.0",
+                "drupal/entity_embed": "1.0",
+                "drupal/environment_indicator": "^3.7",
+                "drupal/eu_cookie_compliance": "^1.8",
+                "drupal/extlink": "^1.1",
+                "drupal/field_group": "^1.0",
+                "drupal/honeypot": "^1.29",
+                "drupal/image_widget_crop": "^2.1",
+                "drupal/inline_entity_form": "^1.0",
+                "drupal/linkit": "^5.0",
+                "drupal/mailsystem": "^4.1",
+                "drupal/metatag": "^1.10",
+                "drupal/module_filter": "^3.1",
+                "drupal/paragraphs": "^1.10",
+                "drupal/pathauto": "^1.5",
+                "drupal/pathologic": "^1.0@alpha",
+                "drupal/redirect": "^1.4",
+                "drupal/scheduler": "^1.1",
+                "drupal/smtp": "^1.0@beta",
+                "drupal/token": "^1.5",
+                "os2web/os2web_datalookup": "^1.0",
+                "os2web/os2web_nemlogin": "^1.0",
+                "os2web/os2web_simplesaml": "8.x-dev",
+                "os2web/os2web_simplesaml_checklist": "8.x-dev"
+            },
+            "type": "drupal-profile",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "EUPL-1.2"
+            ],
+            "description": "Wrapper over contrib modules used for OS2 Drupal solutions",
+            "time": "2020-04-29T11:55:29+00:00"
         },
         {
             "name": "os2forms/os2forms",
