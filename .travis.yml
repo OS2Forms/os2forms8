@@ -11,4 +11,4 @@ before_script:
   - fin init
 
 script:
-  - fin test
+  - fin rebuild-test
