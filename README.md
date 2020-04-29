@@ -1,4 +1,4 @@
-# OS2Forms Drupal 8 project
+# OS2Forms Drupal 8 project [![Build Status](https://travis-ci.org/OS2Forms/os2forms8.svg?branch=master)](https://travis-ci.org/OS2Forms/os2forms8)
 
 ## Usage
 
