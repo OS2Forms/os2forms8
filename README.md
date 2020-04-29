@@ -4,24 +4,23 @@
 
 * Clone the repository
 
-```
-git clone git@github.com:OS2Forms/os2forms8.git
-```
+    ```
+    git clone git@github.com:OS2Forms/os2forms8.git
+    ```
 * Rename your installation if needed
 
 * Go to the installation and start composer
-
-```
-composer install
-```
-
+    ```
+    composer install
+    ```
 * Follow the regular install process, select ```OS2Web``` as install profile.
-
 * After installation is done, enable OS2Forms by:
+    ```
+    drush en os2forms, os2forms_nemid, os2forms_dawa, os2forms_sbsys
+    ```
+* Enable `Custom theme` for project. This is recommended theme that has minimum settings,
+ so you will need to add all required blocks into proper regions afterwards.
 
-```
-drush en os2forms, os2forms_nemid, os2forms_dawa, os2forms_sbsys
-```
 
 ## Contribution
 
