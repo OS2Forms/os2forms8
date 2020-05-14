@@ -25,6 +25,8 @@
         "drupal/core": "^8.7.1",
         "drupal/fontyourface": "^3.2",
         "drupal/header_and_footer_scripts": "^2.2",
+        "drupal/telephone_validation": "^2.2",
+        "drupal/webform_scheduled_tasks": "^2.0",
         "drupal/webform_views": "^5.0@alpha",
         "drush/drush": "^9.0.0",
         "os2core/os2core": "^1.0",
