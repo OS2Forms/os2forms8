@@ -1,0 +1,96 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the os2core installation profile.
+ */
+use \Drupal\Core\Url;
+use Drupal\Core\Link;
+use Drupal\node\Entity\Node;
+use Drupal\block\Entity\Block;
+/**
+ * Implements hook_install().
+ *
+ * Perform actions to set up the site for this profile.
+ *
+ * @see system_install()
+ */
+function os2forms_install_install() {
+// Install theme/ 
+\Drupal::service('theme_installer')->install(['custom_theme']);
+\Drupal::service('theme_handler')->setDefault('custom_theme');
+// Import settings.
+\Drupal::configFactory()->getEditable('eu_cookie_compliance.settings')
+    ->set('method', 'categories')
+    ->set('cookie_categories','Functional cookies|Funktionelle|Funktionelle cookies er nødvendige for at løsningen kan huske dine valg.
+                                 Statistical cookies|Statistik|Statistiske cookies opsamler anonymiseret statistik, så vi kan måle og optimere løsningen.')
+    ->set('save_preferences_button_label', 'Gem valgte')
+    ->set('accept_all_categories_button_label', 'Accepter alle')
+    ->set('select_all_categories_by_default', 1) 
+    ->set('popup_info', array('value' =>"<h2>Du bestemmer over dine data</h2>
+                      <p>Vi og vores samarbejdspartnere bruger teknologier, herunder cookies, til at indsamle oplysninger om dig til forskellige formål, herunder funktionalitet og statistik.</p>  
+                      <p>Ved at trykke på 'Accepter alle' giver du samtykke til alle disse formål. Du kan også vælge at tilkendegive, hvilke formål du vil give samtykke til ved at benytte checkboksene ud for formålet og derefter trykke på 'Gem indstillinger'.<br/>Du kan til enhver tid trække dit samtykke tilbage ved at trykke på 'Cookie-samtykke' nederst på siden.</p>
+                      <p>Du kan læse mere om vores brug af cookies og andre teknologier, samt om vores indsamling og behandling af personoplysninger ved at trykke på linket.</p>", 'format'=>'restricted_html'))
+    ->set('disagree_button_label', 'Nej tak')
+    ->set('withdraw_enabled', 1)
+    ->set('withdraw_message', array('value'=>'<h2>Du bestemmer over dine data.</h2><p>Du har givet samtykke til at vi må bruge cookies.</p>', 'format'=>'restricted_html')) 
+    ->set('withdraw_tab_button_label', 'Cookie-samtykke')
+    ->set('withdraw_action_button_label','Fjern samtykke') 
+     ->save();
+\Drupal::configFactory()->getEditable('os2web_nemlogin.settings')
+    ->set('nemlogin_idp_url', 'https://nemlogin.bellcom.dk/simplesaml')
+    ->set('nemlogin_idp_mnemo', 'bellcom.dk')
+ ->save();
+$base_url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]";
+$body = '<p><strong>OPRET NY WEBFORM</strong><br /><a href="'. $base_url.'/admin/structure/webform/add">'. $base_url .'/admin/structure/webform/add</a></p>
+
+<p><strong>OPRET NY INDHOLDSSIDE</strong><br /><a href="'. $base_url.'/node/add">'. $base_url. '/node/add</a></p>
+
+<p><strong>ALLE FORMULARER</strong><br />
+<a href="'. $base_url.'/formularer">'. $base_url.'/formularer</a></p>
+
+<p><strong>INTERNE FORMULARER</strong><br />
+<a href="'. $base_url.'/formularer?title=&amp;field_fagomraade_value=All&amp;field_anvendelse_value=intern">'. $base_url.'/formularer?title=&amp;field_fagomraade_value=All&amp;field_anvendelse_value=intern</a></p>
+
+<p><strong>EKSTERNE FORMULARER</strong><br />
+<a href="'. $base_url.' /content/ekstern/alleformularer">'. $base_url.'/content/ekstern/alleformularer</a></p>
+';
+$node = Node::create([
+      // The node entity bundle.
+      'type' => 'side',
+      'langcode' => 'da',
+      'promted' => 1,
+      'title' => 'Forside',
+      'body' => array('value'=>$body, 'format'=>'basic_html')
+    ]);
+$node->save();
+\Drupal::configFactory()->getEditable('system.site')
+    ->set('page.front', '/node/'. $node->id())
+    ->save();
+$disable_blocks = array (
+  'custom_theme_footer',
+  'custom_theme_breadcrumbs',
+  'custom_theme_main_menu',
+  'custom_theme_account_menu',
+  'custom_theme_tools',
+  'custom_theme_local_actions',
+  'custom_theme_powered',
+  'custom_theme_messages'
+);
+
+foreach ($disable_blocks as $block) {
+  $block_entity = Block::load($block);
+  $block_entity->disable();
+  $block_entity->save(); 
+}
+
+$block_entity = Block::load('custom_theme_branding');
+$block_entity->setRegion('navigation');
+$block_entity->save();
+$block_entity = Block::load('custom_theme_page_title');
+$block_entity->setRegion('header');
+$block_entity->save();
+$block_entity = Block::load('custom_theme_local_tasks');
+$block_entity->setRegion('header');
+$block_entity->save();
+}

@@ -1,0 +1,22 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.side
+  module:
+    - text
+id: node.side.body
+field_name: body
+entity_type: node
+bundle: side
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

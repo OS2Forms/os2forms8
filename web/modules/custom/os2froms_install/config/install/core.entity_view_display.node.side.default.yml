@@ -1,0 +1,32 @@
+
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.node.side.body
+    - node.type.side
+  module:
+    - text
+    - user
+id: node.side.default
+targetEntityType: node
+bundle: side
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  langcode: true

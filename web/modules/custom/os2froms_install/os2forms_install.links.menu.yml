@@ -1,0 +1,36 @@
+formdesign.webforms:
+  title: 'Webformularer'
+  menu_name: admin
+  route_name: webform.config
+  parent: views_view:views.formularer.page_1
+  weight: 10
+formdesign.sbsys_formular:
+  title: 'Ny formular med SBSIP'
+  url: internal:/admin/structure/webform/manage/hk_basis/duplicate
+  menu_name: admin
+  parent: views_view:views.formularer.page_1
+  weight: 20   
+formdesign.add_webform:
+  title: 'Opret ny webformular'
+  menu_name: admin
+  route_name: entity.webform.add_form
+  parent: views_view:views.formularer.page_1
+  weight: 30
+formdesign.add_webform_node:
+  title: 'Opret indholdsside med webformular'
+  menu_name: admin
+  url: internal:/node/add/webform
+  parent: views_view:views.formularer.page_1 
+  weight: 40
+formdesign.webform_templates:
+  title: 'Webformular skabeloner'
+  route_name: 'entity.webform.templates'
+  menu_name: admin
+  parent: views_view:views.formularer.page_1
+  weight: 50
+formdesign.translate:
+  title: 'Oversættelser'
+  url: internal:/admin/config/regional/translate
+  menu_name: admin
+  parent: views_view:views.formularer.page_1
+  weight: 60
