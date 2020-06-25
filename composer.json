@@ -25,6 +25,8 @@
         "drupal/core": "^8.7.1",
         "drupal/fontyourface": "^3.2",
         "drupal/header_and_footer_scripts": "^2.2",
+        "drupal/migrate_tools": "^5.0",
+        "drupal/migrate_upgrade": "^3.2",
         "drupal/telephone_validation": "^2.2",
         "drupal/webform_scheduled_tasks": "^2.0",
         "drupal/webform_views": "^5.0@alpha",
@@ -84,6 +86,13 @@
             "initial": {
                 ".editorconfig": "../.editorconfig",
                 ".gitattributes": "../.gitattributes"
+            }
+        },
+        "enable-patching": true,
+        "patches": {
+            "drupal/webform_migrate" : {
+                "Wrong wizard page type" :  "https://www.drupal.org/files/issues/2020-06-25/3154779-wrong-wizard-page-type-1.patch",
+                "Checkboxes field type migrated to checkbox" :  "https://www.drupal.org/files/issues/2020-06-25/webform_migrate-select_handling_errors-3024866-7.patch"
             }
         }
     }
