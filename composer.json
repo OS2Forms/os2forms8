@@ -92,7 +92,8 @@
         "patches": {
             "drupal/webform_migrate" : {
                 "Wrong wizard page type" :  "https://www.drupal.org/files/issues/2020-06-25/3154779-wrong-wizard-page-type-1.patch",
-                "Checkboxes field type migrated to checkbox" :  "https://www.drupal.org/files/issues/2020-06-25/webform_migrate-select_handling_errors-3024866-7.patch"
+                "Checkboxes field type migrated to checkbox" :  "https://www.drupal.org/files/issues/2020-06-25/webform_migrate-select_handling_errors-3024866-7.patch",
+                "Add webform_element altering during migration" :  "https://www.drupal.org/files/issues/2020-06-26/alter-wf-element-markup-3155073-2.patch"
             }
         }
     }

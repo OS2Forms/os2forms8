@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a0054138891cdcac5675db4436392c09",
+    "content-hash": "9d522d1bbb3c883239cd610e69212005",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -4236,9 +4236,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-2.1",
                     "datestamp": "1533220070",
@@ -4256,6 +4253,10 @@
                 {
                     "name": "Ben Dougherty",
                     "homepage": "https://www.drupal.org/u/benjy"
+                },
+                {
+                    "name": "benjy",
+                    "homepage": "https://www.drupal.org/user/1852732"
                 },
                 {
                     "name": "pameeela",
@@ -6333,9 +6334,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.1",
                     "datestamp": "1547087580",
@@ -8098,16 +8096,16 @@
         },
         {
             "name": "os2forms/os2forms",
-            "version": "2.1",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2Forms/os2forms.git",
-                "reference": "b272f66e45241f659a8a7c8cc19c2e575d8b555b"
+                "reference": "d6d2e9f3be5ffc9a766dea29dc2e79210879a6ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2Forms/os2forms/zipball/b272f66e45241f659a8a7c8cc19c2e575d8b555b",
-                "reference": "b272f66e45241f659a8a7c8cc19c2e575d8b555b",
+                "url": "https://api.github.com/repos/OS2Forms/os2forms/zipball/d6d2e9f3be5ffc9a766dea29dc2e79210879a6ae",
+                "reference": "d6d2e9f3be5ffc9a766dea29dc2e79210879a6ae",
                 "shasum": ""
             },
             "require": {
@@ -8149,7 +8147,7 @@
                 "EUPL-1.2"
             ],
             "description": "Drupal 8 OS2Form module provides advanced webform functionality for Danish Municipalities",
-            "time": "2020-06-19T15:11:15+00:00"
+            "time": "2020-06-26T12:07:29+00:00"
         },
         {
             "name": "os2web/os2web_datalookup",
