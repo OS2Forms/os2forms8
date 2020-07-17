@@ -100,9 +100,8 @@
                 "Wrong wizard page type" :  "https://www.drupal.org/files/issues/2020-06-25/3154779-wrong-wizard-page-type-1.patch",
                 "Checkboxes field type migrated to checkbox" :  "https://www.drupal.org/files/issues/2020-06-25/webform_migrate-select_handling_errors-3024866-7.patch",
                 "Add webform_element altering during migration" :  "https://www.drupal.org/files/issues/2020-06-26/alter-wf-element-markup-3155073-2.patch",
-                "When migrating conditions, skip states that don't exist in D8" :  "https://www.drupal.org/files/issues/2020-07-06/condition-unsupported-flag.patch",
                 "Multiple states not showing on webform migrate" :  "https://www.drupal.org/files/issues/2019-11-04/multiple_states_not_showing_on_webform_migrate-3092123-13338162.patch",
-                "Element keys contain uppercase letter" :  "./patches/3159081-elements-keys-lowercase-2-modified.patch"
+                "Combined patch for 3159081 and 3159518" :  "./patches/combined-3159081-3159518-onlyD7.patch"
             },
             "drupal/queue_mail" : {
                 "Admin interface to see queued mail" :  "https://www.drupal.org/files/issues/2020-06-30/3096917-ui-queue-mail-moderate-5.patch"

@@ -1,0 +1,96 @@
+diff --git a/src/Plugin/migrate/source/d7/D7Webform.php b/src/Plugin/migrate/source/d7/D7Webform.php
+index 13f8dc4..a149971 100644
+--- a/src/Plugin/migrate/source/d7/D7Webform.php
++++ b/src/Plugin/migrate/source/d7/D7Webform.php
+@@ -322,7 +322,8 @@ class D7Webform extends DrupalSqlBase implements ImportAwareInterface, RollbackA
+         $element['value'] = $this->replaceTokens($element['value']);
+       }
+ 
+-      $markup = $indent . $element['form_key'] . ":\n";
++      $element_form_key = strtolower($element['form_key']);
++      $markup = $indent . $element_form_key . ":\n";
+       switch ($element['type']) {
+         case 'fieldset':
+           if ($multiPage && empty($current_page_title)) {
+@@ -452,7 +453,7 @@ class D7Webform extends DrupalSqlBase implements ImportAwareInterface, RollbackA
+ 
+         case 'pagebreak':
+           $output = str_replace('{' . $current_page . '_title}', $current_page_title, $output);
+-          $current_page = $element['form_key'];
++          $current_page = $element_form_key;
+           $markup .= "$indent  '#type': webform_wizard_page\n  '#open': true\n  '#title': {" . $current_page . "_title}\n";
+           $current_page_title = t('Page') . ' ' . $pageCnt++;
+           break;
+@@ -495,7 +496,9 @@ class D7Webform extends DrupalSqlBase implements ImportAwareInterface, RollbackA
+           foreach ($values as $value) {
+             foreach ($value as $name => $item) {
+               $markup .= "$indent      " . Yaml::dump($name, 2, 2) . ":\n";
+-              $markup .= "$indent        " . Yaml::dump($item, 2, 2);
++              foreach (explode("\n", Yaml::dump($item, 2, 2)) as $line) {
++                $markup .= "$indent        " . $line . "\n";
++              }
+             }
+           }
+         }
+@@ -558,7 +561,7 @@ class D7Webform extends DrupalSqlBase implements ImportAwareInterface, RollbackA
+             break;
+ 
+           case 'set':
+-            // Nothing found in D8 :(.
++            $unsupported_condition = TRUE;
+             break;
+         }
+         // Condition states.
+@@ -584,10 +587,19 @@ class D7Webform extends DrupalSqlBase implements ImportAwareInterface, RollbackA
+             break;
+ 
+           case 'less_than':
++            $element_condition = ['value' => ['less' => $operator_value]];
++            break;
++
+           case 'less_than_equal':
++            $element_condition = ['value' => ['less_equal' => $operator_value]];
++            break;
++
+           case 'greater_than':
++            $element_condition = ['value' => ['greater' => $operator_value]];
++            break;
++
+           case 'greater_than_equal':
+-            // Nothing in D8 to handle these.
++            $element_condition = ['value' => ['greater_equal' => $operator_value]];
+             break;
+ 
+           case 'empty':
+@@ -610,13 +622,26 @@ class D7Webform extends DrupalSqlBase implements ImportAwareInterface, RollbackA
+         }
+ 
+         $depedent_extra_items = explode("\n", trim($depedent_extra['items']));
+-        if (!$depedent_extra['aslist'] && $depedent_extra['multiple'] && count($depedent_extra_items) > 1) {
+-          $depedent['form_key'] = $depedent['form_key'] . "[$operator_value]";
++        $dependent_form_key = strtolower($depedent['form_key']);
++        $selectable_types = [
++          'checkboxes',
++          'select',
++          'radios',
++        ];
++        // State should have value inside #state definition only
++        // for selectable elements.
++        if (!empty($operator_value) && in_array($depedent['type'], $selectable_types)) {
++          if (!$depedent_extra['aslist'] && $depedent_extra['multiple'] && count($depedent_extra_items) > 1) {
++            $dependent_form_key = $dependent_form_key . "[$operator_value]";
++          }
++          elseif (!$depedent_extra['aslist'] && !$depedent_extra['multiple']) {
++            $dependent_form_key = $dependent_form_key . "[$operator_value]";
++          }
+         }
+-        elseif (!$depedent_extra['aslist'] && !$depedent_extra['multiple']) {
+-          $depedent['form_key'] = $depedent['form_key'] . "[$operator_value]";
++
++        if (!$unsupported_condition) {
++          $states[$element_state][] = [':input[name="' . $dependent_form_key . '"]' => $element_condition];
+         }
+-        $states[$element_state][] = [':input[name="' . $depedent['form_key'] . '"]' => $element_condition];
+       }
+       if (empty($states)) {
+         return FALSE;
