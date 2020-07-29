@@ -1,0 +1,20 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fagomraade
+    - node.type.webform
+  module:
+    - options
+id: node.webform.field_fagomraade
+field_name: field_fagomraade
+entity_type: node
+bundle: webform
+label: Fagområde
+description: 'Angiv fagområde for formularen.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

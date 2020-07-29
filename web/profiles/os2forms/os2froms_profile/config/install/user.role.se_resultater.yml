@@ -1,0 +1,27 @@
+langcode: da
+status: true
+dependencies: {  }
+id: se_resultater
+label: 'Se resultater'
+weight: 4
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'access webform overview'
+  - 'access webform submission log'
+  - 'access webform submission user'
+  - 'bypass entity print access'
+  - 'entity print access bundle contact'
+  - 'entity print access type block_content'
+  - 'entity print access type file'
+  - 'entity print access type menu_link_content'
+  - 'entity print access type node'
+  - 'entity print access type redirect'
+  - 'entity print access type taxonomy_term'
+  - 'entity print access type user'
+  - 'view any webform submission'
+  - 'view the administration theme'
+  - 'view webform submissions any node'
