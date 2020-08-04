@@ -8077,12 +8077,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2Forms/os2forms_egbolig.git",
-                "reference": "d14aa858b1f383cd00dbc27f8f5f443947724470"
+                "reference": "a19dbb1897b7e1191e85d4410528540d70fe4237"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2Forms/os2forms_egbolig/zipball/d14aa858b1f383cd00dbc27f8f5f443947724470",
-                "reference": "d14aa858b1f383cd00dbc27f8f5f443947724470",
+                "url": "https://api.github.com/repos/OS2Forms/os2forms_egbolig/zipball/a19dbb1897b7e1191e85d4410528540d70fe4237",
+                "reference": "a19dbb1897b7e1191e85d4410528540d70fe4237",
                 "shasum": ""
             },
             "require": {
@@ -8094,7 +8094,7 @@
                 "EUPL-1.2"
             ],
             "description": "Provides advanced webform for EGBolig",
-            "time": "2020-08-04T11:49:52+00:00"
+            "time": "2020-08-04T12:30:07+00:00"
         },
         {
             "name": "os2web/os2web_datalookup",
