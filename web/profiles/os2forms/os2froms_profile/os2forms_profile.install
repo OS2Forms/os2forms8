@@ -59,6 +59,12 @@ foreach ($roles as $role_name => $role) {
     ->set('nemlogin_idp_url', 'https://nemlogin.bellcom.dk/simplesaml')
     ->set('nemlogin_idp_mnemo', 'bellcom.dk')
  ->save();
+\Drupal::configFactory()->getEditable('os2web_datalookup.serviceplatformen_cpr')
+    ->set('serviceuuid', 'c0daecde-e278-43b7-84fd-477bfeeea027')
+ ->save();
+\Drupal::configFactory()->getEditable('os2web_datalookup.serviceplatformen_cvr')
+    ->set('serviceuuid', 'c0daecde-e278-43b7-84fd-477bfeeea027')
+ ->save();
 $base_url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]";
 $body = '<p><strong>OPRET NY WEBFORM</strong><br /><a href="'. $base_url.'/admin/structure/webform/add">'. $base_url .'/admin/structure/webform/add</a></p>
 
