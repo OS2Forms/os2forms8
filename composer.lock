@@ -6457,7 +6457,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform_migrate.git",
-                "reference": "a3ee639335db860c816621732130fedc3eeaf7ea"
+                "reference": "2638e99160dcad1f9a1d4484cbd0e8435ed3cb0c"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9",
