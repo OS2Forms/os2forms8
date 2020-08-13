@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ec3e67b39da39b237c134e90d568d553",
+    "content-hash": "967fbfa5b7e381cab4fa1dfbb90845ef",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -6470,8 +6470,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.1+5-dev",
-                    "datestamp": "1596804092",
+                    "version": "8.x-1.1+9-dev",
+                    "datestamp": "1597005578",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -6509,7 +6509,7 @@
                 "source": "http://cgit.drupalcode.org/webform_migrate",
                 "issues": "http://drupal.org/project/issues/webform_migrate"
             },
-            "time": "2020-08-07T13:15:42+00:00"
+            "time": "2020-08-09T20:56:14+00:00"
         },
         {
             "name": "drupal/webform_node",
@@ -8236,16 +8236,16 @@
         },
         {
             "name": "os2forms/os2forms",
-            "version": "2.2.2",
+            "version": "2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2Forms/os2forms.git",
-                "reference": "ff2b5d40c042b59383ff521d77220f63375ca072"
+                "reference": "604c79b4f5a5be0a3613b27376063bf8031e2f4b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2Forms/os2forms/zipball/ff2b5d40c042b59383ff521d77220f63375ca072",
-                "reference": "ff2b5d40c042b59383ff521d77220f63375ca072",
+                "url": "https://api.github.com/repos/OS2Forms/os2forms/zipball/604c79b4f5a5be0a3613b27376063bf8031e2f4b",
+                "reference": "604c79b4f5a5be0a3613b27376063bf8031e2f4b",
                 "shasum": ""
             },
             "require": {
@@ -8279,6 +8279,9 @@
                 "patches": {
                     "drupal/entity_print": {
                         "2733781 - Add Export to Word Support": "https://www.drupal.org/files/issues/2019-11-22/2733781-47.patch"
+                    },
+                    "drupal/webform": {
+                        "Unlock possibility of using Entity print module export to Word": "https://www.drupal.org/files/issues/2020-02-29/3096552-6.patch"
                     }
                 }
             },
@@ -8287,7 +8290,7 @@
                 "EUPL-1.2"
             ],
             "description": "Drupal 8 OS2Form module provides advanced webform functionality for Danish Municipalities",
-            "time": "2020-08-05T10:02:45+00:00"
+            "time": "2020-08-10T07:58:39+00:00"
         },
         {
             "name": "os2forms/os2forms_egbolig",
@@ -15257,6 +15260,7 @@
             "keywords": [
                 "tokenizer"
             ],
+            "abandoned": true,
             "time": "2019-09-17T06:23:10+00:00"
         },
         {
@@ -16234,5 +16238,6 @@
     "platform": {
         "php": ">=5.6"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }
