@@ -8236,16 +8236,16 @@
         },
         {
             "name": "os2forms/os2forms",
-            "version": "2.3.2",
+            "version": "2.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2Forms/os2forms.git",
-                "reference": "518601399133301f1a77360e28af2ee638d9247a"
+                "reference": "1afb1b24dfe4db6249fb0e660a22a5adefffd22e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2Forms/os2forms/zipball/518601399133301f1a77360e28af2ee638d9247a",
-                "reference": "518601399133301f1a77360e28af2ee638d9247a",
+                "url": "https://api.github.com/repos/OS2Forms/os2forms/zipball/1afb1b24dfe4db6249fb0e660a22a5adefffd22e",
+                "reference": "1afb1b24dfe4db6249fb0e660a22a5adefffd22e",
                 "shasum": ""
             },
             "require": {
@@ -8290,7 +8290,7 @@
                 "EUPL-1.2"
             ],
             "description": "Drupal 8 OS2Form module provides advanced webform functionality for Danish Municipalities",
-            "time": "2020-08-10T07:58:39+00:00"
+            "time": "2020-08-31T12:42:07+00:00"
         },
         {
             "name": "os2forms/os2forms_egbolig",
