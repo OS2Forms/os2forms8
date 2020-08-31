@@ -9297,12 +9297,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_simplesaml.git",
-                "reference": "788cda2aec7e4661edfb510e2861f369e924109d"
+                "reference": "6dc7585e08335f6807a3c0d47708e09d1875708b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_simplesaml/zipball/788cda2aec7e4661edfb510e2861f369e924109d",
-                "reference": "788cda2aec7e4661edfb510e2861f369e924109d",
+                "url": "https://api.github.com/repos/OS2web/os2web_simplesaml/zipball/6dc7585e08335f6807a3c0d47708e09d1875708b",
+                "reference": "6dc7585e08335f6807a3c0d47708e09d1875708b",
                 "shasum": ""
             },
             "require": {
@@ -9314,7 +9314,7 @@
                 "EUPL-1.2"
             ],
             "description": "Enhances integration with simplesamlphp_auth module, by force triggering SimpleSAML auth page redirect when certain criteria are met",
-            "time": "2020-08-26T12:34:49+00:00"
+            "time": "2020-08-31T10:45:56+00:00"
         },
         {
             "name": "os2web/os2web_simplesaml_checklist",
