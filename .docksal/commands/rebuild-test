@@ -22,7 +22,7 @@ echo-yellow () { echo -e "${yellow}$1${NC}"; }
 echo-yellow "Fetching composer dependencies"
 fin composer install
 
-echo-yellow "Installing drupal based on os2web profile"
+echo-yellow "Installing drupal based on os2core profile"
 fin drush si os2core --db-url=mysql://root:root@db/default --account-pass=admin -y -vvv
 
 echo-yellow "Enable modules"
