@@ -22,3 +22,7 @@
 
 # Ignore .env files as they are personal
 /.env
+
+/.docksal/commands/*
+!/.docksal/commands/init
+!/.docksal/commands/rebuild-test
