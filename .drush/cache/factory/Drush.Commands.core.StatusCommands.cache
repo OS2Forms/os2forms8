@@ -1,0 +1,172 @@
+{
+    "cid": "Drush\\Commands\\core\\StatusCommands",
+    "data": {
+        "status": {
+            "schema": 4,
+            "class": "Drush\\Commands\\core\\StatusCommands",
+            "method_name": "status",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "core:status",
+            "description": "An overview of the environment - Drush and Drupal.",
+            "help": "",
+            "aliases": [
+                "status",
+                "st",
+                "core-status"
+            ],
+            "annotations": {
+                "command": "core:status",
+                "table-style": "compact",
+                "list-delimiter": ":",
+                "field-labels": "\n   drupal-version: Drupal version\n   uri: Site URI\n   db-driver: DB driver\n   db-hostname: DB hostname\n   db-port: DB port\n   db-username: DB username\n   db-password: DB password\n   db-name: DB name\n   db-status: Database\n   bootstrap: Drupal bootstrap\n   theme: Default theme\n   admin-theme: Admin theme\n   php-bin: PHP binary\n   php-conf: PHP config\n   php-os: PHP OS\n   drush-script: Drush script\n   drush-version: Drush version\n   drush-temp: Drush temp\n   drush-cache-directory: Drush cache folder\n   drush-conf: Drush configs\n   drush-alias-files: Drush aliases\n   alias-searchpaths: Alias search paths\n   install-profile: Install profile\n   root: Drupal root\n   drupal-settings-file: Drupal Settings\n   site-path: Site path\n   site: Site path\n   themes: Themes path\n   modules: Modules path\n   files: Files, Public\n   private: Files, Private\n   temp: Files, Temp\n   config-sync: Drupal config\n   files-path: Files, Public\n   temp-path: Files, Temp\n   %paths: Other paths",
+                "default-fields": "drupal-version,uri,db-driver,db-hostname,db-port,db-username,db-name,db-status,bootstrap,theme,admin-theme,php-bin,php-conf,php-os,drush-script,drush-version,drush-temp,drush-conf,install-profile,root,site,files,private,temp",
+                "pipe-format": "json",
+                "hidden-options": "project",
+                "bootstrap": "max",
+                "topics": "docs:readme"
+            },
+            "example_usages": {
+                "drush core-status --field=files": "Emit just one field, not all the default fields.",
+                "drush core-status --fields=*": "Emit all fields, not just the default ones."
+            },
+            "return_type": "\\Consolidation\\OutputFormatters\\StructuredData\\PropertyList",
+            "arguments": {
+                "filter": {
+                    "description": "A field to filter on. @deprecated - use --field option instead.",
+                    "default": ""
+                }
+            },
+            "options": {
+                "project": {
+                    "description": "A comma delimited list of projects. Their paths will be added to path-aliases section.",
+                    "default": 2
+                },
+                "format": {
+                    "description": "",
+                    "default": "table"
+                }
+            }
+        },
+        "getPropertyList": {
+            "schema": 4,
+            "class": "Drush\\Commands\\core\\StatusCommands",
+            "method_name": "getPropertyList",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "renderStatusCell": {
+            "schema": 4,
+            "class": "Drush\\Commands\\core\\StatusCommands",
+            "method_name": "renderStatusCell",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "adjustStatusOptions": {
+            "schema": 4,
+            "class": "Drush\\Commands\\core\\StatusCommands",
+            "method_name": "adjustStatusOptions",
+            "mtime": 1581269391,
+            "injected_classes": [
+                "Consolidation\\AnnotatedCommand\\CommandData"
+            ],
+            "name": "adjust:status-options",
+            "description": "",
+            "help": "",
+            "aliases": [],
+            "annotations": {
+                "hook": "pre-command core-status"
+            },
+            "example_usages": [],
+            "return_type": null,
+            "arguments": [],
+            "options": []
+        },
+        "setProcessManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setProcessManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "processManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "processManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "hasProcessManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "hasProcessManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "setLogger": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setLogger",
+            "mtime": 1584954725,
+            "injected_classes": []
+        },
+        "getConfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "getConfig",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "setConfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setConfig",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "parentgetconfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "parentgetconfig",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "setInput": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setInput",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "setOutput": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setOutput",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "setSiteAliasManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\core\\StatusCommands",
+            "method_name": "setSiteAliasManager",
+            "mtime": 1552411908,
+            "injected_classes": []
+        },
+        "siteAliasManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\core\\StatusCommands",
+            "method_name": "siteAliasManager",
+            "mtime": 1552411908,
+            "injected_classes": []
+        },
+        "hasSiteAliasManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\core\\StatusCommands",
+            "method_name": "hasSiteAliasManager",
+            "mtime": 1552411908,
+            "injected_classes": []
+        }
+    },
+    "created": 1599741432,
+    "expire": 0
+}

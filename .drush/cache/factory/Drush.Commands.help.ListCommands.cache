@@ -1,0 +1,127 @@
+{
+    "cid": "Drush\\Commands\\help\\ListCommands",
+    "data": {
+        "helpList": {
+            "schema": 4,
+            "class": "Drush\\Commands\\help\\ListCommands",
+            "method_name": "helpList",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "list",
+            "description": "List available commands.",
+            "help": "",
+            "aliases": [],
+            "annotations": {
+                "command": "list",
+                "bootstrap": "max"
+            },
+            "example_usages": {
+                "drush list": "List all commands.",
+                "drush list --filter=devel_generate": "Show only commands starting with devel-",
+                "drush list --format=xml": "List all commands in Symfony compatible xml format."
+            },
+            "return_type": "Drush\\Commands\\help\\string",
+            "arguments": [],
+            "options": {
+                "format": {
+                    "description": "",
+                    "default": "listcli"
+                },
+                "raw": {
+                    "description": "Show a simple table of command names and descriptions.",
+                    "default": false
+                },
+                "filter": {
+                    "description": "Restrict command list to those commands defined in the specified file. Omit value to choose from a list of names.",
+                    "default": 2
+                }
+            }
+        },
+        "buildDom": {
+            "schema": 4,
+            "class": "Drush\\Commands\\help\\ListCommands",
+            "method_name": "buildDom",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "getTerminalWidth": {
+            "schema": 4,
+            "class": "Drush\\Commands\\help\\ListCommands",
+            "method_name": "getTerminalWidth",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "renderListRaw": {
+            "schema": 4,
+            "class": "Drush\\Commands\\help\\ListCommands",
+            "method_name": "renderListRaw",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "setProcessManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setProcessManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "processManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "processManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "hasProcessManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "hasProcessManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "setLogger": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setLogger",
+            "mtime": 1584954725,
+            "injected_classes": []
+        },
+        "getConfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "getConfig",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "setConfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setConfig",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "parentgetconfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "parentgetconfig",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "setInput": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setInput",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "setOutput": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setOutput",
+            "mtime": 1582047086,
+            "injected_classes": []
+        }
+    },
+    "created": 1599741432,
+    "expire": 0
+}

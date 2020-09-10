@@ -1,0 +1,5 @@
+
+Start-Date: 2020-09-10  11:50:03
+Commandline: apt-get install libxml2-dev
+Install: libxml2-dev:amd64 (2.9.4+dfsg1-7+b3)
+End-Date: 2020-09-10  11:50:04

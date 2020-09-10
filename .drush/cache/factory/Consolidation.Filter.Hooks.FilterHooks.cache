@@ -1,0 +1,34 @@
+{
+    "cid": "Consolidation\\Filter\\Hooks\\FilterHooks",
+    "data": {
+        "filterOutput": {
+            "schema": 4,
+            "class": "Consolidation\\Filter\\Hooks\\FilterHooks",
+            "method_name": "filterOutput",
+            "mtime": 1547791507,
+            "injected_classes": [],
+            "name": "filter:output",
+            "description": "",
+            "help": "",
+            "aliases": [],
+            "annotations": {
+                "hook": "alter @filter-output"
+            },
+            "example_usages": [],
+            "return_type": null,
+            "arguments": {
+                "result": {
+                    "description": ""
+                }
+            },
+            "options": {
+                "filter": {
+                    "description": "Filter output based on provided expression",
+                    "default": ""
+                }
+            }
+        }
+    },
+    "created": 1599741432,
+    "expire": 0
+}

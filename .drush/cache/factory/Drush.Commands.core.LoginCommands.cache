@@ -1,0 +1,150 @@
+{
+    "cid": "Drush\\Commands\\core\\LoginCommands",
+    "data": {
+        "login": {
+            "schema": 4,
+            "class": "Drush\\Commands\\core\\LoginCommands",
+            "method_name": "login",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "user:login",
+            "description": "Display a one time login link for user ID 1, or another user.",
+            "help": "",
+            "aliases": [
+                "uli",
+                "user-login"
+            ],
+            "annotations": {
+                "command": "user:login",
+                "bootstrap": "none",
+                "handle-remote-commands": ""
+            },
+            "example_usages": {
+                "drush user:login": "Open default web browser and browse to homepage, logged in as uid=1.",
+                "drush user:login --name=ryan node\/add\/blog": "Open default web browser (if configured or detected) for a one-time login link for username ryan that redirects to node\/add\/blog.",
+                "drush user:login --uid=123": "Open default web browser and login as user with uid \"123\".",
+                "drush user:login --mail=foo@bar.com": "Open default web browser and login as user with mail \"foo@bar.com\".",
+                "drush user:login --browser=firefox --name=$(drush user:information --mail=\"drush@example.org\" --fields=name --format=string)": "Open firefox web browser, and login as the user with the e-mail address drush@example.org."
+            },
+            "return_type": null,
+            "arguments": {
+                "path": {
+                    "description": "Optional path to redirect to after logging in.",
+                    "default": ""
+                }
+            },
+            "options": {
+                "name": {
+                    "description": "A user name to log in as."
+                },
+                "uid": {
+                    "description": "A uid to log in as."
+                },
+                "mail": {
+                    "description": "A user mail address to log in as."
+                },
+                "browser": {
+                    "description": "Optional value denotes which browser to use (defaults to operating system default). Use --no-browser to suppress opening a browser.",
+                    "default": true
+                },
+                "redirect-port": {
+                    "description": "A custom port for redirecting to (e.g., when running within a Vagrant environment)",
+                    "default": 2
+                }
+            }
+        },
+        "setProcessManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setProcessManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "processManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "processManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "hasProcessManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "hasProcessManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "setLogger": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setLogger",
+            "mtime": 1584954725,
+            "injected_classes": []
+        },
+        "getConfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "getConfig",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "setConfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setConfig",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "parentgetconfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "parentgetconfig",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "setInput": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setInput",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "setOutput": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setOutput",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "setSiteAliasManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\core\\LoginCommands",
+            "method_name": "setSiteAliasManager",
+            "mtime": 1552411908,
+            "injected_classes": []
+        },
+        "siteAliasManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\core\\LoginCommands",
+            "method_name": "siteAliasManager",
+            "mtime": 1552411908,
+            "injected_classes": []
+        },
+        "hasSiteAliasManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\core\\LoginCommands",
+            "method_name": "hasSiteAliasManager",
+            "mtime": 1552411908,
+            "injected_classes": []
+        },
+        "startBrowser": {
+            "schema": 4,
+            "class": "Drush\\Commands\\core\\LoginCommands",
+            "method_name": "startBrowser",
+            "mtime": 1581269391,
+            "injected_classes": []
+        }
+    },
+    "created": 1599741432,
+    "expire": 0
+}

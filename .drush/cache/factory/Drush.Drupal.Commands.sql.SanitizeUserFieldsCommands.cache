@@ -1,0 +1,154 @@
+{
+    "cid": "Drush\\Drupal\\Commands\\sql\\SanitizeUserFieldsCommands",
+    "data": {
+        "getDatabase": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\sql\\SanitizeUserFieldsCommands",
+            "method_name": "getDatabase",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "getEntityManager": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\sql\\SanitizeUserFieldsCommands",
+            "method_name": "getEntityManager",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "sanitize": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\sql\\SanitizeUserFieldsCommands",
+            "method_name": "sanitize",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "sanitize",
+            "description": "Sanitize string fields associated with the user.",
+            "help": "",
+            "aliases": [],
+            "annotations": {
+                "todo": "Use Drupal services to get field info.",
+                "hook": "post-command sql-sanitize",
+                "inheritdoc": ""
+            },
+            "example_usages": [],
+            "return_type": null,
+            "arguments": {
+                "result": {
+                    "description": ""
+                }
+            },
+            "options": []
+        },
+        "messages": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\sql\\SanitizeUserFieldsCommands",
+            "method_name": "messages",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "messages",
+            "description": "",
+            "help": "",
+            "aliases": [],
+            "annotations": {
+                "hook": "on-event sql-sanitize-confirms",
+                "inheritdoc": ""
+            },
+            "example_usages": [],
+            "return_type": null,
+            "arguments": {
+                "messages": {
+                    "description": ""
+                }
+            },
+            "options": []
+        },
+        "options": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\sql\\SanitizeUserFieldsCommands",
+            "method_name": "options",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "options",
+            "description": "",
+            "help": "",
+            "aliases": [],
+            "annotations": {
+                "hook": "option sql-sanitize"
+            },
+            "example_usages": [],
+            "return_type": null,
+            "arguments": [],
+            "options": {
+                "whitelist-fields": {
+                    "description": "A comma delimited list of fields exempt from sanitization.",
+                    "default": ""
+                }
+            }
+        },
+        "setProcessManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setProcessManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "processManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "processManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "hasProcessManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "hasProcessManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "setLogger": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setLogger",
+            "mtime": 1584954725,
+            "injected_classes": []
+        },
+        "getConfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "getConfig",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "setConfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setConfig",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "parentgetconfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "parentgetconfig",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "setInput": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setInput",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "setOutput": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setOutput",
+            "mtime": 1582047086,
+            "injected_classes": []
+        }
+    },
+    "created": 1599741433,
+    "expire": 0
+}

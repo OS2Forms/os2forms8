@@ -1,0 +1,136 @@
+{
+    "cid": "Drush\\Commands\\core\\BrowseCommands",
+    "data": {
+        "browse": {
+            "schema": 4,
+            "class": "Drush\\Commands\\core\\BrowseCommands",
+            "method_name": "browse",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "browse",
+            "description": "Display a link to a given path or open link in a browser.",
+            "help": "",
+            "aliases": [],
+            "annotations": {
+                "command": "browse",
+                "handle-remote-commands": "true"
+            },
+            "example_usages": {
+                "drush browse": "Open default web browser (if configured or detected) to the site front page.",
+                "drush browse node\/1": "Open web browser to the path node\/1.",
+                "drush @example.prod": "Open a browser to the web site specified in a site alias.",
+                "drush browse --browser=firefox admin": "Open Firefox web browser to the path 'admin'."
+            },
+            "return_type": null,
+            "arguments": {
+                "path": {
+                    "description": "Path to open. If omitted, the site front page will be opened.",
+                    "default": ""
+                }
+            },
+            "options": {
+                "browser": {
+                    "description": "Specify a particular browser (defaults to operating system default). Use --no-browser to suppress opening a browser.",
+                    "default": 2
+                },
+                "redirect-port": {
+                    "description": "The port that the web server is redirected to (e.g. when running within a Vagrant environment).",
+                    "default": 2
+                }
+            }
+        },
+        "setProcessManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setProcessManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "processManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "processManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "hasProcessManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "hasProcessManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "setLogger": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setLogger",
+            "mtime": 1584954725,
+            "injected_classes": []
+        },
+        "getConfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "getConfig",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "setConfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setConfig",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "parentgetconfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "parentgetconfig",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "setInput": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setInput",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "setOutput": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setOutput",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "startBrowser": {
+            "schema": 4,
+            "class": "Drush\\Commands\\core\\BrowseCommands",
+            "method_name": "startBrowser",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "setSiteAliasManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\core\\BrowseCommands",
+            "method_name": "setSiteAliasManager",
+            "mtime": 1552411908,
+            "injected_classes": []
+        },
+        "siteAliasManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\core\\BrowseCommands",
+            "method_name": "siteAliasManager",
+            "mtime": 1552411908,
+            "injected_classes": []
+        },
+        "hasSiteAliasManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\core\\BrowseCommands",
+            "method_name": "hasSiteAliasManager",
+            "mtime": 1552411908,
+            "injected_classes": []
+        }
+    },
+    "created": 1599741432,
+    "expire": 0
+}

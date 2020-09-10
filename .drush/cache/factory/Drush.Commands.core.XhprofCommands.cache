@@ -1,0 +1,143 @@
+{
+    "cid": "Drush\\Commands\\core\\XhprofCommands",
+    "data": {
+        "optionsetXhProf": {
+            "schema": 4,
+            "class": "Drush\\Commands\\core\\XhprofCommands",
+            "method_name": "optionsetXhProf",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "optionset:xh-prof",
+            "description": "",
+            "help": "",
+            "aliases": [],
+            "annotations": {
+                "hook": "option *"
+            },
+            "example_usages": [],
+            "return_type": null,
+            "arguments": [],
+            "options": {
+                "xh-link": {
+                    "description": "URL to your XHProf report site.",
+                    "default": 2
+                }
+            }
+        },
+        "xhprofPost": {
+            "schema": 4,
+            "class": "Drush\\Commands\\core\\XhprofCommands",
+            "method_name": "xhprofPost",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "xhprof:post",
+            "description": "Enable profiling via XHProf",
+            "help": "",
+            "aliases": [],
+            "annotations": {
+                "hook": "post-command *"
+            },
+            "example_usages": [],
+            "return_type": null,
+            "arguments": {
+                "result": {
+                    "description": ""
+                }
+            },
+            "options": []
+        },
+        "xhprofInitialize": {
+            "schema": 4,
+            "class": "Drush\\Commands\\core\\XhprofCommands",
+            "method_name": "xhprofInitialize",
+            "mtime": 1581269391,
+            "injected_classes": [
+                "Consolidation\\AnnotatedCommand\\AnnotationData",
+                "Symfony\\Component\\Console\\Input\\InputInterface"
+            ],
+            "name": "xhprof:initialize",
+            "description": "Enable profiling via XHProf",
+            "help": "",
+            "aliases": [],
+            "annotations": {
+                "hook": "init *"
+            },
+            "example_usages": [],
+            "return_type": null,
+            "arguments": [],
+            "options": []
+        },
+        "xhprofFinishRun": {
+            "schema": 4,
+            "class": "Drush\\Commands\\core\\XhprofCommands",
+            "method_name": "xhprofFinishRun",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "setProcessManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setProcessManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "processManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "processManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "hasProcessManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "hasProcessManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "setLogger": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setLogger",
+            "mtime": 1584954725,
+            "injected_classes": []
+        },
+        "getConfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "getConfig",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "setConfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setConfig",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "parentgetconfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "parentgetconfig",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "setInput": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setInput",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "setOutput": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setOutput",
+            "mtime": 1582047086,
+            "injected_classes": []
+        }
+    },
+    "created": 1599741432,
+    "expire": 0
+}

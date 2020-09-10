@@ -1,0 +1,77 @@
+version: '3.7'
+
+networks:
+  frontend:
+    driver: bridge
+  backend:
+    driver: bridge
+
+volumes:
+  mysql:
+    driver: local
+
+services:
+
+  php:
+    build:
+      context: ./.docker/php
+    container_name: php
+    volumes:
+      - ./.docker/php/custom.ini:/usr/local/etc/php/conf.d/custom.ini:ro,delegated
+      - ./:/var/www:delegated
+      - ./.docker/logs:/var/log:delegated
+      - ./.docker/php/sites-enabled:/etc/apache2/sites-enabled:delegated
+    depends_on:
+      - mariadb
+    ports:
+      - "80:80"
+    networks:
+      - backend
+      - frontend
+    environment:
+      - APP_ENV=${APP_ENV}
+
+  mariadb:
+    image: mariadb:latest
+    container_name: mariadb
+    volumes:
+      - ${DATA_PATH_HOST}/mariadb:/var/lib/mysql:delegated
+      - ./.docker/mariadb/my.cnf:/etc/mysql/conf.d/my.cnf:ro,delegated
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=${MYSQL_DATABASE}
+      - MYSQL_USER=app
+      - MYSQL_PASSWORD=app
+    ports:
+      - "3306:3306"
+    networks:
+      - backend
+
+#  nginx:
+#    image: nginx:stable-alpine
+#    container_name: nginx
+#    ports:
+#      - "80:80"
+#      # - "443:443"
+#    volumes:
+#      - ./:/var/www:delegated
+#      - ./.docker/nginx/conf.d:/etc/nginx/conf.d:ro,delegated
+#    depends_on:
+#      - php
+#    networks:
+#      - backend
+#      - frontend
+
+#  apache:
+#    image: httpd:latest
+#    container_name: apache
+#    ports:
+#      - "80:80"
+#    volumes:
+#      - ./:/var/www:delegated
+#      - ./.docker/apache/conf/httpd.conf:/usr/local/apache2/conf/httpd.conf
+#    depends_on:
+#      - php
+#    networks:
+#      - backend
+#      - frontend

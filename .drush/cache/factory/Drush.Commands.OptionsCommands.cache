@@ -1,0 +1,158 @@
+{
+    "cid": "Drush\\Commands\\OptionsCommands",
+    "data": {
+        "optionsetProcBuild": {
+            "schema": 4,
+            "class": "Drush\\Commands\\OptionsCommands",
+            "method_name": "optionsetProcBuild",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "optionset:proc-build",
+            "description": "",
+            "help": "",
+            "aliases": [],
+            "annotations": {
+                "hook": "option @optionset_proc_build"
+            },
+            "example_usages": [],
+            "return_type": null,
+            "arguments": [],
+            "options": {
+                "ssh-options": {
+                    "description": "A string of extra options that will be passed to the ssh command (e.g. \"-p 100\")",
+                    "default": 2
+                },
+                "tty": {
+                    "description": "Create a tty (e.g. to run an interactive program).",
+                    "default": false
+                }
+            }
+        },
+        "optionsetGetEditor": {
+            "schema": 4,
+            "class": "Drush\\Commands\\OptionsCommands",
+            "method_name": "optionsetGetEditor",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "optionset:get-editor",
+            "description": "",
+            "help": "",
+            "aliases": [],
+            "annotations": {
+                "hook": "option @optionset_get_editor"
+            },
+            "example_usages": [],
+            "return_type": null,
+            "arguments": [],
+            "options": {
+                "editor": {
+                    "description": "A string of bash which launches user's preferred text editor. Defaults to ${VISUAL-${EDITOR-vi}}.",
+                    "default": ""
+                },
+                "bg": {
+                    "description": "Run editor in the background. Does not work with editors such as `vi` that run in the terminal.",
+                    "default": false
+                }
+            }
+        },
+        "optionsetSsh": {
+            "schema": 4,
+            "class": "Drush\\Commands\\OptionsCommands",
+            "method_name": "optionsetSsh",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "optionset:ssh",
+            "description": "",
+            "help": "",
+            "aliases": [],
+            "annotations": {
+                "hook": "option @optionset_ssh"
+            },
+            "example_usages": [],
+            "return_type": null,
+            "arguments": [],
+            "options": {
+                "ssh-options": {
+                    "description": "A string appended to ssh command during rsync, sql-sync, etc.",
+                    "default": 2
+                }
+            }
+        },
+        "optionsetSql": {
+            "schema": 4,
+            "class": "Drush\\Commands\\OptionsCommands",
+            "method_name": "optionsetSql",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "optionset:sql",
+            "description": "",
+            "help": "",
+            "aliases": [],
+            "annotations": {
+                "hook": "option @optionset_sql"
+            },
+            "example_usages": [],
+            "return_type": null,
+            "arguments": [],
+            "options": {
+                "database": {
+                    "description": "The DB connection key if using multiple connections in settings.php.",
+                    "default": "default"
+                },
+                "target": {
+                    "description": "The name of a target within the specified database connection. Defaults to default",
+                    "default": "default"
+                },
+                "db-url": {
+                    "description": "A Drupal 6 style database URL.",
+                    "default": 2
+                }
+            }
+        },
+        "optionsetTableSelection": {
+            "schema": 4,
+            "class": "Drush\\Commands\\OptionsCommands",
+            "method_name": "optionsetTableSelection",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "optionset:table-selection",
+            "description": "",
+            "help": "",
+            "aliases": [],
+            "annotations": {
+                "hook": "option @optionset_table_selection"
+            },
+            "example_usages": [],
+            "return_type": null,
+            "arguments": [],
+            "options": {
+                "skip-tables-key": {
+                    "description": "A key in the $skip_tables array. @see example.drush.yml",
+                    "default": 2
+                },
+                "structure-tables-key": {
+                    "description": "A key in the $structure_tables array. @see example.drush.yml",
+                    "default": 2
+                },
+                "tables-key": {
+                    "description": "A key in the $tables array.",
+                    "default": 2
+                },
+                "skip-tables-list": {
+                    "description": "A comma-separated list of tables to exclude completely.",
+                    "default": 2
+                },
+                "structure-tables-list": {
+                    "description": "A comma-separated list of tables to include for structure, but not data.",
+                    "default": 2
+                },
+                "tables-list": {
+                    "description": "A comma-separated list of tables to transfer.",
+                    "default": 2
+                }
+            }
+        }
+    },
+    "created": 1599741432,
+    "expire": 0
+}

@@ -1,0 +1,366 @@
+{
+    "cid": "Drush\\Drupal\\Commands\\core\\UserCommands",
+    "data": {
+        "information": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\core\\UserCommands",
+            "method_name": "information",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "user:information",
+            "description": "Print information about the specified user(s).",
+            "help": "",
+            "aliases": [
+                "uinf",
+                "user-information"
+            ],
+            "annotations": {
+                "command": "user:information",
+                "field-labels": "\n   uid: User ID\n   name: User name\n   pass: Password\n   mail: User mail\n   theme: User theme\n   signature: Signature\n   signature_format: Signature format\n   user_created: User created\n   created: Created\n   user_access: User last access\n   access: Last access\n   user_login: User last login\n   login: Last login\n   user_status: User status\n   status: Status\n   timezone: Time zone\n   picture: User picture\n   init: Initial user mail\n   roles: User roles\n   group_audience: Group Audience\n   langcode: Language code\n   uuid: Uuid",
+                "table-style": "default",
+                "default-fields": "uid,name,mail,roles,user_status",
+                "filter-default-field": "name"
+            },
+            "example_usages": {
+                "drush user:information someguy,somegal": "Display information about the someguy and somegal user accounts.",
+                "drush user:information --mail=someguy@somegal.com": "Display information for a given email account.",
+                "drush user:information --uid=5": "Display information for a given user id."
+            },
+            "return_type": "\\Consolidation\\OutputFormatters\\StructuredData\\RowsOfFields",
+            "arguments": {
+                "names": {
+                    "description": "A comma delimited list of user names.",
+                    "default": ""
+                }
+            },
+            "options": {
+                "format": {
+                    "description": "",
+                    "default": "table"
+                },
+                "uid": {
+                    "description": "A comma delimited list of user ids to lookup (an alternative to names).",
+                    "default": 2
+                },
+                "mail": {
+                    "description": "A comma delimited list of emails to lookup (an alternative to names).",
+                    "default": 2
+                }
+            }
+        },
+        "renderRolesCell": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\core\\UserCommands",
+            "method_name": "renderRolesCell",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "block": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\core\\UserCommands",
+            "method_name": "block",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "user:block",
+            "description": "Block the specified user(s).",
+            "help": "",
+            "aliases": [
+                "ublk",
+                "user-block"
+            ],
+            "annotations": {
+                "command": "user:block"
+            },
+            "example_usages": {
+                "drush user:block user3": "Block the users whose name is user3"
+            },
+            "return_type": null,
+            "arguments": {
+                "names": {
+                    "description": "A comma delimited list of user names."
+                }
+            },
+            "options": []
+        },
+        "unblock": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\core\\UserCommands",
+            "method_name": "unblock",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "user:unblock",
+            "description": "UnBlock the specified user(s).",
+            "help": "",
+            "aliases": [
+                "uublk",
+                "user-unblock"
+            ],
+            "annotations": {
+                "command": "user:unblock"
+            },
+            "example_usages": {
+                "drush user:unblock user3": "Unblock the users with name user3"
+            },
+            "return_type": null,
+            "arguments": {
+                "names": {
+                    "description": "A comma delimited list of user names."
+                }
+            },
+            "options": []
+        },
+        "addRole": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\core\\UserCommands",
+            "method_name": "addRole",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "user:role:add",
+            "description": "Add a role to the specified user accounts.",
+            "help": "",
+            "aliases": [
+                "urol",
+                "user-add-role"
+            ],
+            "annotations": {
+                "command": "user:role:add",
+                "validate-entity-load": "user_role role"
+            },
+            "example_usages": {
+                "drush user-add-role \"power user\" user3": "Add the \"power user\" role to user3"
+            },
+            "return_type": null,
+            "arguments": {
+                "role": {
+                    "description": "The name of the role to add."
+                },
+                "names": {
+                    "description": "A comma delimited list of user names."
+                }
+            },
+            "options": []
+        },
+        "removeRole": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\core\\UserCommands",
+            "method_name": "removeRole",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "user:role:remove",
+            "description": "Remove a role from the specified user accounts.",
+            "help": "",
+            "aliases": [
+                "urrol",
+                "user-remove-role"
+            ],
+            "annotations": {
+                "command": "user:role:remove",
+                "validate-entity-load": "user_role role"
+            },
+            "example_usages": {
+                "drush user:remove-role \"power user\" user3": "Remove the \"power user\" role from user3"
+            },
+            "return_type": null,
+            "arguments": {
+                "role": {
+                    "description": "The name of the role to add"
+                },
+                "names": {
+                    "description": "A comma delimited list of user names."
+                }
+            },
+            "options": []
+        },
+        "create": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\core\\UserCommands",
+            "method_name": "create",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "user:create",
+            "description": "Create a user account.",
+            "help": "",
+            "aliases": [
+                "ucrt",
+                "user-create"
+            ],
+            "annotations": {
+                "command": "user:create"
+            },
+            "example_usages": {
+                "drush user:create newuser --mail=\"person@example.com\" --password=\"letmein\"": "Create a new user account with the name newuser, the email address person@example.com, and the password letmein"
+            },
+            "return_type": null,
+            "arguments": {
+                "name": {
+                    "description": "The name of the account to add"
+                }
+            },
+            "options": {
+                "password": {
+                    "description": "The password for the new account",
+                    "default": 2
+                },
+                "mail": {
+                    "description": "The email address for the new account",
+                    "default": 2
+                }
+            }
+        },
+        "createValidate": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\core\\UserCommands",
+            "method_name": "createValidate",
+            "mtime": 1581269391,
+            "injected_classes": [
+                "Consolidation\\AnnotatedCommand\\CommandData"
+            ],
+            "name": "create:validate",
+            "description": "Assure that provided username is available.",
+            "help": "",
+            "aliases": [],
+            "annotations": {
+                "hook": "validate user-create"
+            },
+            "example_usages": [],
+            "return_type": null,
+            "arguments": [],
+            "options": []
+        },
+        "cancel": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\core\\UserCommands",
+            "method_name": "cancel",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "user:cancel",
+            "description": "Cancel user account(s) with the specified name(s).",
+            "help": "",
+            "aliases": [
+                "ucan",
+                "user-cancel"
+            ],
+            "annotations": {
+                "command": "user:cancel"
+            },
+            "example_usages": {
+                "drush user:cancel username": "Cancel the user account with the name username and anonymize all content created by that user.",
+                "drush user:cancel --delete-content username": "Delete the user account with the name username and delete all content created by that user."
+            },
+            "return_type": null,
+            "arguments": {
+                "names": {
+                    "description": "A comma delimited list of user names."
+                }
+            },
+            "options": {
+                "delete-content": {
+                    "description": "Delete the user, and all content created by the user",
+                    "default": false
+                }
+            }
+        },
+        "password": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\core\\UserCommands",
+            "method_name": "password",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "user:password",
+            "description": "Set the password for the user account with the specified name.",
+            "help": "",
+            "aliases": [
+                "upwd",
+                "user-password"
+            ],
+            "annotations": {
+                "command": "user:password"
+            },
+            "example_usages": {
+                "drush user:password someuser \"correct horse battery staple\"": "Set the password for the username someuser. @see xkcd.com\/936"
+            },
+            "return_type": null,
+            "arguments": {
+                "name": {
+                    "description": "The name of the account to modify."
+                },
+                "password": {
+                    "description": "The new password for the account."
+                }
+            },
+            "options": []
+        },
+        "infoArray": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\core\\UserCommands",
+            "method_name": "infoArray",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "setProcessManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setProcessManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "processManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "processManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "hasProcessManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "hasProcessManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "setLogger": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setLogger",
+            "mtime": 1584954725,
+            "injected_classes": []
+        },
+        "getConfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "getConfig",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "setConfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setConfig",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "parentgetconfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "parentgetconfig",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "setInput": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setInput",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "setOutput": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setOutput",
+            "mtime": 1582047086,
+            "injected_classes": []
+        }
+    },
+    "created": 1599741433,
+    "expire": 0
+}

@@ -1,0 +1,8 @@
+AH00112: Warning: DocumentRoot [/var/www/html] does not exist
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.26.0.3. Set the 'ServerName' directive globally to suppress this message
+[Thu Sep 10 13:27:33.405074 2020] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.38 (Debian) PHP/7.4.10 configured -- resuming normal operations
+[Thu Sep 10 13:27:33.405158 2020] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Thu Sep 10 13:29:33.881407 2020] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.26.0.3. Set the 'ServerName' directive globally to suppress this message
+[Thu Sep 10 13:29:43.402818 2020] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.38 (Debian) PHP/7.4.10 configured -- resuming normal operations
+[Thu Sep 10 13:29:43.402911 2020] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'

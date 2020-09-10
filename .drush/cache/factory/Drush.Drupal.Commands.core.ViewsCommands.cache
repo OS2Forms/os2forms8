@@ -1,0 +1,321 @@
+{
+    "cid": "Drush\\Drupal\\Commands\\core\\ViewsCommands",
+    "data": {
+        "getConfigFactory": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\core\\ViewsCommands",
+            "method_name": "getConfigFactory",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "getModuleHandler": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\core\\ViewsCommands",
+            "method_name": "getModuleHandler",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "getEntityTypeManager": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\core\\ViewsCommands",
+            "method_name": "getEntityTypeManager",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "getRenderer": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\core\\ViewsCommands",
+            "method_name": "getRenderer",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "dev": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\core\\ViewsCommands",
+            "method_name": "dev",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "views:dev",
+            "description": "Set several Views settings to more developer-oriented values.",
+            "help": "",
+            "aliases": [
+                "vd",
+                "views-dev"
+            ],
+            "annotations": {
+                "command": "views:dev",
+                "validate-module-enabled": "views"
+            },
+            "example_usages": [],
+            "return_type": null,
+            "arguments": [],
+            "options": []
+        },
+        "vlist": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\core\\ViewsCommands",
+            "method_name": "vlist",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "views:list",
+            "description": "Get a list of all views in the system.",
+            "help": "",
+            "aliases": [
+                "vl",
+                "views-list"
+            ],
+            "annotations": {
+                "command": "views:list",
+                "table-style": "default",
+                "field-labels": "\n   machine-name: Machine name\n   label: Name\n   description: Description\n   status: Status\n   tag: Tag",
+                "default-fields": "machine-name,label,description,status",
+                "validate-module-enabled": "views",
+                "filter-default-field": "machine-name"
+            },
+            "example_usages": {
+                "drush vl": "Show a list of all available views.",
+                "drush vl --name=blog": "Show a list of views which names contain 'blog'.",
+                "drush vl --tags=tag1,tag2": "Show a list of views tagged with 'tag1' or 'tag2'.",
+                "drush vl --status=enabled": "Show a list of enabled views."
+            },
+            "return_type": "\\Consolidation\\OutputFormatters\\StructuredData\\RowsOfFields",
+            "arguments": [],
+            "options": {
+                "name": {
+                    "description": "A string contained in the view's name to filter the results with.",
+                    "default": 2
+                },
+                "tags": {
+                    "description": "A comma-separated list of views tags by which to filter the results.",
+                    "default": 2
+                },
+                "status": {
+                    "description": "Filter views by status. Choices: enabled, disabled.",
+                    "default": 2
+                },
+                "format": {
+                    "description": "",
+                    "default": "table"
+                }
+            }
+        },
+        "execute": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\core\\ViewsCommands",
+            "method_name": "execute",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "views:execute",
+            "description": "Execute a view and show a count of the results, or the rendered HTML.",
+            "help": "",
+            "aliases": [
+                "vex",
+                "views-execute"
+            ],
+            "annotations": {
+                "command": "views:execute",
+                "validate-entity-load": "view view_name",
+                "validate-module-enabled": "views"
+            },
+            "example_usages": {
+                "drush views:execute my_view": "Show the rendered HTML for the default display for the my_view View.",
+                "drush views:execute my_view page_1 3 --count": "Show a count of my_view:page_1 where the first contextual filter value is 3.",
+                "drush views:execute my_view page_1 3,foo": "Show the rendered HTML of my_view:page_1 where the first two contextual filter values are 3 and 'foo' respectively."
+            },
+            "return_type": "Drush\\Drupal\\Commands\\core\\string",
+            "arguments": {
+                "view_name": {
+                    "description": "The name of the view to execute."
+                },
+                "display": {
+                    "description": "The display ID to execute. If none specified, the default display will be used.",
+                    "default": null
+                },
+                "view_args": {
+                    "description": "A comma delimited list of values, corresponding to contextual filters.",
+                    "default": null
+                }
+            },
+            "options": {
+                "count": {
+                    "description": "Display a count of the results instead of each row.",
+                    "default": 0
+                },
+                "show-admin-links": {
+                    "description": "Show contextual admin links in the rendered markup.",
+                    "default": false
+                }
+            }
+        },
+        "analyze": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\core\\ViewsCommands",
+            "method_name": "analyze",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "views:analyze",
+            "description": "Get a list of all Views and analyze warnings.",
+            "help": "",
+            "aliases": [
+                "va",
+                "views-analyze"
+            ],
+            "annotations": {
+                "command": "views:analyze",
+                "todo": "Command has not  been fully tested. How to generate a message?",
+                "field-labels": "\n   type: Type\n   message: Message",
+                "validate-module-enabled": "views"
+            },
+            "example_usages": [],
+            "return_type": "\\Consolidation\\OutputFormatters\\StructuredData\\RowsOfFields",
+            "arguments": [],
+            "options": []
+        },
+        "enable": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\core\\ViewsCommands",
+            "method_name": "enable",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "views:enable",
+            "description": "Enable the specified views.",
+            "help": "",
+            "aliases": [
+                "ven",
+                "views-enable"
+            ],
+            "annotations": {
+                "command": "views:enable",
+                "validate-entity-load": "view views"
+            },
+            "example_usages": {
+                "drush ven frontpage,taxonomy_term": "Enable the frontpage and taxonomy_term views."
+            },
+            "return_type": null,
+            "arguments": {
+                "views": {
+                    "description": "A comma delimited list of view names."
+                }
+            },
+            "options": []
+        },
+        "disable": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\core\\ViewsCommands",
+            "method_name": "disable",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "views:disable",
+            "description": "Disable the specified views.",
+            "help": "",
+            "aliases": [
+                "vdis",
+                "views-disable"
+            ],
+            "annotations": {
+                "command": "views:disable",
+                "validate-entity-load": "view views"
+            },
+            "example_usages": {
+                "drush vdis frontpage taxonomy_term": "Disable the frontpage and taxonomy_term views."
+            },
+            "return_type": null,
+            "arguments": {
+                "views": {
+                    "description": "A comma delimited list of view names."
+                }
+            },
+            "options": []
+        },
+        "cacheClear": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\core\\ViewsCommands",
+            "method_name": "cacheClear",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "cache:clear",
+            "description": "Adds a cache clear option for views.",
+            "help": "",
+            "aliases": [],
+            "annotations": {
+                "hook": "on-event cache-clear"
+            },
+            "example_usages": [],
+            "return_type": null,
+            "arguments": {
+                "types": {
+                    "description": ""
+                },
+                "include_bootstrapped_types": {
+                    "description": ""
+                }
+            },
+            "options": []
+        },
+        "setProcessManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setProcessManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "processManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "processManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "hasProcessManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "hasProcessManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "setLogger": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setLogger",
+            "mtime": 1584954725,
+            "injected_classes": []
+        },
+        "getConfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "getConfig",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "setConfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setConfig",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "parentgetconfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "parentgetconfig",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "setInput": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setInput",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "setOutput": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setOutput",
+            "mtime": 1582047086,
+            "injected_classes": []
+        }
+    },
+    "created": 1599741433,
+    "expire": 0
+}

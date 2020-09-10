@@ -1,0 +1,108 @@
+{
+    "cid": "Drush\\Drupal\\Commands\\sql\\SanitizeCommands",
+    "data": {
+        "sanitize": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\sql\\SanitizeCommands",
+            "method_name": "sanitize",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "sql:sanitize",
+            "description": "Sanitize the database by removing or obfuscating user data.",
+            "help": "Commandfiles may add custom operations by implementing:\n- @hook_on-event sql-sanitize-message\nDisplay summary to user before confirmation.\n- @hook post-command sql-sanitize\nRun queries or call APIs to perform sanitizing",
+            "aliases": [
+                "sqlsan",
+                "sql-sanitize"
+            ],
+            "annotations": {
+                "command": "sql:sanitize"
+            },
+            "example_usages": {
+                "drush sql:sanitize --sanitize-password=no": "Sanitize database without modifying any passwords.",
+                "drush sql:sanitize --whitelist-fields=field_biography,field_phone_number": "Sanitizes database but exempts two user fields from modification."
+            },
+            "return_type": null,
+            "arguments": [],
+            "options": []
+        },
+        "setProcessManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setProcessManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "processManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "processManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "hasProcessManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "hasProcessManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "setLogger": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setLogger",
+            "mtime": 1584954725,
+            "injected_classes": []
+        },
+        "getConfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "getConfig",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "setConfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setConfig",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "parentgetconfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "parentgetconfig",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "setInput": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setInput",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "setOutput": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setOutput",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "setHookManager": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\sql\\SanitizeCommands",
+            "method_name": "setHookManager",
+            "mtime": 1552064103,
+            "injected_classes": []
+        },
+        "getCustomEventHandlers": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\sql\\SanitizeCommands",
+            "method_name": "getCustomEventHandlers",
+            "mtime": 1552064103,
+            "injected_classes": []
+        }
+    },
+    "created": 1599741433,
+    "expire": 0
+}

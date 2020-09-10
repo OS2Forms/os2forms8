@@ -1,0 +1,9 @@
+2020-09-10 11:50:03 startup archives unpack
+2020-09-10 11:50:03 install libxml2-dev:amd64 <none> 2.9.4+dfsg1-7+b3
+2020-09-10 11:50:03 status half-installed libxml2-dev:amd64 2.9.4+dfsg1-7+b3
+2020-09-10 11:50:04 status unpacked libxml2-dev:amd64 2.9.4+dfsg1-7+b3
+2020-09-10 11:50:04 startup packages configure
+2020-09-10 11:50:04 configure libxml2-dev:amd64 2.9.4+dfsg1-7+b3 <none>
+2020-09-10 11:50:04 status unpacked libxml2-dev:amd64 2.9.4+dfsg1-7+b3
+2020-09-10 11:50:04 status half-configured libxml2-dev:amd64 2.9.4+dfsg1-7+b3
+2020-09-10 11:50:04 status installed libxml2-dev:amd64 2.9.4+dfsg1-7+b3

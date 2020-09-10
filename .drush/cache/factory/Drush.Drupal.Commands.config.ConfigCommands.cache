@@ -1,0 +1,386 @@
+{
+    "cid": "Drush\\Drupal\\Commands\\config\\ConfigCommands",
+    "data": {
+        "getConfigFactory": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\config\\ConfigCommands",
+            "method_name": "getConfigFactory",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "get": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\config\\ConfigCommands",
+            "method_name": "get",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "config:get",
+            "description": "Display a config value, or a whole configuration object.",
+            "help": "",
+            "aliases": [
+                "cget",
+                "config-get"
+            ],
+            "annotations": {
+                "command": "config:get",
+                "validate-config-name": "",
+                "interact-config-name": ""
+            },
+            "example_usages": {
+                "drush config:get system.site": "Displays the system.site config.",
+                "drush config:get system.site page.front": "Gets system.site:page.front value."
+            },
+            "return_type": null,
+            "arguments": {
+                "config_name": {
+                    "description": "The config object name, for example \"system.site\"."
+                },
+                "key": {
+                    "description": "The config key, for example \"page.front\". Optional.",
+                    "default": ""
+                }
+            },
+            "options": {
+                "format": {
+                    "description": "",
+                    "default": "yaml"
+                },
+                "source": {
+                    "description": "The config storage source to read. Additional labels may be defined in settings.php.",
+                    "default": "active"
+                },
+                "include-overridden": {
+                    "description": "Apply module and settings.php overrides to values.",
+                    "default": false
+                }
+            }
+        },
+        "set": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\config\\ConfigCommands",
+            "method_name": "set",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "config:set",
+            "description": "Set config value directly. Does not perform a config import.",
+            "help": "",
+            "aliases": [
+                "cset",
+                "config-set"
+            ],
+            "annotations": {
+                "command": "config:set",
+                "validate-config-name": "",
+                "todo": "@interact-config-name deferred until we have interaction for key.",
+                "hidden-options": "value"
+            },
+            "example_usages": {
+                "drush config:set system.site page.front '\/path\/to\/page'": "Sets the given URL path as value for the config item with key \"page.front\" of \"system.site\" config object."
+            },
+            "return_type": null,
+            "arguments": {
+                "config_name": {
+                    "description": "The config object name, for example \"system.site\"."
+                },
+                "key": {
+                    "description": "The config key, for example \"page.front\"."
+                },
+                "value": {
+                    "description": "The value to assign to the config key. Use '-' to read from STDIN.",
+                    "default": null
+                }
+            },
+            "options": {
+                "input-format": {
+                    "description": "Format to parse the object. Use \"string\" for string (default), and \"yaml\" for YAML.",
+                    "default": "string"
+                },
+                "value": {
+                    "description": "The value to assign to the config key (if any).",
+                    "default": 2
+                }
+            }
+        },
+        "edit": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\config\\ConfigCommands",
+            "method_name": "edit",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "config:edit",
+            "description": "Open a config file in a text editor. Edits are imported after closing editor.",
+            "help": "",
+            "aliases": [
+                "cedit",
+                "config-edit"
+            ],
+            "annotations": {
+                "command": "config:edit",
+                "validate-config-name": "",
+                "interact-config-name": "",
+                "optionset_get_editor": "",
+                "allow_additional_options": "config-import",
+                "hidden-options": "source,partial",
+                "validate-module-enabled": "config"
+            },
+            "example_usages": {
+                "drush config:edit image.style.large": "Edit the image style configurations.",
+                "drush config:edit": "Choose a config file to edit.",
+                "drush --bg config-edit image.style.large": "Return to shell prompt as soon as the editor window opens."
+            },
+            "return_type": null,
+            "arguments": {
+                "config_name": {
+                    "description": "The config object name, for example \"system.site\"."
+                }
+            },
+            "options": []
+        },
+        "delete": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\config\\ConfigCommands",
+            "method_name": "delete",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "config:delete",
+            "description": "Delete a configuration key, or a whole object.",
+            "help": "",
+            "aliases": [
+                "cdel",
+                "config-delete"
+            ],
+            "annotations": {
+                "command": "config:delete",
+                "validate-config-name": "",
+                "interact-config-name": ""
+            },
+            "example_usages": {
+                "drush config:delete system.site": "Delete the the system.site config object.",
+                "drush config:delete system.site page.front": "Delete the 'page.front' key from the system.site object."
+            },
+            "return_type": null,
+            "arguments": {
+                "config_name": {
+                    "description": "The config object name, for example \"system.site\"."
+                },
+                "key": {
+                    "description": "A config key to clear, for example \"page.front\".",
+                    "default": null
+                }
+            },
+            "options": []
+        },
+        "status": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\config\\ConfigCommands",
+            "method_name": "status",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "config:status",
+            "description": "Display status of configuration (differences between the filesystem configuration and database configuration).",
+            "help": "",
+            "aliases": [
+                "cst",
+                "config-status"
+            ],
+            "annotations": {
+                "command": "config:status",
+                "field-labels": "\n   name: Name\n   state: State",
+                "default-fields": "name,state",
+                "filter-default-field": "name"
+            },
+            "example_usages": {
+                "drush config:status": "Display configuration items that need to be synchronized.",
+                "drush config:status --state=Identical": "Display configuration items that are in default state.",
+                "drush config:status --state='Only in sync dir' --prefix=node.type.": "Display all content types that would be created in active storage on configuration import.",
+                "drush config:status --state=Any --format=list": "List all config names."
+            },
+            "return_type": "\\Consolidation\\OutputFormatters\\StructuredData\\RowsOfFields",
+            "arguments": [],
+            "options": {
+                "state": {
+                    "description": "A comma-separated list of states to filter results.",
+                    "default": "Only in DB,Only in sync dir,Different"
+                },
+                "prefix": {
+                    "description": "Prefix The config prefix. For example, \"system\". No prefix will return all names in the system.",
+                    "default": 2
+                },
+                "label": {
+                    "description": "A config directory label (i.e. a key in \\$config_directories array in settings.php).",
+                    "default": 2
+                }
+            }
+        },
+        "getChanges": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\config\\ConfigCommands",
+            "method_name": "getChanges",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "getStorage": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\config\\ConfigCommands",
+            "method_name": "getStorage",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "interactConfigName": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\config\\ConfigCommands",
+            "method_name": "interactConfigName",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "interact:config-name",
+            "description": "",
+            "help": "",
+            "aliases": [],
+            "annotations": {
+                "hook": "interact @interact-config-name"
+            },
+            "example_usages": [],
+            "return_type": null,
+            "arguments": {
+                "input": {
+                    "description": ""
+                },
+                "output": {
+                    "description": ""
+                }
+            },
+            "options": []
+        },
+        "interactConfigLabel": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\config\\ConfigCommands",
+            "method_name": "interactConfigLabel",
+            "mtime": 1581269391,
+            "injected_classes": [
+                "Symfony\\Component\\Console\\Output\\ConsoleOutputInterface",
+                "Symfony\\Component\\Console\\Input\\InputInterface"
+            ],
+            "name": "interact:config-label",
+            "description": "",
+            "help": "",
+            "aliases": [],
+            "annotations": {
+                "hook": "interact @interact-config-label"
+            },
+            "example_usages": [],
+            "return_type": null,
+            "arguments": [],
+            "options": []
+        },
+        "validateConfigName": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\config\\ConfigCommands",
+            "method_name": "validateConfigName",
+            "mtime": 1581269391,
+            "injected_classes": [
+                "Consolidation\\AnnotatedCommand\\CommandData"
+            ],
+            "name": "validate:config-name",
+            "description": "Validate that a config name is valid.",
+            "help": "If the argument to be validated is not named $config_name, pass the\nargument name as the value of the annotation.",
+            "aliases": [],
+            "annotations": {
+                "hook": "validate @validate-config-name"
+            },
+            "example_usages": [],
+            "return_type": "\\Consolidation\\AnnotatedCommand\\CommandError|null",
+            "arguments": {
+                "commandData": {
+                    "description": ""
+                }
+            },
+            "options": []
+        },
+        "setProcessManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setProcessManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "processManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "processManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "hasProcessManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "hasProcessManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "setLogger": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setLogger",
+            "mtime": 1584954725,
+            "injected_classes": []
+        },
+        "getConfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "getConfig",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "setConfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setConfig",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "parentgetconfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "parentgetconfig",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "setInput": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setInput",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "setOutput": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setOutput",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "setStdinHandler": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\config\\ConfigCommands",
+            "method_name": "setStdinHandler",
+            "mtime": 1552064103,
+            "injected_classes": []
+        },
+        "stdin": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\config\\ConfigCommands",
+            "method_name": "stdin",
+            "mtime": 1552064103,
+            "injected_classes": []
+        },
+        "startBrowser": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\config\\ConfigCommands",
+            "method_name": "startBrowser",
+            "mtime": 1581269391,
+            "injected_classes": []
+        }
+    },
+    "created": 1599741433,
+    "expire": 0
+}

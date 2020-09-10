@@ -1,0 +1,378 @@
+{
+    "cid": "Drush\\Commands\\core\\DocsCommands",
+    "data": {
+        "readme": {
+            "schema": 4,
+            "class": "Drush\\Commands\\core\\DocsCommands",
+            "method_name": "readme",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "docs:readme",
+            "description": "README.md",
+            "help": "",
+            "aliases": [
+                "docs-readme"
+            ],
+            "annotations": {
+                "command": "docs:readme",
+                "hidden": "",
+                "topic": ""
+            },
+            "example_usages": [],
+            "return_type": null,
+            "arguments": [],
+            "options": []
+        },
+        "bisect": {
+            "schema": 4,
+            "class": "Drush\\Commands\\core\\DocsCommands",
+            "method_name": "bisect",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "docs:bisect",
+            "description": "Drush's support for Git Bisect.",
+            "help": "",
+            "aliases": [
+                "docs-bisect"
+            ],
+            "annotations": {
+                "command": "docs:bisect",
+                "hidden": "",
+                "topic": ""
+            },
+            "example_usages": [],
+            "return_type": null,
+            "arguments": [],
+            "options": []
+        },
+        "bashrc": {
+            "schema": 4,
+            "class": "Drush\\Commands\\core\\DocsCommands",
+            "method_name": "bashrc",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "docs:bashrc",
+            "description": "Bashrc customization examples for Drush.",
+            "help": "",
+            "aliases": [
+                "docs-bashrc"
+            ],
+            "annotations": {
+                "command": "docs:bashrc",
+                "hidden": "",
+                "topic": ""
+            },
+            "example_usages": [],
+            "return_type": null,
+            "arguments": [],
+            "options": []
+        },
+        "config": {
+            "schema": 4,
+            "class": "Drush\\Commands\\core\\DocsCommands",
+            "method_name": "config",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "docs:configuration",
+            "description": "Configuration overview with examples from example.drush.yml.",
+            "help": "",
+            "aliases": [
+                "docs-configuration"
+            ],
+            "annotations": {
+                "command": "docs:configuration",
+                "hidden": "",
+                "topic": ""
+            },
+            "example_usages": [],
+            "return_type": null,
+            "arguments": [],
+            "options": []
+        },
+        "configExport": {
+            "schema": 4,
+            "class": "Drush\\Commands\\core\\DocsCommands",
+            "method_name": "configExport",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "docs:config:exporting",
+            "description": "Drupal config export instructions, including customizing config by environment.",
+            "help": "",
+            "aliases": [
+                "docs-config-exporting"
+            ],
+            "annotations": {
+                "command": "docs:config:exporting",
+                "hidden": "",
+                "topic": ""
+            },
+            "example_usages": [],
+            "return_type": null,
+            "arguments": [],
+            "options": []
+        },
+        "outputFormatsFilters": {
+            "schema": 4,
+            "class": "Drush\\Commands\\core\\DocsCommands",
+            "method_name": "outputFormatsFilters",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "docs:output-formats-filters",
+            "description": "Output formatters and filters: how to control the output produced by Drush commands",
+            "help": "",
+            "aliases": [
+                "docs-output"
+            ],
+            "annotations": {
+                "command": "docs:output-formats-filters",
+                "hidden": "",
+                "topic": ""
+            },
+            "example_usages": [],
+            "return_type": null,
+            "arguments": [],
+            "options": []
+        },
+        "siteAliases": {
+            "schema": 4,
+            "class": "Drush\\Commands\\core\\DocsCommands",
+            "method_name": "siteAliases",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "docs:aliases",
+            "description": "Creating site aliases for running Drush on remote sites.",
+            "help": "",
+            "aliases": [
+                "docs-aliases"
+            ],
+            "annotations": {
+                "command": "docs:aliases",
+                "hidden": "",
+                "topic": ""
+            },
+            "example_usages": [],
+            "return_type": null,
+            "arguments": [],
+            "options": []
+        },
+        "bootstrap": {
+            "schema": 4,
+            "class": "Drush\\Commands\\core\\DocsCommands",
+            "method_name": "bootstrap",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "docs:bootstrap",
+            "description": "Bootstrap explanation: how Drush starts up and prepares the Drupal environment.",
+            "help": "",
+            "aliases": [
+                "docs-bootstrap"
+            ],
+            "annotations": {
+                "command": "docs:bootstrap",
+                "hidden": "",
+                "topic": ""
+            },
+            "example_usages": [],
+            "return_type": null,
+            "arguments": [],
+            "options": []
+        },
+        "cron": {
+            "schema": 4,
+            "class": "Drush\\Commands\\core\\DocsCommands",
+            "method_name": "cron",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "docs:cron",
+            "description": "Crontab instructions for running your Drupal cron tasks via `drush cron`.",
+            "help": "",
+            "aliases": [
+                "docs-cron"
+            ],
+            "annotations": {
+                "command": "docs:cron",
+                "hidden": "",
+                "topic": ""
+            },
+            "example_usages": [],
+            "return_type": null,
+            "arguments": [],
+            "options": []
+        },
+        "commands": {
+            "schema": 4,
+            "class": "Drush\\Commands\\core\\DocsCommands",
+            "method_name": "commands",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "docs:commands",
+            "description": "Instructions on creating your own Drush commands.",
+            "help": "",
+            "aliases": [
+                "docs-commands"
+            ],
+            "annotations": {
+                "command": "docs:commands",
+                "hidden": "",
+                "topic": ""
+            },
+            "example_usages": [],
+            "return_type": null,
+            "arguments": [],
+            "options": []
+        },
+        "generators": {
+            "schema": 4,
+            "class": "Drush\\Commands\\core\\DocsCommands",
+            "method_name": "generators",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "docs:generators",
+            "description": "Instructions on creating your own Drush Generators.",
+            "help": "",
+            "aliases": [
+                "docs-generators"
+            ],
+            "annotations": {
+                "command": "docs:generators",
+                "hidden": "",
+                "topic": ""
+            },
+            "example_usages": [],
+            "return_type": null,
+            "arguments": [],
+            "options": []
+        },
+        "exampleCommand": {
+            "schema": 4,
+            "class": "Drush\\Commands\\core\\DocsCommands",
+            "method_name": "exampleCommand",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "docs:examplecommand",
+            "description": "Example Drush command file.",
+            "help": "",
+            "aliases": [
+                "docs-examplecommand"
+            ],
+            "annotations": {
+                "command": "docs:examplecommand",
+                "hidden": "",
+                "topic": ""
+            },
+            "example_usages": [],
+            "return_type": null,
+            "arguments": [],
+            "options": []
+        },
+        "syncHttp": {
+            "schema": 4,
+            "class": "Drush\\Commands\\core\\DocsCommands",
+            "method_name": "syncHttp",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "docs:example-sync-via-http",
+            "description": "Extend sql-sync to allow transfer of the sql dump file via http.",
+            "help": "",
+            "aliases": [
+                "docs-example-sync-via-http"
+            ],
+            "annotations": {
+                "command": "docs:example-sync-via-http",
+                "hidden": "",
+                "topic": ""
+            },
+            "example_usages": [],
+            "return_type": null,
+            "arguments": [],
+            "options": []
+        },
+        "policy": {
+            "schema": 4,
+            "class": "Drush\\Commands\\core\\DocsCommands",
+            "method_name": "policy",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "docs:policy",
+            "description": "Example policy file.",
+            "help": "",
+            "aliases": [
+                "docs-policy"
+            ],
+            "annotations": {
+                "command": "docs:policy",
+                "hidden": "",
+                "topic": ""
+            },
+            "example_usages": [],
+            "return_type": null,
+            "arguments": [],
+            "options": []
+        },
+        "setProcessManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setProcessManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "processManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "processManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "hasProcessManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "hasProcessManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "setLogger": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setLogger",
+            "mtime": 1584954725,
+            "injected_classes": []
+        },
+        "getConfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "getConfig",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "setConfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setConfig",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "parentgetconfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "parentgetconfig",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "setInput": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setInput",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "setOutput": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setOutput",
+            "mtime": 1582047086,
+            "injected_classes": []
+        }
+    },
+    "created": 1599741432,
+    "expire": 0
+}

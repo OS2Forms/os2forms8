@@ -1,0 +1,233 @@
+{
+    "cid": "Drush\\Drupal\\Commands\\pm\\PmCommands",
+    "data": {
+        "getConfigFactory": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\pm\\PmCommands",
+            "method_name": "getConfigFactory",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "getModuleInstaller": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\pm\\PmCommands",
+            "method_name": "getModuleInstaller",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "getThemeHandler": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\pm\\PmCommands",
+            "method_name": "getThemeHandler",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "enable": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\pm\\PmCommands",
+            "method_name": "enable",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "pm:enable",
+            "description": "Enable one or more modules.",
+            "help": "",
+            "aliases": [
+                "en",
+                "pm-enable"
+            ],
+            "annotations": {
+                "command": "pm:enable"
+            },
+            "example_usages": [],
+            "return_type": null,
+            "arguments": {
+                "modules": {
+                    "description": "A comma delimited list of modules.",
+                    "default": []
+                }
+            },
+            "options": []
+        },
+        "uninstall": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\pm\\PmCommands",
+            "method_name": "uninstall",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "pm:uninstall",
+            "description": "Uninstall one or more modules and their dependent modules.",
+            "help": "",
+            "aliases": [
+                "pmu",
+                "pm-uninstall"
+            ],
+            "annotations": {
+                "command": "pm:uninstall"
+            },
+            "example_usages": [],
+            "return_type": null,
+            "arguments": {
+                "modules": {
+                    "description": "A comma delimited list of modules.",
+                    "default": []
+                }
+            },
+            "options": []
+        },
+        "validateUninstall": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\pm\\PmCommands",
+            "method_name": "validateUninstall",
+            "mtime": 1581269391,
+            "injected_classes": [
+                "Consolidation\\AnnotatedCommand\\CommandData"
+            ],
+            "name": "validate:uninstall",
+            "description": "",
+            "help": "",
+            "aliases": [],
+            "annotations": {
+                "hook": "validate pm-uninstall"
+            },
+            "example_usages": [],
+            "return_type": null,
+            "arguments": [],
+            "options": []
+        },
+        "pmList": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\pm\\PmCommands",
+            "method_name": "pmList",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "pm:list",
+            "description": "Show a list of available extensions (modules and themes).",
+            "help": "",
+            "aliases": [
+                "pml",
+                "pm-list"
+            ],
+            "annotations": {
+                "command": "pm:list",
+                "field-labels": "\n   package: Package\n   display_name: Name\n   name: Name\n   type: Type\n   path: Path\n   status: Status\n   version: Version",
+                "default-fields": "package,display_name,status,version",
+                "filter-default-field": "display_name"
+            },
+            "example_usages": [],
+            "return_type": "\\Consolidation\\OutputFormatters\\StructuredData\\RowsOfFields",
+            "arguments": [],
+            "options": {
+                "format": {
+                    "description": "",
+                    "default": "table"
+                },
+                "type": {
+                    "description": "Only show extensions having a given type. Choices: module, theme.",
+                    "default": "module,theme"
+                },
+                "status": {
+                    "description": "Only show extensions having a given status. Choices: enabled or disabled.",
+                    "default": "enabled,disabled"
+                },
+                "package": {
+                    "description": "Only show extensions having a given project packages (e.g. Development).",
+                    "default": 2
+                },
+                "core": {
+                    "description": "Only show extensions that are in Drupal core.",
+                    "default": false
+                },
+                "no-core": {
+                    "description": "Only show extensions that are not provided by Drupal core.",
+                    "default": false
+                }
+            }
+        },
+        "extensionStatus": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\pm\\PmCommands",
+            "method_name": "extensionStatus",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "addInstallDependencies": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\pm\\PmCommands",
+            "method_name": "addInstallDependencies",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "addUninstallDependencies": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\pm\\PmCommands",
+            "method_name": "addUninstallDependencies",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "setProcessManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setProcessManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "processManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "processManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "hasProcessManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "hasProcessManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "setLogger": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setLogger",
+            "mtime": 1584954725,
+            "injected_classes": []
+        },
+        "getConfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "getConfig",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "setConfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setConfig",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "parentgetconfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "parentgetconfig",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "setInput": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setInput",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "setOutput": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setOutput",
+            "mtime": 1582047086,
+            "injected_classes": []
+        }
+    },
+    "created": 1599741433,
+    "expire": 0
+}

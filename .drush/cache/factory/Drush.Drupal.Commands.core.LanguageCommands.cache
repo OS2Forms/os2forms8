@@ -1,0 +1,143 @@
+{
+    "cid": "Drush\\Drupal\\Commands\\core\\LanguageCommands",
+    "data": {
+        "getLanguageManager": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\core\\LanguageCommands",
+            "method_name": "getLanguageManager",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "getModuleHandler": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\core\\LanguageCommands",
+            "method_name": "getModuleHandler",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "add": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\core\\LanguageCommands",
+            "method_name": "add",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "language:add",
+            "description": "Add a configurable language.",
+            "help": "",
+            "aliases": [
+                "language-add"
+            ],
+            "annotations": {
+                "command": "language:add",
+                "validate-module-enabled": "language",
+                "hidden": "",
+                "throws": "\\Exception"
+            },
+            "example_usages": {
+                "drush language:add nl,fr": "Add Dutch and French language and import their translations.",
+                "drush language:add nl --skip-translations": "Add Dutch language without importing translations."
+            },
+            "return_type": null,
+            "arguments": {
+                "langcode": {
+                    "description": "A comma delimited list of language codes."
+                }
+            },
+            "options": {
+                "skip-translations": {
+                    "description": "Prevent translations to be downloaded and\/or imported.",
+                    "default": false
+                }
+            }
+        },
+        "info": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\core\\LanguageCommands",
+            "method_name": "info",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "language:info",
+            "description": "Print the currently available languages.",
+            "help": "",
+            "aliases": [
+                "language-info"
+            ],
+            "annotations": {
+                "command": "language:info",
+                "hidden": "",
+                "field-labels": "\n   language: Language\n   direction: Direction\n   default: Default\n   locked: Locked",
+                "default-fields": "language,direction,default",
+                "filter-default-field": "language"
+            },
+            "example_usages": [],
+            "return_type": "\\Consolidation\\OutputFormatters\\StructuredData\\RowsOfFields",
+            "arguments": [],
+            "options": []
+        },
+        "setProcessManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setProcessManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "processManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "processManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "hasProcessManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "hasProcessManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "setLogger": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setLogger",
+            "mtime": 1584954725,
+            "injected_classes": []
+        },
+        "getConfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "getConfig",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "setConfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setConfig",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "parentgetconfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "parentgetconfig",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "setInput": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setInput",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "setOutput": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setOutput",
+            "mtime": 1582047086,
+            "injected_classes": []
+        }
+    },
+    "created": 1599741433,
+    "expire": 0
+}

@@ -1,0 +1,133 @@
+{
+    "cid": "Drush\\Commands\\help\\HelpCommands",
+    "data": {
+        "help": {
+            "schema": 4,
+            "class": "Drush\\Commands\\help\\HelpCommands",
+            "method_name": "help",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "help",
+            "description": "Display usage details for a command.",
+            "help": "",
+            "aliases": [],
+            "annotations": {
+                "command": "help",
+                "bootstrap": "max",
+                "topics": "docs:readme"
+            },
+            "example_usages": {
+                "drush help pm-uninstall": "Show help for a command.",
+                "drush help pmu": "Show help for a command using an alias.",
+                "drush help --format=xml": "Show all available commands in XML format.",
+                "drush help --format=json": "All available commands, in JSON format."
+            },
+            "return_type": "\\Consolidation\\AnnotatedCommand\\Help\\HelpDocument",
+            "arguments": {
+                "command_name": {
+                    "description": "A command name",
+                    "default": ""
+                }
+            },
+            "options": {
+                "format": {
+                    "description": "",
+                    "default": "helpcli"
+                },
+                "include-field-labels": {
+                    "description": "",
+                    "default": false
+                },
+                "table-style": {
+                    "description": "",
+                    "default": "compact"
+                }
+            }
+        },
+        "validate": {
+            "schema": 4,
+            "class": "Drush\\Commands\\help\\HelpCommands",
+            "method_name": "validate",
+            "mtime": 1581269391,
+            "injected_classes": [
+                "Consolidation\\AnnotatedCommand\\CommandData"
+            ],
+            "name": "validate",
+            "description": "",
+            "help": "",
+            "aliases": [],
+            "annotations": {
+                "hook": "validate help"
+            },
+            "example_usages": [],
+            "return_type": null,
+            "arguments": [],
+            "options": []
+        },
+        "setProcessManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setProcessManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "processManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "processManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "hasProcessManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "hasProcessManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "setLogger": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setLogger",
+            "mtime": 1584954725,
+            "injected_classes": []
+        },
+        "getConfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "getConfig",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "setConfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setConfig",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "parentgetconfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "parentgetconfig",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "setInput": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setInput",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "setOutput": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setOutput",
+            "mtime": 1582047086,
+            "injected_classes": []
+        }
+    },
+    "created": 1599741432,
+    "expire": 0
+}

@@ -1,0 +1,280 @@
+{
+    "cid": "Drush\\Drupal\\Commands\\core\\WatchdogCommands",
+    "data": {
+        "show": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\core\\WatchdogCommands",
+            "method_name": "show",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "watchdog:show",
+            "description": "Show watchdog messages.",
+            "help": "",
+            "aliases": [
+                "wd-show",
+                "ws",
+                "watchdog-show"
+            ],
+            "annotations": {
+                "command": "watchdog:show",
+                "validate-module-enabled": "dblog",
+                "field-labels": "\n   wid: ID\n   type: Type\n   message: Message\n   severity: Severity\n   location: Location\n   hostname: Hostname\n   date: Date\n   username: Username",
+                "default-fields": "wid,date,type,severity,message",
+                "filter-default-field": "message"
+            },
+            "example_usages": {
+                "drush watchdog-show": "Show a listing of most recent 10 messages.",
+                "drush watchdog:show \"cron run succesful\"": "Show a listing of most recent 10 messages containing the string \"cron run succesful\".",
+                "drush watchdog:show --count=46": "Show a listing of most recent 46 messages.",
+                "drush watchdog:show --severity=Notice": "Show a listing of most recent 10 messages with a severity of notice.",
+                "drush watchdog:show --type=php": "Show a listing of most recent 10 messages of type php"
+            },
+            "return_type": "\\Consolidation\\OutputFormatters\\StructuredData\\RowsOfFields",
+            "arguments": {
+                "substring": {
+                    "description": "A substring to look search in error messages.",
+                    "default": ""
+                }
+            },
+            "options": {
+                "format": {
+                    "description": "",
+                    "default": "table"
+                },
+                "count": {
+                    "description": "The number of messages to show. Defaults to 10.",
+                    "default": 10
+                },
+                "severity": {
+                    "description": "Restrict to messages of a given severity level.",
+                    "default": 2
+                },
+                "type": {
+                    "description": "Restrict to messages of a given type.",
+                    "default": 2
+                },
+                "extended": {
+                    "description": "Return extended information about each message.",
+                    "default": false
+                }
+            }
+        },
+        "watchdogList": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\core\\WatchdogCommands",
+            "method_name": "watchdogList",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "watchdog:list",
+            "description": "Interactively filter the watchdog message listing.",
+            "help": "",
+            "aliases": [
+                "wd-list",
+                "watchdog-list"
+            ],
+            "annotations": {
+                "command": "watchdog:list",
+                "hidden-options": "type,severity",
+                "validate-module-enabled": "dblog",
+                "field-labels": "\n   wid: ID\n   type: Type\n   message: Message\n   severity: Severity\n   location: Location\n   hostname: Hostname\n   date: Date\n   username: Username",
+                "default-fields": "wid,date,type,severity,message"
+            },
+            "example_usages": {
+                "drush watchdog-list": "Prompt for message type or severity, then run watchdog-show."
+            },
+            "return_type": "\\Consolidation\\OutputFormatters\\StructuredData\\RowsOfFields",
+            "arguments": {
+                "substring": {
+                    "description": "A substring to look search in error messages.",
+                    "default": ""
+                }
+            },
+            "options": {
+                "format": {
+                    "description": "",
+                    "default": "table"
+                },
+                "count": {
+                    "description": "The number of messages to show. Defaults to 10.",
+                    "default": 10
+                },
+                "extended": {
+                    "description": "Return extended information about each message.",
+                    "default": false
+                },
+                "severity": {
+                    "description": "Restrict to messages of a given severity level."
+                },
+                "type": {
+                    "description": "Restrict to messages of a given type."
+                }
+            }
+        },
+        "interactList": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\core\\WatchdogCommands",
+            "method_name": "interactList",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "interact:list",
+            "description": "",
+            "help": "",
+            "aliases": [],
+            "annotations": {
+                "hook": "interact watchdog-list",
+                "throws": "\\Drush\\Exceptions\\UserAbortException"
+            },
+            "example_usages": [],
+            "return_type": null,
+            "arguments": {
+                "input": {
+                    "description": ""
+                },
+                "output": {
+                    "description": ""
+                }
+            },
+            "options": []
+        },
+        "delete": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\core\\WatchdogCommands",
+            "method_name": "delete",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "watchdog:delete",
+            "description": "Delete watchdog log records.",
+            "help": "",
+            "aliases": [
+                "wd-del",
+                "wd-delete",
+                "wd",
+                "watchdog-delete"
+            ],
+            "annotations": {
+                "command": "watchdog:delete",
+                "validate-module-enabled": "dblog"
+            },
+            "example_usages": {
+                "drush watchdog:delete all": "Delete all messages.",
+                "drush watchdog:delete 64": "Delete messages with id 64.",
+                "drush watchdog:delete \"cron run succesful\"": "Delete messages containing the string \"cron run succesful\".",
+                "drush watchdog:delete --severity=notice": "Delete all messages with a severity of notice.",
+                "drush watchdog:delete --type=cron": "Delete all messages of type cron."
+            },
+            "return_type": "Drush\\Drupal\\Commands\\core\\void",
+            "arguments": {
+                "substring": {
+                    "description": "Delete all log records with this text in the messages.",
+                    "default": ""
+                }
+            },
+            "options": {
+                "severity": {
+                    "description": "Delete messages of a given severity level.",
+                    "default": 2
+                },
+                "type": {
+                    "description": "Delete messages of a given type.",
+                    "default": 2
+                }
+            }
+        },
+        "showOne": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\core\\WatchdogCommands",
+            "method_name": "showOne",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "watchdog:show-one",
+            "description": "Show one log record by ID.",
+            "help": "",
+            "aliases": [
+                "wd-one",
+                "watchdog-show-one"
+            ],
+            "annotations": {
+                "command": "watchdog:show-one",
+                "validate-module-enabled": "dblog"
+            },
+            "example_usages": [],
+            "return_type": "\\Consolidation\\OutputFormatters\\StructuredData\\PropertyList",
+            "arguments": {
+                "id": {
+                    "description": "Watchdog Id"
+                }
+            },
+            "options": {
+                "format": {
+                    "description": "",
+                    "default": "yaml"
+                }
+            }
+        },
+        "setProcessManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setProcessManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "processManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "processManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "hasProcessManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "hasProcessManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "setLogger": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setLogger",
+            "mtime": 1584954725,
+            "injected_classes": []
+        },
+        "getConfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "getConfig",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "setConfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setConfig",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "parentgetconfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "parentgetconfig",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "setInput": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setInput",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "setOutput": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setOutput",
+            "mtime": 1582047086,
+            "injected_classes": []
+        }
+    },
+    "created": 1599741433,
+    "expire": 0
+}

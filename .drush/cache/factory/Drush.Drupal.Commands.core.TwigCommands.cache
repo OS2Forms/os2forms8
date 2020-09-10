@@ -1,0 +1,133 @@
+{
+    "cid": "Drush\\Drupal\\Commands\\core\\TwigCommands",
+    "data": {
+        "getTwig": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\core\\TwigCommands",
+            "method_name": "getTwig",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "getModuleHandler": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\core\\TwigCommands",
+            "method_name": "getModuleHandler",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "unused": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\core\\TwigCommands",
+            "method_name": "unused",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "twig:unused",
+            "description": "Find potentially unused Twig templates.",
+            "help": "Immediately before running this command, crawl your entire web site. Or\nuse your Production PHPStorage dir for comparison.",
+            "aliases": [],
+            "annotations": {
+                "table-style": "default",
+                "field-labels": "\n   template: Template\n   compiled: Compiled",
+                "default-fields": "template,compiled",
+                "filter-output": "",
+                "command": "twig:unused"
+            },
+            "example_usages": {
+                "drush twig:unused --field=template \/var\/www\/mass.local\/docroot\/modules\/custom,\/var\/www\/mass.local\/docroot\/themes\/custom": "Output a simple list of potentially unused templates."
+            },
+            "return_type": "\\Consolidation\\OutputFormatters\\StructuredData\\RowsOfFields",
+            "arguments": {
+                "searchpaths": {
+                    "description": "A comma delimited list of paths to recursively search"
+                }
+            },
+            "options": []
+        },
+        "twigCompile": {
+            "schema": 4,
+            "class": "Drush\\Drupal\\Commands\\core\\TwigCommands",
+            "method_name": "twigCompile",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "twig:compile",
+            "description": "Compile all Twig template(s).",
+            "help": "",
+            "aliases": [
+                "twigc",
+                "twig-compile"
+            ],
+            "annotations": {
+                "command": "twig:compile"
+            },
+            "example_usages": [],
+            "return_type": null,
+            "arguments": [],
+            "options": []
+        },
+        "setProcessManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setProcessManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "processManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "processManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "hasProcessManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "hasProcessManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "setLogger": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setLogger",
+            "mtime": 1584954725,
+            "injected_classes": []
+        },
+        "getConfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "getConfig",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "setConfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setConfig",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "parentgetconfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "parentgetconfig",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "setInput": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setInput",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "setOutput": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setOutput",
+            "mtime": 1582047086,
+            "injected_classes": []
+        }
+    },
+    "created": 1599741433,
+    "expire": 0
+}

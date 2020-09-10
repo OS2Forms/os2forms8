@@ -1,0 +1,210 @@
+{
+    "cid": "Drush\\Commands\\sql\\SqlSyncCommands",
+    "data": {
+        "sqlsync": {
+            "schema": 4,
+            "class": "Drush\\Commands\\sql\\SqlSyncCommands",
+            "method_name": "sqlsync",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "sql:sync",
+            "description": "Copy DB data from a source site to a target site. Transfers data via rsync.",
+            "help": "",
+            "aliases": [
+                "sql-sync"
+            ],
+            "annotations": {
+                "command": "sql:sync",
+                "optionset_table_selection": "",
+                "topics": "docs:aliases,docs:policy,docs:configuration,docs:example-sync-via-http",
+                "throws": "\\Exception"
+            },
+            "example_usages": {
+                "drush sql:sync @source @self": "Copy the database from the site with the alias 'source' to the local site.",
+                "drush sql:sync @self @target": "Copy the database from the local site to the site with the alias 'target'.",
+                "drush sql:sync #prod #dev": "Copy the database from the site in \/sites\/prod to the site in \/sites\/dev (multisite installation)."
+            },
+            "return_type": null,
+            "arguments": {
+                "source": {
+                    "description": "A site-alias or the name of a subdirectory within \/sites whose database you want to copy from."
+                },
+                "target": {
+                    "description": "A site-alias or the name of a subdirectory within \/sites whose database you want to replace."
+                }
+            },
+            "options": {
+                "no-dump": {
+                    "description": "Do not dump the sql database; always use an existing dump file.",
+                    "default": false
+                },
+                "no-sync": {
+                    "description": "Do not rsync the database dump file from source to target.",
+                    "default": false
+                },
+                "runner": {
+                    "description": "Where to run the rsync command; defaults to the local site. Can also be 'source' or 'target'.",
+                    "default": 2
+                },
+                "create-db": {
+                    "description": "Create a new database before importing the database dump on the target machine.",
+                    "default": false
+                },
+                "db-su": {
+                    "description": "Account to use when creating a new database (e.g. root).",
+                    "default": 2
+                },
+                "db-su-pw": {
+                    "description": "Password for the db-su account.",
+                    "default": 2
+                },
+                "target-dump": {
+                    "description": "The path for storing the sql-dump on target machine.",
+                    "default": 2
+                },
+                "source-dump": {
+                    "description": "The path for retrieving the sql-dump on source machine.",
+                    "default": 4
+                },
+                "extra-dump": {
+                    "description": "Add custom arguments\/options to the dumping of the database (e.g. mysqldump command)."
+                }
+            }
+        },
+        "validate": {
+            "schema": 4,
+            "class": "Drush\\Commands\\sql\\SqlSyncCommands",
+            "method_name": "validate",
+            "mtime": 1581269391,
+            "injected_classes": [
+                "Consolidation\\AnnotatedCommand\\CommandData"
+            ],
+            "name": "validate",
+            "description": "",
+            "help": "",
+            "aliases": [],
+            "annotations": {
+                "hook": "validate sql-sync",
+                "throws": "\\Exception"
+            },
+            "example_usages": [],
+            "return_type": null,
+            "arguments": [],
+            "options": []
+        },
+        "databaseName": {
+            "schema": 4,
+            "class": "Drush\\Commands\\sql\\SqlSyncCommands",
+            "method_name": "databaseName",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "dump": {
+            "schema": 4,
+            "class": "Drush\\Commands\\sql\\SqlSyncCommands",
+            "method_name": "dump",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "rsync": {
+            "schema": 4,
+            "class": "Drush\\Commands\\sql\\SqlSyncCommands",
+            "method_name": "rsync",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "import": {
+            "schema": 4,
+            "class": "Drush\\Commands\\sql\\SqlSyncCommands",
+            "method_name": "import",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "setProcessManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setProcessManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "processManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "processManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "hasProcessManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "hasProcessManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "setLogger": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setLogger",
+            "mtime": 1584954725,
+            "injected_classes": []
+        },
+        "getConfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "getConfig",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "setConfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setConfig",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "parentgetconfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "parentgetconfig",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "setInput": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setInput",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "setOutput": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setOutput",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "setSiteAliasManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\sql\\SqlSyncCommands",
+            "method_name": "setSiteAliasManager",
+            "mtime": 1552411908,
+            "injected_classes": []
+        },
+        "siteAliasManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\sql\\SqlSyncCommands",
+            "method_name": "siteAliasManager",
+            "mtime": 1552411908,
+            "injected_classes": []
+        },
+        "hasSiteAliasManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\sql\\SqlSyncCommands",
+            "method_name": "hasSiteAliasManager",
+            "mtime": 1552411908,
+            "injected_classes": []
+        }
+    },
+    "created": 1599741432,
+    "expire": 0
+}

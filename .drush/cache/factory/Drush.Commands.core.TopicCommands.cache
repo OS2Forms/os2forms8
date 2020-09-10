@@ -1,0 +1,143 @@
+{
+    "cid": "Drush\\Commands\\core\\TopicCommands",
+    "data": {
+        "topic": {
+            "schema": 4,
+            "class": "Drush\\Commands\\core\\TopicCommands",
+            "method_name": "topic",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "core:topic",
+            "description": "Read detailed documentation on a given topic.",
+            "help": "",
+            "aliases": [
+                "topic",
+                "core-topic"
+            ],
+            "annotations": {
+                "command": "core:topic",
+                "remote-tty": "",
+                "bootstrap": "max",
+                "topics": "docs:readme"
+            },
+            "example_usages": {
+                "drush topic": "Pick from all available topics.",
+                "drush topic docs-repl": "Show documentation for the Drush interactive shell",
+                "drush docs:r": "Filter topics for those starting with 'docs-r'."
+            },
+            "return_type": null,
+            "arguments": {
+                "topic_name": {
+                    "description": "The name of the topic you wish to view. If omitted, list all topic descriptions (and names in parenthesis)."
+                }
+            },
+            "options": []
+        },
+        "interact": {
+            "schema": 4,
+            "class": "Drush\\Commands\\core\\TopicCommands",
+            "method_name": "interact",
+            "mtime": 1581269391,
+            "injected_classes": [
+                "Symfony\\Component\\Console\\Output\\OutputInterface",
+                "Symfony\\Component\\Console\\Input\\InputInterface"
+            ],
+            "name": "interact",
+            "description": "",
+            "help": "",
+            "aliases": [],
+            "annotations": {
+                "hook": "interact topic"
+            },
+            "example_usages": [],
+            "return_type": null,
+            "arguments": [],
+            "options": []
+        },
+        "validate": {
+            "schema": 4,
+            "class": "Drush\\Commands\\core\\TopicCommands",
+            "method_name": "validate",
+            "mtime": 1581269391,
+            "injected_classes": [
+                "Consolidation\\AnnotatedCommand\\CommandData"
+            ],
+            "name": "validate",
+            "description": "",
+            "help": "",
+            "aliases": [],
+            "annotations": {
+                "hook": "validate topic"
+            },
+            "example_usages": [],
+            "return_type": null,
+            "arguments": [],
+            "options": []
+        },
+        "setProcessManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setProcessManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "processManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "processManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "hasProcessManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "hasProcessManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "setLogger": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setLogger",
+            "mtime": 1584954725,
+            "injected_classes": []
+        },
+        "getConfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "getConfig",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "setConfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setConfig",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "parentgetconfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "parentgetconfig",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "setInput": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setInput",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "setOutput": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setOutput",
+            "mtime": 1582047086,
+            "injected_classes": []
+        }
+    },
+    "created": 1599741432,
+    "expire": 0
+}

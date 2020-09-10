@@ -1,0 +1,134 @@
+{
+    "cid": "Drush\\Commands\\core\\SshCommands",
+    "data": {
+        "ssh": {
+            "schema": 4,
+            "class": "Drush\\Commands\\core\\SshCommands",
+            "method_name": "ssh",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "site:ssh",
+            "description": "Connect to a Drupal site's server via SSH, and optionally run a shell command.",
+            "help": "",
+            "aliases": [
+                "ssh",
+                "site-ssh"
+            ],
+            "annotations": {
+                "command": "site:ssh",
+                "optionset_proc_build": "",
+                "handle-remote-commands": "",
+                "topics": "docs:aliases"
+            },
+            "example_usages": {
+                "drush @mysite ssh": "Open an interactive shell on @mysite's server.",
+                "drush @prod ssh ls \/tmp": "Run \"ls \/tmp\" on @prod site.",
+                "drush @prod ssh git pull": "Run \"git pull\" on the Drupal root directory on the @prod site.",
+                "drush ssh git pull": "Run \"git pull\" on the local Drupal root directory."
+            },
+            "return_type": null,
+            "arguments": {
+                "args": {
+                    "description": "",
+                    "default": []
+                }
+            },
+            "options": {
+                "cd": {
+                    "description": "Directory to change to. Defaults to Drupal root.",
+                    "default": 2
+                },
+                "tty": {
+                    "description": "",
+                    "default": false
+                }
+            }
+        },
+        "setProcessManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setProcessManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "processManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "processManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "hasProcessManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "hasProcessManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "setLogger": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setLogger",
+            "mtime": 1584954725,
+            "injected_classes": []
+        },
+        "getConfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "getConfig",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "setConfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setConfig",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "parentgetconfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "parentgetconfig",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "setInput": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setInput",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "setOutput": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setOutput",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "setSiteAliasManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\core\\SshCommands",
+            "method_name": "setSiteAliasManager",
+            "mtime": 1552411908,
+            "injected_classes": []
+        },
+        "siteAliasManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\core\\SshCommands",
+            "method_name": "siteAliasManager",
+            "mtime": 1552411908,
+            "injected_classes": []
+        },
+        "hasSiteAliasManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\core\\SshCommands",
+            "method_name": "hasSiteAliasManager",
+            "mtime": 1552411908,
+            "injected_classes": []
+        }
+    },
+    "created": 1599741432,
+    "expire": 0
+}

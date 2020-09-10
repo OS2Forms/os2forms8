@@ -26,3 +26,6 @@
 /.docksal/commands/*
 !/.docksal/commands/init
 !/.docksal/commands/rebuild-test
+
+# docker stuff
+logs/*.log

@@ -1,0 +1,132 @@
+{
+    "cid": "Drush\\Commands\\core\\InitCommands",
+    "data": {
+        "initializeDrush": {
+            "schema": 4,
+            "class": "Drush\\Commands\\core\\InitCommands",
+            "method_name": "initializeDrush",
+            "mtime": 1581269391,
+            "injected_classes": [],
+            "name": "core:init",
+            "description": "Enrich the bash startup file with bash aliases and a smart command prompt.",
+            "help": "",
+            "aliases": [
+                "init",
+                "core-init"
+            ],
+            "annotations": {
+                "command": "core:init",
+                "optionset_get_editor": ""
+            },
+            "example_usages": {
+                "core-init --edit": "Enrich Bash and open drush config file in editor.",
+                "core-init --edit --bg": "Return to shell prompt as soon as the editor window opens"
+            },
+            "return_type": null,
+            "arguments": [],
+            "options": {
+                "edit": {
+                    "description": "Open the new config file in an editor.",
+                    "default": false
+                },
+                "add-path": {
+                    "description": "Always add Drush to the $PATH in the user's .bashrc file, even if it is already in the $PATH. Use --no-add-path to skip updating .bashrc with the Drush $PATH. Default is to update .bashrc only if Drush is not already in the $PATH.",
+                    "default": ""
+                }
+            }
+        },
+        "setProcessManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setProcessManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "processManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "processManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "hasProcessManager": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "hasProcessManager",
+            "mtime": 1568138184,
+            "injected_classes": []
+        },
+        "setLogger": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setLogger",
+            "mtime": 1584954725,
+            "injected_classes": []
+        },
+        "getConfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "getConfig",
+            "mtime": 1581269391,
+            "injected_classes": []
+        },
+        "setConfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setConfig",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "parentgetconfig": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "parentgetconfig",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "setInput": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setInput",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "setOutput": {
+            "schema": 4,
+            "class": "Drush\\Commands\\DrushCommands",
+            "method_name": "setOutput",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "getBuiltTask": {
+            "schema": 4,
+            "class": "Drush\\Commands\\core\\InitCommands",
+            "method_name": "getBuiltTask",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "setBuilder": {
+            "schema": 4,
+            "class": "Drush\\Commands\\core\\InitCommands",
+            "method_name": "setBuilder",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "getBuilder": {
+            "schema": 4,
+            "class": "Drush\\Commands\\core\\InitCommands",
+            "method_name": "getBuilder",
+            "mtime": 1582047086,
+            "injected_classes": []
+        },
+        "startBrowser": {
+            "schema": 4,
+            "class": "Drush\\Commands\\core\\InitCommands",
+            "method_name": "startBrowser",
+            "mtime": 1581269391,
+            "injected_classes": []
+        }
+    },
+    "created": 1599741432,
+    "expire": 0
+}
