@@ -1,0 +1,38 @@
+name: OS2Core
+type: profile
+description: 'OS2Core installation profile.'
+core: 8.x
+install:
+  # Drupal core
+  - node
+  - block
+  - ckeditor
+  - config
+  - contextual
+  - menu_link_content
+  - datetime
+  - block_content
+  - editor
+  - options
+  - image
+  - path
+  - page_cache
+  - dynamic_page_cache
+  - taxonomy
+  - field_ui
+  - file
+  - views
+  - telephone
+
+  # Contrib
+  - admin_toolbar_tools
+
+  # OS2Forms
+  - os2forms
+  - os2forms_nemid
+  - os2forms_dawa
+  - os2forms_sbsys
+
+themes:
+  - seven
+  - custom_theme
