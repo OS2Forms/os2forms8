@@ -13,19 +13,19 @@
     ```
     composer install
     ```
-* Follow the regular install process, select ```OS2Web``` as install profile.
+* Follow the regular install process, select ```OS2Forms8``` as install profile.
 * After installation is done, enable OS2Forms by:
     ```
     drush en os2forms, os2forms_nemid, os2forms_dawa, os2forms_sbsys
     ```
-* Enable `Custom theme` for project. This is recommended theme that has minimum settings,
+* Enable `Custom theme` for project. This is a recommended theme that has minimum settings,
  so you will need to add all required blocks into proper regions afterwards.
 
 
 ## Contribution
 
-OS2Forms projects is opened for new features and os course bugfixes.
-If you have any suggestion or you found a bug in project, you are very welcome
+OS2Forms projects is an opened for new features and os course bugfixes.
+If you have any suggestion, or you found a bug in project, you are very welcome
 to create an issue in github repository issue tracker.
 For issue description there is expected that you will provide clear and
 sufficient information about your feature request or bug report.
