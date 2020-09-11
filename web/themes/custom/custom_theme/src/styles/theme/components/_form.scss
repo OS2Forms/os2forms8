@@ -1,0 +1,28 @@
+.form-control {
+  font-weight: 400;
+
+  &:focus {
+    box-shadow: none;
+
+    outline: 4px solid #747474;
+    outline-offset: 1px;
+  }
+}
+
+.control-label {
+  font-weight: 600;
+}
+
+.webform-actions {
+  text-align: right;
+
+  .btn {
+    margin-left: 5px;
+  }
+}
+
+.form-group.has-error {
+  padding-left: 15px;
+
+  border-left: 4px solid #c00;
+}

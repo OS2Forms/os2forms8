@@ -1,0 +1,13 @@
+{
+  "javascripts": [
+    "node_modules/bootstrap-sass/assets/javascripts/bootstrap.js",
+    "src/javascripts/app.js"
+  ],
+  "styles": [
+    "src/styles/stylesheet.scss"
+  ],
+  "fonts": [
+    "node_modules/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.*",
+    "src/fonts/**/*"
+  ]
+}

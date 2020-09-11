@@ -1,0 +1,105 @@
+/* stylelint-disable at-rule-empty-line-before */
+
+// IBMPlexSans
+$font-weight-normal:          400;
+$font-weight-medium:          500;
+$font-weight-semibold:        600;
+$font-weight-bold:            700;
+$font-style-normal:           normal;
+$font-style-italic:           italic;
+
+$font-text-regular: 'IBMPlexSans-Text';
+$font-regular: 'IBMPlexSans-Regular';
+$font-medium: 'IBMPlexSans-Medium';
+$font-semibold: 'IBMPlexSans-SemiBold';
+$font-bold: 'IBMPlexSans-Bold';
+$font-italic: 'IBMPlexSans-Italic';
+$font-system: 'system';
+
+@font-face {
+  font-family: 'IBMPlexSans';
+  src: url('../fonts/IBMPlexSans/' + $font-regular + '.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/IBMPlexSans/' + $font-regular + '.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+url('../fonts/IBMPlexSans/' + $font-regular + '.woff') format('woff'), /* Modern Browsers */
+url('../fonts/IBMPlexSans/' + $font-regular + '.woff2') format('woff2'), /* Modern Browsers */
+url('../fonts/IBMPlexSans/' + $font-regular + '.ttf')  format('truetype'); /* Safari, Android, iOS */
+
+  font-style:   $font-style-normal;
+  font-weight:  $font-weight-normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'IBMPlexSans';
+  src: url('../fonts/IBMPlexSans/' + $font-medium + '.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/IBMPlexSans/' + $font-medium + '.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+url('../fonts/IBMPlexSans/' + $font-medium + '.woff') format('woff'), /* Modern Browsers */
+url('../fonts/IBMPlexSans/' + $font-medium + '.woff2') format('woff2'), /* Modern Browsers */
+url('../fonts/IBMPlexSans/' + $font-medium + '.ttf') format('truetype'); /* Safari, Android, iOS */
+
+  font-style:   $font-style-normal;
+  font-weight:  $font-weight-medium;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'IBMPlexSans';
+  src: url('../fonts/IBMPlexSans/' + $font-semibold + '.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/IBMPlexSans/' + $font-semibold + '.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+url('../fonts/IBMPlexSans/' + $font-semibold + '.woff') format('woff'), /* Modern Browsers */
+url('../fonts/IBMPlexSans/' + $font-semibold + '.woff2') format('woff2'), /* Modern Browsers */
+url('../fonts/IBMPlexSans/' + $font-semibold + '.ttf') format('truetype'); /* Safari, Android, iOS */
+
+  font-style:   $font-style-normal;
+  font-weight:  $font-weight-semibold;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'IBMPlexSans';
+  src: url('../fonts/IBMPlexSans/' + $font-bold + '.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/IBMPlexSans/' + $font-bold + '.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+url('../fonts/IBMPlexSans/' + $font-bold + '.woff') format('woff'), /* Modern Browsers */
+url('../fonts/IBMPlexSans/' + $font-bold + '.woff2') format('woff2'), /* Modern Browsers */
+url('../fonts/IBMPlexSans/' + $font-bold + '.ttf') format('truetype'); /* Safari, Android, iOS */
+
+  font-style:   $font-style-normal;
+  font-weight:  $font-weight-bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBMPlexSans';
+  src: url('../fonts/IBMPlexSans/' + $font-italic + '.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/IBMPlexSans/' + $font-italic + '.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+url('../fonts/IBMPlexSans/' + $font-italic + '.woff') format('woff'), /* Modern Browsers */
+url('../fonts/IBMPlexSans/' + $font-italic + '.woff2') format('woff2'), /* Modern Browsers */
+url('../fonts/IBMPlexSans/' + $font-italic + '.ttf') format('truetype'); /* Safari, Android, iOS */
+
+  font-style:   $font-style-italic;
+  font-weight:  $font-weight-normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: system;
+  src:  local(".SFNSText-Light"), //Mac OS X - El Captain
+  local(".HelveticaNeueDeskInterface-Light"), //Mac OS X - Yosemite
+  local(".LucidaGrandeUI"), //Mac OS X - Mavericks
+  local("Ubuntu Light"), //Ubuntu
+  local("Segoe UI Light"), //Windows - Vista
+  local("Roboto-Light"), //Android - Ice Cream Sandwich (4.0)+
+  local("DroidSans"), //Android - Cupcake (1.5) to Honeycomb (3.2.6)
+  local("Tahoma"); //Windows - XP
+  font-style:   $font-style-normal;
+  font-weight:  $font-weight-normal;
+  font-display: swap;
+}
+
+h1, h2, h3, h4, h5, h6, p, legend, strong, b, cite, var, address, dfn {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: none;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern=1";
+}

@@ -1,6 +1,6 @@
 name: 'Custom theme'
 type: theme
-description: ''
+description: 'A beautiful custom theme.'
 core: 8.x
 base theme: bootstrap
 package: Custom
@@ -17,3 +17,7 @@ regions:
   footer: 'Footer'
   page_top: 'Page top'
   page_bottom: 'Page bottom'
+
+libraries:
+  - 'custom_theme/styles'
+  - 'custom_theme/javascripts'

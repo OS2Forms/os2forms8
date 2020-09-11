@@ -1,0 +1,32 @@
+{#
+/**
+ * @file
+ * This is a template file for a banner informing a user that he has already
+ * agreed to cookies.
+ *
+ * When overriding this template it is important to note that jQuery will use
+ * the following classes to assign actions to buttons:
+ *
+ * hide-popup-button - destroy the banner
+ * find-more-button  - link to an information page
+ *
+ * Variables available:
+ * - $message:  Contains the text that will be display within the banner
+ * - $hide_button: Label for the hide button
+ * - $find_more_button: Label for the find out more button
+ */
+#}
+
+<div class="eu-cookie-compliance-banner eu-cookie-compliance-banner-thank-you">
+  <div class="popup-content agreed eu-cookie-compliance-content">
+    <div id="popup-text" class="eu-cookie-compliance-message">
+      {{ message }}
+    </div>
+    <div id="popup-buttons" class="eu-cookie-compliance-buttons">
+      <button tabindex="1" type="button" class="hide-popup-button eu-cookie-compliance-hide-button">{{ hide_button }}</button>
+      {% if find_more_button %}
+        <button tabindex="1" type="button" class="find-more-button eu-cookie-compliance-more-button-thank-you" >{{ find_more_button }}</button>
+      {% endif %}
+    </div>
+  </div>
+</div>
