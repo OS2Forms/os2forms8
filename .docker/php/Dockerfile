@@ -27,7 +27,8 @@ RUN apt-get update \
     && docker-php-ext-configure intl \
     && docker-php-ext-install intl \
     && docker-php-ext-install soap \
-    && docker-php-ext-install xml
+    && docker-php-ext-install xml \
+    && docker-php-ext-install opcache
 
 # pecl extensions
 #RUN pecl install redis-5.1.1 \
