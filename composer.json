@@ -25,6 +25,7 @@
         "drupal/core": "^8.7.1",
         "drupal/fontyourface": "^3.2",
         "drupal/header_and_footer_scripts": "^2.2",
+        "drupal/ldap": "^3.0@beta",
         "drupal/migrate_tools": "^5.0",
         "drupal/migrate_upgrade": "^3.2",
         "drupal/queue_mail": "^1.3",
