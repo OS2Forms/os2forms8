@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "126ad2f2440ec6190b891565ff08fea8",
+    "content-hash": "66a308bbf584b387812e3d6b469c0ae5",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3042,7 +3042,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-1.11",
-                    "datestamp": "1586540246",
+                    "datestamp": "1586536891",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5204,7 +5204,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-1.3",
-                    "datestamp": "1587027151",
+                    "datestamp": "1586422899",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6052,6 +6052,10 @@
                     "name": "Lucas Hedding",
                     "homepage": "https://www.drupal.org/u/heddn",
                     "role": "Maintainer"
+                },
+                {
+                    "name": "moshe weitzman",
+                    "homepage": "https://www.drupal.org/user/23"
                 }
             ],
             "description": "Tools to assist in developing and running migrations.",
@@ -6090,7 +6094,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-3.2",
-                    "datestamp": "1588260599",
+                    "datestamp": "1588260035",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6116,6 +6120,22 @@
                     "name": "Lucas Hedding",
                     "homepage": "https://www.drupal.org/u/heddn",
                     "role": "Maintainer"
+                },
+                {
+                    "name": "ksenzee",
+                    "homepage": "https://www.drupal.org/user/139855"
+                },
+                {
+                    "name": "mikeryan",
+                    "homepage": "https://www.drupal.org/user/4420"
+                },
+                {
+                    "name": "ultimike",
+                    "homepage": "https://www.drupal.org/user/51132"
+                },
+                {
+                    "name": "xjm",
+                    "homepage": "https://www.drupal.org/user/65776"
                 }
             ],
             "description": "Drush support for direct upgrades from older Drupal versions.",
@@ -6695,6 +6715,77 @@
             }
         },
         {
+            "name": "drupal/simple_ldap",
+            "version": "1.0.0-alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/simple_ldap.git",
+                "reference": "8.x-1.0-alpha3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/simple_ldap-8.x-1.0-alpha3.zip",
+                "reference": "8.x-1.0-alpha3",
+                "shasum": "187e0b415f48815f1b5d1cfeabebf38626e8bed1"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "require-dev": {
+                "drupal/simple_ldap_user": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-alpha3",
+                    "datestamp": "1590813055",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "John Franklin",
+                    "homepage": "https://www.drupal.org/user/683430"
+                },
+                {
+                    "name": "KarenS",
+                    "homepage": "https://www.drupal.org/user/45874"
+                },
+                {
+                    "name": "blc",
+                    "homepage": "https://www.drupal.org/user/727498"
+                },
+                {
+                    "name": "e0ipso",
+                    "homepage": "https://www.drupal.org/user/550110"
+                },
+                {
+                    "name": "jazzdrive3",
+                    "homepage": "https://www.drupal.org/user/348785"
+                },
+                {
+                    "name": "mtift",
+                    "homepage": "https://www.drupal.org/user/751908"
+                },
+                {
+                    "name": "q0rban",
+                    "homepage": "https://www.drupal.org/user/31022"
+                }
+            ],
+            "description": "Simple LDAP server configuration.",
+            "homepage": "https://www.drupal.org/project/simple_ldap",
+            "support": {
+                "source": "https://git.drupalcode.org/project/simple_ldap"
+            }
+        },
+        {
             "name": "drupal/simplesamlphp_auth",
             "version": "3.2.0",
             "source": {
@@ -7193,7 +7284,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-5.19",
-                    "datestamp": "1596102131",
+                    "datestamp": "1593681136",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -16368,6 +16459,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/simple_ldap": 15,
         "drupal/webform_migrate": 20,
         "drupal/webform_views": 15,
         "os2forms/os2forms_egbolig": 20
