@@ -533,7 +533,7 @@ $settings['file_private_path'] = '../' . str_replace('sites', 'private', $site_p
  *
  * @see \Drupal\Component\FileSystem\FileSystem::getOsTemporaryDirectory()
  */
-# $settings['file_temp_path'] = '/tmp';
+$settings['file_temp_path'] = '../' . str_replace('sites', 'tmp', $site_path);
 
 /**
  * Session write interval:
@@ -706,6 +706,7 @@ $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
  * will allow the site to run off of all variants of example.com and
  * example.org, with all subdomains included.
  */
+$settings['trusted_host_patterns'] = ['^' . str_replace(['sites/', '.'], ['', '\.'], $site_path) . '$'];
 
 /**
  * The default list of directories that will be ignored by Drupal's file API.
