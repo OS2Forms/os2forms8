@@ -21,6 +21,26 @@
 * Enable `Custom theme` for project. This is a recommended theme that has minimum settings,
  so you will need to add all required blocks into proper regions afterwards.
 
+### Drupal settings
+
+Main Drupal setting file `web/sites/default/settings.php` has been added to git index.
+By this way all os2forms projects are getting default settings, like temporary
+directory, private directory, sync directory.
+
+All project's sensitive configuration should be stored in `settings.local.php`
+file. This file will be included from main `settings.php` settings.
+
+#### Multisite/Subsite configuration.
+
+On multisite solution main Drupal setting file`web/sites/default/settings.php`
+should be included into subsite's `settings.php` file. The easiest way to get
+the new configuration on a subsite is to copy prepared template
+`web/sites/subsite.settings.php` and add DB configuration, salt.
+
+Hint to generate salt string:
+```
+drush php-eval 'echo \Drupal\Component\Utility\Crypt::randomBytesBase64(55) . "\n";'
+```
 
 ## Contribution
 
