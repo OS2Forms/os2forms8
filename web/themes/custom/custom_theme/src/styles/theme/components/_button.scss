@@ -1,0 +1,16 @@
+.btn {
+  border-width: 2px;
+
+  &:focus {
+    outline: 4px solid #747474;
+    outline-offset: 1px;
+  }
+}
+
+a {
+
+  &:focus {
+    outline: 4px solid #747474;
+    outline-offset: 1px;
+  }
+}
