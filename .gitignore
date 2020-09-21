@@ -29,4 +29,6 @@
 
 # docker stuff
 logs/*.log
-.docker/logs/*
+.docker/logs/*.log
+.docker/php/logs/*.log
+.docker/apache/logs/*.log
