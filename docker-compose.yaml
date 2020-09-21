@@ -19,15 +19,14 @@ services:
     volumes:
       - ./.docker/php/custom.ini:/usr/local/etc/php/conf.d/custom.ini:ro,delegated
       - ./:/var/www:delegated
-      - ./.docker/logs:/var/log:delegated
+      - ./.docker/php/logs:/var/log:delegated
       - ./.docker/php/sites-enabled:/etc/apache2/sites-enabled:delegated
     depends_on:
       - mariadb
-    ports:
-      - "80:80"
+    expose:
+      - "9000"
     networks:
       - backend
-      - frontend
     environment:
       - APP_ENV=${APP_ENV}
 
@@ -47,16 +46,18 @@ services:
     networks:
       - backend
 
-#  apache:
-#    image: httpd:latest
-#    container_name: apache
-#    ports:
-#      - "80:80"
-#    volumes:
-#      - ./:/var/www:delegated
-#      - ./.docker/apache/conf/httpd.conf:/usr/local/apache2/conf/httpd.conf
-#    depends_on:
-#      - php
-#    networks:
-#      - backend
-#      - frontend
+  apache:
+    image: httpd:latest
+    container_name: apache
+    ports:
+      - "80:80"
+    volumes:
+      - ./:/var/www:delegated
+      - ./.docker/apache/conf/httpd.conf:/usr/local/apache2/conf/httpd.conf
+      - ./.docker/apache/conf/sites-enabled:/usr/local/apache2/conf/sites-enabled:delegated
+      - ./.docker/apache/logs:/var/log/apache:delegated
+    depends_on:
+      - php
+    networks:
+      - backend
+      - frontend

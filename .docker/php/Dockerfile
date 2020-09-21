@@ -1,4 +1,4 @@
-FROM php:7.4-apache-buster
+FROM php:7.4-fpm-buster
 
 WORKDIR "/var/www"
 
@@ -18,7 +18,7 @@ RUN apt-get update \
         libzip-dev zip unzip \
         libicu-dev \
         libxml2-dev \
-#    && npm install -g yarn \
+	vim \
     && docker-php-ext-configure gd --with-freetype --with-jpeg \
     && docker-php-ext-install -j$(nproc) gd \
     && docker-php-ext-configure zip \
