@@ -20,7 +20,6 @@ services:
       - ./.docker/php/custom.ini:/usr/local/etc/php/conf.d/custom.ini:ro,delegated
       - ./:/var/www:delegated
       - ./.docker/php/logs:/var/log:delegated
-      - ./.docker/php/sites-enabled:/etc/apache2/sites-enabled:delegated
     depends_on:
       - mariadb
     expose:
@@ -41,8 +40,8 @@ services:
       - MYSQL_DATABASE=${MYSQL_DATABASE}
       - MYSQL_USER=${MYSQL_USER}
       - MYSQL_PASSWORD=${MYSQL_PASSWORD}
-    ports:
-      - "3306:3306"
+    expose:
+      - "3306"
     networks:
       - backend
 

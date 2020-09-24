@@ -38,6 +38,9 @@ RUN apt-get update \
 # Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
+# Drush launcher
+RUN curl -fsSL "https://github.com/drush-ops/drush-launcher/releases/latest/download/drush.phar" -o /usr/local/bin/drush && chmod +x /usr/local/bin/drush
+
 # Cache tool
 # https://github.com/gordalina/cachetool
 #RUN curl -sO https://github.com/gordalina/cachetool/releases/latest/download/cachetool.phar \
