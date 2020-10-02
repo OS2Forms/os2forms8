@@ -11,6 +11,24 @@
 
    DocumentRoot /var/www/web
 
+   # SimpleSAMLphp
+   SetEnv SIMPLESAMLPHP_CONFIG_DIR /var/www/simplesamlphp/config
+   Alias /simplesaml /var/www/simplesamlphp/www
+
+   <Directory /var/www/simplesamlphp/www>
+      <IfModule !mod_authz_core.c>
+         # For Apache 2.2:
+         Order allow,deny
+         Allow from all
+      </IfModule>
+      <IfModule mod_authz_core.c>
+         # For Apache 2.4:
+         Require all granted
+      </IfModule>
+   </Directory>
+
+   # php_admin_value open_basedir /var/www/web:/usr/share/php:/var/www/simplesamlphp
+
    # Proxying php requests through port 9000 to the php container
    <FilesMatch \.php$>
       SetHandler "proxy:fcgi://php:9000"
