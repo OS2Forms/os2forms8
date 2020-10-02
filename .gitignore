@@ -32,3 +32,4 @@ logs/*.log
 .docker/logs/*.log
 .docker/php/logs/*.log
 .docker/apache/logs/*.log
+.docker/apache/conf/sites-enabled/*.conf
