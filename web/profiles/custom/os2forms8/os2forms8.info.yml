@@ -1,6 +1,6 @@
-name: OS2Core
+name: OS2Forms
 type: profile
-description: 'OS2Core installation profile.'
+description: 'OS2Forms installation profile (based on OS2Core)'
 core: 8.x
 install:
   # Drupal core
@@ -32,6 +32,9 @@ install:
   - os2forms_nemid
   - os2forms_dawa
   - os2forms_sbsys
+
+  # OS2Web
+  - os2web_simplesaml
 
 themes:
   - seven
