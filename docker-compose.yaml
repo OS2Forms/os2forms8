@@ -28,6 +28,7 @@ services:
       - backend
     environment:
       - APP_ENV=${APP_ENV}
+    restart: always
 
   mariadb:
     image: mariadb:latest
@@ -44,6 +45,7 @@ services:
       - "3306"
     networks:
       - backend
+    restart: always
 
   apache:
     image: httpd:latest
@@ -60,3 +62,4 @@ services:
     networks:
       - backend
       - frontend
+    restart: always
