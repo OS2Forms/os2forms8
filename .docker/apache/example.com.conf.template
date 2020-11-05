@@ -13,9 +13,9 @@
 
    # SimpleSAMLphp
    SetEnv SIMPLESAMLPHP_CONFIG_DIR /var/www/simplesamlphp/config
-   Alias /simplesaml /var/www/simplesamlphp/www
+   Alias /simplesaml /var/www/vendor/simplesamlphp/simplesamlphp/www
 
-   <Directory /var/www/simplesamlphp/www>
+   <Directory /var/www/vendor/simplesamlphp/simplesamlphp/www>
       <IfModule !mod_authz_core.c>
          # For Apache 2.2:
          Order allow,deny
