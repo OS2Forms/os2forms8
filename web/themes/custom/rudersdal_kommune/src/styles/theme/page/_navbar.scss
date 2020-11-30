@@ -1,0 +1,153 @@
+// |--------------------------------------------------------------------------
+// | Overrides .main-container
+// |--------------------------------------------------------------------------
+// |
+// | This file contains styles for the following:
+// | - .navbar
+// |
+
+// --------------------------------------------------
+// Variables
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Mixins
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Styling
+// --------------------------------------------------
+
+.navbar {
+  background: #fff;
+
+  &-wrapper {
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+  }
+
+  &-default {
+    border:0;
+
+    .navbar {
+      &-nav {
+        > li {
+          > a {
+            height: 50px;
+            line-height: 31px;
+            display: inline-block;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #3b3b3b;
+            font-size: 16px;
+            margin-left: 8px;
+            padding-right: 7px;
+          }
+
+          &:hover {
+            background-color: darken(#fff, 5%);
+          }
+        }
+      }
+    }
+  }
+
+  .logo {
+    padding-top: 9px;
+
+    img {
+      width: 190px;
+      height: 80px;
+    }
+  }
+}
+
+// --------------------------------------------------
+// Variants
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Responsive
+// --------------------------------------------------
+
+// Mobile - and up
+@media #{$breakpoint-mobile-and-up} {}
+
+// Mobile - only
+@media #{$breakpoint-mobile-only} {}
+
+// Tablet - and up
+@media #{$breakpoint-tablet-and-up} {
+  .navbar{
+    &.container {
+      max-width: $container-sm;
+    }
+
+    .navbar {
+      &-nav {
+        > li {
+          > a {
+            height: 105px;
+            line-height: 80px;
+
+            &:hover {
+              border-bottom: 4px solid #233978;
+              border-top: 0;
+            }
+          }
+
+          &:hover {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Tablet - only
+@media #{$breakpoint-tablet-only} {}
+
+// Desktop - and up
+@media #{$breakpoint-desktop-and-up} {
+  .navbar{
+    &.container {
+      max-width: $container-md;
+    }
+  }
+}
+
+
+// Desktop - only
+@media #{$breakpoint-desktop-only} {}
+
+// Large desktop - and up
+@media #{$breakpoint-large-desktop-and-up} {
+  .navbar{
+    &.container {
+      max-width: $container-lg;
+    }
+  }
+}
+
+// Print
+@media screen {
+  .navbar {
+    margin-bottom: 0;
+  }
+}
+
+// Print
+@media print {}
+
+// Touch
+.touchevents {}
+
+// No touch
+.no-touchevents {}
+
+// Flexbox
+.flexbox {}
+
+// No flexbox
+.no-flexbox {}
+

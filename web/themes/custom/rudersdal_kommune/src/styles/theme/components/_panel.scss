@@ -1,0 +1,82 @@
+// |--------------------------------------------------------------------------
+// | Overrides .main-container
+// |--------------------------------------------------------------------------
+// |
+// | This file contains styles for the following:
+// | - .panel
+// |
+
+// --------------------------------------------------
+// Variables
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Mixins
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Styling
+// --------------------------------------------------
+
+.panel {
+  body & {
+    border-radius: 0;
+    border: 0;
+
+    &-heading {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+
+    &-body {
+      border-left: 1px solid rgba(0, 0, 0, 0.05);
+      border-right: 1px rgba(0, 0, 0, 0.05);
+      border-bottom: 1px rgba(0, 0, 0, 0.05);
+    }
+  }
+}
+
+// --------------------------------------------------
+// Variants
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Responsive
+// --------------------------------------------------
+
+// Mobile - and up
+@media #{$breakpoint-mobile-and-up} {}
+
+// Mobile - only
+@media #{$breakpoint-mobile-only} {}
+
+// Tablet - and up
+@media #{$breakpoint-tablet-and-up} {}
+
+// Tablet - only
+@media #{$breakpoint-tablet-only} {}
+
+// Desktop - and up
+@media #{$breakpoint-desktop-and-up} {}
+
+// Desktop - only
+@media #{$breakpoint-desktop-only} {}
+
+// Large desktop - and up
+@media #{$breakpoint-large-desktop-and-up} {}
+
+// Print
+@media print {}
+
+// Touch
+.touchevents {}
+
+// No touch
+.no-touchevents {}
+
+// Flexbox
+.flexbox {}
+
+// No flexbox
+.no-flexbox {}
+

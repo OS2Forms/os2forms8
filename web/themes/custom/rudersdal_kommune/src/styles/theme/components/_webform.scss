@@ -1,0 +1,117 @@
+// |--------------------------------------------------------------------------
+// | Overrides .main-container
+// |--------------------------------------------------------------------------
+// |
+// | This file contains styles for the following:
+// | - .webform
+// |
+
+// --------------------------------------------------
+// Variables
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Mixins
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Styling
+// --------------------------------------------------
+
+.webform {
+  &-progress-tracker {
+    .progress-step {
+      .progress-marker {
+        background: #fff;
+        box-shadow: 0 0 0 1px #b2aead;
+        color: $text-color;
+        padding-top: 6px;
+      }
+
+      &.is-active {
+        .progress-marker {
+          background: #fff;
+        }
+        .progress-text {
+          font-family: $font-DINWeb-regular;
+        }
+
+        &:hover .progress-marker {
+          background: #fff;
+        }
+      }
+
+      &.is-complete {
+        .progress-marker {
+          border: 6px solid #fff;
+        }
+
+        .progress-text {
+          color: $text-color;
+        }
+      }
+
+
+      &:hover .progress-marker {
+        background-color: #fff;
+      }
+
+      &:not(:last-child)::after {
+        height: 1px;
+        background-color: $text-color;
+        z-index: 0;
+        top: 13px;
+      }
+
+      .progress-text {
+        color: $text-color;
+      }
+    }
+  }
+}
+
+// --------------------------------------------------
+// Variants
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Responsive
+// --------------------------------------------------
+
+// Mobile - and up
+@media #{$breakpoint-mobile-and-up} {}
+
+// Mobile - only
+@media #{$breakpoint-mobile-only} {}
+
+// Tablet - and up
+@media #{$breakpoint-tablet-and-up} {
+}
+
+// Tablet - only
+@media #{$breakpoint-tablet-only} {}
+
+// Desktop - and up
+@media #{$breakpoint-desktop-and-up} {}
+
+// Desktop - only
+@media #{$breakpoint-desktop-only} {}
+
+// Large desktop - and up
+@media #{$breakpoint-large-desktop-and-up} {}
+
+// Print
+@media print {}
+
+// Touch
+.touchevents {}
+
+// No touch
+.no-touchevents {}
+
+// Flexbox
+.flexbox {}
+
+// No flexbox
+.no-flexbox {}
+

@@ -1,0 +1,59 @@
+.btn {
+  height: 56px;
+  text-decoration: none;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 20px;
+  padding: 3px 24px 0;
+  margin-bottom: 20px;
+  border: 0;
+  border-radius: 0;
+
+  &:focus {
+    outline: 1px dotted #283139;
+  }
+}
+
+a {
+
+  &:focus {
+    outline: 1px dotted #283139;
+  }
+}
+
+@mixin button-variant-override($color, $background, $border) {
+  color: $color;
+  background-color: $background;
+  border-color: $border;
+
+  &:hover {
+    color: $color;
+    background-color: $background;
+    border-color: $background;
+    text-decoration: underline;
+  }
+}
+
+.btn-default {
+  @include button-variant-override($btn-default-color, $btn-default-bg, $btn-default-border);
+}
+.btn-primary {
+  @include button-variant-override($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+}
+// Success appears as green
+.btn-success {
+  @include button-variant-override($btn-success-color, $btn-success-bg, $btn-success-border);
+}
+// Info appears as blue-green
+.btn-info {
+  @include button-variant-override($btn-info-color, $btn-info-bg, $btn-info-border);
+}
+// Warning appears as orange
+.btn-warning {
+  @include button-variant-override($btn-warning-color, $btn-warning-bg, $btn-warning-border);
+}
+// Danger and error appear as red
+.btn-danger {
+  @include button-variant-override($btn-danger-color, $btn-danger-bg, $btn-danger-border);
+}

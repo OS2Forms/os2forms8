@@ -1,0 +1,44 @@
+/* stylelint-disable at-rule-empty-line-before */
+
+$font-DINWeb-regular: 'DINWeb';
+$font-DINWeb-light: 'DINWeb-Light';
+$font-DINPro-regular: 'DINPro-Regular';
+$font-DINPro-light: 'DINPro-Light';
+$font-rudersdal-icon-font: 'rudersdal-icon-font';
+
+
+@font-face {
+  font-family: $font-DINWeb-regular;
+  src: url('../fonts/DINWeb/' + $font-DINWeb-regular + '.eot') format("embedded-opentype"), url('../fonts/DINWeb/' + $font-DINWeb-regular + '.woff') format("woff");
+  font-weight: normal;
+  font-style: normal
+}
+
+@font-face {
+  font-family: $font-DINWeb-light;
+  src: url('../fonts/DINWeb/' + $font-DINWeb-light + '.eot') format("embedded-opentype"), url('../fonts/DINWeb/' + $font-DINWeb-light + '.woff') format("woff");
+  font-weight: normal;
+  font-style: normal
+}
+
+@font-face {
+  font-family: $font-DINPro-light;
+  src: url('../fonts/DINWeb/' + $font-DINPro-light + '.otf') format("embedded-opentype"), url('../fonts/DINWeb/' + $font-DINPro-light + '.woff') format("woff");
+  font-weight: normal;
+  font-style: normal
+}
+
+@font-face {
+  font-family: $font-DINPro-regular;
+  src: url('../fonts/DINWeb/' + $font-DINPro-regular + '.otf') format("embedded-opentype"), url('../fonts/DINWeb/' + $font-DINPro-regular + '.woff') format("woff");
+  font-weight: normal;
+  font-style: normal
+}
+
+@font-face {
+  font-family: $font-rudersdal-icon-font;
+  src: url('../fonts/' + $font-rudersdal-icon-font + '.eot');
+  src: url('../fonts/' + $font-rudersdal-icon-font + '?#iefix') format("embedded-opentype"), url('../fonts/' + $font-rudersdal-icon-font + '.ttf') format("truetype"), url('../fonts/' + $font-rudersdal-icon-font + '.woff') format("woff"), url('../fonts/' + $font-rudersdal-icon-font + '.svg?3#' + $font-rudersdal-icon-font) format("svg");
+  font-weight: normal;
+  font-style: normal
+}

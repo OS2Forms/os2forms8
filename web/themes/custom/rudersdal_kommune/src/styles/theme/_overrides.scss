@@ -1,0 +1,97 @@
+// |--------------------------------------------------------------------------
+// | Overrides
+// |--------------------------------------------------------------------------
+// |
+// | This file contains styles for the following:
+// | - img
+// | - .icon
+// | - .form-control
+// | - .row--equal-height-columns
+// |
+
+// --------------------------------------------------
+// Variables
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Mixins
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Styling
+// --------------------------------------------------
+
+body {
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+}
+
+.icon {}
+
+.form-control {
+  // Remove inline shadow on iOS (https://stackoverflow.com/questions/23211656/remove-ios-input-shadow)
+  appearance: none;
+
+  &,
+  &:focus {
+    @include box-shadow(none);
+  }
+}
+
+a {
+
+  &:not(.btn) {
+    text-decoration: underline;
+
+    &:visited {
+      color: #800080;
+    }
+  }
+}
+
+// --------------------------------------------------
+// Variants
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Responsive
+// --------------------------------------------------
+
+// Mobile - and up
+@media #{$breakpoint-mobile-and-up} {}
+
+// Mobile - only
+@media #{$breakpoint-mobile-only} {}
+
+// Tablet - and up
+@media #{$breakpoint-tablet-and-up} {}
+
+// Tablet - only
+@media #{$breakpoint-tablet-only} {}
+
+// Desktop - and up
+@media #{$breakpoint-desktop-and-up} {}
+
+// Desktop - only
+@media #{$breakpoint-desktop-only} {}
+
+// Large desktop - and up
+@media #{$breakpoint-large-desktop-and-up} {}
+
+// Print
+@media print {}
+
+// Touch
+.touchevents {}
+
+// No touch
+.no-touchevents {}
+
+// Flexbox
+.flexbox {}
+
+// No flexbox
+.no-flexbox {}

@@ -1,0 +1,11 @@
+styles:
+  css:
+    theme:
+      dist/stylesheets/stylesheet.css: {}
+
+javascripts:
+  js:
+    dist/javascripts/app.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery

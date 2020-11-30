@@ -1,0 +1,21 @@
+name: ' Rudersdal municipality theme'
+type: theme
+description: 'Custom theme for Rudersdal municipality.'
+core: 8.x
+base theme: bootstrap
+package: Custom
+
+regions:
+  navigation: 'Navigation'
+  navigation_collapsible: 'Navigation (Collapsible)'
+  header: 'Top Bar'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  content: 'Content'
+  footer: 'Footer'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+
+libraries:
+  - 'rudersdal_kommune/styles'
+  - 'rudersdal_kommune/javascripts'

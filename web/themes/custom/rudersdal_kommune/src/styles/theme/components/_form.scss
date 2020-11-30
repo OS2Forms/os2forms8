@@ -1,0 +1,69 @@
+.form-control {
+  font-weight: 400;
+
+  &:focus {
+    box-shadow: none;
+
+    outline: 4px solid #747474;
+    outline-offset: 1px;
+  }
+
+  form & {
+    border-radius: 0;
+  }
+
+}
+
+input.form-control[type="file"] {
+  border: none;
+  font-size: 16px;
+  padding-left: 0;
+  margin: 5px 0;
+}
+
+
+.control-label {
+  font-family: $font-DINWeb-regular;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 0;
+  padding-bottom: 4px;
+
+  &.form-required:after {
+    background-image: none;
+    content: '*';
+    color: $text-color;
+    vertical-align: middle;
+    padding: 0 0 0 5px;
+    height: 14px;
+  }
+}
+
+.webform-actions {
+  text-align: right;
+
+  .btn {
+    margin-left: 5px;
+  }
+}
+
+.form-group {
+  margin-bottom: 20px;
+
+  .has-error {
+    padding-left: 15px;
+
+    border-left: 4px solid #c00;
+  }
+}
+
+
+form {
+
+}
+
+.help-block, .control-group .help-inline {
+  color: $text-color;
+  font-size: inherit;
+}
