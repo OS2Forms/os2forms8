@@ -22,7 +22,7 @@
         "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/bootstrap": "^3.21",
         "drupal/console": "^1.0.2",
-        "drupal/core": "^8.9",
+        "drupal/core": "^8.7.1",
         "drupal/fontyourface": "^3.2",
         "drupal/header_and_footer_scripts": "^2.2",
         "drupal/ldap": "^3.0@beta",
