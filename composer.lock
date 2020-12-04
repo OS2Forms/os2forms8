@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "aa16910cbda6e37f777f21d42ce78d7b",
+    "content-hash": "276995d65478e91e69ff73852fb7b993",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -7467,6 +7467,51 @@
             }
         },
         {
+            "name": "drupal/webform_composite",
+            "version": "1.0.0-rc2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/webform_composite.git",
+                "reference": "8.x-1.0-rc2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/webform_composite-8.x-1.0-rc2.zip",
+                "reference": "8.x-1.0-rc2",
+                "shasum": "08d7c23d8b4014d066598ae4b7632682c05bcd83"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/webform": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-rc2",
+                    "datestamp": "1591213393",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "richgerdes",
+                    "homepage": "https://www.drupal.org/user/3437973"
+                }
+            ],
+            "description": "Additional tools for Webform Composites.",
+            "homepage": "https://www.drupal.org/project/webform_composite",
+            "support": {
+                "source": "https://git.drupalcode.org/project/webform_composite"
+            }
+        },
+        {
             "name": "drupal/webform_embed",
             "version": "dev-1.x",
             "source": {
@@ -7640,6 +7685,55 @@
             "homepage": "https://www.drupal.org/project/webform",
             "support": {
                 "source": "https://git.drupalcode.org/project/webform"
+            }
+        },
+        {
+            "name": "drupal/webform_node_element",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/webform_node_element.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/webform_node_element-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "f9a6a4f163e7e2e3a58d69abc827378d6e9f449d"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "drupal/webform": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1537539780",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "alarcombe",
+                    "homepage": "https://www.drupal.org/user/172759"
+                },
+                {
+                    "name": "cafuego",
+                    "homepage": "https://www.drupal.org/user/218525"
+                }
+            ],
+            "description": "Displays a node as a webform element.",
+            "homepage": "https://www.drupal.org/project/webform_node_element",
+            "support": {
+                "source": "https://git.drupalcode.org/project/webform_node_element"
             }
         },
         {
@@ -16661,6 +16755,7 @@
     "stability-flags": {
         "drupal/ldap": 10,
         "drupal/simple_ldap": 15,
+        "drupal/webform_composite": 5,
         "drupal/webform_migrate": 20,
         "drupal/webform_views": 15,
         "os2forms/os2forms_egbolig": 20,
@@ -16671,6 +16766,5 @@
     "platform": {
         "php": ">=5.6"
     },
-    "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "platform-dev": []
 }
