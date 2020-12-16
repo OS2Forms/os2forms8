@@ -110,6 +110,9 @@
             },
             "drupal/queue_mail" : {
                 "Admin interface to see queued mail" :  "https://www.drupal.org/files/issues/2020-06-30/3096917-ui-queue-mail-moderate-5.patch"
+            },
+            "drupal/smtp" : {
+                "Duplicated Attachments using webforms" :  "https://www.drupal.org/files/issues/2020-06-18/smtp-2995290-17.patch"
             }
         }
     }
