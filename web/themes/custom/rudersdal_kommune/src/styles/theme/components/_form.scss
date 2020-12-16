@@ -56,6 +56,14 @@ input.form-control[type="file"] {
 
     border-left: 4px solid #c00;
   }
+
+  button {
+    .webform-button--next {
+      &:first-child:nth-last-child(1) {
+        float: right;
+      }
+    }
+  }
 }
 
 
