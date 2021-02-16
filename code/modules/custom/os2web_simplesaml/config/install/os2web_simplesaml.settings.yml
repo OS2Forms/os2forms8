@@ -1,0 +1,3 @@
+redirect_ips: ''
+redirect_trigger_path: /
+redirect_cookies_ttl: '300'

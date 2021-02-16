@@ -1,57 +1,36 @@
-# OS2Forms Drupal 8 project [![Build Status](https://travis-ci.org/OS2Forms/os2forms8.svg?branch=master)](https://travis-ci.org/OS2Forms/os2forms8)
+# drupal_dockerized
 
-## Usage
+Purpose of this project is to create a clean dockerized Drupal installation.
 
-* Clone the repository
 
-    ```
-    git clone git@github.com:OS2Forms/os2forms8.git
-    ```
-* Rename your installation if needed
+# Runnning the project - NOTE: this will take 10 minutes the first time you build
+`docker-compose up -d`
 
-* Go to the installation and start composer
-    ```
-    composer install
-    ```
-* Follow the regular install process, select ```OS2Forms8``` as install profile.
-* After installation is done, enable OS2Forms by:
-    ```
-    drush en os2forms, os2forms_nemid, os2forms_dawa, os2forms_sbsys
-    ```
-* Enable `Custom theme` for project. This is a recommended theme that has minimum settings,
- so you will need to add all required blocks into proper regions afterwards.
 
-### Drupal settings
 
-Main Drupal setting file `web/sites/default/settings.php` has been added to git index.
-By this way all os2forms projects are getting default settings, like temporary
-directory, private directory, sync directory.
+# Running tests
+`docker-compose -f docker-compose.yml -f docker-compose.tests.yml up`
 
-All project's sensitive configuration should be stored in `settings.local.php`
-file. This file will be included from main `settings.php` settings.
+# Composer dependencies
 
-#### Multisite/Subsite configuration.
+Installed dependencies are locked to specific versions using the `composer.lock` file. `composer install` will install every package specified in `composer.json` with respect to the pinned versions in `composer.lock`.
 
-On multisite solution main Drupal setting file`web/sites/default/settings.php`
-should be included into subsite's `settings.php` file. The easiest way to get
-the new configuration on a subsite is to copy prepared template
-`web/sites/subsite.settings.php` and add DB configuration, salt.
+## Adding dependencies
 
-Hint to generate salt string:
+Use `composer require` to add and install new packages. Alternatively add the requirement to `composer.json` and run `composer install`.
+
 ```
-drush php-eval 'echo \Drupal\Component\Utility\Crypt::randomBytesBase64(55) . "\n";'
+$ docker-compose exec drupal composer require "vendor/package:2.*"
 ```
 
-## Contribution
+## Updating dependencies
 
-OS2Forms projects is an opened for new features and os course bugfixes.
-If you have any suggestion, or you found a bug in project, you are very welcome
-to create an issue in github repository issue tracker.
-For issue description there is expected that you will provide clear and
-sufficient information about your feature request or bug report.
+When a version update is needed, use `composer update vendor/package`. 
 
-### Code review policy
-See [OS2Forms code review policy](https://github.com/OS2Forms/docs#code-review)
+```
+$ docker-compose exec -e COMPOSER_MEMORY_LIMIT=-1 drupal composer update vendor/package
+```
 
-### Git name convention
-See [OS2Forms git name convention](https://github.com/OS2Forms/docs#git-guideline)
+On first run, the `composer.lock` file was generated using `composer update` without further parameters.
+
+Check https://getcomposer.org/doc/03-cli.md#update-u for further details.

@@ -1,0 +1,21 @@
+{
+    "name": "os2web/os2web_datalookup",
+    "type": "drupal-module",
+    "description": "Provides integration with Danish data lookup services such as Service platformen or Datafordeler.",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "license": "EUPL-1.2",
+    "require": {
+        "ext-soap": "*"
+    },
+    "repositories": {
+        "drupal": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        "assets": {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    }
+}

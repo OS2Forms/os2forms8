@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tns="http://serviceplatformen.dk/xml/wsdl/soap11/CPRBasicInformationService/1/" xmlns:invctx="http://serviceplatformen.dk/xml/schemas/InvocationContext/1/"
+	xmlns:cpr="http://serviceplatformen.dk/xml/schemas/cpr/PNR/1/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" version="1.0"
+	targetNamespace="http://serviceplatformen.dk/xml/wsdl/soap11/CPRBasicInformationService/1/">
+
+	<xsd:import namespace="http://serviceplatformen.dk/xml/schemas/InvocationContext/1/" schemaLocation="InvocationContext_20121009.xsd" />
+	<xsd:import namespace="http://serviceplatformen.dk/xml/schemas/cpr/PNR/1/" schemaLocation="PNR_20121119.xsd" />
+
+	<xsd:element name="callCPRBasicInformationRequest" type="tns:CPRBasicInformationRequestType" />
+	<xsd:element name="callCPRBasicInformationExtendedRequest" type="tns:CPRBasicInformationRequestType" />
+	<xsd:element name="callCPRBasicInformationListRequest" type="tns:CPRBasicInformationRequestType" />
+	<xsd:element name="callCPRBasicInformationExtendedListRequest" type="tns:CPRBasicInformationRequestType" />
+	<xsd:complexType name="CPRBasicInformationRequestType">
+		<xsd:sequence>
+			<xsd:element ref="invctx:InvocationContext" minOccurs="1" maxOccurs="1" />
+			<xsd:element ref="cpr:PNR" minOccurs="1" maxOccurs="1" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:element name="callCPRBasicInformationResponse" type="tns:CPRBasicInformationResponseType" />
+
+	<xsd:element name="callCPRBasicInformationListResponse" type="tns:CPRBasicInformationResponseListType" />
+
+	<xsd:complexType name="CPRBasicInformationResponseListType">
+		<xsd:sequence minOccurs="0" maxOccurs="unbounded">
+			<xsd:element name="CPRBasicInformationResponse" type="tns:CPRBasicInformationResponseType" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="CPRBasicInformationResponseType">
+		<xsd:sequence>
+			<xsd:element name="pnr" type="xsd:string" />
+			<xsd:element name="gaeldendePersonnummer" type="xsd:string" minOccurs="0" />
+			<xsd:element name="koen" type="tns:koenType" />
+			<xsd:element name="foedselsdato" type="xsd:date" minOccurs="0" />
+			<xsd:element name="foedselsdatoUsikkerhedsmarkering" type="xsd:boolean" />
+			<xsd:element name="status" type="tns:statusType" minOccurs="0" />
+			<xsd:element name="statusdato" type="xsd:date" minOccurs="0" />
+			<xsd:element name="civilstand" type="tns:civstType" minOccurs="0" />
+
+			<xsd:element name="navneOgAdressebeskyttelse" type="xsd:boolean" />
+			<xsd:element name="adresseringsnavn" type="xsd:string" minOccurs="0" />
+			<xsd:element name="conavn" type="xsd:string" minOccurs="0" />
+			<xsd:element name="standardadresse" type="xsd:string" minOccurs="0" />
+			<xsd:element name="postnummer" type="xsd:int" minOccurs="0" />
+			<xsd:element name="postdistrikt" type="xsd:string" minOccurs="0" />
+
+			<xsd:element name="bynavn" type="xsd:string" minOccurs="0" />
+			<xsd:element name="vejadresseringsnavn" type="xsd:string" minOccurs="0" />
+			<xsd:element name="husnummer" type="xsd:string" minOccurs="0" />
+			<xsd:element name="lokalitet" type="xsd:string" minOccurs="0" />
+			<xsd:element name="bygningsnummer" type="xsd:string" minOccurs="0" />
+			<xsd:element name="etage" type="xsd:string" minOccurs="0" />
+			<xsd:element name="sidedoer" type="xsd:string" minOccurs="0" />
+			<xsd:element name="kommunekode" type="xsd:int" minOccurs="0" />
+			<xsd:element name="vejkode" type="xsd:int" minOccurs="0" />
+
+			<xsd:element name="tilflytningsdato" type="xsd:date" minOccurs="0" />
+			<xsd:element name="landekode" type="xsd:int" minOccurs="0" />
+			<xsd:element name="indrejseLandekode" type="xsd:int" minOccurs="0" />
+
+			<xsd:element name="udrejseLandekode" type="xsd:int" minOccurs="0" />
+			<xsd:element name="udlandsadresse1" type="xsd:string" minOccurs="0" />
+			<xsd:element name="udlandsadresse2" type="xsd:string" minOccurs="0" />
+			<xsd:element name="udlandsadresse3" type="xsd:string" minOccurs="0" />
+			<xsd:element name="udlandsadresse4" type="xsd:string" minOccurs="0" />
+			<xsd:element name="udlandsadresse5" type="xsd:string" minOccurs="0" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:element name="callCPRBasicInformationExtendedResponse" type="tns:CPRBasicInformationExtendedResponseType" />
+
+	<xsd:element name="callCPRBasicInformationExtendedListResponse" type="tns:CPRBasicInformationExtendedResponseListType" />
+
+	<xsd:complexType name="CPRBasicInformationExtendedResponseListType">
+		<xsd:sequence minOccurs="0" maxOccurs="unbounded">
+			<xsd:element name="CPRBasicInformationExtendedResponse" type="tns:CPRBasicInformationExtendedResponseType" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="CPRBasicInformationExtendedResponseType">
+	    <xsd:complexContent>
+	        <xsd:extension base="tns:CPRBasicInformationResponseType">
+	            <xsd:sequence>
+	                <xsd:element name="fornavn" type="xsd:string" minOccurs="0" />
+	                <xsd:element name="mellemnavn" type="xsd:string" minOccurs="0" />
+	                <xsd:element name="efternavn" type="xsd:string" minOccurs="0" />
+	            </xsd:sequence>
+	        </xsd:extension>
+	    </xsd:complexContent>
+	</xsd:complexType>
+
+	<xsd:simpleType name="koenType">
+		<xsd:annotation>
+			<xsd:documentation>
+				K=female
+				M=male
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="K" />
+			<xsd:enumeration value="M" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="statusType">
+		<xsd:annotation>
+			<xsd:documentation>
+				Status attribute:
+				1 = Aktiv, bopæl i dansk folkeregister
+				3 = Aktiv, speciel vejkode (9900 - 9999) i dansk folkeregister
+				5 = Aktiv, bopæl i grønlandsk folkeregister
+				7 = Aktiv, speciel vejkode (9900 - 9999) i grønlandsk folkeregister
+				20 = Inaktiv, uden bopæl i dansk/grønlandsk folkeregister men tildelt personnummer af skattehensyn (kommunekoderne 0010, 0011, 0012 og 0019)
+				30 = Inaktiv, anulleret personnummer
+				50 = Inaktiv, slettet personnummer ved dobbeltnummer
+				60 = Inaktiv, ændret personnummer ved ændring af fødselsdato og køn CPR Centrale Personregister Side 8 af 53
+				70 = Inaktiv, forsvundet
+				80 = Inaktiv, udrejst
+				90 = Inaktiv, død
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:int">
+			<xsd:enumeration value="1" />
+			<xsd:enumeration value="3" />
+			<xsd:enumeration value="5" />
+			<xsd:enumeration value="7" />
+			<xsd:enumeration value="20" />
+			<xsd:enumeration value="30" />
+			<xsd:enumeration value="50" />
+			<xsd:enumeration value="60" />
+			<xsd:enumeration value="70" />
+			<xsd:enumeration value="80" />
+			<xsd:enumeration value="90" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:simpleType name="civstType">
+		<xsd:annotation>
+			<xsd:documentation>
+				U = Ugift
+				G = Gift
+				F = Fraskilt
+				E = Enke/enkemand
+				P = Registreret partnerskab
+				O = Ophævet partnerskab
+				L = Længestlevende partner
+				D = Død
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="U" />
+			<xsd:enumeration value="G" />
+			<xsd:enumeration value="F" />
+			<xsd:enumeration value="E" />
+			<xsd:enumeration value="P" />
+			<xsd:enumeration value="O" />
+			<xsd:enumeration value="L" />
+			<xsd:enumeration value="D" />
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+</xsd:schema>

@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the OS2Web SimpleSAML Checklist.
+ */
+
+/**
+ * Implements hook_uninstall().
+ */
+function os2web_simplesaml_checklist_uninstall() {
+  /** @var \Drupal\checklistapi\Storage\StateStorage $storage */
+  $storage = \Drupal::service('checklistapi_storage.state');
+  $storage->setChecklistId('os2web_simplesaml_checklist')->deleteSavedProgress();
+}

@@ -1,0 +1,6 @@
+services:
+  os2web_simplesaml_event_subscriber:
+    class: Drupal\os2web_simplesaml\EventSubscriber\SimplesamlSubscriber
+    arguments: ['@simplesamlphp_auth.manager', '@current_user']
+    tags:
+      - {name: event_subscriber}

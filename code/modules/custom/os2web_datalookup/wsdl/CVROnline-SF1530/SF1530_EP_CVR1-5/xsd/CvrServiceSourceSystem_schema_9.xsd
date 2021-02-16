@@ -1,0 +1,23 @@
+﻿<xsd:schema xmlns:dkcc2005-2="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/05/13/"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/05/13/"
+            elementFormDefault="qualified"
+            targetNamespace="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/05/13/">
+    <xsd:simpleType name="PostOfficeBoxIdentifierType">
+        <xsd:annotation>
+            <xsd:documentation>Declaration of a Post Office
+                Box.
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:integer">
+            <xsd:minInclusive value="1"/>
+            <xsd:maxInclusive value="9999"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:element name="PostOfficeBoxIdentifier" type="dkcc2005-2:PostOfficeBoxIdentifierType">
+        <xsd:annotation>
+            <xsd:documentation>Declaration of a Post Office
+                Box.
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+</xsd:schema>

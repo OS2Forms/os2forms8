@@ -1,0 +1,4 @@
+administer  os2web datalookup configuration:
+  title: 'Administer OS2Web datalookup configuration'
+  description: 'Permission for administrating the OS2Web datalookup configuration.'
+  restrict access: TRUE

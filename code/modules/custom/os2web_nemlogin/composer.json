@@ -1,0 +1,8 @@
+{
+    "name": "os2web/os2web_nemlogin",
+    "type": "drupal-module",
+    "description": "Provide authentication via Nemlogin",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "license": "EUPL-1.2"
+}

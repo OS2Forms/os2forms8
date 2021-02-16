@@ -1,0 +1,12 @@
+version: "3"
+services:
+  codeceptjs:
+    image: magentalabs/drupal-test:stable
+    depends_on:
+      - mysql
+      - drupal
+    volumes:
+      - ./tests:/tests
+    env_file:
+      - dev-environment/dev.env
+

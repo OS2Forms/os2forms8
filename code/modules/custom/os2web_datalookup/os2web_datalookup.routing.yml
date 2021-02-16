@@ -1,0 +1,10 @@
+os2web_datalookup.status_list:
+  path: '/admin/config/system/os2web-datalookup'
+  defaults:
+    _controller: '\Drupal\os2web_datalookup\Controller\DatalookupController::statusList'
+    _title: 'OS2Web Datalookup'
+  requirements:
+    _permission: 'administer os2web datalookup configuration'
+
+route_callbacks:
+  - '\Drupal\os2web_datalookup\Routing\DataLookupRoutes::routes'

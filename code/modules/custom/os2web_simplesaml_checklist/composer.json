@@ -1,0 +1,11 @@
+{
+    "name": "os2web/os2web_simplesaml_checklist",
+    "type": "drupal-module",
+    "description": "SimpleSAML configuration checklist for Drupal",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "license": "EUPL-1.2",
+    "require": {
+        "drupal/checklistapi": "^1.10"
+    }
+}

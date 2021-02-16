@@ -1,0 +1,6 @@
+name: 'OS2Web datalookup'
+type: module
+description: 'Provides integration with Danish data lookup services such as Service platformen or Datafordeler.'
+package: OS2
+core: 8.x
+core_version_requirement: ^8 || ^9

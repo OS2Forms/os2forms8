@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema targetNamespace="http://rep.oio.dk/eogs/xml/2/"
+            xmlns:tns="http://rep.oio.dk/eogs/xml/2/"
+            xmlns:callctx="http://serviceplatformen.dk/xml/schemas/CallContext/1/"
+            xmlns:invctx="http://serviceplatformen.dk/xml/schemas/InvocationContext/1/"
+            xmlns:cvr="http://rep.oio.dk/eogs/xml.wsdl/"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            elementFormDefault="qualified"
+            attributeFormDefault="unqualified"
+            version="1.0">
+
+    <xsd:import namespace="http://serviceplatformen.dk/xml/schemas/CallContext/1/"
+                schemaLocation="sp/CallContext_1.xsd"/>
+
+    <xsd:import namespace="http://serviceplatformen.dk/xml/schemas/InvocationContext/1/"
+                schemaLocation="sp/InvocationContext_1.xsd"/>
+
+    <xsd:import namespace="http://rep.oio.dk/eogs/xml.wsdl/"
+                schemaLocation="SF1530_EP_CVR1-5/xsd/CvrServiceSourceSystem_schema.xsd"/>
+
+    <!-- Online - GetLegalUnit -->
+    <xsd:element name="GetLegalUnitRequest" type="tns:GetLegalUnitRequestType"/>
+    <xsd:complexType name="GetLegalUnitRequestType">
+        <xsd:sequence>
+            <xsd:element ref="callctx:CallContext" minOccurs="0"/>
+            <xsd:element ref="invctx:InvocationContext" minOccurs="0"/>
+            <xsd:element ref="cvr:GetLegalUnitRequest"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="GetLegalUnitResponse" type="tns:GetLegalUnitResponseType"/>
+    <xsd:complexType name="GetLegalUnitResponseType">
+        <xsd:sequence>
+            <xsd:element ref="cvr:GetLegalUnitResponse"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!-- Online - SearchLegalUnit -->
+    <xsd:element name="SearchLegalUnitRequest" type="tns:SearchLegalUnitRequestType"/>
+    <xsd:complexType name="SearchLegalUnitRequestType">
+        <xsd:sequence>
+            <xsd:element ref="callctx:CallContext" minOccurs="0"/>
+            <xsd:element ref="invctx:InvocationContext" minOccurs="0"/>
+            <xsd:element ref="cvr:SearchLegalUnitRequest"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="SearchLegalUnitResponse" type="tns:SearchLegalUnitResponseType"/>
+    <xsd:complexType name="SearchLegalUnitResponseType">
+        <xsd:sequence>
+            <xsd:element ref="cvr:SearchLegalUnitResponse"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!-- Online - GetProductionUnit -->
+    <xsd:element name="GetProductionUnitRequest" type="tns:GetProductionUnitRequestType"/>
+    <xsd:complexType name="GetProductionUnitRequestType">
+        <xsd:sequence>
+            <xsd:element ref="callctx:CallContext" minOccurs="0"/>
+            <xsd:element ref="invctx:InvocationContext" minOccurs="0"/>
+            <xsd:element ref="cvr:GetProductionUnitRequest"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="GetProductionUnitResponse" type="tns:GetProductionUnitResponseType"/>
+    <xsd:complexType name="GetProductionUnitResponseType">
+        <xsd:sequence>
+            <xsd:element ref="cvr:GetProductionUnitResponse"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!-- Online - SearchProductionUnit -->
+    <xsd:element name="SearchProductionUnitRequest" type="tns:SearchProductionUnitRequestType"/>
+    <xsd:complexType name="SearchProductionUnitRequestType">
+        <xsd:sequence>
+            <xsd:element ref="callctx:CallContext" minOccurs="0"/>
+            <xsd:element ref="invctx:InvocationContext" minOccurs="0"/>
+            <xsd:element ref="cvr:SearchProductionUnitRequest"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="SearchProductionUnitResponse" type="tns:SearchProductionUnitResponseType"/>
+    <xsd:complexType name="SearchProductionUnitResponseType">
+        <xsd:sequence>
+            <xsd:element ref="cvr:SearchProductionUnitResponse"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!-- Online - GetRelatedProductionUnitNameAndAddress -->
+    <xsd:element name="GetRelatedProductionUnitNameAndAddressRequest" type="tns:GetRelatedProductionUnitNameAndAddressRequestType"/>
+    <xsd:complexType name="GetRelatedProductionUnitNameAndAddressRequestType">
+        <xsd:sequence>
+            <xsd:element ref="callctx:CallContext" minOccurs="0"/>
+            <xsd:element ref="invctx:InvocationContext" minOccurs="0"/>
+            <xsd:element ref="cvr:GetRelatedProductionUnitNameAndAddressRequest"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="GetRelatedProductionUnitNameAndAddressResponse" type="tns:GetRelatedProductionUnitNameAndAddressResponseType"/>
+    <xsd:complexType name="GetRelatedProductionUnitNameAndAddressResponseType">
+        <xsd:sequence>
+            <xsd:element ref="cvr:GetRelatedProductionUnitNameAndAddressResponse"/>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>

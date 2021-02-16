@@ -1,0 +1,6 @@
+os2web_nemlogin.settings:
+  title: 'OS2Web Nemlogin settings'
+  parent: system.admin_config_system
+  description: 'Configure OS2Web nemlogin'
+  route_name: os2web_nemlogin.settings
+  weight: -20

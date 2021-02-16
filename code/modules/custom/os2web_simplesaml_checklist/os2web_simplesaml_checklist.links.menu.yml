@@ -1,0 +1,5 @@
+os2web_simplesaml_checklist.checklist:
+  title: OS2Web SimpleSAML Checklist
+  description: Go through the checklist to easily set up SimpleSAML.
+  route_name: checklistapi.checklists.os2web_simplesaml_checklist
+  parent: user.admin_index

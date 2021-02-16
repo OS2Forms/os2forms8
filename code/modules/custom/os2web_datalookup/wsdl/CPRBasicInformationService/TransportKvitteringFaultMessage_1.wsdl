@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="ServiceplatformFaultMessage"
+                  targetNamespace="http://serviceplatformen.dk/xml/schemas/kvittering/1/"
+                  xmlns:tns="http://serviceplatformen.dk/xml/schemas/kvittering/1/"
+                  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                  xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+
+    <wsdl:types>
+        <xsd:schema targetNamespace="http://serviceplatformen.dk/xml/schemas/kvittering/1/">
+            <xsd:include schemaLocation="Kvittering_1.xsd"/>
+        </xsd:schema>
+    </wsdl:types>
+
+    <wsdl:message name="TransportKvitteringFault">
+        <wsdl:part name="error" element="tns:TransportKvittering"/>
+    </wsdl:message>
+
+</wsdl:definitions>

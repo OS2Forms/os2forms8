@@ -1,0 +1,183 @@
+﻿<xsd:schema xmlns:dkcc2003="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/"
+            elementFormDefault="qualified"
+            targetNamespace="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/">
+    <xsd:simpleType name="_CountryIdentificationCodeType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en-uk">This is a support
+                type for CountryIdentificationCodeType. The pattern is a
+                choice of 4 different patterns for
+                different schems. ISO
+                3166 standard, alpha 2: [a-z,A-Z]{2}. Eksample "DK" for
+                Danmark. ISO 3166 standard, alpha 3: [a-z,A-Z]{3}.
+                Eksample "DKN" for Danmark.
+                UN Statistics Divisions
+                country codes: [0-9]{3}. Eksample "208" for Danmark
+                AuthorityCode from the Central Office of Civil
+                Registration: [0-9]{4}. Eksample
+                "5100" for
+                Danmark.
+            </xsd:documentation>
+            <xsd:documentation xml:lang="da-dk">Dette er en
+                stÃ¸ttetype til CountryIdentificationCodeType.
+                Det regulÃ¦re udtryk er et valg
+                for de 4
+                forskellige regulÃ¦re udtryk for de forskellige
+                formater. ISO 3166 standard, alpha 2: [a-z,A-Z]{2}.
+                Eksempel "DK" for Danmark. ISO 3166
+                standard, alpha 3:
+                [a-z,A-Z]{3}. Eksempel "DKN" for Danmark. UN Statistics
+                Divisions country codes: [0-9]{3}. Eksempel "208" for
+                Danmark AuthorityCode from
+                the Central Office of Civil
+                Registration: [0-9]{4}. Eksempel "5100" for
+                Danmark.
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="[a-z,A-Z]{2}|[a-z,A-Z]{3}|[0-9]{3}|[0-9]{4}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="_CountryIdentificationSchemeType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en-uk">This is a support
+                type for
+                CountryIdentificationCodeType.
+            </xsd:documentation>
+            <xsd:documentation xml:lang="da-dk">Dette er en
+                stÃ¸ttetype til
+                CountryIdentificationCodeType.
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="iso3166-alpha2">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en-uk">This scheme
+                        follows the ISO 3166 standard, alpha
+                        2.
+                    </xsd:documentation>
+                    <xsd:documentation xml:lang="da-dk">Dette format
+                        fÃ¸lge ISO 3166 standarden, alpha
+                        2.
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="iso3166-alpha3">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en-uk">This scheme
+                        follows the ISO 3166 standard, alpha
+                        3.
+                    </xsd:documentation>
+                    <xsd:documentation xml:lang="da-dk">Dette format
+                        fÃ¸lge ISO 3166 standarden, alpha
+                        3.
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="un-numeric3">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en-uk">This scheme
+                        follows the UN Statistics Divisions country
+                        codes.
+                    </xsd:documentation>
+                    <xsd:documentation xml:lang="da-dk">Dette format
+                        fÃ¸lger FNs Statistik Kontor
+                        landekoder
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+            <xsd:enumeration value="imk">
+                <xsd:annotation>
+                    <xsd:documentation xml:lang="en-uk">This scheme
+                        follows the AuthorityCode from the Central Office of
+                        Civil Registration.
+                    </xsd:documentation>
+                    <xsd:documentation xml:lang="da-dk">Dette format
+                        fÃ¸lger MyndighedsKoden fra Det Centrale
+                        Personregister
+                    </xsd:documentation>
+                </xsd:annotation>
+            </xsd:enumeration>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="FloorIdentifierType">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="[1-9]|[1-9][0-9]|KL|ST|kl|st|k[2-9]|K[2-9]"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="MailDeliverySublocationIdentifierType">
+        <xsd:restriction base="xsd:string">
+            <xsd:minLength value="1"/>
+            <xsd:maxLength value="34"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="StreetBuildingIdentifierType">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="([1-9]|[1-9][0-9]|[1-9][0-9]{2})|([1-9][A-Z]|[1-9][0-9][A-Z]|[1-9][0-9]{2}[A-Z])"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="SuiteIdentifierType">
+        <xsd:restriction base="xsd:string">
+            <xsd:minLength value="1"/>
+            <xsd:maxLength value="4"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:complexType name="CountryIdentificationCodeType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="en-uk">The country code
+                based on the 4 diffent schemes.
+            </xsd:documentation>
+            <xsd:documentation xml:lang="da-dk">Landeidentifikations
+                kode baseret pÃ¥ de 4 forskellige
+                formater.
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:simpleContent>
+            <xsd:extension base="dkcc2003:_CountryIdentificationCodeType">
+                <xsd:attribute name="scheme" type="dkcc2003:_CountryIdentificationSchemeType" use="required"/>
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+    <xsd:element name="CountryIdentificationCode" type="dkcc2003:CountryIdentificationCodeType"/>
+    <xsd:element name="FloorIdentifier" type="dkcc2003:FloorIdentifierType">
+        <xsd:annotation>
+            <xsd:documentation>Identification which describes the
+                floor or level on which a specific entrance door,
+                appartment or suite is placed, in the staircase
+                refered
+                to.
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="MailDeliverySublocationIdentifier" type="dkcc2003:MailDeliverySublocationIdentifierType">
+        <xsd:annotation>
+            <xsd:documentation>The given name of a farm, estate,
+                building or dwelling, which is used as a additional
+                postal address identifier.
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="StreetBuildingIdentifier" type="dkcc2003:StreetBuildingIdentifierType">
+        <xsd:annotation>
+            <xsd:documentation>Numeric identification (da: house
+                number ~ 'husnummer') including an optional letter, which
+                identifies a certain access to a building, a
+                plot/piece
+                of land or a plant etc. based on the named road or street
+                which gives access hereto. The identifier is determined
+                in increasing numerical and
+                letter order along the road,
+                normally with even numbers on the right side and odd
+                numbers on the left side of the road.
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="SuiteIdentifier" type="dkcc2003:SuiteIdentifierType">
+        <xsd:annotation>
+            <xsd:documentation>Identification which describes the
+                location of a specific entrance door on a floor or level
+                (repos) in the staircase referred to.
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+</xsd:schema>

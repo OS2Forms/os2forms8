@@ -1,0 +1,246 @@
+﻿<xsd:schema xmlns:cvr="http://rep.oio.dk/eogs/xml.schema/"
+            xmlns:dkcc2005="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/03/15/"
+            xmlns:dkcc2003="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/"
+            xmlns:itst="http://rep.oio.dk/itst.dk/xml/schemas/2005/06/24/"
+            xmlns:cpr="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/03/18/"
+            xmlns:cpr1="http://rep.oio.dk/cpr.dk/xml/schemas/2007/01/02/"
+            xmlns:kms="http://rep.oio.dk/kms.dk/xml/schemas/2007/05/23/"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns="http://rep.oio.dk/eogs/xml.wsdl/"
+            attributeFormDefault="unqualified"
+            elementFormDefault="qualified"
+            targetNamespace="http://rep.oio.dk/eogs/xml.wsdl/">
+    <xsd:import schemaLocation="CvrServiceSourceSystem_schema_1.xsd" namespace="http://rep.oio.dk/eogs/xml.schema/"/>
+    <xsd:import schemaLocation="CvrServiceSourceSystem_schema_12.xsd"
+                namespace="http://rep.oio.dk/cpr.dk/xml/schemas/2007/01/02/"/>
+    <xsd:import schemaLocation="CvrServiceSourceSystem_schema_8.xsd"
+                namespace="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/03/15/"/>
+    <xsd:import schemaLocation="CvrServiceSourceSystem_schema_2.xsd"
+                namespace="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/"/>
+    <xsd:import schemaLocation="CvrServiceSourceSystem_schema_3.xsd"
+                namespace="http://rep.oio.dk/itst.dk/xml/schemas/2005/06/24/"/>
+    <xsd:import schemaLocation="CvrServiceSourceSystem_schema_5.xsd"
+                namespace="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/03/18/"/>
+    <xsd:import schemaLocation="CvrServiceSourceSystem_schema_4.xsd"
+                namespace="http://rep.oio.dk/kms.dk/xml/schemas/2007/05/23/"/>
+    <xsd:simpleType name="LevelType">
+        <xsd:restriction base="xsd:positiveInteger"/>
+    </xsd:simpleType>
+    <!--<xsd:simpleType name="PasswordType">-->
+        <!--<xsd:restriction base="xsd:string"/>-->
+    <!--</xsd:simpleType>-->
+    <!--<xsd:simpleType name="UserIdType">-->
+        <!--<xsd:restriction base="xsd:string"/>-->
+    <!--</xsd:simpleType>-->
+    <xsd:complexType name="GetLegalUnitRequestType">
+        <xsd:complexContent>
+            <xsd:extension base="RequestBaseType">
+                <xsd:sequence>
+                    <xsd:element ref="cvr:LegalUnitIdentifier"/>
+                </xsd:sequence>
+                <xsd:attribute name="level" type="LevelType" use="required"/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="RequestBaseType">
+        <xsd:sequence>
+            <!--<xsd:element name="UserId" type="UserIdType"/>-->
+            <!--<xsd:element name="Password" type="PasswordType"/>-->
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="GetLegalUnitRequest" type="GetLegalUnitRequestType"/>
+    <xsd:element name="GetLegalUnitResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element minOccurs="0" ref="cvr:LegalUnit"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="RequestBase" type="RequestBaseType"/>
+
+    <xsd:complexType name="ProductionUnitIdentifierCollectionType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="unbounded" ref="cvr:ProductionUnitIdentifier"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="SearchProductionUnitRequestType">
+        <xsd:complexContent>
+            <xsd:extension base="RequestBaseType">
+                <xsd:sequence>
+                    <xsd:element minOccurs="0" ref="SearchName"/>
+                    <xsd:element minOccurs="0" ref="SearchAddress"/>
+                    <xsd:element minOccurs="0" ref="SearchContactInformation"/>
+                    <xsd:element minOccurs="0" ref="cvr:ActivityCode"/>
+                    <xsd:element minOccurs="0" ref="SearchLifecycleStartDateInterval"/>
+                    <xsd:element minOccurs="0" ref="SearchLifecycleStatus"/>
+                    <xsd:element minOccurs="0" ref="cvr:EmploymentIntervalCode"/>
+                    <xsd:element minOccurs="0" ref="cvr:LegalUnitIdentifier"/>
+                    <xsd:element minOccurs="0" ref="cvr:AdvertisingProtectionIndicator"/>
+                </xsd:sequence>
+                <xsd:attribute name="maximumNumberOfResultsType" type="MaximumNumberOfResultsType" use="optional"/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="SearchProductionUnitRequest" type="SearchProductionUnitRequestType"/>
+    <xsd:element name="SearchProductionUnitResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element minOccurs="0" name="ProductionUnitIdentifierCollection"
+                             type="ProductionUnitIdentifierCollectionType"/>
+            </xsd:sequence>
+            <xsd:attribute name="moreResultsExistIndicator" type="MoreResultsExistIndicatorType" use="required"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:complexType name="AddressLocationType">
+        <xsd:complexContent>
+            <xsd:extension base="cvr:AddressDescriptionType"/>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="GetRelatedProductionUnitNameAndAddressRequestType">
+        <xsd:complexContent>
+            <xsd:extension base="RequestBaseType">
+                <xsd:sequence>
+                    <xsd:element ref="cvr:LegalUnitIdentifier"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="ProductionUnitNameAndAddressCollectionType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="unbounded" ref="ProductionUnitNameAndAddress"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ProductionUnitNameAndAddressType">
+        <xsd:sequence>
+            <xsd:element ref="cvr:ProductionUnitIdentifier"/>
+            <xsd:element ref="cvr:ProductionUnitName"/>
+            <xsd:element name="AddressLocation" type="AddressLocationType"/>
+            <xsd:element ref="cvr:AdvertisingProtectionIndicator"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="GetRelatedProductionUnitNameAndAddressRequest"
+                 type="GetRelatedProductionUnitNameAndAddressRequestType"/>
+    <xsd:element name="GetRelatedProductionUnitNameAndAddressResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element minOccurs="0" name="ProductionUnitNameAndAddressCollection"
+                             type="ProductionUnitNameAndAddressCollectionType"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="ProductionUnitNameAndAddress" type="ProductionUnitNameAndAddressType"/>
+
+    <xsd:complexType name="GetProductionUnitRequestType">
+        <xsd:complexContent>
+            <xsd:extension base="RequestBaseType">
+                <xsd:sequence>
+                    <xsd:element ref="cvr:ProductionUnitIdentifier"/>
+                </xsd:sequence>
+                <xsd:attribute name="level" type="LevelType" use="required"/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:element name="GetProductionUnitRequest" type="GetProductionUnitRequestType"/>
+    <xsd:element name="GetProductionUnitResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element minOccurs="0" ref="cvr:ProductionUnit"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:simpleType name="MaximumNumberOfResultsType">
+        <xsd:restriction base="xsd:positiveInteger"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="MoreResultsExistIndicatorType">
+        <xsd:restriction base="xsd:boolean"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="SearchLifecycleStatusType">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="active"/>
+            <xsd:enumeration value="all"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="SearchNameType">
+        <xsd:restriction base="xsd:string"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="SearchNumberType">
+        <xsd:restriction base="xsd:nonNegativeInteger"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="SearchTermType">
+        <xsd:restriction base="xsd:string"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="StartDateType">
+        <xsd:restriction base="xsd:date"/>
+    </xsd:simpleType>
+    <xsd:complexType name="LegalUnitIdentifierCollectionType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="unbounded" ref="cvr:LegalUnitIdentifier"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="SearchAddressType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" ref="dkcc2005:StreetName"/>
+            <xsd:element minOccurs="0" ref="dkcc2003:StreetBuildingIdentifier"/>
+            <xsd:element minOccurs="0" ref="itst:CareOfName"/>
+            <xsd:element minOccurs="0" ref="dkcc2005:PostCodeIdentifier"/>
+            <xsd:element minOccurs="0" ref="cpr:MunicipalityCode"/>
+            <xsd:element minOccurs="0" ref="kms:RegionCode"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="SearchContactInformationType">
+        <xsd:sequence>
+            <xsd:element name="term" type="SearchTermType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="SearchLegalUnitRequestType">
+        <xsd:complexContent>
+            <xsd:extension base="RequestBaseType">
+                <xsd:sequence>
+                    <xsd:element minOccurs="0" ref="SearchName"/>
+                    <xsd:element minOccurs="0" ref="SearchAddress"/>
+                    <xsd:element minOccurs="0" ref="SearchContactInformation"/>
+                    <xsd:element minOccurs="0" ref="cvr:ActivityCode"/>
+                    <xsd:element minOccurs="0" ref="cvr:BusinessFormatCode"/>
+                    <xsd:element minOccurs="0" ref="SearchLifecycleStartDateInterval"/>
+                    <xsd:element minOccurs="0" ref="SearchLifecycleStatus"/>
+                    <xsd:element minOccurs="0" ref="cvr:CreditorStatusCode"/>
+                    <xsd:element minOccurs="0" ref="cvr:EmploymentIntervalCode"/>
+                    <xsd:element minOccurs="0" ref="SearchNumberOfProductionUnitInterval"/>
+                    <xsd:element minOccurs="0" ref="cpr1:PersonCivilregistrationIdentifier"/>
+                    <xsd:element minOccurs="0" ref="cvr:AdvertisingProtectionIndicator"/>
+                </xsd:sequence>
+                <xsd:attribute name="maximumNumberOfResultsType" type="MaximumNumberOfResultsType" use="optional"/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="SearchLifecycleStartDateIntervalType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="StartDate" type="StartDateType"/>
+            <xsd:element minOccurs="0" name="EndDate" type="StartDateType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="SearchNumberOfProductionUnitIntervalType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="StartNumber" type="SearchNumberType"/>
+            <xsd:element minOccurs="0" name="EndNumber" type="SearchNumberType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="SearchAddress" type="SearchAddressType"/>
+    <xsd:element name="SearchContactInformation" type="SearchContactInformationType"/>
+    <xsd:element name="SearchLegalUnitRequest" type="SearchLegalUnitRequestType"/>
+    <xsd:element name="SearchLegalUnitResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element minOccurs="0" name="LegalUnitIdentifierCollection"
+                             type="LegalUnitIdentifierCollectionType"/>
+            </xsd:sequence>
+            <xsd:attribute name="moreResultsExistIndicator" type="MoreResultsExistIndicatorType" use="required"/>
+        </xsd:complexType>
+    </xsd:element>
+    <xsd:element name="SearchLifecycleStartDateInterval" type="SearchLifecycleStartDateIntervalType"/>
+    <xsd:element name="SearchLifecycleStatus" type="SearchLifecycleStatusType"/>
+    <xsd:element name="SearchName" type="SearchNameType"/>
+    <xsd:element name="SearchNumberOfProductionUnitInterval" type="SearchNumberOfProductionUnitIntervalType"/>
+</xsd:schema>

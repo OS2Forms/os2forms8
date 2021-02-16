@@ -1,0 +1,42 @@
+version: "3"
+services:
+  mysql:
+    hostname: db
+    container_name: db
+    image: mysql:8.0.0
+    env_file:
+    - dev-environment/dev.env
+    ports:
+    - 3306:3306
+    volumes:
+      - mysql-data:/var/lib/mysql
+
+
+  drupal:
+    env_file:
+    - dev-environment/dev.env
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    ports:
+    - 8080:80
+    depends_on:
+      - mysql
+      - mailhog
+    volumes:
+      - ./docker/composer.lock:/var/www/html/drupal/composer.lock
+      - ./docker/composer.json:/var/www/html/drupal/composer.json
+#    volumes:
+#    - ./code/profiles:/var/www/html/drupal/web/profiles
+#    - ./code/modules:/var/www/html/drupal/web/modules
+#    - ./code/themes:/var/www/html/drupal/web/themes
+#    - ./code/libraries:/var/www/html/drupal/web/libraries
+
+  mailhog:
+    image: mailhog/mailhog:v1.0.1
+    ports:
+    - 8025:8025
+    - 1025:1025
+
+volumes:
+  mysql-data:

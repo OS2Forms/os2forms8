@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema targetNamespace="http://serviceplatformen.dk/xml/schemas/kvittering/1/"
+            xmlns:tns="http://serviceplatformen.dk/xml/schemas/kvittering/1/"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            elementFormDefault="qualified"
+            version="1.0">
+
+    <xsd:annotation>
+        <xsd:documentation xml:lang="en">
+            Version 1.0.0
+        </xsd:documentation>
+    </xsd:annotation>
+
+    <xsd:simpleType name="TransportValideringsKodeType">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="OK"/>
+            <xsd:enumeration value="ADVARSEL"/>
+            <xsd:enumeration value="FEJL"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:element name="TransportKvittering" type="tns:TransportKvitteringType"/>
+    <xsd:complexType name="TransportKvitteringType">
+        <xsd:sequence>
+            <xsd:element name="TransportValideringsKode" type="tns:TransportValideringsKodeType" minOccurs="1"
+                         maxOccurs="1"/>
+            <xsd:element name="Begrundelse" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="FejlListe" type="tns:FejlListeType" minOccurs="0" maxOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="FejlListeType">
+        <xsd:sequence>
+            <xsd:element name="Fejl" type="tns:FejlType" minOccurs="1" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="FejlType">
+        <xsd:sequence>
+            <xsd:element name="FejlKode" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+            <xsd:element name="FejlTekst" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:element name="Forretningskvittering" type="tns:ForretningskvitteringType"/>
+    <xsd:complexType name="ForretningskvitteringType">
+        <xsd:sequence>
+            <xsd:element name="ForretningsValideringsKode" type="tns:ForretningsValideringsKodeType" minOccurs="1"
+                         maxOccurs="1"/>
+            <xsd:element name="Begrundelse" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="FejlListe" type="tns:FejlListeType" minOccurs="0" maxOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:simpleType name="ForretningsValideringsKodeType">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="MODTAGET"/>
+            <xsd:enumeration value="AFLEVERET"/>
+            <xsd:enumeration value="ACCEPTERET"/>
+            <xsd:enumeration value="AFVIST"/>
+            <xsd:enumeration value="FEJLET"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:complexType name="SygefravaerResponse">
+        <xsd:sequence>
+            <xsd:element name="TransportKvittering" type="tns:TransportKvitteringType" minOccurs="1" maxOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>

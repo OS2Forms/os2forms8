@@ -1,0 +1,49 @@
+<h3>Troubleshooting</h3>
+<p>Please read attempts these steps if SimpleSAML integration with Drupal still not working as expected.</p>
+
+<br/>
+
+<h4>1. Enable logging</h4>
+<p>
+  <small>
+    Inspect the logs and try finding the exact problem. Make sure log file can we written!
+  </small>
+</p>
+<p>
+  <strong>1.1 Change config.php:</strong>
+  <br/>
+  <pre>'logging.handler' => 'file',</pre>
+</p>
+
+<br/>
+
+<h4>2. Change session storage</h4>
+<p>
+  <small>
+    Sometimes storing SimpleSAML in phpsession conflicts with Drupal. Common for that is "session headers already sent" error message.
+    Try using alternative storage for SimpleSAML session.
+  </small>
+</p>
+<p>
+  <strong>2.1 Change config.php:</strong>
+  <br/>
+  <pre>'store.type' => 'sql',</pre>
+</p>
+<p>
+  <strong>2.2 Change config.php:</strong>
+  <br/>
+  <pre>'store.sql.dsn' => 'sqlite:[path to sq3 file]',</pre>
+  e.g.
+  <pre>'store.sql.dsn' => 'sqlite:/var/www/os2forms.web.dk/simplesaml.sq3',</pre>
+</p>
+<p>
+  <strong>2.3 Manually create & make sure it has write rights:</strong>
+  <br/>
+  <pre>touch /var/www/os2forms.web.dk/simplesaml.sq3</pre>
+<small>Make sure file is writtable.</small>
+</p>
+<p>
+  <strong>2.4 Make sure php-sqlite3 existing, if not install it:</strong>
+  <br/>
+  <pre>sudo apt install php-sqlite3</pre>
+</p>

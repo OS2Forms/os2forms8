@@ -1,0 +1,148 @@
+################################################################################
+# Changes to this file requires approval from Labs. Please add a person from   #
+# Labs as required approval to your MR if you have any changes.                #
+################################################################################
+
+# For the release steps to work, the following environment variables have to be
+# set in the Gitlab UI:
+# RELEASE_REGISTRY_USER
+# RELEASE_REGISTRY_PASSWORD
+
+stages:
+  - build
+  - test
+  - release
+  - deploy
+
+variables:
+  RELEASE_REGISTRY: docker.io
+  RELEASE_REGISTRY_IMAGE: index.docker.io/magentaaps/os2forms
+  IMAGE_SHA: ${CI_REGISTRY_IMAGE}:${CI_COMMIT_SHA}
+  IMAGE_DEV: ${RELEASE_REGISTRY_IMAGE}:dev
+  IMAGE: magentaaps/os2forms
+  IMAGE_TAG: ${IMAGE}:${CI_COMMIT_TAG}
+  IMAGE_LATEST: ${IMAGE}:latest
+
+# Build stage
+#############
+
+Build app image:
+  stage: build
+  needs: []
+  dependencies: []
+  image:
+    name: gcr.io/kaniko-project/executor:debug-v0.16.0
+    entrypoint: [""]
+  tags:
+    - docker
+  script:
+    # Login to GitLab registry
+    - echo "{\"auths\":{\"$CI_REGISTRY\":{\"username\":\"$CI_REGISTRY_USER\",\"password\":\"$CI_REGISTRY_PASSWORD\"}}}" > /kaniko/.docker/config.json
+    - /kaniko/executor
+      --cache
+      --context=$CI_PROJECT_DIR
+      --dockerfile=$CI_PROJECT_DIR/docker/Dockerfile
+      --destination=${IMAGE_SHA}
+
+# Test stage
+#############
+
+Integration Test:
+  stage: test
+  needs: ["Build app image"]
+  image:
+    name: magentalabs/drupal-test:stable
+    entrypoint: ['']
+  dependencies: []
+  tags:
+    - docker
+  services:
+    - name: mysql:8.0.0
+      alias: db
+    - name: ${IMAGE_SHA}
+      alias: drupal
+  variables:
+    FF_NETWORK_PER_BUILD: 1
+    MYSQL_HOST: db
+    MYSQL_DATABASE: drupal
+    MYSQL_USER: drupal
+    MYSQL_PASSWORD: drupal
+    MYSQL_ROOT_PASSWORD: secret
+    SITE_NAME: OS2forms
+    SITE_MAIL: test@noreply.dk
+    ACCOUNT_MAIL: test@noreply.dk
+    ACCOUNT_NAME: admin
+    ACCOUNT_PASS: admin
+    SMTP_HOST: mailhog
+    SMTP_PORT: 1025
+    SMTP_AUTH: "off"
+    SMTP_TLS: "off"
+    SMTP_USER: ""
+    SMTP_PASSWORD: ""
+    TEST_HOST: drupal
+    TEST_PORT: 80
+  before_script:
+    - wait-on -l http-get://drupal
+  script:
+    - xvfb-run -a --server-args="-screen 0 1024x768x24" codeceptjs run -c $CI_PROJECT_DIR/tests
+  artifacts:
+    when: always
+    paths:
+      - $CI_PROJECT_DIR/tests/output
+
+
+# Release stage
+###############
+.release-default: &release-default
+  stage: release
+  needs: ['Integration Test']
+  image: alpine
+  variables:
+    GIT_STRATEGY: none # We do not need the source code
+  dependencies: []
+  tags:
+    - docker
+  before_script:
+    # install skopeo
+    - apk add skopeo
+
+Release dev:
+  <<: *release-default
+  only:
+    refs:
+      - development
+  script:
+    - skopeo copy
+      --src-creds=${CI_REGISTRY_USER}:${CI_BUILD_TOKEN}
+      --dest-creds=${RELEASE_REGISTRY_USER}:${RELEASE_REGISTRY_PASSWORD}
+      "docker://${IMAGE_SHA}"
+      "docker://${IMAGE_DEV}"
+
+# Deploy stage
+##############
+.deploy-default: &deploy-default
+  stage: deploy
+  image: magentalabs/pepper:latest
+  services: []
+  dependencies: []
+  tags:
+    - deploy
+
+Deploy development:
+  # Automatic deployment of branch develop to
+  <<: *deploy-default
+  needs: ["Release dev"]
+  only:
+    refs:
+      - development
+  variables:
+    DEPLOYMENT_NAMESPACE: os2forms.magenta.test
+    SALTAPI_URL: https://ctrldev1.magenta-aps.dk/api/
+    SALTAPI_EAUTH: file
+    GIT_STRATEGY: none
+  script:
+    - echo Attempting to call deployment
+    - pepper --client runner --fail-any state.orchestrate ${DEPLOYMENT_NAMESPACE}
+  environment:
+    name: test
+    url: http://os2forms-test.magenta.dk

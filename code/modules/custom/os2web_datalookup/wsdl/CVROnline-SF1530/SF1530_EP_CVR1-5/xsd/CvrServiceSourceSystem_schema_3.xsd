@@ -1,0 +1,11 @@
+﻿<xsd:schema xmlns:itst="http://rep.oio.dk/itst.dk/xml/schemas/2005/06/24/"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://rep.oio.dk/itst.dk/xml/schemas/2005/06/24/"
+            elementFormDefault="qualified"
+            targetNamespace="http://rep.oio.dk/itst.dk/xml/schemas/2005/06/24/">
+    <xsd:simpleType name="CareOfNameType">
+        <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="34"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:element name="CareOfName" type="itst:CareOfNameType"/>
+</xsd:schema>

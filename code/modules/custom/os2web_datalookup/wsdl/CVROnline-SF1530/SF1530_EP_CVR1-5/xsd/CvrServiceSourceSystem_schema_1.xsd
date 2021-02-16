@@ -1,0 +1,479 @@
+﻿<xsd:schema xmlns:xkom="http://rep.oio.dk/xkom.dk/xml/schemas/2006/01/06/"
+            xmlns:xkom2005="http://rep.oio.dk/xkom.dk/xml/schemas/2005/03/15/"
+            xmlns:dkcc2005-2="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/05/13/"
+            xmlns:kms="http://rep.oio.dk/kms.dk/xml/schemas/2007/05/23/"
+            xmlns:cpr1="http://rep.oio.dk/cpr.dk/xml/schemas/2007/01/02/"
+            xmlns:itst="http://rep.oio.dk/itst.dk/xml/schemas/2005/06/24/"
+            xmlns:itst1="http://rep.oio.dk/itst.dk/xml/schemas/2005/01/10/"
+            xmlns:dkcc2003="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/"
+            xmlns:cvr="http://rep.oio.dk/eogs/xml.schema/"
+            xmlns:cvr2005="http://rep.oio.dk/cvr.dk/xml/schemas/2005/03/22/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns="http://rep.oio.dk/eogs/xml.schema/" attributeFormDefault="unqualified"
+            elementFormDefault="qualified" targetNamespace="http://rep.oio.dk/eogs/xml.schema/">
+    <xsd:import schemaLocation="CvrServiceSourceSystem_schema_12.xsd"
+                namespace="http://rep.oio.dk/cpr.dk/xml/schemas/2007/01/02/"/>
+    <xsd:import schemaLocation="CvrServiceSourceSystem_schema_10.xsd"
+                namespace="http://rep.oio.dk/itst.dk/xml/schemas/2005/01/10/"/>
+    <xsd:import schemaLocation="CvrServiceSourceSystem_schema_9.xsd"
+                namespace="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/05/13/"/>
+    <xsd:import schemaLocation="CvrServiceSourceSystem_schema_2.xsd"
+                namespace="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/"/>
+    <xsd:import schemaLocation="CvrServiceSourceSystem_schema_3.xsd"
+                namespace="http://rep.oio.dk/itst.dk/xml/schemas/2005/06/24/"/>
+    <xsd:import schemaLocation="CvrServiceSourceSystem_schema_4.xsd"
+                namespace="http://rep.oio.dk/kms.dk/xml/schemas/2007/05/23/"/>
+    <xsd:import schemaLocation="CvrServiceSourceSystem_schema_6.xsd"
+                namespace="http://rep.oio.dk/xkom.dk/xml/schemas/2005/03/15/"/>
+    <xsd:import schemaLocation="CvrServiceSourceSystem_schema_7.xsd"
+                namespace="http://rep.oio.dk/xkom.dk/xml/schemas/2006/01/06/"/>
+    <xsd:import schemaLocation="CvrServiceSourceSystem_schema_11.xsd"
+                namespace="http://rep.oio.dk/cvr.dk/xml/schemas/2005/03/22/"/>
+    <xsd:simpleType name="ActivityCodeType">
+        <xsd:restriction base="xsd:string">
+            <xsd:length value="6"/>
+            <xsd:pattern value="[0-9]{6}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="ActivityDescriptionType">
+        <xsd:restriction base="xsd:string"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="ActivityResponsibilityCodeType">
+        <xsd:restriction base="xsd:nonNegativeInteger"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="AddressLineTextType">
+        <xsd:restriction base="xsd:string">
+            <xsd:length value="238"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="AddressProtectionIndicatorType">
+        <xsd:restriction base="xsd:boolean"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="AdvertisingProtectionIndicatorType">
+        <xsd:restriction base="xsd:boolean"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="AncillaryUnitIndicatorType">
+        <xsd:restriction base="xsd:boolean"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="BusinessFormatCodeType">
+        <xsd:restriction base="xsd:integer">
+            <xsd:minInclusive value="0"/>
+            <xsd:maxInclusive value="999"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="CessationDateType">
+        <xsd:restriction base="xsd:date"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="CreditorStatusCodeType">
+        <xsd:restriction base="xsd:integer">
+            <xsd:minInclusive value="0"/>
+            <xsd:maxInclusive value="99"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="CreditorStatusInformationCodeType">
+        <xsd:restriction base="xsd:integer">
+            <xsd:minInclusive value="0"/>
+            <xsd:maxInclusive value="99"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="DataSupplierIdentifierType">
+        <xsd:restriction base="xsd:string"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="EmploymentIntervalCodeType">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="[A-Z]"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="LegalUnitIdentifierType">
+        <xsd:restriction base="xsd:integer">
+            <xsd:minInclusive value="10000000"/>
+            <xsd:maxInclusive value="99999999"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="LegalUnitNameBaseType">
+        <xsd:restriction base="xsd:string"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="LegalUnitNameSequenceNumberType">
+        <xsd:restriction base="xsd:nonNegativeInteger"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="MainDivisionIndicatorType">
+        <xsd:restriction base="xsd:boolean"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="MunicipalCommunityType">
+        <xsd:restriction base="xsd:boolean"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="NumberOfEmployeesType">
+        <xsd:restriction base="xsd:nonNegativeInteger"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="ObligationCodeType">
+        <xsd:restriction base="xsd:integer">
+            <xsd:minInclusive value="0"/>
+            <xsd:maxInclusive value="99"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="ParticipantIdentifierType">
+        <xsd:restriction base="xsd:integer">
+            <xsd:minInclusive value="4000000000"/>
+            <xsd:maxInclusive value="9999999999"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="ParticipantNameType">
+        <xsd:restriction base="xsd:string"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="ProductionUnitIdentifierType">
+        <xsd:restriction base="xsd:integer">
+            <xsd:minInclusive value="1000000000"/>
+            <xsd:maxInclusive value="9999999999"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="ProductionUnitNameBaseType">
+        <xsd:restriction base="xsd:string"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="ProductionUnitNameSequenceNumberType">
+        <xsd:restriction base="xsd:nonNegativeInteger"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="ProtectionIndicatorType">
+        <xsd:restriction base="xsd:boolean"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="RankType">
+        <xsd:restriction base="xsd:positiveInteger"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="ReferenceQuarterCodeType">
+        <xsd:restriction base="xsd:integer">
+            <xsd:minInclusive value="1"/>
+            <xsd:maxInclusive value="4"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="ReferenceYearType">
+        <xsd:restriction base="xsd:gYear"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="StartDateType">
+        <xsd:restriction base="xsd:date"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="StreetBuildingIdentifierToType">
+        <xsd:restriction base="dkcc2003:StreetBuildingIdentifierType"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="ValidDateType">
+        <xsd:restriction base="xsd:date"/>
+    </xsd:simpleType>
+    <xsd:simpleType name="VersionIdentifierType">
+        <xsd:restriction base="xsd:integer"/>
+    </xsd:simpleType>
+    <xsd:complexType name="ActivityInformationType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" ref="cvr:ActivityResponsibilityCode"/>
+            <xsd:element name="MainActivity" type="cvr:ActivityType"/>
+            <xsd:element minOccurs="0" name="SecondaryActivities" type="cvr:ActivityRankCollectionType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ActivityRankCollectionType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="unbounded" ref="cvr:ActivityRank"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ActivityRankType">
+        <xsd:sequence>
+            <xsd:element ref="cvr:Activity"/>
+        </xsd:sequence>
+        <xsd:attribute name="rankNumber" type="cvr:RankType" use="required"/>
+    </xsd:complexType>
+    <xsd:complexType name="ActivityType">
+        <xsd:sequence>
+            <xsd:element ref="cvr:ActivityCode"/>
+            <xsd:element minOccurs="0" ref="cvr:ActivityDescription"/>
+        </xsd:sequence>
+        <xsd:attribute name="validFromDate" type="cvr:ValidDateType" use="required"/>
+        <xsd:attribute name="validToDate" type="cvr:ValidDateType" use="optional"/>
+    </xsd:complexType>
+    <xsd:complexType name="AddressDescriptionType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" ref="xkom2005:AddressAccess"/>
+            <xsd:element minOccurs="0" name="AddressPostalExtended" type="cvr:AddressPostalExtendedType"/>
+            <xsd:element minOccurs="0" name="AddressLineText" type="cvr:AddressLineTextType"/>
+            <xsd:element ref="dkcc2003:CountryIdentificationCode"/>
+            <xsd:element minOccurs="0" ref="cvr:AddressProtectionIndicator"/>
+        </xsd:sequence>
+        <xsd:attribute name="validFromDate" type="cvr:ValidDateType" use="required"/>
+        <xsd:attribute name="validToDate" type="cvr:ValidDateType" use="optional"/>
+    </xsd:complexType>
+    <xsd:complexType name="AddressLocationType">
+        <xsd:complexContent>
+            <xsd:extension base="cvr:AddressDescriptionType"/>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="AddressOfficialType">
+        <xsd:complexContent>
+            <xsd:extension base="cvr:AddressDescriptionType"/>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="AddressPOBoxType">
+        <xsd:complexContent>
+            <xsd:extension base="cvr:AddressDescriptionType">
+                <xsd:sequence>
+                    <xsd:element ref="dkcc2005-2:PostOfficeBoxIdentifier"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="AddressPostalExtendedType">
+        <xsd:complexContent>
+            <xsd:extension base="xkom:AddressPostalType">
+                <xsd:sequence>
+                    <xsd:element minOccurs="0" ref="itst:CareOfName"/>
+                    <xsd:element minOccurs="0" name="StreetBuildingIdentifierTo"
+                                 type="cvr:StreetBuildingIdentifierToType"/>
+                    <xsd:element minOccurs="0" ref="kms:RegionCode"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="BusinessFormatType">
+        <xsd:sequence>
+            <xsd:element ref="cvr:BusinessFormatCode"/>
+            <xsd:element ref="cvr:DataSupplierIdentifier"/>
+            <xsd:element name="MunicipalCommunity" type="cvr:MunicipalCommunityType"/>
+        </xsd:sequence>
+        <xsd:attribute name="validFromDate" type="cvr:ValidDateType" use="required"/>
+        <xsd:attribute name="validToDate" type="cvr:ValidDateType" use="optional"/>
+    </xsd:complexType>
+    <xsd:complexType name="ContactInformationType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="Telephone" type="cvr:TelephoneType"/>
+            <xsd:element minOccurs="0" name="Fax" type="cvr:FaxType"/>
+            <xsd:element minOccurs="0" name="Email" type="cvr:EmailType"/>
+            <xsd:element minOccurs="0" name="ForeignTelephone" type="cvr:TelephoneType"/>
+            <xsd:element minOccurs="0" name="ForeignFax" type="cvr:FaxType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="CreditorInformationCollectionType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="unbounded" ref="cvr:CreditorInformation"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="CreditorInformationType">
+        <xsd:sequence>
+            <xsd:element ref="cvr:CreditorStatusCode"/>
+            <xsd:element ref="cvr:CreditorStatusInformationCode"/>
+        </xsd:sequence>
+        <xsd:attribute name="validFromDate" type="cvr:ValidDateType" use="required"/>
+        <xsd:attribute name="validToDate" type="cvr:ValidDateType" use="optional"/>
+    </xsd:complexType>
+    <xsd:complexType name="EmailType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" ref="xkom2005:EmailAddressIdentifier"/>
+        </xsd:sequence>
+        <xsd:attribute name="validFromDate" type="cvr:ValidDateType" use="required"/>
+        <xsd:attribute name="validToDate" type="cvr:ValidDateType" use="optional"/>
+        <xsd:attribute name="protectionIndicator" type="cvr:ProtectionIndicatorType"/>
+    </xsd:complexType>
+    <xsd:complexType name="EmploymentIntervalType">
+        <xsd:sequence>
+            <xsd:element name="MinimumNumberOfEmployees" type="cvr:NumberOfEmployeesType"/>
+            <xsd:element name="MaximumNumberOfEmployees" type="cvr:NumberOfEmployeesType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="EmploymentQuarterType">
+        <xsd:complexContent>
+            <xsd:extension base="cvr:EmploymentYearType">
+                <xsd:attribute name="referenceQuarter" type="cvr:ReferenceQuarterCodeType" use="required"/>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="EmploymentYearType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" ref="cvr:NumberOfEmployees"/>
+            <xsd:element ref="cvr:EmploymentIntervalCode"/>
+            <xsd:element ref="cvr:EmploymentInterval"/>
+        </xsd:sequence>
+        <xsd:attribute name="referenceYear" type="cvr:ReferenceYearType" use="required"/>
+    </xsd:complexType>
+    <xsd:complexType name="FaxType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" ref="itst1:FaxNumberIdentifier"/>
+        </xsd:sequence>
+        <xsd:attribute name="validFromDate" type="cvr:ValidDateType" use="required"/>
+        <xsd:attribute name="validToDate" type="cvr:ValidDateType" use="optional"/>
+        <xsd:attribute name="protectionIndicator" type="cvr:ProtectionIndicatorType"/>
+    </xsd:complexType>
+    <xsd:complexType name="LegalUnitAffiliationType">
+        <xsd:sequence>
+            <xsd:element ref="cvr:LegalUnitIdentifier"/>
+        </xsd:sequence>
+        <xsd:attribute name="validFromDate" type="cvr:ValidDateType" use="required"/>
+        <xsd:attribute name="validToDate" type="cvr:ValidDateType" use="optional"/>
+    </xsd:complexType>
+    <xsd:complexType name="LegalUnitNameType">
+        <xsd:sequence>
+            <xsd:element name="name" type="cvr:LegalUnitNameBaseType"/>
+        </xsd:sequence>
+        <xsd:attribute name="sequenceNumber" type="cvr:LegalUnitNameSequenceNumberType" use="required"/>
+        <xsd:attribute name="validFromDate" type="cvr:ValidDateType" use="required"/>
+        <xsd:attribute name="validToDate" type="cvr:ValidDateType" use="optional"/>
+    </xsd:complexType>
+    <xsd:complexType name="LegalUnitType">
+        <xsd:sequence>
+            <xsd:element ref="cvr:LegalUnitIdentifier"/>
+            <xsd:element ref="cvr:LegalUnitName"/>
+            <xsd:element ref="cvr:AdvertisingProtectionIndicator"/>
+            <xsd:element ref="cvr2005:ExporterIndicator"/>
+            <xsd:element ref="cvr2005:ImporterIndicator"/>
+            <xsd:element ref="cvr:Lifecycle"/>
+            <xsd:element name="AddressOfficial" type="cvr:AddressOfficialType"/>
+            <xsd:element minOccurs="0" name="AddressPostal" type="cvr:AddressDescriptionType"/>
+            <xsd:element minOccurs="0" ref="cvr:AddressPOBox"/>
+            <xsd:element minOccurs="0" ref="cvr:ActivityInformation"/>
+            <xsd:element minOccurs="0" ref="cvr:BusinessFormat"/>
+            <xsd:element minOccurs="0" ref="cvr:EmploymentYear"/>
+            <xsd:element minOccurs="0" ref="cvr:EmploymentQuarter"/>
+            <xsd:element minOccurs="0" ref="cvr:ContactInformation"/>
+            <xsd:element minOccurs="0" name="CreditorInformationCollection"
+                         type="cvr:CreditorInformationCollectionType"/>
+            <xsd:element minOccurs="0" name="ObligationCollection" type="cvr:ObligationCollectionType"/>
+            <xsd:element minOccurs="0" name="ParticipantCollection" type="cvr:ParticipantCollectionType"/>
+            <xsd:element minOccurs="0" name="ProductionUnitAffiliationCollection"
+                         type="cvr:ProductionUnitAffiliationCollectionType"/>
+        </xsd:sequence>
+        <xsd:attribute name="versionIdentifier" type="cvr:VersionIdentifierType" use="required"/>
+    </xsd:complexType>
+    <xsd:complexType name="LifecycleType">
+        <xsd:sequence>
+            <xsd:element name="StartDate" type="cvr:StartDateType"/>
+            <xsd:element minOccurs="0" name="CessationDate" type="cvr:CessationDateType"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ObligationCollectionType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="unbounded" ref="cvr:Obligation"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ObligationType">
+        <xsd:sequence>
+            <xsd:element ref="cvr:ObligationCode"/>
+        </xsd:sequence>
+        <xsd:attribute name="validFromDate" type="cvr:ValidDateType" use="required"/>
+        <xsd:attribute name="validToDate" type="cvr:ValidDateType" use="optional"/>
+    </xsd:complexType>
+    <xsd:complexType name="ParticipantCollectionType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="unbounded" ref="cvr:Participant"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ParticipantDanishPersonType">
+        <xsd:complexContent>
+            <xsd:extension base="cvr:ParticipantType">
+                <xsd:sequence>
+                    <xsd:element minOccurs="0" ref="cpr1:PersonCivilregistrationIdentifier"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="ParticipantLegalUnitType">
+        <xsd:complexContent>
+            <xsd:extension base="cvr:ParticipantType">
+                <xsd:sequence>
+                    <xsd:element ref="cvr:LegalUnitIdentifier"/>
+                </xsd:sequence>
+            </xsd:extension>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="ParticipantOtherType">
+        <xsd:complexContent>
+            <xsd:extension base="cvr:ParticipantType"/>
+        </xsd:complexContent>
+    </xsd:complexType>
+    <xsd:complexType name="ParticipantType" abstract="true">
+        <xsd:sequence>
+            <xsd:element ref="cvr:ParticipantIdentifier"/>
+            <xsd:element ref="cvr:ParticipantName"/>
+        </xsd:sequence>
+        <xsd:attribute name="validFromDate" type="cvr:ValidDateType" use="required"/>
+        <xsd:attribute name="validToDate" type="cvr:ValidDateType" use="optional"/>
+    </xsd:complexType>
+    <xsd:complexType name="ProductionUnitAffiliationCollectionType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" maxOccurs="unbounded" ref="cvr:ProductionUnitAffiliation"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:complexType name="ProductionUnitAffiliationType">
+        <xsd:sequence>
+            <xsd:element ref="cvr:ProductionUnitIdentifier"/>
+        </xsd:sequence>
+        <xsd:attribute name="validFromDate" type="cvr:ValidDateType" use="required"/>
+        <xsd:attribute name="validToDate" type="cvr:ValidDateType" use="optional"/>
+    </xsd:complexType>
+    <xsd:complexType name="ProductionUnitNameType">
+        <xsd:sequence>
+            <xsd:element name="name" type="cvr:ProductionUnitNameBaseType"/>
+        </xsd:sequence>
+        <xsd:attribute name="sequenceNumber" type="cvr:ProductionUnitNameSequenceNumberType" use="required"/>
+        <xsd:attribute name="validFromDate" type="cvr:ValidDateType" use="required"/>
+        <xsd:attribute name="validToDate" type="cvr:ValidDateType" use="optional"/>
+    </xsd:complexType>
+    <xsd:complexType name="ProductionUnitType">
+        <xsd:sequence>
+            <xsd:element ref="cvr:ProductionUnitIdentifier"/>
+            <xsd:element ref="cvr:ProductionUnitName"/>
+            <xsd:element ref="cvr:AdvertisingProtectionIndicator"/>
+            <xsd:element ref="cvr:AncillaryUnitIndicator"/>
+            <xsd:element ref="cvr:MainDivisionIndicator"/>
+            <xsd:element ref="cvr:Lifecycle"/>
+            <xsd:element name="AddressLocation" type="cvr:AddressLocationType"/>
+            <xsd:element minOccurs="0" name="AddressPostal" type="cvr:AddressDescriptionType"/>
+            <xsd:element minOccurs="0" ref="cvr:AddressPOBox"/>
+            <xsd:element minOccurs="0" ref="cvr:LegalUnitAffiliation"/>
+            <xsd:element minOccurs="0" ref="cvr:ActivityInformation"/>
+            <xsd:element minOccurs="0" ref="cvr:EmploymentYear"/>
+            <xsd:element minOccurs="0" ref="cvr:ContactInformation"/>
+        </xsd:sequence>
+        <xsd:attribute name="versionIdentifier" type="cvr:VersionIdentifierType" use="required"/>
+    </xsd:complexType>
+    <xsd:complexType name="TelephoneType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" ref="itst1:TelephoneNumberIdentifier"/>
+        </xsd:sequence>
+        <xsd:attribute name="validFromDate" type="cvr:ValidDateType" use="required"/>
+        <xsd:attribute name="validToDate" type="cvr:ValidDateType" use="optional"/>
+        <xsd:attribute name="protectionIndicator" type="cvr:ProtectionIndicatorType"/>
+    </xsd:complexType>
+    <xsd:element name="Activity" type="cvr:ActivityType"/>
+    <xsd:element name="ActivityCode" type="cvr:ActivityCodeType"/>
+    <xsd:element name="ActivityDescription" type="cvr:ActivityDescriptionType"/>
+    <xsd:element name="ActivityInformation" type="cvr:ActivityInformationType"/>
+    <xsd:element name="ActivityRank" type="cvr:ActivityRankType"/>
+    <xsd:element name="ActivityResponsibilityCode" type="cvr:ActivityResponsibilityCodeType"/>
+    <xsd:element name="AddressDescription" type="cvr:AddressDescriptionType"/>
+    <xsd:element name="AddressLineText" type="cvr:AddressLineTextType"/>
+    <xsd:element name="AddressPOBox" type="cvr:AddressPOBoxType"/>
+    <xsd:element name="AddressProtectionIndicator" type="cvr:AddressProtectionIndicatorType"/>
+    <xsd:element name="AdvertisingProtectionIndicator" type="cvr:AdvertisingProtectionIndicatorType"/>
+    <xsd:element name="AncillaryUnitIndicator" type="cvr:AncillaryUnitIndicatorType"/>
+    <xsd:element name="BusinessFormat" type="cvr:BusinessFormatType"/>
+    <xsd:element name="BusinessFormatCode" type="cvr:BusinessFormatCodeType"/>
+    <xsd:element name="ContactInformation" type="cvr:ContactInformationType"/>
+    <xsd:element name="CreditorInformation" type="cvr:CreditorInformationType"/>
+    <xsd:element name="CreditorStatusCode" type="cvr:CreditorStatusCodeType"/>
+    <xsd:element name="CreditorStatusInformationCode" type="cvr:CreditorStatusInformationCodeType"/>
+    <xsd:element name="DataSupplierIdentifier" type="cvr:DataSupplierIdentifierType"/>
+    <xsd:element name="EmploymentInterval" type="cvr:EmploymentIntervalType"/>
+    <xsd:element name="EmploymentIntervalCode" type="cvr:EmploymentIntervalCodeType"/>
+    <xsd:element name="EmploymentQuarter" type="cvr:EmploymentQuarterType"/>
+    <xsd:element name="EmploymentYear" type="cvr:EmploymentYearType"/>
+    <xsd:element name="LegalUnit" type="cvr:LegalUnitType"/>
+    <xsd:element name="LegalUnitAffiliation" type="cvr:LegalUnitAffiliationType"/>
+    <xsd:element name="LegalUnitIdentifier" type="cvr:LegalUnitIdentifierType"/>
+    <xsd:element name="LegalUnitName" type="cvr:LegalUnitNameType"/>
+    <xsd:element name="Lifecycle" type="cvr:LifecycleType"/>
+    <xsd:element name="MainDivisionIndicator" type="cvr:MainDivisionIndicatorType"/>
+    <xsd:element name="NumberOfEmployees" type="cvr:NumberOfEmployeesType"/>
+    <xsd:element name="Obligation" type="cvr:ObligationType"/>
+    <xsd:element name="ObligationCode" type="cvr:ObligationCodeType"/>
+    <xsd:element name="Participant" type="cvr:ParticipantType"/>
+    <xsd:element name="ParticipantDanishPerson" type="cvr:ParticipantDanishPersonType"/>
+    <xsd:element name="ParticipantIdentifier" type="cvr:ParticipantIdentifierType"/>
+    <xsd:element name="ParticipantLegalUnit" type="cvr:ParticipantLegalUnitType"/>
+    <xsd:element name="ParticipantName" type="cvr:ParticipantNameType"/>
+    <xsd:element name="ParticipantOther" type="cvr:ParticipantOtherType"/>
+    <xsd:element name="ProductionUnit" type="cvr:ProductionUnitType"/>
+    <xsd:element name="ProductionUnitAffiliation" type="cvr:ProductionUnitAffiliationType"/>
+    <xsd:element name="ProductionUnitIdentifier" type="cvr:ProductionUnitIdentifierType"/>
+    <xsd:element name="ProductionUnitName" type="cvr:ProductionUnitNameType"/>
+</xsd:schema>

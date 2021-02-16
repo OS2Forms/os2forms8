@@ -1,0 +1,14 @@
+uuid: 2e82a717-4666-4c82-ae92-21651a468ef1
+langcode: da
+status: true
+dependencies: {  }
+id: flow_designer_default_page
+label: 'Flow designer default page'
+user_roles:
+  flow_designer: flow_designer
+users: null
+weight: -1
+login_redirect: /maestro/templates/list
+login_redirect_message: ''
+logout_redirect: ''
+logout_redirect_message: ''

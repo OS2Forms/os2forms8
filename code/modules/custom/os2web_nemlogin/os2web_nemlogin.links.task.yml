@@ -1,0 +1,9 @@
+os2web_nemlogin.settings_tab:
+  title: 'Settings'
+  route_name: os2web_nemlogin.settings
+  base_route: os2web_nemlogin.settings
+
+os2web_nemlogin.test_tab:
+  title: 'Test'
+  route_name: os2web_nemlogin.test
+  base_route: os2web_nemlogin.settings

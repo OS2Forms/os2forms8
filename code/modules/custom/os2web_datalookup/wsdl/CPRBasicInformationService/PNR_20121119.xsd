@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:tns="http://serviceplatformen.dk/xml/schemas/cpr/PNR/1/"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            elementFormDefault="qualified"
+            version="1.0"
+            targetNamespace="http://serviceplatformen.dk/xml/schemas/cpr/PNR/1/">
+
+    <xsd:element name="PNR" type="tns:PNRtype"/>
+    <xsd:simpleType name="PNRtype">
+        <xsd:restriction base="xsd:string">
+            <xsd:maxLength value="10"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+</xsd:schema>

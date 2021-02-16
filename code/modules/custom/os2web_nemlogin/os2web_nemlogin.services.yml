@@ -1,0 +1,7 @@
+services:
+  plugin.manager.os2web_nemlogin.auth_provider:
+    class: Drupal\os2web_nemlogin\Plugin\AuthProviderManager
+    parent: default_plugin_manager
+  os2web_nemlogin.auth_provider:
+    class: Drupal\os2web_nemlogin\Service\AuthProviderService
+    arguments: ['@config.factory']

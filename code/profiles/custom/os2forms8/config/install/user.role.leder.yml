@@ -1,0 +1,16 @@
+uuid: 64279f31-400f-4cd5-bca6-7277b6c49339
+langcode: da
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: tV_EeHxqvtiAx0gKWYmy4E1F1cRhZZyWBMfia5MAVZw
+id: leder
+label: Leder
+weight: 8
+is_admin: null
+permissions:
+  - 'access site in maintenance mode'
+  - 'access toolbar'
+  - 'use advanced search'
+  - 'view own unpublished content'
+  - 'view the administration theme'

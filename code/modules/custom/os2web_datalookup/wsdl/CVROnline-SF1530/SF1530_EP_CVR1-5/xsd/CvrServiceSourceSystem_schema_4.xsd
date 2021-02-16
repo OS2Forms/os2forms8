@@ -1,0 +1,8 @@
+﻿<xsd:schema xmlns:cpr="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/03/18/"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://rep.oio.dk/kms.dk/xml/schemas/2007/05/23/"
+            elementFormDefault="qualified" targetNamespace="http://rep.oio.dk/kms.dk/xml/schemas/2007/05/23/"
+            version="1.0">
+    <xsd:import schemaLocation="CvrServiceSourceSystem_schema_5.xsd"
+                namespace="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/03/18/"/>
+    <xsd:element name="RegionCode" type="cpr:AuthorityCodeType"/>
+</xsd:schema>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<wsdl:definitions targetNamespace="http://rep.oio.dk/eogs/xml.wsdl/2/"
+                  xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+                  xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+                  xmlns:tns="http://rep.oio.dk/eogs/xml.wsdl/2/"
+                  xmlns:msg="http://rep.oio.dk/eogs/xml/2/"
+                  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                  xmlns:wsp="http://www.w3.org/ns/ws-policy">
+
+    <wsdl:import namespace="http://serviceplatformen.dk/xml/wsdl/soap11/Security/Policy" location="policies.wsdl"/>
+
+    <wsdl:types>
+        <xsd:schema targetNamespace="http://rep.oio.dk/eogs/xml/2/">
+            <xsd:include schemaLocation="../../OnlineServiceMsg.xsd"/>
+        </xsd:schema>
+    </wsdl:types>
+
+    <wsdl:message name="getLegalUnitRequest">
+        <wsdl:part name="request" element="msg:GetLegalUnitRequest"/>
+    </wsdl:message>
+    <wsdl:message name="getLegalUnitResponse">
+        <wsdl:part name="response" element="msg:GetLegalUnitResponse"/>
+    </wsdl:message>
+    <wsdl:message name="searchLegalUnitRequest">
+        <wsdl:part name="request" element="msg:SearchLegalUnitRequest"/>
+    </wsdl:message>
+    <wsdl:message name="searchLegalUnitResponse">
+        <wsdl:part name="response" element="msg:SearchLegalUnitResponse"/>
+    </wsdl:message>
+    <wsdl:message name="getProductionUnitRequest">
+        <wsdl:part name="request" element="msg:GetProductionUnitRequest"/>
+    </wsdl:message>
+    <wsdl:message name="getProductionUnitResponse">
+        <wsdl:part name="response" element="msg:GetProductionUnitResponse"/>
+    </wsdl:message>
+    <wsdl:message name="searchProductionUnitRequest">
+        <wsdl:part name="request" element="msg:SearchProductionUnitRequest"/>
+    </wsdl:message>
+    <wsdl:message name="searchProductionUnitResponse">
+        <wsdl:part name="response" element="msg:SearchProductionUnitResponse"/>
+    </wsdl:message>
+    <wsdl:message name="getRelatedProductionUnitNameAndAddressRequest">
+        <wsdl:part name="request" element="msg:GetRelatedProductionUnitNameAndAddressRequest"/>
+    </wsdl:message>
+    <wsdl:message name="getRelatedProductionUnitNameAndAddressResponse">
+        <wsdl:part name="response" element="msg:GetRelatedProductionUnitNameAndAddressResponse"/>
+    </wsdl:message>
+
+    <wsdl:portType name="CvrPortType">
+        <wsdl:operation name="getLegalUnit">
+			<wsdl:input message="tns:getLegalUnitRequest"/>
+			<wsdl:output message="tns:getLegalUnitResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="searchLegalUnit">
+			<wsdl:input message="tns:searchLegalUnitRequest"/>
+			<wsdl:output message="tns:searchLegalUnitResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="getProductionUnit">
+			<wsdl:input message="tns:getProductionUnitRequest"/>
+			<wsdl:output message="tns:getProductionUnitResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="searchProductionUnit">
+			<wsdl:input message="tns:searchProductionUnitRequest"/>
+			<wsdl:output message="tns:searchProductionUnitResponse"/>
+        </wsdl:operation>
+        <wsdl:operation name="getRelatedProductionUnitNameAndAddress">
+			<wsdl:input message="tns:getRelatedProductionUnitNameAndAddressRequest"/>
+			<wsdl:output message="tns:getRelatedProductionUnitNameAndAddressResponse"/>
+        </wsdl:operation>
+    </wsdl:portType>
+
+    <wsdl:binding name="CvrBinding" type="tns:CvrPortType">
+        <wsp:PolicyReference URI="policies.wsdl#ServiceplatformBindingPolicy"/>
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+        <wsdl:operation name="getLegalUnit">
+            <soap:operation soapAction="http://rep.oio.dk/eogs/xml.wsdl/2/getLegalUnit"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+
+        <wsdl:operation name="searchLegalUnit">
+            <soap:operation soapAction="http://rep.oio.dk/eogs/xml.wsdl/2/searchLegalUnit"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+
+        <wsdl:operation name="searchProductionUnit">
+            <soap:operation soapAction="http://rep.oio.dk/eogs/xml.wsdl/2/searchProductionUnit"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+
+        <wsdl:operation name="getRelatedProductionUnitNameAndAddress">
+            <soap:operation soapAction="http://rep.oio.dk/eogs/xml.wsdl/2/getRelatedProductionUnitNameAndAddress"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+
+        <wsdl:operation name="getProductionUnit">
+            <soap:operation soapAction="http://rep.oio.dk/eogs/xml.wsdl/2/getProductionUnit"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+
+    <wsdl:service name="RelatedProductionUnitNameAndAddressGet">
+        <wsdl:port name="CvrService" binding="tns:CvrBinding">
+            <soap:address location="https://localhost:8080/service/CVR/Online/2"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>

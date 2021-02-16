@@ -1,0 +1,153 @@
+{
+  "name": "drupal/recommended-project",
+  "description": "Project template for Drupal 8 projects with a relocated document root",
+  "type": "project",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://www.drupal.org/project/drupal",
+  "support": {
+    "docs": "https://www.drupal.org/docs/user_guide/en/index.html",
+    "chat": "https://www.drupal.org/node/314178"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    }
+  ],
+  "require": {
+    "composer/installers": "^1.9",
+    "drupal/admin_toolbar": "^2",
+    "drupal/antibot": "^1",
+    "drupal/checklistapi": "^2",
+    "drupal/chosen": "^2.9",
+    "drupal/ckeditor_a11ychecker": "^1.0",
+    "drupal/clientside_validation": "^3",
+    "drupal/coc_forms_auto_export": "^1",
+    "drupal/config_entity_revisions": "^1",
+    "drupal/core-composer-scaffold": "^8.9.12",
+    "drupal/core-project-message": "^8.9.12",
+    "drupal/core-recommended": "^8.9.12",
+    "drupal/drush_language": "^1.0@RC",
+    "drupal/embed": "^1.0",
+    "drupal/entity_print": "^2",
+    "drupal/events_logging": "^1",
+    "drupal/gin": "^3",
+    "drupal/header_and_footer_scripts": "^2.2",
+    "drupal/honeypot": "^2",
+    "drupal/image_widget_crop": "^2.1",
+    "drupal/ldap": "^3.0@beta",
+    "drupal/ldap_auth": "^1.17",
+    "drupal/libraries": "3.0-beta1",
+    "drupal/linkit": "^5.0",
+    "drupal/logging_alerts": "^1",
+    "drupal/maestro": "^3",
+    "drupal/mailsystem": "^4",
+    "drupal/masquerade": "2.0-beta4",
+    "drupal/pathauto": "^1",
+    "drupal/permissions_by_term": "2.27",
+    "drupal/queue_mail": "^1.3",
+    "drupal/queue_ui": "^2.1",
+    "drupal/redirect": "^1",
+    "drupal/rules": "^3",
+    "drupal/rules_token": "^1",
+    "drupal/rules_webform": "^1",
+    "drupal/simple_ldap": "^1.0@alpha",
+    "drupal/simplesamlphp_auth": "^3",
+    "drupal/smtp": "^1",
+    "drupal/telephone_validation": "^2.2",
+    "drupal/token": "^1",
+    "drupal/ultimate_cron": "^2.0-alpha5",
+    "drupal/user_default_page": "^2",
+    "drupal/webform_embed": "^1",
+    "drupal/webform_migrate": "1.x-dev",
+    "drupal/webform_permissions_by_term": "^1",
+    "drupal/webform_remote_handlers": "^1",
+    "drupal/webform_rest": "^4",
+    "drupal/webform_scheduled_tasks": "^2.0",
+    "drupal/webform_views": "^5.0@alpha",
+    "drupal/workflow_participants": "2.*",
+    "vaimo/composer-patches": "^4.20",
+    "vlucas/phpdotenv": "^2.4",
+    "webflo/drupal-finder": "^1.0.0",
+    "webmozart/path-util": "^2.3",
+    "zaporylie/composer-drupal-optimizations": "^1.0"
+  },
+  "conflict": {
+    "drupal/drupal": "*"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "drupal-scaffold": {
+      "locations": {
+        "web-root": "web/"
+      }
+    },
+    "composer-exit-on-patch-failure": true,
+    "patchLevel": {
+      "test": "-p2"
+    },
+    "enable-patching" : true,
+    "patches": {
+      "drupal/entity_print": {
+        "2733781 - Add Export to Word Support": "https://www.drupal.org/files/issues/2019-11-22/2733781-47.patch"
+      },
+      "drupal/webform": {
+        "Unlock possibility of using Entity print module export to Word": "https://www.drupal.org/files/issues/2020-02-29/3096552-6.patch"
+      },
+      "drupal/rules": {
+        "List of conditions includes Core conditions which do not work with Rules": "https://www.drupal.org/files/issues/2020-07-23/2927132-15-remove-other-conditions-from-ui.patch"
+      }
+    },
+    "installer-paths": {
+      "web/core": [
+        "type:drupal-core"
+      ],
+      "web/libraries/{$name}": [
+        "type:drupal-library"
+      ],
+      "web/modules/contrib/{$name}": [
+        "type:drupal-module"
+      ],
+      "web/profiles/contrib/{$name}": [
+        "type:drupal-profile"
+      ],
+      "web/themes/contrib/{$name}": [
+        "type:drupal-theme"
+      ],
+      "drush/Commands/contrib/{$name}": [
+        "type:drupal-drush"
+      ],
+      "web/modules/custom/{$name}": [
+        "type:drupal-custom-module"
+      ],
+      "web/themes/custom/{$name}": [
+        "type:drupal-custom-theme"
+      ]
+    },
+    "drupal-core-project-message": {
+      "include-keys": [
+        "homepage",
+        "support"
+      ],
+      "post-create-project-cmd-message": [
+        "<bg=blue;fg=white>                                                         </>",
+        "<bg=blue;fg=white>  Congratulations, you’ve installed the Drupal codebase  </>",
+        "<bg=blue;fg=white>  from the drupal/recommended-project template!          </>",
+        "<bg=blue;fg=white>                                                         </>",
+        "",
+        "<bg=yellow;fg=black>Next steps</>:",
+        "  * Install the site: https://www.drupal.org/docs/8/install",
+        "  * Read the user guide: https://www.drupal.org/docs/user_guide/en/index.html",
+        "  * Get support: https://www.drupal.org/support",
+        "  * Get involved with the Drupal community:",
+        "      https://www.drupal.org/getting-involved",
+        "  * Remove the plugin that prints this message:",
+        "      composer remove drupal/core-project-message"
+      ]
+    }
+  }
+}

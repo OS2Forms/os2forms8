@@ -1,0 +1,19 @@
+﻿<xsd:schema xmlns:cpr1="http://rep.oio.dk/cpr.dk/xml/schemas/2007/01/02/"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns="http://rep.oio.dk/cpr.dk/xml/schemas/2007/01/02/"
+            targetNamespace="http://rep.oio.dk/cpr.dk/xml/schemas/2007/01/02/">
+    <xsd:simpleType name="PersonCivilRegistrationIdentifierType">
+        <xsd:annotation>
+            <xsd:documentation>Type til
+                personnummer
+            </xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+            <xsd:minLength value="10"/>
+            <xsd:maxLength value="10"/>
+            <xsd:pattern
+                    value="(((0[1-9]|1[0-9]|2[0-9]|3[0-1])(01|03|05|07|08|10|12))|((0[1-9]|1[0-9]|2[0-9]|30)(04|06|09|11))|((0[1-9]|1[0-9]|2[0-9])(02)))[0-9]{6}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:element name="PersonCivilregistrationIdentifier" type="cpr1:PersonCivilRegistrationIdentifierType"/>
+</xsd:schema>

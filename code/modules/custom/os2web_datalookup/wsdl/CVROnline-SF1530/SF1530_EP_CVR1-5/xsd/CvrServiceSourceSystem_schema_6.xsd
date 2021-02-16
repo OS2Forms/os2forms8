@@ -1,0 +1,37 @@
+﻿<xsd:schema xmlns:cpr="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/03/18/"
+            xmlns:xkom2005="http://rep.oio.dk/xkom.dk/xml/schemas/2005/03/15/"
+            xmlns:dkcc2003="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://rep.oio.dk/xkom.dk/xml/schemas/2005/03/15/"
+            elementFormDefault="qualified"
+            targetNamespace="http://rep.oio.dk/xkom.dk/xml/schemas/2005/03/15/">
+    <xsd:import schemaLocation="CvrServiceSourceSystem_schema_5.xsd"
+                namespace="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/03/18/"/>
+    <xsd:import schemaLocation="CvrServiceSourceSystem_schema_5.xsd"
+                namespace="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/03/18/"/>
+    <xsd:import schemaLocation="CvrServiceSourceSystem_schema_2.xsd"
+                namespace="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/"/>
+    <xsd:simpleType name="EmailAddressIdentifierType">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="([^&gt;\(\)\[\]\\,;:@\s]{0,191}@[^&gt;\(\)\[\]\\,;:@\s]{1,64})"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:complexType name="AddressAccessType">
+        <xsd:sequence>
+            <xsd:element ref="cpr:MunicipalityCode"/>
+            <xsd:element ref="cpr:StreetCode"/>
+            <xsd:element ref="dkcc2003:StreetBuildingIdentifier"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="AddressAccess" type="xkom2005:AddressAccessType">
+        <xsd:annotation>
+            <xsd:documentation>Unique identification of a specific
+                access to a building (entrance door etc.) plot of land,
+                plant etc., by use of municipialitycode,
+                streetcode and
+                street building identifier (da. house number ~
+                husnummer).
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="EmailAddressIdentifier" type="xkom2005:EmailAddressIdentifierType"/>
+</xsd:schema>

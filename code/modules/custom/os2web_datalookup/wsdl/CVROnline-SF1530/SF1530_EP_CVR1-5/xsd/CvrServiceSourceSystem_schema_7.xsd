@@ -1,0 +1,47 @@
+﻿<xsd:schema xmlns:dkcc2005-2="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/05/13/"
+            xmlns:dkcc2005="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/03/15/"
+            xmlns:dkcc2003="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/"
+            xmlns:xkom="http://rep.oio.dk/xkom.dk/xml/schemas/2006/01/06/"
+            xmlns:cpr="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/03/18/"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://rep.oio.dk/xkom.dk/xml/schemas/2006/01/06/"
+            elementFormDefault="qualified"
+            targetNamespace="http://rep.oio.dk/xkom.dk/xml/schemas/2006/01/06/">
+    <xsd:import schemaLocation="CvrServiceSourceSystem_schema_8.xsd"
+                namespace="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/03/15/"/>
+    <xsd:import schemaLocation="CvrServiceSourceSystem_schema_2.xsd"
+                namespace="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/"/>
+    <xsd:import schemaLocation="CvrServiceSourceSystem_schema_2.xsd"
+                namespace="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/"/>
+    <xsd:import schemaLocation="CvrServiceSourceSystem_schema_2.xsd"
+                namespace="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/"/>
+    <xsd:import schemaLocation="CvrServiceSourceSystem_schema_2.xsd"
+                namespace="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/"/>
+    <xsd:import schemaLocation="CvrServiceSourceSystem_schema_8.xsd"
+                namespace="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/03/15/"/>
+    <xsd:import schemaLocation="CvrServiceSourceSystem_schema_9.xsd"
+                namespace="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/05/13/"/>
+    <xsd:import schemaLocation="CvrServiceSourceSystem_schema_8.xsd"
+                namespace="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/03/15/"/>
+    <xsd:import schemaLocation="CvrServiceSourceSystem_schema_8.xsd"
+                namespace="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/03/15/"/>
+    <xsd:import schemaLocation="CvrServiceSourceSystem_schema_2.xsd"
+                namespace="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2003/02/13/"/>
+    <xsd:import schemaLocation="CvrServiceSourceSystem_schema_5.xsd"
+                namespace="http://rep.oio.dk/cpr.dk/xml/schemas/core/2005/03/18/"/>
+    <xsd:complexType name="AddressPostalType">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" ref="dkcc2003:MailDeliverySublocationIdentifier"/>
+            <xsd:element ref="dkcc2005:StreetName"/>
+            <xsd:element minOccurs="0" ref="cpr:StreetNameForAddressingName"/>
+            <xsd:element ref="dkcc2003:StreetBuildingIdentifier"/>
+            <xsd:element minOccurs="0" ref="dkcc2003:FloorIdentifier"/>
+            <xsd:element minOccurs="0" ref="dkcc2003:SuiteIdentifier"/>
+            <xsd:element minOccurs="0" ref="dkcc2005:DistrictSubdivisionIdentifier"/>
+            <xsd:element minOccurs="0" ref="dkcc2005-2:PostOfficeBoxIdentifier"/>
+            <xsd:element ref="dkcc2005:PostCodeIdentifier"/>
+            <xsd:element ref="dkcc2005:DistrictName"/>
+            <xsd:element minOccurs="0" ref="dkcc2003:CountryIdentificationCode"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="AddressPostal" type="xkom:AddressPostalType"/>
+</xsd:schema>

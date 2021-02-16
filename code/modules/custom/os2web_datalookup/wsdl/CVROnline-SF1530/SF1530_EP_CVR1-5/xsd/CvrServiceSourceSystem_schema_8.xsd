@@ -1,0 +1,77 @@
+﻿<xsd:schema xmlns:dkcc2005="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/03/15/"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/03/15/"
+            elementFormDefault="qualified"
+            targetNamespace="http://rep.oio.dk/ebxml/xml/schemas/dkcc/2005/03/15/">
+    <xsd:simpleType name="DistrictNameType">
+        <xsd:restriction base="xsd:string">
+            <xsd:minLength value="1"/>
+            <xsd:maxLength value="20"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="DistrictSubdivisionIdentifierType">
+        <xsd:restriction base="xsd:string">
+            <xsd:minLength value="1"/>
+            <xsd:maxLength value="34"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="PostCodeIdentifierType">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="[0-9]{4}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:simpleType name="StreetNameType">
+        <xsd:restriction base="xsd:string">
+            <xsd:minLength value="1"/>
+            <xsd:maxLength value="40"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:element name="DistrictName" type="dkcc2005:DistrictNameType">
+        <xsd:annotation>
+            <xsd:documentation>Declares the name of a postal district
+                in plain text. The field contains 20 positions, which
+                enables it to fit a window envelope together
+                with the
+                postal code and one free position in addition. The postal
+                district is defined by municipalitycode, roadcode,
+                postalcode, housenumber from/to
+                together with a code,
+                which declares whether the roadsection in question
+                contains even or uneven housenumbers.
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="DistrictSubdivisionIdentifier" type="dkcc2005:DistrictSubdivisionIdentifierType">
+        <xsd:annotation>
+            <xsd:documentation>Name of a village, city or subdivision
+                of a city or district, which is determined as a part of
+                the official address specification for a
+                certain street
+                or specific parts of a street, defined by intervals of
+                street building identifiers (da: house
+                numbers).
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="PostCodeIdentifier" type="dkcc2005:PostCodeIdentifierType">
+        <xsd:annotation>
+            <xsd:documentation>The postal departments nationwide
+                postal code.
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="StreetName" type="dkcc2005:StreetNameType">
+        <xsd:annotation>
+            <xsd:documentation>The approved name of a road, a street,
+                a square, a path and the like. Further more street names
+                can be connected to other particularly
+                limited areas like
+                garden associations or summer residence areas without
+                road network, large commercial or institutional areas
+                with a large number of
+                buildings, smaller islands without
+                road network, larger sporting facilities and the
+                like.
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+</xsd:schema>

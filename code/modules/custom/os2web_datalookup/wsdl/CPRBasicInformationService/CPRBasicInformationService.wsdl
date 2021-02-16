@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://serviceplatformen.dk/xml/wsdl/soap11/CPRBasicInformationService/1/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://serviceplatformen.dk/xml/wsdl/soap11/CPRBasicInformationService/1/"
+	name="CPRBasicInformationService">
+	<types>
+		<xsd:schema targetNamespace="http://serviceplatformen.dk/xml/wsdl/soap11/CPRBasicInformationService/1/">
+			<xsd:include schemaLocation="CPRBasicInformationServiceMsg.xsd" />
+		</xsd:schema>
+	</types>
+
+	<message name="callCPRBasicInformationServiceRequest">
+		<part name="request" element="tns:callCPRBasicInformationRequest" />
+	</message>
+
+	<message name="callCPRBasicInformationServiceExtendedRequest">
+		<part name="request" element="tns:callCPRBasicInformationExtendedRequest" />
+	</message>
+
+	<message name="callCPRBasicInformationServiceListRequest">
+		<part name="request" element="tns:callCPRBasicInformationListRequest" />
+	</message>
+
+	<message name="callCPRBasicInformationServiceExtendedListRequest">
+		<part name="request" element="tns:callCPRBasicInformationExtendedListRequest" />
+	</message>
+
+	<message name="callCPRBasicInformationServiceResponse">
+		<part name="response" element="tns:callCPRBasicInformationResponse" />
+	</message>
+
+	<message name="callCPRBasicInformationServiceExtendedResponse">
+		<part name="response" element="tns:callCPRBasicInformationExtendedResponse" />
+	</message>
+
+	<message name="callCPRBasicInformationServiceListResponse">
+		<part name="response" element="tns:callCPRBasicInformationListResponse" />
+	</message>
+
+	<message name="callCPRBasicInformationServiceExtendedListResponse">
+		<part name="response" element="tns:callCPRBasicInformationExtendedListResponse" />
+	</message>
+
+	<portType name="CPRBasicInformationWebServicePortType">
+		<operation name="callCPRBasicInformationService">
+			<input message="tns:callCPRBasicInformationServiceRequest" />
+			<output message="tns:callCPRBasicInformationServiceResponse" />
+		</operation>
+		<operation name="callCPRBasicInformationServiceExtended">
+			<input message="tns:callCPRBasicInformationServiceExtendedRequest" />
+			<output message="tns:callCPRBasicInformationServiceExtendedResponse" />
+		</operation>
+		<operation name="callCPRBasicInformationServiceList">
+			<input message="tns:callCPRBasicInformationServiceListRequest" />
+			<output message="tns:callCPRBasicInformationServiceListResponse" />
+		</operation>
+		<operation name="callCPRBasicInformationServiceExtendedList">
+			<input message="tns:callCPRBasicInformationServiceExtendedListRequest" />
+			<output message="tns:callCPRBasicInformationServiceExtendedListResponse" />
+		</operation>
+
+	</portType>
+
+	<binding name="CPRBasicInformationWebServiceBinding" type="tns:CPRBasicInformationWebServicePortType">
+		<soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+
+		<operation name="callCPRBasicInformationService">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal" />
+			</input>
+			<output>
+				<soap:body use="literal" />
+			</output>
+		</operation>
+
+		<operation name="callCPRBasicInformationServiceExtended">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal" />
+			</input>
+			<output>
+				<soap:body use="literal" />
+			</output>
+		</operation>
+
+		<operation name="callCPRBasicInformationServiceList">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal" />
+			</input>
+			<output>
+				<soap:body use="literal" />
+			</output>
+		</operation>
+
+		<operation name="callCPRBasicInformationServiceExtendedList">
+			<soap:operation soapAction="" />
+			<input>
+				<soap:body use="literal" />
+			</input>
+			<output>
+				<soap:body use="literal" />
+			</output>
+		</operation>
+
+	</binding>
+
+	<service name="CPRBasicInformationService">
+		<port name="CPRBasicInformationServicePort" binding="tns:CPRBasicInformationWebServiceBinding">
+			<soap:address location="http://localhost:8080/service/CPRBasicInformation/CPRBasicInformation/1" />
+		</port>
+	</service>
+</definitions>

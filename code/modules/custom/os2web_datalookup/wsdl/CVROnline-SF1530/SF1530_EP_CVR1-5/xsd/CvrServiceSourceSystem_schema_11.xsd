@@ -1,0 +1,21 @@
+﻿<xsd:schema
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://rep.oio.dk/cvr.dk/xml/schemas/2005/03/22/"
+        elementFormDefault="qualified" targetNamespace="http://rep.oio.dk/cvr.dk/xml/schemas/2005/03/22/"
+        version="1.1">
+    <xsd:element name="ExporterIndicator" type="xsd:boolean">
+        <xsd:annotation>
+            <xsd:documentation>States whether the legal unit in
+                question is registered as an exporter or
+                not.
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="ImporterIndicator" type="xsd:boolean">
+        <xsd:annotation>
+            <xsd:documentation>States whether the legal unit in
+                question is registered as an importer or
+                not.
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+</xsd:schema>

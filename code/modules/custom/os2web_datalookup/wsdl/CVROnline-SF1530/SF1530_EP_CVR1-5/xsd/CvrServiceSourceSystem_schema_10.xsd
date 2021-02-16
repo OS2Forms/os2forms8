@@ -1,0 +1,24 @@
+﻿<xsd:schema xmlns:itst1="http://rep.oio.dk/itst.dk/xml/schemas/2005/01/10/"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://rep.oio.dk/itst.dk/xml/schemas/2005/01/10/"
+            elementFormDefault="qualified"
+            targetNamespace="http://rep.oio.dk/itst.dk/xml/schemas/2005/01/10/">
+    <xsd:simpleType name="TelephoneNumberIdentifierType">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="(\+)?[0-9]{3,20}"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+    <xsd:element name="FaxNumberIdentifier" type="itst1:TelephoneNumberIdentifierType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="da">Faxnummer inkl.
+                internationalt prefix
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+    <xsd:element name="TelephoneNumberIdentifier" type="itst1:TelephoneNumberIdentifierType">
+        <xsd:annotation>
+            <xsd:documentation xml:lang="da">Telefonnummer inkl.
+                internationalt prefix
+            </xsd:documentation>
+        </xsd:annotation>
+    </xsd:element>
+</xsd:schema>

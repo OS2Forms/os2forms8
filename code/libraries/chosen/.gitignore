@@ -1,0 +1,14 @@
+.DS_Store
+node_modules
+.project
+public/*.js
+public/*.css
+public/*.json
+public/LICENSE.md
+chosen*.zip
+.sass-cache
+.ruby-version
+.rbenv-gemsets
+.grunt
+_SpecRunner.html
+spec/public
