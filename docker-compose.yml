@@ -26,11 +26,12 @@ services:
     volumes:
       - ./docker/composer.lock:/var/www/html/drupal/composer.lock
       - ./docker/composer.json:/var/www/html/drupal/composer.json
-#    volumes:
-#    - ./code/profiles:/var/www/html/drupal/web/profiles
-#    - ./code/modules:/var/www/html/drupal/web/modules
-#    - ./code/themes:/var/www/html/drupal/web/themes
-#    - ./code/libraries:/var/www/html/drupal/web/libraries
+      - ./code/profiles:/var/www/html/drupal/web/profiles
+      - ./code/modules:/var/www/html/drupal/web/modules
+      - ./code/themes:/var/www/html/drupal/web/themes
+      - ./code/libraries:/var/www/html/drupal/web/libraries
+      - ./code/vendor:/var/www/html/drupal/vendor
+    # - ./code/sites:/var/www/html/drupal/web/sites
 
   mailhog:
     image: mailhog/mailhog:v1.0.1

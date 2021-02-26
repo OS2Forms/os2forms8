@@ -13,3 +13,6 @@ tests/output/
 
 #ignore contrib modules
 code/modules/contrib/*
+
+#ignore contrib themes
+code/themes/contrib/*

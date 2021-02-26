@@ -2,7 +2,7 @@ Feature('Test drupal loads');
 Scenario('Testing drupal startup', (I) => {
     I.amOnPage('/');
     I.saveScreenshot("01_01_drupal_installed.png");
-    I.see('Velkommen til OS2forms');
+    I.see('OS2forms');
     I.saveScreenshot("01_02_drupal_welcome.png");
 });
 Scenario('Testing drupal login', (I) => {

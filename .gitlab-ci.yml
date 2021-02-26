@@ -128,21 +128,21 @@ Release dev:
   tags:
     - deploy
 
-Deploy development:
-  # Automatic deployment of branch develop to
-  <<: *deploy-default
-  needs: ["Release dev"]
-  only:
-    refs:
-      - development
-  variables:
-    DEPLOYMENT_NAMESPACE: os2forms.magenta.test
-    SALTAPI_URL: https://ctrldev1.magenta-aps.dk/api/
-    SALTAPI_EAUTH: file
-    GIT_STRATEGY: none
-  script:
-    - echo Attempting to call deployment
-    - pepper --client runner --fail-any state.orchestrate ${DEPLOYMENT_NAMESPACE}
-  environment:
-    name: test
-    url: http://os2forms-test.magenta.dk
+# Deploy development:
+#   # Automatic deployment of branch develop to
+#   <<: *deploy-default
+#   needs: ["Release dev"]
+#   only:
+#     refs:
+#       - development
+#   variables:
+#     DEPLOYMENT_NAMESPACE: os2forms.magenta.test
+#     SALTAPI_URL: https://ctrldev1.magenta-aps.dk/api/
+#     SALTAPI_EAUTH: file
+#     GIT_STRATEGY: none
+#   script:
+#     - echo Attempting to call deployment
+#     - pepper --client runner --fail-any state.orchestrate ${DEPLOYMENT_NAMESPACE}
+#   environment:
+#     name: test
+#     url: http://os2forms-test.magenta.dk

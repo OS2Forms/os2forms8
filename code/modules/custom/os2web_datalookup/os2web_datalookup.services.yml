@@ -1,4 +1,0 @@
-services:
-  plugin.manager.os2web_datalookup:
-    class: Drupal\os2web_datalookup\Plugin\DataLookupManager
-    arguments: ['@container.namespaces', '@cache.discovery', '@module_handler', '@config.factory']

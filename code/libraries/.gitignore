@@ -1,0 +1,4 @@
+# ignore third party libraries
+!folder/
+folder/*
+*/*

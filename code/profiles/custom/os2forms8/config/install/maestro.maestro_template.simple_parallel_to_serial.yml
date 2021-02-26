@@ -1,9 +1,6 @@
-uuid: 7b61948e-9e8a-47e8-aa45-eb3b25ad09b5
 langcode: da
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: 6yDWEzeorp3SYTP6mbXNnA-FPTJcxAqBrqihAu1hJ7I
 id: simple_parallel_to_serial
 label: 'Simple Parallel to Serial'
 app_group: 0

@@ -1,9 +1,6 @@
-uuid: aa81afef-24eb-4737-983c-317304a16c9b
 langcode: da
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: 8ARReDmFxeVU5fREr0WFmflCsaUl3pXy-pxrcmkr310
 id: forloeb_designer
 label: 'Forløb designer'
 weight: 5
@@ -80,8 +77,6 @@ permissions:
   - 'entity print access type taxonomy_term'
   - 'entity print access type user'
   - 'entity print access type webform_submission'
-  - 'entity print access type workflow_participants'
-  - 'manage own workflow participants'
   - 'revert webform revisions'
   - 'translate interface'
   - 'use advanced search'

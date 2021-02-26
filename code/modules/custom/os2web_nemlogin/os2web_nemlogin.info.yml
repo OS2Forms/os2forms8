@@ -1,7 +1,0 @@
-name: OS2Web Nemlogin
-type: module
-description: Provides a login link for Nemlogin, can use one of the two predefined plugins for integration
-package: OS2Web
-core: 8.x
-core_version_requirement: ^8 || ^9
-configure: os2web_nemlogin.settings

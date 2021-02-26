@@ -1,16 +1,31 @@
-uuid: 64279f31-400f-4cd5-bca6-7277b6c49339
 langcode: da
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: tV_EeHxqvtiAx0gKWYmy4E1F1cRhZZyWBMfia5MAVZw
 id: leder
 label: Leder
 weight: 8
 is_admin: null
 permissions:
-  - 'access site in maintenance mode'
-  - 'access toolbar'
-  - 'use advanced search'
-  - 'view own unpublished content'
-  - 'view the administration theme'
+- 'access content overview'
+- 'access files overview'
+- 'access shortcuts'
+- 'access site in maintenance mode'
+- 'access toolbar'
+- 'access webform overview'
+- 'access webform submission log'
+- 'access webform submission user'
+- 'administer maestro production assignment entities'
+- 'administer maestro queue entities'
+- 'search content'
+- 'use advanced search'
+- 'use text format full_html'
+- 'view any unpublished content'
+- 'view any webform submission'
+- 'view latest version'
+- 'view maestro entity identifiers entities'
+- 'view maestro process entities'
+- 'view maestro production assignment entities'
+- 'view maestro queue entities'
+- 'view maestro task console'
+- 'view own unpublished content'
+- 'view the administration theme'

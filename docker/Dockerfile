@@ -42,11 +42,12 @@ COPY --chown=www-data:www-data ./docker/database_test.php docker/
 COPY --chown=www-data:www-data ./docker/httpd.conf /etc/apache2/sites-available/000-default.conf
 
 # Copy custom modules and profile with proper file owner
+COPY --chown=www-data:www-data ./code/modules/contrib /var/www/html/drupal/web/modules/contrib/
 COPY --chown=www-data:www-data ./code/modules/custom /var/www/html/drupal/web/modules/custom/
 COPY --chown=www-data:www-data ./code/themes/custom /var/www/html/drupal/web/themes/custom/
 COPY --chown=www-data:www-data ./code/profiles /var/www/html/drupal/web/profiles/
+COPY --chown=www-data:www-data ./code/vendor /var/www/html/drupal/vendor/
 COPY --chown=www-data:www-data ./code/profiles/custom/os2forms8/config/translations /var/www/html/drupal/web/sites/default/files/translations/
-COPY --chown=www-data:www-data ./code/libraries /var/www/html/drupal/web/libraries/
 
 # Copy production php.ini to ini dir and set custom vars
 RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"

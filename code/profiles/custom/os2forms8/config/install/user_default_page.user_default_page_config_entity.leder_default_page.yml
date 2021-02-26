@@ -1,13 +1,13 @@
 langcode: da
 status: true
 dependencies: {  }
-id: forloebs_designer_default_page
-label: 'Forløbs designer default page'
+id: leder_default_page
+label: 'Flow designer default page'
 user_roles:
-  forloeb_designer: forloeb_designer
+  leder: leder
 users: null
 weight: -1
-login_redirect: /admin/structure/webform
+login_redirect: /maestro-all-flows
 login_redirect_message: ''
 logout_redirect: ''
 logout_redirect_message: ''

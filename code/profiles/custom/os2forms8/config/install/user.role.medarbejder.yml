@@ -1,9 +1,6 @@
-uuid: b3aac2bd-29d4-4a66-84cd-be5f89ba1d08
 langcode: da
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: eydrygEjRixtOAJ4RjUUoZXvLD-1l8A9wgM1yYYAnkM
 id: medarbejder
 label: Medarbejder
 weight: 7

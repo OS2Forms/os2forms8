@@ -1,9 +1,6 @@
-uuid: 9d4f947e-a8f7-4ac5-bad4-e3b52cba49e1
 langcode: da
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: e8-9SszESXzNE5tC3sRAOrI1-zYn_C8GDUau1tMtPNs
 id: flow_designer
 label: 'Flow designer'
 weight: 4
@@ -45,7 +42,6 @@ permissions:
   - 'entity print access type maestro_process_variables'
   - 'entity print access type maestro_production_assignments'
   - 'entity print access type maestro_queue'
-  - 'entity print access type workflow_participants'
   - 'start maestro process'
   - 'start template form_approval_flow'
   - 'start template simple_parallel_to_serial'

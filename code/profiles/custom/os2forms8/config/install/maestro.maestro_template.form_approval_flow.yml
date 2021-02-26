@@ -1,9 +1,6 @@
-uuid: b663ff99-b5fa-4e6b-803f-e44904f80f39
 langcode: da
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: I0CgdvB9JWUlbO1LRrdNcbcrEhfd74CAVJcwlgBdf8U
 id: form_approval_flow
 label: 'Form Approval Flow'
 app_group: 0

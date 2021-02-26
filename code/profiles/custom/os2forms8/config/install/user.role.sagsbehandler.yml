@@ -1,9 +1,6 @@
-uuid: 1485cc21-87f0-4440-8f3c-b93a3c1d0e0b
 langcode: da
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: 0FXxRGQ4gC05fzRUxCkBlcqCs2Jq9UKwC5Vhmvh_hJA
 id: sagsbehandler
 label: Sagsbehandler
 weight: 6
