@@ -1,0 +1,5 @@
+# ignore vendor folders and files
+!folder/
+folder/*
+*/*
+autoload.php
