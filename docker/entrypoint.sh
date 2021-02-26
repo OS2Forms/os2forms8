@@ -31,6 +31,9 @@ sed -i "s/\$SMTP_PASSWORD/$SMTP_PASSWORD/g" /etc/msmtp/msmtp.conf
 
 chown www-data: /etc/msmtp/msmtp.conf && chmod 600 /etc/msmtp/msmtp.conf
 
+# Re-run composer install in case of possible differences in image vs. mounted dependencies
+composer install
+
 if ! drush status bootstrap | grep -q Successful ; then
     echo "Drupal not bootstrapped - starting site-install"
     drush site-install os2forms8 -y --verbose \
