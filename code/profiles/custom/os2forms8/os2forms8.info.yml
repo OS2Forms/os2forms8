@@ -97,7 +97,6 @@ install:
 - webform_clientside_validation
 - webform_revisions
 - webform_permissions_by_term
-- workflow_participants
 
 # Required modules
 # Note that any dependencies of the modules listed here will be installed automatically.
