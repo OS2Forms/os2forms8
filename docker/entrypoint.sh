@@ -44,28 +44,28 @@ if ! drush status bootstrap | grep -q Successful ; then
     --account-mail=$ACCOUNT_MAIL \
     --account-name=$ACCOUNT_NAME \
     --account-pass=$ACCOUNT_PASS
+
+    # Creating demo-users - BEGIN
+
+    drush ucrt forloeb-designer --mail="os2forms-forloeb-designer@magenta.dk" --password="forloeb-designer"
+    drush urol "forloeb_designer" forloeb-designer
+
+    drush ucrt flow-designer --mail="os2forms-flow-designer@magenta.dk" --password="flow-designer"
+    drush urol "flow_designer" flow-designer
+
+    drush ucrt medarbejder --mail="os2forms-medarbejder@magenta.dk" --password="medarbejder"
+    drush urol "medarbejder" medarbejder
+
+    drush ucrt sagsbehandler --mail="os2forms-sagsbehandler@magenta.dk" --password="sagsbehandler"
+    drush urol "sagsbehandler" sagsbehandler
+
+    drush ucrt leder --mail="os2forms-leder@magenta.dk" --password="leder"
+    drush urol "leder" leder
+
+    # Creating demo-users - END
 else
     echo "Drupal already bootstrapped - skipping install"
 fi
-
-# Creating demo-users - BEGIN
-
-drush ucrt forloeb-designer --mail="os2forms-forloeb-designer@magenta.dk" --password="forloeb-designer"
-drush urol "forloeb_designer" forloeb-designer
-
-drush ucrt flow-designer --mail="os2forms-flow-designer@magenta.dk" --password="flow-designer"
-drush urol "flow_designer" flow-designer
-
-drush ucrt medarbejder --mail="os2forms-medarbejder@magenta.dk" --password="medarbejder"
-drush urol "medarbejder" medarbejder
-
-drush ucrt sagsbehandler --mail="os2forms-sagsbehandler@magenta.dk" --password="sagsbehandler"
-drush urol "sagsbehandler" sagsbehandler
-
-drush ucrt leder --mail="os2forms-leder@magenta.dk" --password="leder"
-drush urol "leder" leder
-
-# Creating demo-users - END
 
 chown www-data:www-data /var/www/html/drupal/web/sites/default/settings.php
 chown www-data:www-data /var/www/html/drupal/web/sites/default/files
