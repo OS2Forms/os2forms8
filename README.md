@@ -34,7 +34,7 @@
     ```
     fin rebuild-test
     ```
-* Add trusted host patterns to settings.php:
+* Add trusted host patterns to `web/sites/default/settings.php`:
 
     ```
     $settings['trusted_host_patterns'] = ['^os2forms8\.docksal$'];
