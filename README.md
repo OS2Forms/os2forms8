@@ -1,6 +1,6 @@
 # OS2Forms Drupal 8 project [![Build Status](https://travis-ci.org/OS2Forms/os2forms8.svg?branch=master)](https://travis-ci.org/OS2Forms/os2forms8)
 
-## Usage
+## Development usage
 
 * Clone the repository
 
@@ -14,12 +14,12 @@
     ```
     curl -fsSL https://get.docksal.io | bash
     ```
-* Check Docksal version (optional check): 
+* Check Docksal version (optional): 
 
     ```
     fin version
     ```
-* Check system info (optional check):
+* Check system info (optional):
 
     ```
     fin sysinfo
@@ -29,19 +29,19 @@
     ```
     fin init
     ```
-* Script to reinstall drupal from scratch based in os2forms8 profile:
+* Script to reinstall drupal from scratch based on os2forms8 profile:
 
     ```
     fin rebuild-test
     ```
-* Add trusted host to settings.php:
+* Add trusted host patterns to settings.php:
 
     ```
     $settings['trusted_host_patterns'] = ['^os2forms8\.docksal$'];
     ```
     
 * The installation should now be available on url: `http://os2forms8.docksal` and ready for further development, 
-eg. by adding a `custom` folder to `web/modules`, `web/themes` and `web/profiles`.
+eg. by adding a `custom` directory to `web/modules`, `web/themes` and `web/profiles`.
 
 ### Drupal settings
 
