@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b3d77d29c058eac70aab2f046a0bb681",
+    "content-hash": "8ca3ab733053754c270c689bab7cad9e",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -10015,16 +10015,16 @@
         },
         {
             "name": "os2web/os2web_datalookup",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_datalookup.git",
-                "reference": "fbcf8788f2b02ac55872d4cafd7c67bb86199523"
+                "reference": "5d1cd640292663625a9fbfdbf6e2ce40ae4b41f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_datalookup/zipball/fbcf8788f2b02ac55872d4cafd7c67bb86199523",
-                "reference": "fbcf8788f2b02ac55872d4cafd7c67bb86199523",
+                "url": "https://api.github.com/repos/OS2web/os2web_datalookup/zipball/5d1cd640292663625a9fbfdbf6e2ce40ae4b41f6",
+                "reference": "5d1cd640292663625a9fbfdbf6e2ce40ae4b41f6",
                 "shasum": ""
             },
             "require": {
@@ -10036,7 +10036,7 @@
                 "EUPL-1.2"
             ],
             "description": "Provides integration with Danish data lookup services such as Service platformen or Datafordeler.",
-            "time": "2020-04-28T08:50:25+00:00"
+            "time": "2021-03-03T13:26:58+00:00"
         },
         {
             "name": "os2web/os2web_logging",
