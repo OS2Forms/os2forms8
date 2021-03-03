@@ -6,11 +6,43 @@
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-### Prerequisites
+### Traditional
+
+#### Installing
+
+1. Clone the git repository
+   ```sh
+   git clone git@github.com:OS2Forms/os2forms8.git
+   ```
+
+2. Enter the newly created project directory
+   ```sh
+   cd os2forms8
+   ```
+
+3. Install dependencies
+   ```sh
+   composer install
+   ```
+
+4. Install drupal based on OS2Forms profile. Make sure you substitute the following variables:
+   * db_pass
+   * db_user
+   * db_host
+   * db_name
+   * account_password
+   * site_name
+   ```sh
+   drush si os2forms8 --db-url=mysql://db_pass:db_user@db_host/db_name --account-pass=account_password --site-name="site_name"
+   ```
+
+### With Docksal
+
+#### Prerequisites
 
 * [Docksal](https://docksal.io/)
 
-### Installing
+#### Installing
 
 1. Clone the git repository
    ```sh
