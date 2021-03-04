@@ -106,8 +106,7 @@
         },
         "patches": {
             "drupal/webform" : {
-                "Add support for Less/Greater than or Equal to #states": "https://www.drupal.org/files/issues/2020-07-14/3159199-2.patch",
-                "Add support for Set to state" :  "./patches/add-set-to-state-3159806-2-modified-5.19.patch"
+               "Add support for Set to state" :  "./patches/add-set-to-state-3159806-2-modified-5.19.patch"
             },
             "drupal/webform_migrate" : {
                 "Set to support. Checkbox condition fixes" :  "./patches/setto-and-checkboxes-condition-fix-onlyD7.patch"
