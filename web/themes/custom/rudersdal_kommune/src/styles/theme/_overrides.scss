@@ -41,6 +41,13 @@ img {
   }
 }
 
+body {
+
+  .select-wrapper select {
+    line-height: 1.7;
+  }
+}
+
 a {
 
   &:not(.btn) {
