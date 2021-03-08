@@ -49,6 +49,27 @@
         }
       }
     }
+
+    .block-os2forms-nemid-login-logout-link {
+      a {
+        height: 50px;
+        line-height: 31px;
+        display: inline-block;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #3b3b3b;
+        font-size: 16px;
+        margin-left: 8px;
+        padding-right: 7px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+
+      &:hover {
+        background-color: darken(#fff, 5%);
+      }
+    }
+
   }
 
   .logo {
@@ -99,6 +120,24 @@
             background-color: transparent;
           }
         }
+      }
+    }
+    .block-os2forms-nemid-login-logout-link {
+      float: right;
+
+      a {
+        height: 105px;
+        line-height: 80px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+
+        &:hover {
+          border-bottom: 4px solid #233978;
+          border-top: 0;
+        }
+      }
+      &:hover {
+        background-color: transparent;
       }
     }
   }
