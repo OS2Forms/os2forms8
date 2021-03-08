@@ -21,7 +21,7 @@ input.form-control[type="file"] {
   margin: 5px 0;
 }
 
-
+.fieldset-legend,
 .control-label {
   font-family: $font-DINWeb-regular;
   display: inline-block;
@@ -59,8 +59,12 @@ input.form-control[type="file"] {
   }
 }
 
+.fieldgroup {
+  margin-bottom: 10px;
+}
+
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 
   .has-error {
     padding-left: 15px;

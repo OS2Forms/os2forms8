@@ -40,7 +40,7 @@
         "drupal/webform_views": "^5.0@alpha",
         "drush/drush": "^9.0.0",
         "os2core/os2core": "^1.0.3",
-        "os2forms/os2forms": "^2.4",
+        "os2forms/os2forms": "^2.5",
         "os2forms/os2forms_egbolig": "dev-master",
         "os2web/os2web_logging": "dev-master",
         "vlucas/phpdotenv": "^2.4",
@@ -106,8 +106,7 @@
         },
         "patches": {
             "drupal/webform" : {
-                "Add support for Less/Greater than or Equal to #states": "https://www.drupal.org/files/issues/2020-07-14/3159199-2.patch",
-                "Add support for Set to state" :  "./patches/add-set-to-state-3159806-2-modified-5.19.patch"
+               "Add support for Set to state" :  "./patches/add-set-to-state-3159806-2-modified-5.19.patch"
             },
             "drupal/webform_migrate" : {
                 "Set to support. Checkbox condition fixes" :  "./patches/setto-and-checkboxes-condition-fix-onlyD7.patch"
