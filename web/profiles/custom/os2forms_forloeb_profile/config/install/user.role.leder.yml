@@ -1,0 +1,31 @@
+langcode: da
+status: true
+dependencies: {  }
+id: leder
+label: Leder
+weight: 8
+is_admin: null
+permissions:
+- 'access content overview'
+- 'access files overview'
+- 'access shortcuts'
+- 'access site in maintenance mode'
+- 'access toolbar'
+- 'access webform overview'
+- 'access webform submission log'
+- 'access webform submission user'
+- 'administer maestro production assignment entities'
+- 'administer maestro queue entities'
+- 'search content'
+- 'use advanced search'
+- 'use text format full_html'
+- 'view any unpublished content'
+- 'view any webform submission'
+- 'view latest version'
+- 'view maestro entity identifiers entities'
+- 'view maestro process entities'
+- 'view maestro production assignment entities'
+- 'view maestro queue entities'
+- 'view maestro task console'
+- 'view own unpublished content'
+- 'view the administration theme'

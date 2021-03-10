@@ -1,0 +1,32 @@
+langcode: da
+status: true
+dependencies:
+  module:
+  - system
+  - user
+  theme:
+  - gin
+id: logind
+theme: gin
+region: content
+weight: 0
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: 'Log ind'
+  provider: user
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

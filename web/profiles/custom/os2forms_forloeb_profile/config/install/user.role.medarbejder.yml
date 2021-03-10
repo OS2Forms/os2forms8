@@ -1,0 +1,13 @@
+langcode: da
+status: true
+dependencies: {  }
+id: medarbejder
+label: Medarbejder
+weight: 7
+is_admin: null
+permissions:
+  - 'access site in maintenance mode'
+  - 'access toolbar'
+  - 'use advanced search'
+  - 'view own unpublished content'
+  - 'view the administration theme'
