@@ -26,7 +26,46 @@ echo-yellow "Fetching composer dependencies"
 fin composer install
 
 echo-yellow "Installing drupal based on os2forms_forloeb_profile"
-fin drush si os2forms_forloeb_profile -y --verbose --db-url=mysql://root:root@db/default --account-name=admin --account-pass=admin --site-name=OS2forms_forloeb
+if ! drush status bootstrap | grep -q Successful ; then
+    echo "Drupal is not bootstrapped - starting site-install"
+    fin drush site-install os2forms_forloeb_profile -y --verbose \
+    --db-url=mysql://root:root@db/default \
+    --db-prefix="forms" \
+    --site-name=OS2forms_forloeb \
+    --site-mail=test@test.dk \
+    --account-mail=test@test.dk \
+    --account-name=admin \
+    --account-pass=admin
+
+    # Creating demo-users - BEGIN
+
+    drush ucrt forloeb-designer --mail="os2forms-forloeb-designer@magenta.dk" --password="forloeb-designer"
+    drush urol "forloeb_designer" forloeb-designer
+
+    drush ucrt flow-designer --mail="os2forms-flow-designer@magenta.dk" --password="flow-designer"
+    drush urol "flow_designer" flow-designer
+
+    drush ucrt medarbejder --mail="os2forms-medarbejder@magenta.dk" --password="medarbejder"
+    drush urol "medarbejder" medarbejder
+
+    drush ucrt sagsbehandler --mail="os2forms-sagsbehandler@magenta.dk" --password="sagsbehandler"
+    drush urol "sagsbehandler" sagsbehandler
+
+    drush ucrt leder --mail="os2forms-leder@magenta.dk" --password="leder"
+    drush urol "leder" leder
+
+    # Creating demo-users - END
+
+    # Import of user interface translations. Never check for updates. Only use local translation source. Only overwrite imported translations.
+    # Comment out the three lines to run install without importing translations
+    drush locale-check
+    drush locale-update
+    drush locale-import da /var/www/html/drupal/web/profiles/custom/os2forms_forloeb/config/translations/os2forms_forloeb.da.po --type=customized --override=all
+    # End import og translations
+
+else
+    echo "Drupal already bootstrapped - skipping install"
+fi
 
 echo-yellow "Run update.php and clear caches"
 fin drush updb -y
