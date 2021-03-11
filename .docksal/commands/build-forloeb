@@ -26,11 +26,11 @@ echo-yellow "Fetching composer dependencies"
 fin composer install
 
 echo-yellow "Installing drupal based on os2forms_forloeb_profile"
-if ! drush status bootstrap | grep -q Successful ; then
+if ! fin drush status bootstrap | grep -q Successful ; then
     echo "Drupal is not bootstrapped - starting site-install"
     fin drush site-install os2forms_forloeb_profile -y --verbose \
     --db-url=mysql://root:root@db/default \
-    --db-prefix="forms" \
+    --db-prefix=forms \
     --site-name=OS2forms_forloeb \
     --site-mail=test@test.dk \
     --account-mail=test@test.dk \
@@ -60,7 +60,7 @@ if ! drush status bootstrap | grep -q Successful ; then
     # Comment out the three lines to run install without importing translations
     fin drush locale-check
     fin drush locale-update
-    fin drush locale-import da /var/www/html/drupal/web/profiles/custom/os2forms_forloeb/config/translations/os2forms_forloeb.da.po --type=customized --override=all
+    fin drush locale-import da /var/www/html/drupal/web/modules/contrib/os2forms_forloeb/config/translations/os2forms_forloeb.da.po --type=customized --override=all
     # End import og translations
 
 else
