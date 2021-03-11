@@ -28,14 +28,7 @@ fin composer install
 echo-yellow "Installing drupal based on os2forms_forloeb_profile"
 if ! fin drush status bootstrap | grep -q Successful ; then
     echo "Drupal is not bootstrapped - starting site-install"
-    fin drush site-install os2forms_forloeb_profile -y --verbose \
-    --db-url=mysql://root:root@db/default \
-    --db-prefix=forms \
-    --site-name=OS2forms_forloeb \
-    --site-mail=test@test.dk \
-    --account-mail=test@test.dk \
-    --account-name=admin \
-    --account-pass=admin
+    fin drush si os2forms_forloeb_profile --db-url=mysql://root:root@db/default --account-pass=admin --site-name=OS2forms_Forløb -y -v
 
     # Creating demo-users - BEGIN
 
