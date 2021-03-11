@@ -74,6 +74,10 @@ install:
   - honeypot
   - libraries
   - maestro
+  - maestro_taskconsole
+  - maestro_template_builder
+  - maestro_utilities
+  - maestro_webform
   - mailsystem
   - masquerade
   - os2forms
