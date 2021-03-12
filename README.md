@@ -56,7 +56,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 3. Start docksal environment
    ```sh
-   fin init
+   fin start
    ```
 
 4. Install dependencies and enable modules
