@@ -19,9 +19,6 @@ echo-green () { echo -e "${green}$1${NC}"; }
 echo-green-bg () { echo -e "${green_bg}$1${NC}"; }
 echo-yellow () { echo -e "${yellow}$1${NC}"; }
 
-echo-yellow "Require os2forms_forloeb module"
-fin composer require os2forms/os2forms_forloeb
-
 echo-yellow "Fetching composer dependencies"
 fin composer install
 
