@@ -26,6 +26,7 @@
 /.docksal/commands/*
 !/.docksal/commands/init
 !/.docksal/commands/rebuild-test
+!/.docksal/commands/build-forloeb
 
 # docker stuff
 logs/*.log
