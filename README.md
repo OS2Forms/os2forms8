@@ -59,17 +59,25 @@ These instructions will get you a copy of the project up and running on your loc
    fin start
    ```
 
-4. Install dependencies and enable modules
+4. Add file permission fix to settings.php. See https://docs.docksal.io/apps/drupal/#file-permissions
+   ```php
+   // web/sites/default/settings.php
+
+   $settings['file_chmod_directory'] = 0777;
+   $settings['file_chmod_file'] = 0666;
+   ```
+
+5. Install dependencies and enable modules
    ```sh
    fin rebuild-test
    ```
 
-5. Create local settings
+6. Create local settings
    ```sh
    cp web/sites/example.settings.local.php web/sites/default/settings.local.php
    ```
 
-6. Configure trusted hosts in settings.local.php (add the following if not present)
+7. Configure trusted hosts in settings.local.php (add the following if not present)
    ```php
    // web/sites/default/settings.local.php
 
