@@ -1,0 +1,19 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - white_darkblue
+id: white_darkblue_messages
+theme: white_darkblue
+region: header
+weight: -1
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

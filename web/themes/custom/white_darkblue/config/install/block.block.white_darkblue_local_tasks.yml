@@ -1,0 +1,31 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - user
+  theme:
+    - white_darkblue
+id: white_darkblue_local_tasks
+theme: white_darkblue
+region: header
+weight: -3
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+      administrator: administrator
+      selvbetjeningsdesigner: selvbetjeningsdesigner
+      se_resultater: se_resultater
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

@@ -1,0 +1,24 @@
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:105b1e2d-408f-4dc1-ad78-c2610e3825c3'
+  module:
+    - block_content
+  theme:
+    - rudersdal_kommune
+id: sidefod_white_darkblue
+theme: white_darkblue
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:105b1e2d-408f-4dc1-ad78-c2610e3825c3'
+settings:
+  id: 'block_content:105b1e2d-408f-4dc1-ad78-c2610e3825c3'
+  label: Sidefod
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,36 @@
+<?php
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Render\Element;
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_webform_submission_form_alter().
+ */
+function white_darkblue_form_alter(array &$form, FormStateInterface $form_state): void {
+  $build_info = $form_state->getBuildInfo();
+  if (empty($build_info['form_id']) || strpos($build_info['form_id'], 'webform_submission_') !== 0) {
+    return;
+  }
+
+  $actions = &$form['actions'];
+  $submit = array_filter(Element::children($form['actions']), function($key) use ($actions) {
+    if (isset($actions[$key]['#access']) && $actions[$key]['#access'] == FALSE) {
+      return FALSE;
+    }
+    return TRUE;
+  });
+
+  if (count($submit) == 1 && in_array($submit[0], ['wizard_next', 'submit'])) {
+    $actions[$submit[0]]['#attributes']['class'][] = 'btn-right';
+  }
+}
+
+function white_darkblue_preprocess_block(&$variables) {
+  if ($variables['plugin_id'] != 'system_branding_block') {
+    return;
+  }
+  if (empty($frontpage_url = theme_get_setting('front_page_url'))) {
+    $frontpage_url = Url::fromRoute('<front>');
+  }
+  $variables['front_page_url'] = $frontpage_url;
+}

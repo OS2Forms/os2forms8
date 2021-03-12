@@ -1,0 +1,22 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - os2forms_nemid
+  theme:
+    - white_darkblue
+id: os2formsnemidloginoutlink_white_darkblue
+theme: white_darkblue
+region: navigation_collapsible
+weight: 0
+provider: null
+plugin: os2forms_nemid_login_logout_link
+settings:
+  id: os2forms_nemid_login_logout_link
+  label: 'OS2Forms Nemid Login/out link'
+  provider: os2forms_nemid
+  label_display: '0'
+  link_login_text: 'Log ind'
+  link_logout_text: 'Log ud'
+  hide_login_button: 1
+visibility: {  }

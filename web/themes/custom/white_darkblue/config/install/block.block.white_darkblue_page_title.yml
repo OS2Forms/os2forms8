@@ -1,0 +1,17 @@
+langcode: da
+status: true
+dependencies:
+  theme:
+    - white_darkblue
+id: white_darkblue_page_title
+theme: white_darkblue
+region: header
+weight: -4
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

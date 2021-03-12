@@ -1,0 +1,17 @@
+langcode: da
+status: false
+dependencies:
+  theme:
+    - white_darkblue
+id: white_darkblue_local_actions
+theme: white_darkblue
+region: header
+weight: 1
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }
