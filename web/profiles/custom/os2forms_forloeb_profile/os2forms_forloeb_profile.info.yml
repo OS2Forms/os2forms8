@@ -2,13 +2,14 @@ name: os2forms_forloeb_profile
 type: profile
 description: 'Installation profile for os2forms_forloeb'
 core_version_requirement: '^8.9 || ^9'
+langcode: da
 
 # Optional: Declare your installation profile as a distribution
 # This will make the installer auto-select this installation profile.
 # The distribution_name property is used in the installer and other places as
 # a label for the software being installed.
 # distribution:
-  name: os2forms_forloeb_profile
+  # name: os2forms_forloeb_profile
   # If you want your distribution to pre-select a language you can specify
   # the language code, as well. This will prevent the user from selecting
   # a language code in the user interface. While not recommended for generic
@@ -22,7 +23,6 @@ core_version_requirement: '^8.9 || ^9'
   #
   # install:
   #  theme: my_theme
-  langcode: da
 
 # Modules to install to support the profile.
 install:
@@ -65,35 +65,19 @@ install:
   - views_ui
 
 # OS2Forms
-  - admin_toolbar_tools
-  - coc_forms_auto_export
-  - config_entity_revisions
   - entity_print
   - eu_cookie_compliance
-  - events_logging
   - honeypot
   - libraries
-  - maestro
-  - maestro_taskconsole
-  - maestro_template_builder
-  - maestro_utilities
-  - maestro_webform
   - mailsystem
-  - masquerade
   - os2forms
   - os2forms_nemid
   - os2forms_dawa
   - os2forms_sbsys
-  - os2web_simplesaml
   - pathauto
   - redirect
-  - rules
-  - rules_token
-  - rules_webform
   - smtp
   - token
-  - ultimate_cron
-  - user_default_page
   - webform
   - webform_ui
   - webform_access
@@ -110,6 +94,24 @@ install:
   - webform_submission_export_import
   - webform_submission_log
   - webform_templates
+
+# OS2forms_forloeb
+  - admin_toolbar_tools
+  - coc_forms_auto_export
+  - config_entity_revisions
+  - events_logging
+  - maestro
+  - maestro_taskconsole
+  - maestro_template_builder
+  - maestro_utilities
+  - maestro_webform
+  - masquerade
+  - os2web_simplesaml
+  - rules
+  - rules_token
+  - rules_webform
+  - ultimate_cron
+  - user_default_page
 
 # List any themes that should be installed as part of the profile installation.
 # Note that this will not set any theme as the default theme.
