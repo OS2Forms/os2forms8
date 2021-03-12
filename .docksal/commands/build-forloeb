@@ -32,19 +32,19 @@ if ! fin drush status bootstrap | grep -q Successful ; then
 
     # Creating demo-users - BEGIN
 
-    fin drush ucrt forloeb-designer --mail="os2forms-forloeb-designer@magenta.dk" --password="forloeb-designer"
+    fin drush ucrt forloeb-designer --mail="os2forms-forloeb-designer@example.com" --password="forloeb-designer"
     fin drush urol "forloeb_designer" forloeb-designer
 
-    fin drush ucrt flow-designer --mail="os2forms-flow-designer@magenta.dk" --password="flow-designer"
+    fin drush ucrt flow-designer --mail="os2forms-flow-designer@example.com" --password="flow-designer"
     fin drush urol "flow_designer" flow-designer
 
-    fin drush ucrt medarbejder --mail="os2forms-medarbejder@magenta.dk" --password="medarbejder"
+    fin drush ucrt medarbejder --mail="os2forms-medarbejder@example.com" --password="medarbejder"
     fin drush urol "medarbejder" medarbejder
 
-    fin drush ucrt sagsbehandler --mail="os2forms-sagsbehandler@magenta.dk" --password="sagsbehandler"
+    fin drush ucrt sagsbehandler --mail="os2forms-sagsbehandler@example.com" --password="sagsbehandler"
     fin drush urol "sagsbehandler" sagsbehandler
 
-    fin drush ucrt leder --mail="os2forms-leder@magenta.dk" --password="leder"
+    fin drush ucrt leder --mail="os2forms-leder@example.com" --password="leder"
     fin drush urol "leder" leder
 
     # Creating demo-users - END
