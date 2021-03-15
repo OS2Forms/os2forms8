@@ -106,6 +106,7 @@ install:
   - maestro_utilities
   - maestro_webform
   - masquerade
+  - os2forms_forloeb
   - os2web_simplesaml
   - rules
   - rules_token
