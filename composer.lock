@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "738a6518704d6caf55f15b01a26b5ae5",
+    "content-hash": "2c7efd7f25505c95f16f6d9e889eb73e",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -8801,11 +8801,17 @@
         },
         {
             "name": "drupal/webform_migrate",
-            "version": "dev-1.x",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform_migrate.git",
-                "reference": "2638e99160dcad1f9a1d4484cbd0e8435ed3cb0c"
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/webform_migrate-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "5bdd71ec318a51f5ebc20f30054eadbe14a2d1f0"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9",
@@ -8814,15 +8820,12 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-1.1+10-dev",
-                    "datestamp": "1597007792",
+                    "version": "8.x-1.2",
+                    "datestamp": "1615806788",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -8832,7 +8835,7 @@
             ],
             "authors": [
                 {
-                    "name": "andriyun",
+                    "name": "andr1yun",
                     "homepage": "https://www.drupal.org/user/1277538"
                 },
                 {
@@ -8856,8 +8859,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/webform_migrate",
                 "issues": "http://drupal.org/project/issues/webform_migrate"
-            },
-            "time": "2020-08-09T20:56:14+00:00"
+            }
         },
         {
             "name": "drupal/webform_node",
@@ -11566,12 +11568,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_logging.git",
-                "reference": "777273f6ec36f63396ee66b115bed6f92845b3d4"
+                "reference": "3411218184b852d148727e99409b4a65c20baa26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_logging/zipball/777273f6ec36f63396ee66b115bed6f92845b3d4",
-                "reference": "777273f6ec36f63396ee66b115bed6f92845b3d4",
+                "url": "https://api.github.com/repos/OS2web/os2web_logging/zipball/3411218184b852d148727e99409b4a65c20baa26",
+                "reference": "3411218184b852d148727e99409b4a65c20baa26",
                 "shasum": ""
             },
             "require": {
@@ -11584,7 +11586,7 @@
                 "EUPL-1.2"
             ],
             "description": "Logs access selected content type or webform elements",
-            "time": "2021-03-09T20:38:18+00:00"
+            "time": "2021-03-15T12:44:05+00:00"
         },
         {
             "name": "os2web/os2web_nemlogin",
@@ -18518,7 +18520,6 @@
         "drupal/ldap": 10,
         "drupal/simple_ldap": 15,
         "drupal/webform_composite": 5,
-        "drupal/webform_migrate": 20,
         "drupal/webform_views": 15,
         "os2forms/os2forms_egbolig": 20,
         "os2forms/os2forms_forloeb": 20,
