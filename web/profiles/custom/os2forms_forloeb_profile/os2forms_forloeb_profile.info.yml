@@ -111,7 +111,6 @@ install:
   - rules_token
   - rules_webform
   - ultimate_cron
-  - user_default_page
 
 # List any themes that should be installed as part of the profile installation.
 # Note that this will not set any theme as the default theme.
