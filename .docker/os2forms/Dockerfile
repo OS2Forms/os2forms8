@@ -41,7 +41,7 @@ RUN mkdir -p files; \
 	rm -rf /opt/drupal/web/sites/default/files; \
 	ln -sf /opt/drupal/files /opt/drupal/web/sites/default/files; \
 	# Adjusting ownership
-	chown -R www-data:www-data /opt/drupal/private /opt/drupal/files /opt/drupal/config/sync /opt/drupal/tmp; \
+	chown -R www-data:www-data /opt/drupal/private /opt/drupal/files /opt/drupal/config/sync /opt/drupal/tmp /opt/drupal/logs; \
 	chmod g+s -R /opt/drupal/private /opt/drupal/files /opt/drupal/config/sync
 
 # Adding custom apache configuration with PHP value and log settings.
