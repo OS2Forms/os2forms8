@@ -5,11 +5,14 @@ RUN set -eux; \
 	apt update; \
 	apt install -qq -y \
 		libxml2-dev \
+		libldap2-dev \
 		git \
 		wget \
+		zip \
 		mariadb-client-10.3 \
 		cron; \
-	docker-php-ext-install soap
+	docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ && \
+	docker-php-ext-install soap ldap
 
 # Removing standard Drupal core and loading OS2Web project.
 WORKDIR /opt
@@ -17,10 +20,18 @@ WORKDIR /opt
 ARG OS2FORMS8_TAG
 RUN set -eux; \
 	rm -rf drupal; \
-	wget https://github.com/os2forms/os2forms8/archive/$OS2FORMS8_TAG.tar.gz; \
-	tar -xzvf $OS2FORMS8_TAG.tar.gz; \
-	rm $OS2FORMS8_TAG.tar.gz; \
-	mv os2forms8-$OS2FORMS8_TAG drupal
+#	PRODUCTION SETTINGS
+#	Loading OS2Forms via tags.
+#	wget https://github.com/os2forms/os2forms8/archive/$OS2FORMS8_TAG.tar.gz; \
+#	tar -xzvf $OS2FORMS8_TAG.tar.gz; \
+#	rm $OS2FORMS8_TAG.tar.gz; \
+#	mv os2forms8-$OS2FORMS8_TAG drupal
+#	DEVELOPMENT SETTINGS
+#	Loading OS2Forms from branch to avoid development releases.
+	wget https://github.com/OS2Forms/os2forms8/archive/docker.zip; \
+	unzip docker.zip; \
+	rm docker.zip; \
+	mv os2forms8-docker drupal
 WORKDIR /opt/drupal
 
 # Loading composer dependencies and configuring project folders.
