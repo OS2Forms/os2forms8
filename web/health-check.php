@@ -15,6 +15,9 @@ $autoloader = require_once 'autoload.php';
 // Sending error code by default.
 http_response_code(500);
 
+// Adjust trusted hosts settings to call health-check.php file from any host.
+putenv("DRUPAL_TRUSTED_HOST=" . $_SERVER['SERVER_NAME']);
+
 try {
   // Loading standard Drupal Kernel process.
   $kernel = new DrupalKernel('prod', $autoloader);
@@ -31,14 +34,14 @@ try {
   }
   else {
     $stderr = fopen('php://stderr', 'w');
-    fwrite($stderr,print_r($_SERVER, 1) . "\n");
+    fwrite($stderr,print_r($result, 1) . "\n");
     fwrite($stderr,print_r($response, 1) . "\n");
     fclose($stderr);
   }
 }
 catch (\Exception $exception) {
   $result = 'NOK' . PHP_EOL;
-  $result = $exception->getMessage();
+  $result .= $exception->getMessage();
   $fh = fopen('php://stderr','w');
   fwrite($fh, $result . "\n");
   fclose($fh);
