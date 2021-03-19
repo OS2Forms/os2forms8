@@ -29,13 +29,16 @@ try {
     http_response_code($response->getStatusCode());
     $result = 'OK';
   }
+  else {
+    print_r($response);
+    fwrite(STDERR, print_r($response, 1) . PHP_EOL);
+  }
 }
 catch (\Exception $exception) {
   $result = 'NOK' . PHP_EOL;
   $result = $exception->getMessage();
-  $fh = fopen('php://stderr','a');
-  fwrite($fh, $result);
-  fclose($fh);
+  print_r($result);
+  fwrite(STDERR, print_r($result, 1) . PHP_EOL);
 }
 
 print $result;
