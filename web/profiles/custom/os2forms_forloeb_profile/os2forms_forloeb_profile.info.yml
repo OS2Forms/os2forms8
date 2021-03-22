@@ -100,6 +100,7 @@ install:
   - coc_forms_auto_export
   - config_entity_revisions
   - events_logging
+  - gin_toolbar
   - maestro
   - maestro_taskconsole
   - maestro_template_builder
@@ -117,3 +118,5 @@ install:
 themes:
   - gin
   - claro
+  - bootstrap
+  - custom_theme
