@@ -50,7 +50,6 @@ if ! fin drush status bootstrap | grep -q Successful ; then
     # Comment out the three lines to run install without importing translations
     fin drush locale-check
     fin drush locale-update
-    fin drush locale-import da /var/www/html/drupal/web/modules/contrib/os2forms_forloeb/config/translations/os2forms_forloeb.da.po --type=customized --override=all
     # End import og translations
 
 else
