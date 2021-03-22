@@ -111,6 +111,7 @@ install:
   - rules
   - rules_token
   - rules_webform
+  - switch_page_theme
   - ultimate_cron
 
 # List any themes that should be installed as part of the profile installation.
