@@ -47,3 +47,4 @@ logs/*.log
 /robots.txt
 /update.php
 /web.config
+/.gitattributes

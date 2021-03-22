@@ -106,17 +106,17 @@
             "force-reset": true
         },
         "patches": {
-            "drupal/webform" : {
-               "Add support for Set to state" :  "./patches/add-set-to-state-3159806-2-modified-5.19.patch"
+            "drupal/webform": {
+               "Add support for Set to state": "./patches/add-set-to-state-3159806-2-modified-5.19.patch"
             },
-            "drupal/webform_migrate" : {
-                "Set to support. Checkbox condition fixes" :  "./patches/setto-and-checkboxes-condition-fix-onlyD7.patch"
+            "drupal/webform_migrate": {
+                "Set to support. Checkbox condition fixes": "./patches/setto-and-checkboxes-condition-fix-onlyD7.patch"
             },
-            "drupal/queue_mail" : {
-                "Admin interface to see queued mail" :  "https://www.drupal.org/files/issues/2020-06-30/3096917-ui-queue-mail-moderate-5.patch"
+            "drupal/queue_mail": {
+                "Admin interface to see queued mail": "https://www.drupal.org/files/issues/2020-06-30/3096917-ui-queue-mail-moderate-5.patch"
             },
-            "drupal/smtp" : {
-                "Duplicated Attachments using webforms" :  "https://www.drupal.org/files/issues/2020-06-18/smtp-2995290-17.patch"
+            "drupal/smtp": {
+                "Duplicated Attachments using webforms": "https://www.drupal.org/files/issues/2020-06-18/smtp-2995290-17.patch"
             }
         }
     }
