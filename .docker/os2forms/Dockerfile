@@ -21,17 +21,17 @@ ARG OS2FORMS8_TAG
 RUN set -eux; \
 	rm -rf drupal; \
 #	PRODUCTION SETTINGS
-#	Loading OS2Forms via tags.
-#	wget https://github.com/os2forms/os2forms8/archive/$OS2FORMS8_TAG.tar.gz; \
-#	tar -xzvf $OS2FORMS8_TAG.tar.gz; \
-#	rm $OS2FORMS8_TAG.tar.gz; \
-#	mv os2forms8-$OS2FORMS8_TAG drupal
+	Loading OS2Forms via tags.
+	wget https://github.com/os2forms/os2forms8/archive/$OS2FORMS8_TAG.tar.gz; \
+	tar -xzvf $OS2FORMS8_TAG.tar.gz; \
+	rm $OS2FORMS8_TAG.tar.gz; \
+	mv os2forms8-$OS2FORMS8_TAG drupal
 #	DEVELOPMENT SETTINGS
 #	Loading OS2Forms from branch to avoid development releases.
-	wget https://github.com/OS2Forms/os2forms8/archive/docker.zip; \
-	unzip docker.zip; \
-	rm docker.zip; \
-	mv os2forms8-docker drupal
+#	wget https://github.com/OS2Forms/os2forms8/archive/docker.zip;
+#	unzip docker.zip; \
+#	rm docker.zip; \
+#	mv os2forms8-docker drupal
 WORKDIR /opt/drupal
 
 # Loading composer dependencies and configuring project folders.
