@@ -21,7 +21,7 @@ ARG OS2FORMS8_TAG
 RUN set -eux; \
 	rm -rf drupal; \
 #	PRODUCTION SETTINGS
-	Loading OS2Forms via tags.
+#	Loading OS2Forms via tags.
 	wget https://github.com/os2forms/os2forms8/archive/$OS2FORMS8_TAG.tar.gz; \
 	tar -xzvf $OS2FORMS8_TAG.tar.gz; \
 	rm $OS2FORMS8_TAG.tar.gz; \
