@@ -105,6 +105,16 @@ $databases = [];
  * webserver.  For most other drivers, you must specify a
  * username, password, host, and database name.
  *
+ * Drupal core implements drivers for mysql, pgsql, and sqlite. Other drivers
+ * can be provided by contributed or custom modules. To use a contributed or
+ * custom driver, the "namespace" property must be set to the namespace of the
+ * driver. The code in this namespace must be autoloadable prior to connecting
+ * to the database, and therefore, prior to when module root namespaces are
+ * added to the autoloader. To add the driver's namespace to the autoloader,
+ * set the "autoload" property to the PSR-4 base directory of the driver's
+ * namespace. This is optional for projects managed with Composer if the
+ * driver's namespace is in Composer's autoloader.
+ *
  * Transaction support is enabled by default for all drivers that support it,
  * including MySQL. To explicitly disable it, set the 'transactions' key to
  * FALSE.
@@ -224,6 +234,20 @@ $databases = [];
  *     'database' => '/path/to/databasefilename',
  *   ];
  * @endcode
+ *
+ * Sample Database configuration format for a driver in a contributed module:
+ * @code
+ *   $databases['default']['default'] = [
+ *     'driver' => 'mydriver',
+ *     'namespace' => 'Drupal\mymodule\Driver\Database\mydriver',
+ *     'autoload' => 'modules/mymodule/src/Driver/Database/mydriver/',
+ *     'database' => 'databasename',
+ *     'username' => 'sqlusername',
+ *     'password' => 'sqlpassword',
+ *     'host' => 'localhost',
+ *     'prefix' => '',
+ *   ];
+ * @endcode
  */
 
 /**
@@ -237,7 +261,7 @@ $databases = [];
  * directory in the public files path. The setting below allows you to set
  * its location.
  */
-$settings['config_sync_directory'] = '../' . str_replace('sites', 'config', $site_path);
+# $settings['config_sync_directory'] = '/directory/outside/webroot';
 
 /**
  * Settings:
@@ -266,7 +290,7 @@ $settings['config_sync_directory'] = '../' . str_replace('sites', 'config', $sit
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = '';
+$settings['hash_salt'] = 'GHThjiLXYGBphnRz_une9GK8wOxzjDAEkXOlVkK-1Vw6JfglEigFxM5MzvIdg3WWJKvM7R-Ulw';
 
 /**
  * Deployment identifier.
@@ -520,7 +544,7 @@ if ($settings['hash_salt']) {
  * See https://www.drupal.org/documentation/modules/file for more information
  * about securing private files.
  */
-$settings['file_private_path'] = '../' . str_replace('sites', 'private', $site_path);
+# $settings['file_private_path'] = '';
 
 /**
  * Temporary file path:
@@ -533,7 +557,7 @@ $settings['file_private_path'] = '../' . str_replace('sites', 'private', $site_p
  *
  * @see \Drupal\Component\FileSystem\FileSystem::getOsTemporaryDirectory()
  */
-$settings['file_temp_path'] = '../' . str_replace('sites', 'tmp', $site_path);
+# $settings['file_temp_path'] = '/tmp';
 
 /**
  * Session write interval:
@@ -706,7 +730,6 @@ $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
  * will allow the site to run off of all variants of example.com and
  * example.org, with all subdomains included.
  */
-$settings['trusted_host_patterns'] = ['^' . str_replace(['sites/', '.'], ['', '\.'], $site_path) . '$'];
 
 /**
  * The default list of directories that will be ignored by Drupal's file API.
@@ -743,16 +766,43 @@ $settings['entity_update_batch_size'] = 50;
 $settings['entity_update_backup'] = TRUE;
 
 /**
+ * Node migration type.
+ *
+ * This is used to force the migration system to use the classic node migrations
+ * instead of the default complete node migrations. The migration system will
+ * use the classic node migration only if there are existing migrate_map tables
+ * for the classic node migrations and they contain data. These tables may not
+ * exist if you are developing custom migrations and do not want to use the
+ * complete node migrations. Set this to TRUE to force the use of the classic
+ * node migrations.
+ */
+$settings['migrate_node_migrate_type_classic'] = FALSE;
+
+/**
  * Load local development override configuration, if available.
  *
- * Use settings.local.php to override variables on secondary (staging,
- * development, etc) installations of this site. Typically used to disable
- * caching, JavaScript/CSS compression, re-routing of outgoing emails, and
- * other things that should not happen on development and testing sites.
+ * Create a settings.local.php file to override variables on secondary (staging,
+ * development, etc.) installations of this site.
+ *
+ * Typical uses of settings.local.php include:
+ * - Disabling caching.
+ * - Disabling JavaScript/CSS compression.
+ * - Rerouting outgoing emails.
  *
  * Keep this code block at the end of this file to take full effect.
  */
-
-if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
-  include $app_root . '/' . $site_path . '/settings.local.php';
-}
+#
+# if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+#   include $app_root . '/' . $site_path . '/settings.local.php';
+# }
+$config_directories['sync'] = '../config/sync';
+$databases['default']['default'] = array (
+  'database' => 'default',
+  'username' => 'root',
+  'password' => 'root',
+  'prefix' => '',
+  'host' => 'db',
+  'port' => '',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);

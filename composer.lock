@@ -11535,12 +11535,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2Forms/os2forms_forloeb.git",
-                "reference": "9c6c9acbd982a723ecf836637d4b4a600d0b82f1"
+                "reference": "f825d5e72eb3e1ced21447c4edebf0b7063c6f84"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2Forms/os2forms_forloeb/zipball/9c6c9acbd982a723ecf836637d4b4a600d0b82f1",
-                "reference": "9c6c9acbd982a723ecf836637d4b4a600d0b82f1",
+                "url": "https://api.github.com/repos/OS2Forms/os2forms_forloeb/zipball/f825d5e72eb3e1ced21447c4edebf0b7063c6f84",
+                "reference": "f825d5e72eb3e1ced21447c4edebf0b7063c6f84",
                 "shasum": ""
             },
             "require": {
@@ -11608,7 +11608,7 @@
                 "EUPL-1.2"
             ],
             "description": "This module adds Maestro workflow engine and functionality to produce advanced workflows",
-            "time": "2021-03-24T13:22:19+00:00"
+            "time": "2021-03-24T13:59:18+00:00"
         },
         {
             "name": "os2web/os2web_datalookup",
