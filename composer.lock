@@ -9961,16 +9961,16 @@
         },
         {
             "name": "os2forms/os2forms",
-            "version": "2.6.1",
+            "version": "2.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2Forms/os2forms.git",
-                "reference": "5f26d647ceea382b8df5fdcc86d2b9d87bb7ce01"
+                "reference": "e53b6f20b0896e453f946b104a0110ea2aa7cd44"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/OS2Forms/os2forms/zipball/ff5acffa9cd19c16b8eb1a41d3fce78b29f8ee48",
-                "reference": "5f26d647ceea382b8df5fdcc86d2b9d87bb7ce01",
+                "reference": "e53b6f20b0896e453f946b104a0110ea2aa7cd44",
                 "shasum": ""
             },
             "require": {
