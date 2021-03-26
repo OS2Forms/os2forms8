@@ -6,6 +6,8 @@ label: 'Flow designer'
 weight: 4
 is_admin: null
 permissions:
+  - 'access content overview'
+  - 'access files overview'
   - 'access contextual links'
   - 'access site in maintenance mode'
   - 'access toolbar'
@@ -69,6 +71,7 @@ permissions:
   - 'entity print access type maestro_process_variables'
   - 'entity print access type maestro_production_assignments'
   - 'entity print access type maestro_queue'
+  - 'search content'
   - 'entity print access type menu_link_content'
   - 'entity print access type node'
   - 'entity print access type redirect'
