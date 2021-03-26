@@ -19,6 +19,12 @@ echo-green () { echo -e "${green}$1${NC}"; }
 echo-green-bg () { echo -e "${green_bg}$1${NC}"; }
 echo-yellow () { echo -e "${yellow}$1${NC}"; }
 
+echo-yellow "Updating os2forms_forloeb module"
+fin composer update os2forms/os2forms_forloeb
+
+echo-yellow "Updating composer.lock file"
+fin composer update --lock
+
 echo-yellow "Fetching composer dependencies"
 fin composer install
 
