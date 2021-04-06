@@ -9,7 +9,8 @@ RUN set -eux; \
 		git \
 		wget \
 		zip \
-		mariadb-client-10.3 \
+		default-mysql-client \
+		default-mysql-client-core \
 		cron; \
 	docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ && \
 	docker-php-ext-install soap ldap
