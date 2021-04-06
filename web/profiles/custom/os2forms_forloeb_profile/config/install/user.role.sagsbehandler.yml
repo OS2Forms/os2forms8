@@ -50,3 +50,4 @@ permissions:
   - 'view the administration theme'
   - 'view webform submissions any node'
   - 'view webform submissions own node'
+  - 'administer maestro templates'
