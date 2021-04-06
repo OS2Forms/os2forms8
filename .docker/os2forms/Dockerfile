@@ -2,6 +2,8 @@ FROM drupal:8-apache-buster
 
 # Installing additional dependencies.
 RUN set -eux; \
+	wget https://repo.mysql.com//mysql-apt-config_0.8.13-1_all.deb
+	dpkg -i mysql-apt-config_0.8.13-1_all.deb
 	apt update; \
 	apt install -qq -y \
 		libxml2-dev \
@@ -9,8 +11,7 @@ RUN set -eux; \
 		git \
 		wget \
 		zip \
-		default-mysql-client \
-		default-mysql-client-core \
+		mysql-client \
 		cron; \
 	docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ && \
 	docker-php-ext-install soap ldap
