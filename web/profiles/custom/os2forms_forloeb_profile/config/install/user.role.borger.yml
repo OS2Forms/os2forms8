@@ -1,0 +1,11 @@
+langcode: da
+status: true
+dependencies: {  }
+id: borger
+label: borger
+weight: 10
+is_admin: null
+permissions:
+- 'access content'
+- 'display eu cookie compliance popup'
+- 'use text format restricted_html'
