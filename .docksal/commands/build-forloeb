@@ -50,6 +50,9 @@ if ! fin drush status bootstrap | grep -q Successful ; then
     fin drush ucrt leder --mail="os2forms-leder@example.com" --password="leder"
     fin drush urol "leder" leder
 
+    fin drush ucrt borger --mail="os2forms-borger@example.com" --password="borger"
+    fin drush urol "borger" borger
+
     fin drush ucrt virksomhed --mail="os2forms-virksomhed@example.com" --password="virksomhed"
     fin drush urol "virksomhed" virksomhed
 
