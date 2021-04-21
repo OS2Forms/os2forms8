@@ -50,6 +50,9 @@ if ! fin drush status bootstrap | grep -q Successful ; then
     fin drush ucrt leder --mail="os2forms-leder@example.com" --password="leder"
     fin drush urol "leder" leder
 
+    fin drush ucrt virksomhed --mail="os2forms-virksomhed@example.com" --password="virksomhed"
+    fin drush urol "virksomhed" virksomhed
+
     # Creating demo-users - END
 
     # Import of user interface translations. Never check for updates. Only use local translation source. Only overwrite imported translations.
