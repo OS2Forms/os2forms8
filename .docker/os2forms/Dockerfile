@@ -9,10 +9,17 @@ RUN set -eux; \
 		git \
 		wget \
 		zip \
-		mariadb-client-10.3 \
-		cron; \
+		cron \
+		lsb-release \
+		gnupg; \
 	docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ && \
-	docker-php-ext-install soap ldap
+	docker-php-ext-install soap ldap; \
+	# Addind mysql-client
+	wget https://repo.mysql.com//mysql-apt-config_0.8.13-1_all.deb; \
+	echo 4 | dpkg -i mysql-apt-config_0.8.13-1_all.deb; \
+	apt update; \
+	apt install -qq -y mysql-client; \
+	echo "[client]" >> /etc/mysql/my.cnf; echo "ssl-mode=DISABLED" >> /etc/mysql/my.cnf
 
 # Removing standard Drupal core and loading OS2Web project.
 WORKDIR /opt
@@ -22,16 +29,16 @@ RUN set -eux; \
 	rm -rf drupal; \
 #	PRODUCTION SETTINGS
 #	Loading OS2Forms via tags.
-#	wget https://github.com/os2forms/os2forms8/archive/$OS2FORMS8_TAG.tar.gz; \
-#	tar -xzvf $OS2FORMS8_TAG.tar.gz; \
-#	rm $OS2FORMS8_TAG.tar.gz; \
-#	mv os2forms8-$OS2FORMS8_TAG drupal
+	wget https://github.com/os2forms/os2forms8/archive/$OS2FORMS8_TAG.tar.gz; \
+	tar -xzvf $OS2FORMS8_TAG.tar.gz; \
+	rm $OS2FORMS8_TAG.tar.gz; \
+	mv os2forms8-$OS2FORMS8_TAG drupal
 #	DEVELOPMENT SETTINGS
 #	Loading OS2Forms from branch to avoid development releases.
-	wget https://github.com/OS2Forms/os2forms8/archive/docker.zip; \
-	unzip docker.zip; \
-	rm docker.zip; \
-	mv os2forms8-docker drupal
+#	wget https://github.com/OS2Forms/os2forms8/archive/docker.zip;
+#	unzip docker.zip; \
+#	rm docker.zip; \
+#	mv os2forms8-docker drupal
 WORKDIR /opt/drupal
 
 # Loading composer dependencies and configuring project folders.
