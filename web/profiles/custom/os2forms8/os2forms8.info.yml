@@ -26,6 +26,8 @@ install:
 
   # Contrib
   - admin_toolbar_tools
+  - restui
+  - straw
 
   # OS2Forms
   - os2forms
