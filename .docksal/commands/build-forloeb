@@ -71,3 +71,4 @@ fi
 echo-yellow "Run update.php and clear caches"
 fin drush updb -y
 fin drush cr
+fin drush en os2forms_forloeb -y
