@@ -24,6 +24,7 @@ permissions:
 - 'administer display modes'
 - 'administer maestro production assignment entities'
 - 'administer maestro queue entities'
+- 'administer maestro templates'
 - 'administer node display'
 - 'administer node form display'
 - 'administer taxonomy_term display'
