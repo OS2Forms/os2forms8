@@ -72,9 +72,15 @@ These instructions will get you a copy of the project up and running on your loc
    $settings['file_chmod_file'] = 0666;
    ```
 
-6. Install dependencies and enable modules
+6. Here you can choose to install a standard OS2forms or include the OS2forms Forløb module with necessary configurations.
    ```sh
+   # Option 1: Standard OS2forms test or development install
    fin rebuild-test
+   ```
+   
+   ```sh
+   # Option 2: OS2forms 2.1 med Forløb test or development install
+   fin build-forloeb
    ```
 
 7. Configure trusted hosts in settings.local.php (add the following if not present)
