@@ -68,7 +68,7 @@ else
     echo "Drupal already bootstrapped - skipping install"
 fi
 
-echo-yellow "Run update.php and clear caches"
+echo-yellow "Install os2forms_forloeb, run update.php and clear caches"
+fin drush en os2forms_forloeb -y
 fin drush updb -y
 fin drush cr
-fin drush en os2forms_forloeb -y
