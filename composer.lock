@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b4e49cc03617efb3f43196c1ff0cec09",
+    "content-hash": "ee03f5b554c06138883050eebd94fe1b",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3782,17 +3782,17 @@
         },
         {
             "name": "drupal/config_entity_revisions",
-            "version": "1.6.0",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/config_entity_revisions.git",
-                "reference": "8.x-1.6"
+                "reference": "8.x-1.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/config_entity_revisions-8.x-1.6.zip",
-                "reference": "8.x-1.6",
-                "shasum": "17d779648ac1a938ad75ef42130d46de235b2389"
+                "url": "https://ftp.drupal.org/files/projects/config_entity_revisions-8.x-1.7.zip",
+                "reference": "8.x-1.7",
+                "shasum": "fef8783aa551d05b8cc7e4a6c106a1dda301d7d1"
             },
             "require": {
                 "drupal/core": "^8 || ^9",
@@ -3805,8 +3805,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.6",
-                    "datestamp": "1604452750",
+                    "version": "8.x-1.7",
+                    "datestamp": "1619148048",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -11720,12 +11720,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2Forms/os2forms_forloeb.git",
-                "reference": "f90edc99b35b19e0cee1144f32fb88903d49465c"
+                "reference": "eb167044efed7d708cd849ad1cc35ff4b69ea53c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2Forms/os2forms_forloeb/zipball/f90edc99b35b19e0cee1144f32fb88903d49465c",
-                "reference": "f90edc99b35b19e0cee1144f32fb88903d49465c",
+                "url": "https://api.github.com/repos/OS2Forms/os2forms_forloeb/zipball/eb167044efed7d708cd849ad1cc35ff4b69ea53c",
+                "reference": "eb167044efed7d708cd849ad1cc35ff4b69ea53c",
                 "shasum": ""
             },
             "require": {
@@ -11735,7 +11735,7 @@
                 "drupal/ckeditor_a11ychecker": "1.0.0",
                 "drupal/clientside_validation": "3.0.0-rc4",
                 "drupal/coc_forms_auto_export": "1.0.0-alpha1",
-                "drupal/config_entity_revisions": "1.6.0",
+                "drupal/config_entity_revisions": "1.7.0",
                 "drupal/embed": "1.4.0",
                 "drupal/events_logging": "1.4.0",
                 "drupal/gin": "3.0.0-alpha33",
@@ -11793,7 +11793,7 @@
                 "EUPL-1.2"
             ],
             "description": "This module adds Maestro workflow engine and functionality to produce advanced workflows",
-            "time": "2021-04-20T08:29:24+00:00"
+            "time": "2021-05-03T12:47:42+00:00"
         },
         {
             "name": "os2web/os2web_datalookup",
