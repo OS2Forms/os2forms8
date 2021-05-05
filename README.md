@@ -101,7 +101,7 @@ For a more detailed description, you could look at the `web/core/INSTALL.txt` [h
 
 * A HTTP server such as [Apache](https://httpd.apache.org/) that supports PHP
 * A database service such as [MySQL](https://www.mysql.com/)
-* PHP 7 with the following extensions enabled:
+* PHP 7.4 with the following extensions enabled:
   * gd
   * curl
   * simplexml
@@ -109,8 +109,10 @@ For a more detailed description, you could look at the `web/core/INSTALL.txt` [h
   * dom
   * soap
   * mbstring
+  * zip
   * database specific extension such as the mysql extension
 * [Composer](https://getcomposer.org/)
+* [Drush launcher](https://github.com/drush-ops/drush-launcher)
 
 ### Installing
 
@@ -129,7 +131,26 @@ cd os2forms8
 composer install --no-dev
 ```
 
-4. Generate a salt string and insert it in web/sites/default/settings.php
+4. Create local settings
+   ```sh
+   cp web/sites/default.settings.local.php web/sites/default/settings.local.php
+   ```
+5. Add databases settings to web/sites/default/settings.local.php
+
+```
+   $databases['default']['default'] = array (
+     'database' => '[dbname]',
+     'username' => '[dbuser]',
+     'password' => '[dbpass]',
+     'prefix' => '',
+     'host' => '[dbhost]',
+     'port' => '',
+     'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+     'driver' => 'mysql',
+   );
+```
+
+6. Generate a salt string and insert it in web/sites/default/settings.local.php
    ```sh
    # Generate salt string - this will output a new salt string
    ./vendor/bin/drush php-eval 'echo \Drupal\Component\Utility\Crypt::randomBytesBase64(55) . "\n";'
@@ -140,18 +161,29 @@ composer install --no-dev
    $settings['hash_salt'] = ''; // Insert the generated salt string here
    ```
 
-5. Configure trusted hosts in web/sites/default/settings.php.
+7. Configure trusted hosts in web/sites/default/settings.local.php.
    For more information on how to write this, see the section for [Trusted Host settings](https://www.drupal.org/docs/installing-drupal/trusted-host-settings)
    in the official Drupal installation guide.
    ```php
-   // web/sites/default/settings.php
+   // web/sites/default/settings.local.php
 
    $settings['trusted_host_patterns'] = [''];
    ```
-6. Visit the url for the os2forms application and follow the instructions
+8. Install Drupal
+
+   Using drush command:
+   ```
+   # To install default OS2Forms
+   drush si os2forms8 --account-pass=account_password --site-name="OS2Forms"
+   
+   # To install OS2Forms 2
+   drush si os2forms_forloeb_profile --account-pass=account_password --site-name="OS2Forms med forløb"
+   ```
+
+   Or visit the url for the os2forms application and follow the instructions
    * Select the os2forms install profile for a default os2forms installation
 
-7. Enable OS2Forms modules
+9. Enable OS2Forms modules
    ```sh
    ./vendor/bin/drush en os2forms, os2forms_nemid, os2forms_dawa, os2forms_sbsys
    ```
