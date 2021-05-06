@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "86aa2614b3b35bde33cf1fd51f60e91e",
+    "content-hash": "ccf3e5d0c5e184796fe9fceda6c57df2",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -10673,16 +10673,16 @@
         },
         {
             "name": "os2forms/os2forms_forloeb",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2Forms/os2forms_forloeb.git",
-                "reference": "fc3a2a3ff39dae36ef48e4972cb74844418d5f46"
+                "reference": "d9ec840ee3bd29c1bbef77c45de1eae7b3a798b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2Forms/os2forms_forloeb/zipball/fc3a2a3ff39dae36ef48e4972cb74844418d5f46",
-                "reference": "fc3a2a3ff39dae36ef48e4972cb74844418d5f46",
+                "url": "https://api.github.com/repos/OS2Forms/os2forms_forloeb/zipball/d9ec840ee3bd29c1bbef77c45de1eae7b3a798b8",
+                "reference": "d9ec840ee3bd29c1bbef77c45de1eae7b3a798b8",
                 "shasum": ""
             },
             "require": {
