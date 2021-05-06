@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Install, update and uninstall functions for the os2forms8 installation profile.
+ * Install, update and uninstall functions for the os2forms_forloeb_profile installation profile.
  */
 
 use Drupal\user\Entity\User;
@@ -30,9 +30,9 @@ function os2forms_forloeb_profile_install() {
  *
  * Enabled
  */
-function os2forms8_install_tasks(&$install_state) {
+function os2forms_forloeb_profile_install_tasks(&$install_state) {
   $tasks = [
-    'os2forms8_install_simplesaml_roles' => [
+    'os2forms_forloeb_profile_install_simplesaml_roles' => [
       'display_name' => t('Set up SimpleSAML roles mapping'),
       'type' => 'normal',
     ]
@@ -44,9 +44,9 @@ function os2forms8_install_tasks(&$install_state) {
 /**
  * Callback function to install default profile content.
  *
- * @see os2forms8_install_tasks()
+ * @see os2forms_forloeb_profile_install_tasks()
  */
-function os2forms8_install_simplesaml_roles() {
+function os2forms_forloeb_profile_install_simplesaml_roles() {
   $config = \Drupal::service('config.factory')
     ->getEditable('simplesamlphp_auth.settings');
 
