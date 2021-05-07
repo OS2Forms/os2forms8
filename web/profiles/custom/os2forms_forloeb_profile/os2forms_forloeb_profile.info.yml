@@ -1,0 +1,123 @@
+name: os2forms_forloeb_profile
+type: profile
+description: 'Installation profile for os2forms_forloeb'
+core_version_requirement: '^8.9 || ^9'
+langcode: da
+
+# Optional: Declare your installation profile as a distribution
+# This will make the installer auto-select this installation profile.
+# The distribution_name property is used in the installer and other places as
+# a label for the software being installed.
+# distribution:
+  # name: os2forms_forloeb_profile
+  # If you want your distribution to pre-select a language you can specify
+  # the language code, as well. This will prevent the user from selecting
+  # a language code in the user interface. While not recommended for generic
+  # community distributions, this can be very useful for distributions that
+  # are tailored to a language-specific audience (for example government
+  # institutions in a certain country) but also site-specific installation
+  # profiles. Note that this language code will also be used when installing
+  # the site via Drush.
+  #
+  # To set your theme as the theme for the distribution installation uncomment the following:
+  #
+  # install:
+  #  theme: my_theme
+
+# Modules to install to support the profile.
+install:
+# Drupal core mudules
+  - automated_cron
+  - big_pipe
+  - block
+  - block_content
+  - breakpoint
+  - ckeditor
+  - color
+  - comment
+  - config
+  - contact
+  - contextual
+  - datetime
+  - dblog
+  - dynamic_page_cache
+  - editor
+  - field_ui
+  - file
+  - help
+  - history
+  - image
+  - locale
+  - menu_link_content
+  - menu_ui
+  - node
+  - options
+  - path
+  - page_cache
+  - rdf
+  - search
+  - shortcut
+  - system
+  - taxonomy
+  - toolbar
+  - telephone
+  - views
+  - views_ui
+
+# OS2Forms
+  - entity_print
+  - eu_cookie_compliance
+  - honeypot
+  - libraries
+  - mailsystem
+  - os2forms
+  - os2forms_nemid
+  - os2forms_dawa
+  - os2forms_sbsys
+  - pathauto
+  - redirect
+  - smtp
+  - token
+  - webform
+  - webform_ui
+  - webform_access
+  - webform_attachment
+  - webform_composite
+  - webform_embed
+  - webform_entity_print
+  - webform_entity_print_attachment
+  - webform_migrate
+  - webform_permissions_by_term
+  - webform_remote_handlers
+  - webform_rest
+  - webform_scheduled_email
+  - webform_submission_export_import
+  - webform_submission_log
+  - webform_templates
+
+# OS2forms_forloeb
+  - admin_toolbar_tools
+  - coc_forms_auto_export
+  - config_entity_revisions
+  - events_logging
+  - gin_toolbar
+  - maestro
+  - maestro_taskconsole
+  - maestro_template_builder
+  - maestro_utilities
+  - maestro_webform
+  - masquerade
+  - os2web_simplesaml
+  - rules
+  - rules_token
+  - rules_webform
+  - switch_page_theme
+  - ultimate_cron
+
+# List any themes that should be installed as part of the profile installation.
+# Note that this will not set any theme as the default theme.
+themes:
+  - gin
+  - claro
+  - bootstrap
+  - custom_theme

@@ -1,0 +1,21 @@
+langcode: da
+status: true
+dependencies: {  }
+id: medarbejder
+label: Medarbejder
+weight: 7
+is_admin: null
+permissions:
+  - 'access site in maintenance mode'
+  - 'access toolbar'
+  - 'administer webform revisions'
+  - 'edit own webform submission'
+  - 'edit webform submissions any node'
+  - 'edit webform submissions own node'
+  - 'use advanced search'
+  - 'view maestro task console'
+  - 'view own unpublished content'
+  - 'view own webform submission'
+  - 'view the administration theme'
+  - 'view webform submissions any node'
+  - 'view webform submissions own node'

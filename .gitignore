@@ -40,6 +40,7 @@ simplesamlphp/*
 /.docksal/commands/*
 !/.docksal/commands/init
 !/.docksal/commands/rebuild-test
+!/.docksal/commands/build-forloeb
 
 # docker stuff
 .docker/php/logs/*.log
@@ -59,3 +60,4 @@ simplesamlphp/*
 /robots.txt
 /update.php
 /web.config
+/.gitattributes

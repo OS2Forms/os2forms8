@@ -1,0 +1,56 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the os2forms_forloeb_profile installation profile.
+ */
+
+use Drupal\user\Entity\User;
+
+/**
+ * Implements hook_install().
+ *
+ * Perform actions to set up the site for this profile.
+ *
+ * @see system_install()
+ */
+function os2forms_forloeb_profile_install() {
+  // Assign user 1 the "administrator" role.
+  $user = User::load(1);
+  $user->roles[] = 'administrator';
+  $user->save();
+
+  // We install some menu links, so we have to rebuild the router, to ensure the
+  // menu links are valid.
+  \Drupal::service('router.builder')->rebuildIfNeeded();
+}
+
+/**
+ * Implements hook_install_tasks().
+ *
+ * Enabled
+ */
+function os2forms_forloeb_profile_install_tasks(&$install_state) {
+  $tasks = [
+    'os2forms_forloeb_profile_install_simplesaml_roles' => [
+      'display_name' => t('Set up SimpleSAML roles mapping'),
+      'type' => 'normal',
+    ]
+  ];
+
+  return $tasks;
+}
+
+/**
+ * Callback function to install default profile content.
+ *
+ * @see os2forms_forloeb_profile_install_tasks()
+ */
+function os2forms_forloeb_profile_install_simplesaml_roles() {
+  $config = \Drupal::service('config.factory')
+    ->getEditable('simplesamlphp_auth.settings');
+
+  $roles = 'authenticated:http¤//schemas.xmlsoap.org/claims/Group,=,OS2Forms_Godkendtbruger|selvbetjeningsdesigner:http¤//schemas.xmlsoap.org/claims/Group,=,OS2Forms_Designer|administrator:http¤//schemas.xmlsoap.org/claims/Group,=,OS2Forms_Administrator';
+  $config->set('role.population', $roles);
+  $config->save();
+}
