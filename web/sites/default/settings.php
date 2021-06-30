@@ -706,7 +706,7 @@ $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
  * will allow the site to run off of all variants of example.com and
  * example.org, with all subdomains included.
  */
-$settings['trusted_host_patterns'] = ['^' . str_replace(['sites/', '.'], ['', '\.'], $site_path) . '$'];
+//$settings['trusted_host_patterns'] = ['^' . str_replace(['sites/', '.'], ['', '\.'], $site_path) . '$'];
 
 /**
  * The default list of directories that will be ignored by Drupal's file API.
@@ -756,3 +756,16 @@ $settings['entity_update_backup'] = TRUE;
 if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
   include $app_root . '/' . $site_path . '/settings.local.php';
 }
+
+$databases['default']['default'] = array (
+  'database' => 'default',
+  'username' => 'root',
+  'password' => 'root',
+  'prefix' => '',
+  'host' => 'db',
+  'port' => '',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
+$settings['hash_salt'] = 'sadad1232123';
+
