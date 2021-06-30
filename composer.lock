@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a764b1659c8cd77d43333bcc99924b14",
+    "content-hash": "7b82ac9fe91663b2ed7cf2630116c747",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -4009,7 +4009,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-3.6",
-                    "datestamp": "1620838181",
+                    "datestamp": "1623860918",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6141,7 +6141,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-3.0-beta1",
-                    "datestamp": "1609758293",
+                    "datestamp": "1618261123",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -8083,7 +8083,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/typed_data.git",
-                "reference": "27555f47b522730d04f3b33c9a46c0acbcb3146e"
+                "reference": "d6550fd64428642da9ace9281670e70f7018f0b1"
             },
             "require": {
                 "drupal/core": "^8.8.2 || ^9"
@@ -8094,8 +8094,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha5+21-dev",
-                    "datestamp": "1600719315",
+                    "version": "8.x-1.0-alpha5+24-dev",
+                    "datestamp": "1623702620",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -8127,7 +8127,7 @@
                 "source": "https://git.drupalcode.org/project/typed_data",
                 "issues": "https://www.drupal.org/project/issues/typed_data"
             },
-            "time": "2020-10-30T06:56:14+00:00"
+            "time": "2021-06-14T20:31:09+00:00"
         },
         {
             "name": "drupal/ultimate_cron",
@@ -10948,16 +10948,16 @@
         },
         {
             "name": "os2forms/os2forms_forloeb",
-            "version": "1.1.0",
+            "version": "dev-gir_integration",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2Forms/os2forms_forloeb.git",
-                "reference": "d9ec840ee3bd29c1bbef77c45de1eae7b3a798b8"
+                "reference": "8652cbbe33de303fdb43a575cff5191475910620"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2Forms/os2forms_forloeb/zipball/d9ec840ee3bd29c1bbef77c45de1eae7b3a798b8",
-                "reference": "d9ec840ee3bd29c1bbef77c45de1eae7b3a798b8",
+                "url": "https://api.github.com/repos/OS2Forms/os2forms_forloeb/zipball/8652cbbe33de303fdb43a575cff5191475910620",
+                "reference": "8652cbbe33de303fdb43a575cff5191475910620",
                 "shasum": ""
             },
             "require": {
@@ -10970,6 +10970,7 @@
                 "drupal/config_entity_revisions": "1.7.0",
                 "drupal/embed": "1.4.0",
                 "drupal/events_logging": "1.4.0",
+                "drupal/feeds_ex": "^1.0@alpha",
                 "drupal/gin": "3.0.0-alpha33",
                 "drupal/header_and_footer_scripts": "2.2.0",
                 "drupal/image_widget_crop": "2.3.0",
@@ -10997,7 +10998,7 @@
                 "drupal/webform_scheduled_tasks": "^2.0",
                 "drupal/webform_views": "5.0.0-alpha7",
                 "drupal/workflow_participants": "^2.4",
-                "vlucas/phpdotenv": "^2.4",
+                "vlucas/phpdotenv": "^4.0",
                 "webmozart/path-util": "2.3.0",
                 "zaporylie/composer-drupal-optimizations": "1.2.0"
             },
@@ -11025,7 +11026,7 @@
                 "EUPL-1.2"
             ],
             "description": "This module adds Maestro workflow engine and functionality to produce advanced workflows",
-            "time": "2021-05-05T09:18:16+00:00"
+            "time": "2021-06-30T10:50:32+00:00"
         },
         {
             "name": "os2web/os2web_datalookup",
@@ -11058,12 +11059,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_logging.git",
-                "reference": "33d26115f6ca5eaeb4f1769d0096548a3134f764"
+                "reference": "c739d2c148b6895ee3abc131892dd80976ec394f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_logging/zipball/33d26115f6ca5eaeb4f1769d0096548a3134f764",
-                "reference": "33d26115f6ca5eaeb4f1769d0096548a3134f764",
+                "url": "https://api.github.com/repos/OS2web/os2web_logging/zipball/c739d2c148b6895ee3abc131892dd80976ec394f",
+                "reference": "c739d2c148b6895ee3abc131892dd80976ec394f",
                 "shasum": ""
             },
             "require": {
@@ -11076,7 +11077,7 @@
                 "EUPL-1.2"
             ],
             "description": "Logs access selected content type or webform elements",
-            "time": "2021-05-03T12:31:15+00:00"
+            "time": "2021-06-01T11:16:38+00:00"
         },
         {
             "name": "os2web/os2web_nemlogin",
@@ -11793,6 +11794,71 @@
                 "writer"
             ],
             "time": "2019-10-01T20:43:33+00:00"
+        },
+        {
+            "name": "phpoption/phpoption",
+            "version": "1.7.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmittjoh/php-option.git",
+                "reference": "994ecccd8f3283ecf5ac33254543eb0ac946d525"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/994ecccd8f3283ecf5ac33254543eb0ac946d525",
+                "reference": "994ecccd8f3283ecf5ac33254543eb0ac946d525",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.5.9 || ^7.0 || ^8.0"
+            },
+            "require-dev": {
+                "bamarni/composer-bin-plugin": "^1.4.1",
+                "phpunit/phpunit": "^4.8.35 || ^5.7.27 || ^6.5.6 || ^7.0 || ^8.0 || ^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PhpOption\\": "src/PhpOption/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Johannes M. Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                },
+                {
+                    "name": "Graham Campbell",
+                    "email": "graham@alt-three.com"
+                }
+            ],
+            "description": "Option Type for PHP",
+            "keywords": [
+                "language",
+                "option",
+                "php",
+                "type"
+            ],
+            "funding": [
+                {
+                    "url": "https://github.com/GrahamCampbell",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/phpoption/phpoption",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-07-20T17:29:33+00:00"
         },
         {
             "name": "phpseclib/phpseclib",
@@ -16638,23 +16704,25 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v2.6.7",
+            "version": "v4.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "b786088918a884258c9e3e27405c6a4cf2ee246e"
+                "reference": "da64796370fc4eb03cc277088f6fede9fde88482"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/b786088918a884258c9e3e27405c6a4cf2ee246e",
-                "reference": "b786088918a884258c9e3e27405c6a4cf2ee246e",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/da64796370fc4eb03cc277088f6fede9fde88482",
+                "reference": "da64796370fc4eb03cc277088f6fede9fde88482",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.3.9 || ^7.0 || ^8.0",
+                "php": "^5.5.9 || ^7.0 || ^8.0",
+                "phpoption/phpoption": "^1.7.3",
                 "symfony/polyfill-ctype": "^1.17"
             },
             "require-dev": {
+                "bamarni/composer-bin-plugin": "^1.4.1",
                 "ext-filter": "*",
                 "ext-pcre": "*",
                 "phpunit/phpunit": "^4.8.36 || ^5.7.27 || ^6.5.14 || ^7.5.20"
@@ -16666,7 +16734,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.6-dev"
+                    "dev-master": "4.1-dev"
                 }
             },
             "autoload": {
@@ -16706,7 +16774,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-01-20T14:39:13+00:00"
+            "time": "2021-01-20T15:11:48+00:00"
         },
         {
             "name": "webflo/drupal-finder",
@@ -16947,6 +17015,7 @@
         "drupal/webform_composite": 5,
         "drupal/webform_views": 15,
         "os2forms/os2forms_egbolig": 20,
+        "os2forms/os2forms_forloeb": 20,
         "os2web/os2web_logging": 20
     },
     "prefer-stable": true,
