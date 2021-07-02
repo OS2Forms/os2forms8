@@ -33,7 +33,7 @@ These instructions will get you a copy of the project up and running on your loc
    * account_password
    * site_name
    ```sh
-   drush si os2forms8 --db-url=mysql://db_pass:db_user@db_host/db_name --account-pass=account_password --site-name="site_name"
+   drush si os2forms8 --db-url=mysql://db_user:db_pass@db_host/db_name --account-pass=account_password --site-name="site_name"
    ```
 
 ### With Docksal
@@ -100,6 +100,7 @@ For a more detailed description, you could look at the `web/core/INSTALL.txt` [h
 ### Prerequisites
 
 * A HTTP server such as [Apache](https://httpd.apache.org/) that supports PHP
+ * Make sure that Apache vhost configured properly. [See requirements](https://www.drupal.org/docs/system-requirements/web-server-requirements#s-apache)
 * A database service such as [MySQL](https://www.mysql.com/)
 * PHP 7.4 with the following extensions enabled:
   * gd
