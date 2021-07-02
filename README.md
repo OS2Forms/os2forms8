@@ -100,7 +100,7 @@ For a more detailed description, you could look at the `web/core/INSTALL.txt` [h
 ### Prerequisites
 
 * A HTTP server such as [Apache](https://httpd.apache.org/) that supports PHP
- * Make sure that Apache vhost configured properly. [See requirements](https://www.drupal.org/docs/system-requirements/web-server-requirements#s-apache)
+  * Make sure that Apache vhost configured properly. [See requirements](https://www.drupal.org/docs/system-requirements/web-server-requirements#s-apache)
 * A database service such as [MySQL](https://www.mysql.com/)
 * PHP 7.4 with the following extensions enabled:
   * gd
@@ -121,6 +121,7 @@ For a more detailed description, you could look at the `web/core/INSTALL.txt` [h
 ```sh
 git clone git@github.com:OS2Forms/os2forms8.git
 ```
+It assumes that you have configured your web-server to use path `[/vhost/path]/os2web8/web` as document root folder.
 
 2. Enter the newly created project directory
 ```sh
