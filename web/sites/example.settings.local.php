@@ -153,3 +153,13 @@ $settings['skip_permissions_hardening'] = TRUE;
  * the language or field module.
  */
 # $settings['config_exclude_modules'] = ['devel', 'stage_file_proxy'];
+#
+
+
+// web/sites/default/settings.local.php
+
+$settings['file_chmod_directory'] = 0777;
+$settings['file_chmod_file'] = 0666;
+
+$settings['trusted_host_patterns'] = ['^os2forms8.docksal$', '^localhost$'];
+$settings['trusted_host_patterns'] = ['^os2forms8-dev.docksal$', '^localhost$'];
