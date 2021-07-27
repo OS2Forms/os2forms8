@@ -5890,6 +5890,68 @@
             }
         },
         {
+            "name": "drupal/keycloak",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/keycloak.git",
+                "reference": "8.x-1.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/keycloak-8.x-1.5.zip",
+                "reference": "8.x-1.5",
+                "shasum": "050c2e94f8978933fe1b726238ed1a4497ca5751"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/openid_connect": "^1.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.5",
+                    "datestamp": "1623068321",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Mario Steinitz",
+                    "homepage": "https://www.drupal.org/u/mario-steinitz",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Mario Steinitz",
+                    "homepage": "https://www.drupal.org/user/2536014"
+                },
+                {
+                    "name": "cgoffin",
+                    "homepage": "https://www.drupal.org/user/744134"
+                },
+                {
+                    "name": "joseph.olstad",
+                    "homepage": "https://www.drupal.org/user/1321830"
+                }
+            ],
+            "description": "Enables OpenID Connect Keycloak sign on and user data synchronization.",
+            "homepage": "https://www.drupal.org/project/keycloak",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/keycloak",
+                "issues": "https://www.drupal.org/project/issues/keycloak"
+            }
+        },
+        {
             "name": "drupal/ldap",
             "version": "3.0.0-beta7",
             "source": {
@@ -6678,6 +6740,10 @@
                     "name": "Lucas Hedding",
                     "homepage": "https://www.drupal.org/u/heddn",
                     "role": "Maintainer"
+                },
+                {
+                    "name": "mikeryan",
+                    "homepage": "https://www.drupal.org/user/4420"
                 }
             ],
             "description": "Tools to assist in developing and running migrations.",
@@ -6861,6 +6927,83 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/monolog",
                 "issues": "http://drupal.org/project/issues/monolog"
+            }
+        },
+        {
+            "name": "drupal/openid_connect",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/openid_connect.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/openid_connect-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "9153c4ecbadd1ea11b2dff41de30b8c90103ea9b"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9",
+                "ext-json": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1622902228",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Mario Steinitz",
+                    "homepage": "https://www.drupal.org/user/2536014"
+                },
+                {
+                    "name": "balintk",
+                    "homepage": "https://www.drupal.org/user/613760"
+                },
+                {
+                    "name": "bojanz",
+                    "homepage": "https://www.drupal.org/user/86106"
+                },
+                {
+                    "name": "jcnventura",
+                    "homepage": "https://www.drupal.org/user/122464"
+                },
+                {
+                    "name": "pfrilling",
+                    "homepage": "https://www.drupal.org/user/169695"
+                },
+                {
+                    "name": "pjcdawkins",
+                    "homepage": "https://www.drupal.org/user/1025236"
+                },
+                {
+                    "name": "robertDouglass",
+                    "homepage": "https://www.drupal.org/user/5449"
+                },
+                {
+                    "name": "sanduhrs",
+                    "homepage": "https://www.drupal.org/user/28074"
+                }
+            ],
+            "description": "A pluggable client implementation for the OpenID Connect protocol.",
+            "homepage": "https://www.drupal.org/project/openid_connect",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/openid_connect",
+                "issues": "https://www.drupal.org/project/issues/openid_connect"
             }
         },
         {
@@ -10859,12 +11002,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2Forms/os2forms_forloeb.git",
-                "reference": "8652cbbe33de303fdb43a575cff5191475910620"
+                "reference": "dc49fa9fd4a524273c73defa9c3b3867952a6d59"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2Forms/os2forms_forloeb/zipball/8652cbbe33de303fdb43a575cff5191475910620",
-                "reference": "8652cbbe33de303fdb43a575cff5191475910620",
+                "url": "https://api.github.com/repos/OS2Forms/os2forms_forloeb/zipball/dc49fa9fd4a524273c73defa9c3b3867952a6d59",
+                "reference": "dc49fa9fd4a524273c73defa9c3b3867952a6d59",
                 "shasum": ""
             },
             "require": {
@@ -10881,6 +11024,7 @@
                 "drupal/gin": "3.0.0-alpha33",
                 "drupal/header_and_footer_scripts": "2.2.0",
                 "drupal/image_widget_crop": "2.3.0",
+                "drupal/keycloak": "^1.5",
                 "drupal/ldap": "^3.0@beta",
                 "drupal/ldap_auth": "^1.17",
                 "drupal/libraries": "3.0.0-beta1",
@@ -10933,7 +11077,7 @@
                 "EUPL-1.2"
             ],
             "description": "This module adds Maestro workflow engine and functionality to produce advanced workflows",
-            "time": "2021-06-30T10:50:32+00:00"
+            "time": "2021-07-27T09:42:15+00:00"
         },
         {
             "name": "os2web/os2web_datalookup",
@@ -10966,12 +11110,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_logging.git",
-                "reference": "c739d2c148b6895ee3abc131892dd80976ec394f"
+                "reference": "a53fdaaff9a545d743bf6c3a288948dd7b9557a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_logging/zipball/c739d2c148b6895ee3abc131892dd80976ec394f",
-                "reference": "c739d2c148b6895ee3abc131892dd80976ec394f",
+                "url": "https://api.github.com/repos/OS2web/os2web_logging/zipball/a53fdaaff9a545d743bf6c3a288948dd7b9557a3",
+                "reference": "a53fdaaff9a545d743bf6c3a288948dd7b9557a3",
                 "shasum": ""
             },
             "require": {
@@ -10984,7 +11128,7 @@
                 "EUPL-1.2"
             ],
             "description": "Logs access selected content type or webform elements",
-            "time": "2021-06-01T11:16:38+00:00"
+            "time": "2021-07-02T11:08:43+00:00"
         },
         {
             "name": "os2web/os2web_nemlogin",
