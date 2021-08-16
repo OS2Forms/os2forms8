@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ccf3e5d0c5e184796fe9fceda6c57df2",
+    "content-hash": "7b82ac9fe91663b2ed7cf2630116c747",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -473,6 +473,20 @@
                 "semver",
                 "validation",
                 "versioning"
+            ],
+            "funding": [
+                {
+                    "url": "https://packagist.com",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/composer",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
+                    "type": "tidelift"
+                }
             ],
             "time": "2020-12-03T15:47:16+00:00"
         },
@@ -1778,6 +1792,20 @@
                 "doctrine",
                 "php"
             ],
+            "funding": [
+                {
+                    "url": "https://www.doctrine-project.org/sponsorship.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/phpdoctrine",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Fcommon",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-06-05T16:46:05+00:00"
         },
         {
@@ -1853,6 +1881,20 @@
                 "event manager",
                 "event system",
                 "events"
+            ],
+            "funding": [
+                {
+                    "url": "https://www.doctrine-project.org/sponsorship.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/phpdoctrine",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Fevent-manager",
+                    "type": "tidelift"
+                }
             ],
             "time": "2020-05-29T18:28:51+00:00"
         },
@@ -1994,6 +2036,20 @@
                 "parser",
                 "php"
             ],
+            "funding": [
+                {
+                    "url": "https://www.doctrine-project.org/sponsorship.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/phpdoctrine",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Flexer",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-05-25T17:44:05+00:00"
         },
         {
@@ -2077,6 +2133,20 @@
                 "odm",
                 "orm",
                 "persistence"
+            ],
+            "funding": [
+                {
+                    "url": "https://www.doctrine-project.org/sponsorship.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/phpdoctrine",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Fpersistence",
+                    "type": "tidelift"
+                }
             ],
             "time": "2020-06-20T12:56:16+00:00"
         },
@@ -2573,7 +2643,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-1.11",
-                    "datestamp": "1586536891",
+                    "datestamp": "1586540246",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2777,13 +2847,10 @@
             },
             "require": {
                 "drupal/ckeditor_balloonpanel": "*",
-                "drupal/core": "*"
+                "drupal/core": "^8"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.0",
                     "datestamp": "1466961539",
@@ -2807,6 +2874,10 @@
                     "name": "Darryl Norris (darol100)",
                     "homepage": "https://www.drupal.org/u/darol100",
                     "role": "Maintainer"
+                },
+                {
+                    "name": "edmund.dunn",
+                    "homepage": "https://www.drupal.org/user/3534438"
                 },
                 {
                     "name": "pifagor",
@@ -2838,13 +2909,10 @@
                 "shasum": "9ef2c9a7e3fefbe108d61593246a57bd2f0761c5"
             },
             "require": {
-                "drupal/core": "*"
+                "drupal/core": "^8"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.1",
                     "datestamp": "1466961839",
@@ -2868,6 +2936,10 @@
                     "name": "Darryl Norris (darol100)",
                     "homepage": "https://www.drupal.org/u/darol100",
                     "role": "Maintainer"
+                },
+                {
+                    "name": "edmund.dunn",
+                    "homepage": "https://www.drupal.org/user/3534438"
                 },
                 {
                     "name": "pifagor",
@@ -3846,9 +3918,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-2.1",
                     "datestamp": "1585251827",
@@ -4596,9 +4665,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-2.2",
                     "datestamp": "1578954483",
@@ -4684,9 +4750,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.0",
                     "datestamp": "1562161679",
@@ -4878,13 +4941,10 @@
                 "shasum": "c5e27581a10f446f7c88568279454f20f5910dc9"
             },
             "require": {
-                "drupal/core": "*"
+                "drupal/core": "^8"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-3.7",
                     "datestamp": "1568149685",
@@ -4906,6 +4966,10 @@
                 {
                     "name": "mrfelton",
                     "homepage": "https://www.drupal.org/user/305669"
+                },
+                {
+                    "name": "pratik_kamble",
+                    "homepage": "https://www.drupal.org/user/3204909"
                 }
             ],
             "description": "Adds a color indicator for the different environments.",
@@ -5156,6 +5220,174 @@
             }
         },
         {
+            "name": "drupal/feeds",
+            "version": "3.0.0-alpha10",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/feeds.git",
+                "reference": "8.x-3.0-alpha10"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/feeds-8.x-3.0-alpha10.zip",
+                "reference": "8.x-3.0-alpha10",
+                "shasum": "84691c6258503c8d4afea5009dcd21bbd8292d49"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "require-dev": {
+                "drupal/pathauto": "^1.8",
+                "drush/drush": "^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-3.0-alpha10",
+                    "datestamp": "1612455136",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Dave Reid",
+                    "homepage": "https://www.drupal.org/user/53892"
+                },
+                {
+                    "name": "Ian Ward",
+                    "homepage": "https://www.drupal.org/user/4736"
+                },
+                {
+                    "name": "MegaChriz",
+                    "homepage": "https://www.drupal.org/user/654114"
+                },
+                {
+                    "name": "Will White",
+                    "homepage": "https://www.drupal.org/user/32237"
+                },
+                {
+                    "name": "alex_b",
+                    "homepage": "https://www.drupal.org/user/53995"
+                },
+                {
+                    "name": "e2thex",
+                    "homepage": "https://www.drupal.org/user/189123"
+                },
+                {
+                    "name": "febbraro",
+                    "homepage": "https://www.drupal.org/user/43670"
+                },
+                {
+                    "name": "franz",
+                    "homepage": "https://www.drupal.org/user/581844"
+                },
+                {
+                    "name": "jmiccolis",
+                    "homepage": "https://www.drupal.org/user/31731"
+                },
+                {
+                    "name": "joelpittet",
+                    "homepage": "https://www.drupal.org/user/160302"
+                },
+                {
+                    "name": "kking",
+                    "homepage": "https://www.drupal.org/user/24399"
+                },
+                {
+                    "name": "tobby",
+                    "homepage": "https://www.drupal.org/user/154797"
+                },
+                {
+                    "name": "tristanoneil",
+                    "homepage": "https://www.drupal.org/user/340659"
+                },
+                {
+                    "name": "twistor",
+                    "homepage": "https://www.drupal.org/user/473738"
+                },
+                {
+                    "name": "yhahn",
+                    "homepage": "https://www.drupal.org/user/264833"
+                }
+            ],
+            "description": "Aggregates RSS/Atom/RDF feeds, imports CSV files and more.",
+            "homepage": "https://www.drupal.org/project/feeds",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/feeds",
+                "issues": "https://www.drupal.org/project/issues/feeds"
+            }
+        },
+        {
+            "name": "drupal/feeds_ex",
+            "version": "1.0.0-alpha4",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/feeds_ex.git",
+                "reference": "8.x-1.0-alpha4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/feeds_ex-8.x-1.0-alpha4.zip",
+                "reference": "8.x-1.0-alpha4",
+                "shasum": "b1b5d5478335c133af1f6eb6bb3434aad9d202b7"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/feeds": "*",
+                "flow/jsonpath": "~0.3",
+                "mtdowling/jmespath.php": "^2.0",
+                "querypath/querypath": "^3.0"
+            },
+            "require-dev": {
+                "drupal/feeds": "3.x-dev"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-alpha4",
+                    "datestamp": "1591295180",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "MegaChriz",
+                    "homepage": "https://www.drupal.org/user/654114"
+                },
+                {
+                    "name": "twistor",
+                    "homepage": "https://www.drupal.org/user/473738"
+                }
+            ],
+            "description": "A generic Feeds parser used to create extensible parsers.",
+            "homepage": "http://drupal.org/project/feeds_ex",
+            "keywords": [
+                "feeds",
+                "parser"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/feeds_ex",
+                "issues": "http://drupal.org/project/issues/feeds_ex"
+            }
+        },
+        {
             "name": "drupal/field_group",
             "version": "3.2.0",
             "source": {
@@ -5403,9 +5635,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-2.2",
                     "datestamp": "1550736484",
@@ -5458,9 +5687,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.30",
                     "datestamp": "1576274288",
@@ -5530,9 +5756,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-2.3",
                     "datestamp": "1585408029",
@@ -5664,6 +5887,68 @@
             "homepage": "https://www.drupal.org/project/inline_entity_form",
             "support": {
                 "source": "https://git.drupalcode.org/project/inline_entity_form"
+            }
+        },
+        {
+            "name": "drupal/keycloak",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/keycloak.git",
+                "reference": "8.x-1.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/keycloak-8.x-1.5.zip",
+                "reference": "8.x-1.5",
+                "shasum": "050c2e94f8978933fe1b726238ed1a4497ca5751"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/openid_connect": "^1.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.5",
+                    "datestamp": "1623068321",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Mario Steinitz",
+                    "homepage": "https://www.drupal.org/u/mario-steinitz",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Mario Steinitz",
+                    "homepage": "https://www.drupal.org/user/2536014"
+                },
+                {
+                    "name": "cgoffin",
+                    "homepage": "https://www.drupal.org/user/744134"
+                },
+                {
+                    "name": "joseph.olstad",
+                    "homepage": "https://www.drupal.org/user/1321830"
+                }
+            ],
+            "description": "Enables OpenID Connect Keycloak sign on and user data synchronization.",
+            "homepage": "https://www.drupal.org/project/keycloak",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/keycloak",
+                "issues": "https://www.drupal.org/project/issues/keycloak"
             }
         },
         {
@@ -5866,7 +6151,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-3.0-beta1",
-                    "datestamp": "1609758293",
+                    "datestamp": "1618261123",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -6457,8 +6742,8 @@
                     "role": "Maintainer"
                 },
                 {
-                    "name": "moshe weitzman",
-                    "homepage": "https://www.drupal.org/user/23"
+                    "name": "mikeryan",
+                    "homepage": "https://www.drupal.org/user/4420"
                 }
             ],
             "description": "Tools to assist in developing and running migrations.",
@@ -6497,7 +6782,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-3.2",
-                    "datestamp": "1588260035",
+                    "datestamp": "1588260599",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6523,22 +6808,6 @@
                     "name": "Lucas Hedding",
                     "homepage": "https://www.drupal.org/u/heddn",
                     "role": "Maintainer"
-                },
-                {
-                    "name": "ksenzee",
-                    "homepage": "https://www.drupal.org/user/139855"
-                },
-                {
-                    "name": "mikeryan",
-                    "homepage": "https://www.drupal.org/user/4420"
-                },
-                {
-                    "name": "ultimike",
-                    "homepage": "https://www.drupal.org/user/51132"
-                },
-                {
-                    "name": "xjm",
-                    "homepage": "https://www.drupal.org/user/65776"
                 }
             ],
             "description": "Drush support for direct upgrades from older Drupal versions.",
@@ -6658,6 +6927,83 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/monolog",
                 "issues": "http://drupal.org/project/issues/monolog"
+            }
+        },
+        {
+            "name": "drupal/openid_connect",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/openid_connect.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/openid_connect-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "9153c4ecbadd1ea11b2dff41de30b8c90103ea9b"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9",
+                "ext-json": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1622902228",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Mario Steinitz",
+                    "homepage": "https://www.drupal.org/user/2536014"
+                },
+                {
+                    "name": "balintk",
+                    "homepage": "https://www.drupal.org/user/613760"
+                },
+                {
+                    "name": "bojanz",
+                    "homepage": "https://www.drupal.org/user/86106"
+                },
+                {
+                    "name": "jcnventura",
+                    "homepage": "https://www.drupal.org/user/122464"
+                },
+                {
+                    "name": "pfrilling",
+                    "homepage": "https://www.drupal.org/user/169695"
+                },
+                {
+                    "name": "pjcdawkins",
+                    "homepage": "https://www.drupal.org/user/1025236"
+                },
+                {
+                    "name": "robertDouglass",
+                    "homepage": "https://www.drupal.org/user/5449"
+                },
+                {
+                    "name": "sanduhrs",
+                    "homepage": "https://www.drupal.org/user/28074"
+                }
+            ],
+            "description": "A pluggable client implementation for the OpenID Connect protocol.",
+            "homepage": "https://www.drupal.org/project/openid_connect",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/openid_connect",
+                "issues": "https://www.drupal.org/project/issues/openid_connect"
             }
         },
         {
@@ -7478,9 +7824,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-3.2",
                     "datestamp": "1580423953",
@@ -8438,9 +8781,6 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-1.2",
                     "datestamp": "1512658384",
@@ -8766,14 +9106,11 @@
                 "shasum": "6c9bb51735a106729dcfa08372e987ebf95d38f2"
             },
             "require": {
-                "drupal/core": "*",
+                "drupal/core": "^8",
                 "drupal/webform": "*"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-5.x": "5.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-5.0-alpha7",
                     "datestamp": "1557288185",
@@ -8788,6 +9125,10 @@
                 "GPL-2.0-or-later"
             ],
             "authors": [
+                {
+                    "name": "acbramley",
+                    "homepage": "https://www.drupal.org/user/1036766"
+                },
                 {
                     "name": "bucefal91",
                     "homepage": "https://www.drupal.org/user/504128"
@@ -8905,6 +9246,12 @@
             "description": "Try to guess the host operating system.",
             "keywords": [
                 "operating system detection"
+            ],
+            "funding": [
+                {
+                    "url": "https://github.com/drupol",
+                    "type": "github"
+                }
             ],
             "abandoned": "loophp/phposinfo",
             "time": "2020-05-19T14:14:28+00:00"
@@ -9174,6 +9521,12 @@
                 "validation",
                 "validator"
             ],
+            "funding": [
+                {
+                    "url": "https://github.com/egulias",
+                    "type": "github"
+                }
+            ],
             "time": "2020-12-29T14:50:06+00:00"
         },
         {
@@ -9225,6 +9578,48 @@
                 "html"
             ],
             "time": "2020-06-29T00:56:53+00:00"
+        },
+        {
+            "name": "flow/jsonpath",
+            "version": "0.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FlowCommunications/JSONPath.git",
+                "reference": "b9738858c75d008c1211612b973e9510f8b7f8ea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FlowCommunications/JSONPath/zipball/b9738858c75d008c1211612b973e9510f8b7f8ea",
+                "reference": "b9738858c75d008c1211612b973e9510f8b7f8ea",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "peekmo/jsonpath": "dev-master",
+                "phpunit/phpunit": "^7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Flow\\JSONPath": "src/",
+                    "Flow\\JSONPath\\Test": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stephen Frank",
+                    "email": "stephen@flowsa.com"
+                }
+            ],
+            "description": "JSONPath implementation for parsing, searching and flattening arrays",
+            "abandoned": "softcreatr/jsonpath",
+            "time": "2019-07-15T17:23:22+00:00"
         },
         {
             "name": "gettext/gettext",
@@ -10344,6 +10739,63 @@
             "time": "2020-12-14T12:56:38+00:00"
         },
         {
+            "name": "mtdowling/jmespath.php",
+            "version": "2.6.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jmespath/jmespath.php.git",
+                "reference": "9b87907a81b87bc76d19a7fb2d61e61486ee9edb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jmespath/jmespath.php/zipball/9b87907a81b87bc76d19a7fb2d61e61486ee9edb",
+                "reference": "9b87907a81b87bc76d19a7fb2d61e61486ee9edb",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.4 || ^7.0 || ^8.0",
+                "symfony/polyfill-mbstring": "^1.17"
+            },
+            "require-dev": {
+                "composer/xdebug-handler": "^1.4 || ^2.0",
+                "phpunit/phpunit": "^4.8.36 || ^7.5.15"
+            },
+            "bin": [
+                "bin/jp.php"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.6-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "JmesPath\\": "src/"
+                },
+                "files": [
+                    "src/JmesPath.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Declaratively specify how to extract elements from a JSON document",
+            "keywords": [
+                "json",
+                "jsonpath"
+            ],
+            "time": "2021-06-14T00:11:39+00:00"
+        },
+        {
             "name": "nikic/php-parser",
             "version": "v4.10.5",
             "source": {
@@ -10546,16 +10998,16 @@
         },
         {
             "name": "os2forms/os2forms_forloeb",
-            "version": "1.1.0",
+            "version": "dev-gir_integration",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2Forms/os2forms_forloeb.git",
-                "reference": "d9ec840ee3bd29c1bbef77c45de1eae7b3a798b8"
+                "reference": "cac2c9fe8197d4ea81747ceef656d8a0ce1377a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2Forms/os2forms_forloeb/zipball/d9ec840ee3bd29c1bbef77c45de1eae7b3a798b8",
-                "reference": "d9ec840ee3bd29c1bbef77c45de1eae7b3a798b8",
+                "url": "https://api.github.com/repos/OS2Forms/os2forms_forloeb/zipball/cac2c9fe8197d4ea81747ceef656d8a0ce1377a9",
+                "reference": "cac2c9fe8197d4ea81747ceef656d8a0ce1377a9",
                 "shasum": ""
             },
             "require": {
@@ -10568,9 +11020,11 @@
                 "drupal/config_entity_revisions": "1.7.0",
                 "drupal/embed": "1.4.0",
                 "drupal/events_logging": "1.4.0",
+                "drupal/feeds_ex": "^1.0@alpha",
                 "drupal/gin": "3.0.0-alpha33",
                 "drupal/header_and_footer_scripts": "2.2.0",
                 "drupal/image_widget_crop": "2.3.0",
+                "drupal/keycloak": "^1.5",
                 "drupal/ldap": "^3.0@beta",
                 "drupal/ldap_auth": "^1.17",
                 "drupal/libraries": "3.0.0-beta1",
@@ -10595,7 +11049,7 @@
                 "drupal/webform_scheduled_tasks": "^2.0",
                 "drupal/webform_views": "5.0.0-alpha7",
                 "drupal/workflow_participants": "^2.4",
-                "vlucas/phpdotenv": "^2.4",
+                "vlucas/phpdotenv": "^4.0",
                 "webmozart/path-util": "2.3.0",
                 "zaporylie/composer-drupal-optimizations": "1.2.0"
             },
@@ -10623,7 +11077,7 @@
                 "EUPL-1.2"
             ],
             "description": "This module adds Maestro workflow engine and functionality to produce advanced workflows",
-            "time": "2021-05-05T09:18:16+00:00"
+            "time": "2021-07-29T12:31:15+00:00"
         },
         {
             "name": "os2web/os2web_datalookup",
@@ -10656,12 +11110,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_logging.git",
-                "reference": "33d26115f6ca5eaeb4f1769d0096548a3134f764"
+                "reference": "a53fdaaff9a545d743bf6c3a288948dd7b9557a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_logging/zipball/33d26115f6ca5eaeb4f1769d0096548a3134f764",
-                "reference": "33d26115f6ca5eaeb4f1769d0096548a3134f764",
+                "url": "https://api.github.com/repos/OS2web/os2web_logging/zipball/a53fdaaff9a545d743bf6c3a288948dd7b9557a3",
+                "reference": "a53fdaaff9a545d743bf6c3a288948dd7b9557a3",
                 "shasum": ""
             },
             "require": {
@@ -10674,7 +11128,7 @@
                 "EUPL-1.2"
             ],
             "description": "Logs access selected content type or webform elements",
-            "time": "2021-05-03T12:31:15+00:00"
+            "time": "2021-07-02T11:08:43+00:00"
         },
         {
             "name": "os2web/os2web_nemlogin",
@@ -11387,6 +11841,71 @@
             "time": "2019-10-01T20:43:33+00:00"
         },
         {
+            "name": "phpoption/phpoption",
+            "version": "1.7.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmittjoh/php-option.git",
+                "reference": "994ecccd8f3283ecf5ac33254543eb0ac946d525"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/994ecccd8f3283ecf5ac33254543eb0ac946d525",
+                "reference": "994ecccd8f3283ecf5ac33254543eb0ac946d525",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.5.9 || ^7.0 || ^8.0"
+            },
+            "require-dev": {
+                "bamarni/composer-bin-plugin": "^1.4.1",
+                "phpunit/phpunit": "^4.8.35 || ^5.7.27 || ^6.5.6 || ^7.0 || ^8.0 || ^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PhpOption\\": "src/PhpOption/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Johannes M. Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                },
+                {
+                    "name": "Graham Campbell",
+                    "email": "graham@alt-three.com"
+                }
+            ],
+            "description": "Option Type for PHP",
+            "keywords": [
+                "language",
+                "option",
+                "php",
+                "type"
+            ],
+            "funding": [
+                {
+                    "url": "https://github.com/GrahamCampbell",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/phpoption/phpoption",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-07-20T17:29:33+00:00"
+        },
+        {
             "name": "phpseclib/phpseclib",
             "version": "2.0.31",
             "source": {
@@ -11734,6 +12253,48 @@
                 "shell"
             ],
             "time": "2021-04-10T16:23:39+00:00"
+        },
+        {
+            "name": "querypath/querypath",
+            "version": "3.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/technosophos/querypath.git",
+                "reference": "6b8e2395fac61fac25bbe962f94def556cb85f7d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/technosophos/querypath/zipball/6b8e2395fac61fac25bbe962f94def556cb85f7d",
+                "reference": "6b8e2395fac61fac25bbe962f94def556cb85f7d",
+                "shasum": ""
+            },
+            "require": {
+                "masterminds/html5": "2.*",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "QueryPath": "src/"
+                },
+                "files": [
+                    "src/qp_functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "HTML/XML querying (CSS 4 or XPath) and processing (like jQuery)",
+            "homepage": "https://github.com/technosophos/querypath",
+            "keywords": [
+                "css",
+                "html",
+                "jquery",
+                "xml",
+                "xslt"
+            ],
+            "time": "2016-08-01T22:40:30+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
@@ -13705,6 +14266,20 @@
             ],
             "description": "Symfony ClassLoader Component",
             "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-10-24T10:57:07+00:00"
         },
         {
@@ -13831,6 +14406,20 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-10-24T10:57:07+00:00"
         },
         {
@@ -14010,6 +14599,20 @@
             ],
             "description": "Symfony DependencyInjection Component",
             "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-10-24T10:57:07+00:00"
         },
         {
@@ -14125,6 +14728,20 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-10-24T10:57:07+00:00"
         },
         {
@@ -14263,6 +14880,20 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-10-24T10:57:07+00:00"
         },
         {
@@ -14362,7 +14993,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-05-19T12:06:59+00:00"
+            "time": "2020-11-27T08:42:42+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -14438,7 +15069,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-19T12:13:01+00:00"
+            "time": "2021-01-07T16:49:33+00:00"
         },
         {
             "name": "symfony/polyfill-iconv",
@@ -14515,7 +15146,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-05-27T09:27:20+00:00"
+            "time": "2021-01-22T09:19:47+00:00"
         },
         {
             "name": "symfony/polyfill-intl-idn",
@@ -14599,7 +15230,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-05-27T09:27:20+00:00"
+            "time": "2021-01-22T09:19:47+00:00"
         },
         {
             "name": "symfony/polyfill-intl-normalizer",
@@ -14680,7 +15311,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-19T12:13:01+00:00"
+            "time": "2021-01-22T09:19:47+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -14757,7 +15388,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-05-27T12:26:48+00:00"
+            "time": "2021-01-22T09:19:47+00:00"
         },
         {
             "name": "symfony/polyfill-php56",
@@ -14807,6 +15438,20 @@
                 "polyfill",
                 "portable",
                 "shim"
+            ],
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
             ],
             "time": "2020-10-23T14:02:19+00:00"
         },
@@ -14858,6 +15503,20 @@
                 "polyfill",
                 "portable",
                 "shim"
+            ],
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
             ],
             "time": "2020-10-23T14:02:19+00:00"
         },
@@ -14932,7 +15591,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-05-27T09:17:38+00:00"
+            "time": "2021-01-07T16:49:33+00:00"
         },
         {
             "name": "symfony/polyfill-php80",
@@ -15056,6 +15715,20 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-10-24T10:57:07+00:00"
         },
         {
@@ -15192,6 +15865,20 @@
                 "uri",
                 "url"
             ],
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-10-24T10:57:07+00:00"
         },
         {
@@ -15266,6 +15953,20 @@
             ],
             "description": "Symfony Serializer Component",
             "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-10-24T10:57:07+00:00"
         },
         {
@@ -15331,6 +16032,20 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-10-24T10:57:07+00:00"
         },
         {
@@ -15412,6 +16127,20 @@
             ],
             "description": "Symfony Validator Component",
             "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-10-28T05:23:51+00:00"
         },
         {
@@ -15538,6 +16267,20 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-10-24T10:57:07+00:00"
         },
         {
@@ -15730,7 +16473,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-05-16T12:11:20+00:00"
+            "time": "2021-01-05T10:10:05+00:00"
         },
         {
             "name": "typo3/phar-stream-wrapper",
@@ -15937,23 +16680,25 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v2.6.7",
+            "version": "v4.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "b786088918a884258c9e3e27405c6a4cf2ee246e"
+                "reference": "da64796370fc4eb03cc277088f6fede9fde88482"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/b786088918a884258c9e3e27405c6a4cf2ee246e",
-                "reference": "b786088918a884258c9e3e27405c6a4cf2ee246e",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/da64796370fc4eb03cc277088f6fede9fde88482",
+                "reference": "da64796370fc4eb03cc277088f6fede9fde88482",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.3.9 || ^7.0 || ^8.0",
+                "php": "^5.5.9 || ^7.0 || ^8.0",
+                "phpoption/phpoption": "^1.7.3",
                 "symfony/polyfill-ctype": "^1.17"
             },
             "require-dev": {
+                "bamarni/composer-bin-plugin": "^1.4.1",
                 "ext-filter": "*",
                 "ext-pcre": "*",
                 "phpunit/phpunit": "^4.8.36 || ^5.7.27 || ^6.5.14 || ^7.5.20"
@@ -15965,7 +16710,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.6-dev"
+                    "dev-master": "4.1-dev"
                 }
             },
             "autoload": {
@@ -15995,7 +16740,17 @@
                 "env",
                 "environment"
             ],
-            "time": "2021-01-20T14:39:13+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/GrahamCampbell",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/vlucas/phpdotenv",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-01-20T15:11:48+00:00"
         },
         {
             "name": "webflo/drupal-finder",
@@ -16229,12 +16984,14 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/feeds_ex": 15,
         "drupal/ldap": 10,
         "drupal/simple_ldap": 15,
         "drupal/webform_analysis": 10,
         "drupal/webform_composite": 5,
         "drupal/webform_views": 15,
         "os2forms/os2forms_egbolig": 20,
+        "os2forms/os2forms_forloeb": 20,
         "os2web/os2web_logging": 20
     },
     "prefer-stable": true,
@@ -16242,5 +16999,6 @@
     "platform": {
         "php": ">=7.1"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }
