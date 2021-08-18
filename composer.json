@@ -48,6 +48,7 @@
         "os2forms/os2forms": "^2.5",
         "os2forms/os2forms_egbolig": "dev-master",
         "os2forms/os2forms_forloeb": "1.1.0",
+        "os2forms/os2forms_forloeb_profile": "dev-main",
         "os2web/os2web_logging": "dev-master",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
