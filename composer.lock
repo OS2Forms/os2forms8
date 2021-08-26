@@ -10462,16 +10462,16 @@
         },
         {
             "name": "os2forms/os2forms",
-            "version": "2.6.4",
+            "version": "2.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2Forms/os2forms.git",
-                "reference": "c515e443068e1413a94261bcd36eeeef1a0aeecf"
+                "reference": "890366ca5efa16c7c391c264517ee3223e4a5352"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2Forms/os2forms/zipball/c515e443068e1413a94261bcd36eeeef1a0aeecf",
-                "reference": "c515e443068e1413a94261bcd36eeeef1a0aeecf",
+                "url": "https://api.github.com/repos/OS2Forms/os2forms/zipball/890366ca5efa16c7c391c264517ee3223e4a5352",
+                "reference": "890366ca5efa16c7c391c264517ee3223e4a5352",
                 "shasum": ""
             },
             "require": {
@@ -10517,7 +10517,11 @@
                 "EUPL-1.2"
             ],
             "description": "Drupal 8 OS2Form module provides advanced webform functionality for Danish Municipalities",
-            "time": "2021-05-07T08:46:05+00:00"
+            "support": {
+                "issues": "https://github.com/OS2Forms/os2forms/issues",
+                "source": "https://github.com/OS2Forms/os2forms/tree/2.7.0"
+            },
+            "time": "2021-08-26T10:19:29+00:00"
         },
         {
             "name": "os2forms/os2forms_egbolig",
@@ -10627,16 +10631,16 @@
         },
         {
             "name": "os2web/os2web_datalookup",
-            "version": "1.0.2.1",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_datalookup.git",
-                "reference": "58735fe34cb85eb7abff0926a8dbc7729167452c"
+                "reference": "8ee393a87ac575bda28288050f824755bca00e34"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_datalookup/zipball/58735fe34cb85eb7abff0926a8dbc7729167452c",
-                "reference": "58735fe34cb85eb7abff0926a8dbc7729167452c",
+                "url": "https://api.github.com/repos/OS2web/os2web_datalookup/zipball/8ee393a87ac575bda28288050f824755bca00e34",
+                "reference": "8ee393a87ac575bda28288050f824755bca00e34",
                 "shasum": ""
             },
             "require": {
@@ -10648,7 +10652,11 @@
                 "EUPL-1.2"
             ],
             "description": "Provides integration with Danish data lookup services such as Service platformen or Datafordeler.",
-            "time": "2021-03-08T11:35:37+00:00"
+            "support": {
+                "issues": "https://github.com/OS2web/os2web_datalookup/issues",
+                "source": "https://github.com/OS2web/os2web_datalookup/tree/1.1.0"
+            },
+            "time": "2021-08-26T10:23:03+00:00"
         },
         {
             "name": "os2web/os2web_logging",
