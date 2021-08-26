@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5f01ca7f730d500f1bf90658bd3ba3f3",
+    "content-hash": "89da442f554e226f277d00e31b8825fb",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -8468,17 +8468,17 @@
         },
         {
             "name": "drupal/webform_remote_handlers",
-            "version": "1.6.0",
+            "version": "1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform_remote_handlers.git",
-                "reference": "8.x-1.6"
+                "reference": "8.x-1.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform_remote_handlers-8.x-1.6.zip",
-                "reference": "8.x-1.6",
-                "shasum": "2453ed9459d7c0aa0dbec9f7aef5b282480ce2fc"
+                "url": "https://ftp.drupal.org/files/projects/webform_remote_handlers-8.x-1.9.zip",
+                "reference": "8.x-1.9",
+                "shasum": "225811dfefa72a77ae9ffb8527f4996fb27aac91"
             },
             "require": {
                 "drupal/core": "^8 || ^9",
@@ -8487,8 +8487,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.6",
-                    "datestamp": "1600074110",
+                    "version": "8.x-1.9",
+                    "datestamp": "1614945152",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -8541,17 +8541,17 @@
         },
         {
             "name": "drupal/webform_rest",
-            "version": "4.0.0-beta2",
+            "version": "4.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform_rest.git",
-                "reference": "4.0.0-beta2"
+                "reference": "4.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform_rest-4.0.0-beta2.zip",
-                "reference": "4.0.0-beta2",
-                "shasum": "b67fd42bc7f92fd03070c5d44d4066ae77f5b54c"
+                "url": "https://ftp.drupal.org/files/projects/webform_rest-4.0.0.zip",
+                "reference": "4.0.0",
+                "shasum": "44deefd90e9e4c2e53d7785446ae6e74d5a6ab12"
             },
             "require": {
                 "drupal/core": "^8 || ^9",
@@ -8561,11 +8561,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "4.0.0-beta2",
-                    "datestamp": "1600634518",
+                    "version": "4.0.0",
+                    "datestamp": "1614618512",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -8766,14 +8766,11 @@
                 "shasum": "6c9bb51735a106729dcfa08372e987ebf95d38f2"
             },
             "require": {
-                "drupal/core": "*",
+                "drupal/core": "^8",
                 "drupal/webform": "*"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-5.x": "5.x-dev"
-                },
                 "drupal": {
                     "version": "8.x-5.0-alpha7",
                     "datestamp": "1557288185",
@@ -8788,6 +8785,10 @@
                 "GPL-2.0-or-later"
             ],
             "authors": [
+                {
+                    "name": "acbramley",
+                    "homepage": "https://www.drupal.org/user/1036766"
+                },
                 {
                     "name": "bucefal91",
                     "homepage": "https://www.drupal.org/user/504128"
@@ -10546,16 +10547,16 @@
         },
         {
             "name": "os2forms/os2forms_forloeb",
-            "version": "1.1.0",
+            "version": "dev-contrib_update",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2Forms/os2forms_forloeb.git",
-                "reference": "d9ec840ee3bd29c1bbef77c45de1eae7b3a798b8"
+                "reference": "0a7107fcdd1e5a33b062b91b5f75aec0b891de72"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2Forms/os2forms_forloeb/zipball/d9ec840ee3bd29c1bbef77c45de1eae7b3a798b8",
-                "reference": "d9ec840ee3bd29c1bbef77c45de1eae7b3a798b8",
+                "url": "https://api.github.com/repos/OS2Forms/os2forms_forloeb/zipball/0a7107fcdd1e5a33b062b91b5f75aec0b891de72",
+                "reference": "0a7107fcdd1e5a33b062b91b5f75aec0b891de72",
                 "shasum": ""
             },
             "require": {
@@ -10568,7 +10569,7 @@
                 "drupal/config_entity_revisions": "1.7.0",
                 "drupal/embed": "1.4.0",
                 "drupal/events_logging": "1.4.0",
-                "drupal/gin": "3.0.0-alpha33",
+                "drupal/gin": "^3.0",
                 "drupal/header_and_footer_scripts": "2.2.0",
                 "drupal/image_widget_crop": "2.3.0",
                 "drupal/ldap": "^3.0@beta",
@@ -10590,11 +10591,12 @@
                 "drupal/ultimate_cron": "2.0.0-alpha5",
                 "drupal/user_default_page": "2.0.0-rc1",
                 "drupal/webform_composite": "1.0-rc2",
-                "drupal/webform_remote_handlers": "1.6.0",
-                "drupal/webform_rest": "4.0.0-beta2",
+                "drupal/webform_remote_handlers": "^1.6.0",
+                "drupal/webform_rest": "^4.0.0-beta2",
                 "drupal/webform_scheduled_tasks": "^2.0",
-                "drupal/webform_views": "5.0.0-alpha7",
+                "drupal/webform_views": "^5.0@alpha",
                 "drupal/workflow_participants": "^2.4",
+                "os2forms/os2forms_forloeb_profile": "dev-main",
                 "vlucas/phpdotenv": "^4.0",
                 "webmozart/path-util": "2.3.0",
                 "zaporylie/composer-drupal-optimizations": "1.2.0"
@@ -10625,9 +10627,39 @@
             "description": "This module adds Maestro workflow engine and functionality to produce advanced workflows",
             "support": {
                 "issues": "https://github.com/OS2Forms/os2forms_forloeb/issues",
-                "source": "https://github.com/OS2Forms/os2forms_forloeb/tree/1.1.0"
+                "source": "https://github.com/OS2Forms/os2forms_forloeb/tree/contrib_update"
             },
-            "time": "2021-05-06T14:01:13+00:00"
+            "time": "2021-08-26T09:11:56+00:00"
+        },
+        {
+            "name": "os2forms/os2forms_forloeb_profile",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OS2Forms/os2forms_forloeb_profile.git",
+                "reference": "d36d1131dbdeb1a8b53a160373b29971fdad612f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OS2Forms/os2forms_forloeb_profile/zipball/d36d1131dbdeb1a8b53a160373b29971fdad612f",
+                "reference": "d36d1131dbdeb1a8b53a160373b29971fdad612f",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/core": "^8"
+            },
+            "default-branch": true,
+            "type": "drupal-profile",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "EUPL-1.2"
+            ],
+            "description": "This profile adds the configuration and initial install of OS2forms 2.1 med Forløb.",
+            "support": {
+                "issues": "https://github.com/OS2Forms/os2forms_forloeb_profile/issues",
+                "source": "https://github.com/OS2Forms/os2forms_forloeb_profile/tree/develop"
+            },
+            "time": "2021-06-01T11:46:21+00:00"
         },
         {
             "name": "os2web/os2web_datalookup",
@@ -16324,6 +16356,7 @@
         "drupal/webform_composite": 5,
         "drupal/webform_views": 15,
         "os2forms/os2forms_egbolig": 20,
+        "os2forms/os2forms_forloeb": 20,
         "os2web/os2web_logging": 20
     },
     "prefer-stable": true,
