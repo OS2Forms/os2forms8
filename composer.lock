@@ -17630,7 +17630,6 @@
         "drupal/webform_composite": 5,
         "drupal/webform_views": 15,
         "os2forms/os2forms_egbolig": 20,
-        "os2forms/os2forms_forloeb": 20,
         "os2web/os2web_logging": 20
     },
     "prefer-stable": true,
