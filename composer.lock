@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2418563bd424601bf589856814232f94",
+    "content-hash": "2d1e39d8a6c8669cc385556eaef83465",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3805,16 +3805,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.9.18",
+            "version": "8.9.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "e536176c45d9d75ec57f7a12c0e3c0aead856841"
+                "reference": "96eb83b31d950f020cbc079ab960159c3735a033"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/e536176c45d9d75ec57f7a12c0e3c0aead856841",
-                "reference": "e536176c45d9d75ec57f7a12c0e3c0aead856841",
+                "url": "https://api.github.com/repos/drupal/core/zipball/96eb83b31d950f020cbc079ab960159c3735a033",
+                "reference": "96eb83b31d950f020cbc079ab960159c3735a033",
                 "shasum": ""
             },
             "require": {
@@ -4033,9 +4033,9 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "support": {
-                "source": "https://github.com/drupal/core/tree/8.9.18"
+                "source": "https://github.com/drupal/core/tree/8.9.19"
             },
-            "time": "2021-08-12T17:48:42+00:00"
+            "time": "2021-09-14T22:08:18+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
@@ -4917,30 +4917,30 @@
         },
         {
             "name": "drupal/entity_embed",
-            "version": "1.0.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/entity_embed.git",
-                "reference": "8.x-1.0"
+                "reference": "8.x-1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/entity_embed-8.x-1.0.zip",
-                "reference": "8.x-1.0",
-                "shasum": "abd37a54162a702cf696ef0e5f8b2b1082263c21"
+                "url": "https://ftp.drupal.org/files/projects/entity_embed-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "e1d4c9d6931984836c1ea550c32ae40f42367525"
             },
             "require": {
-                "drupal/core": "^8.4.0",
-                "drupal/embed": "*"
+                "drupal/core": "^8.8 || ^9",
+                "drupal/embed": "^1.3"
             },
             "require-dev": {
-                "drupal/entity_browser": "*"
+                "drupal/entity_browser": "^2.2"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1562161679",
+                    "version": "8.x-1.2",
+                    "datestamp": "1631726164",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -10887,16 +10887,16 @@
         },
         {
             "name": "os2core/os2core",
-            "version": "1.0.4",
+            "version": "1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bellcom/os2core.git",
-                "reference": "d72d302f742a22334a8ec9d92cdc9f6bfdeae23e"
+                "reference": "8f49c7e12b14a6d7305059babb63cad862544071"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bellcom/os2core/zipball/d72d302f742a22334a8ec9d92cdc9f6bfdeae23e",
-                "reference": "d72d302f742a22334a8ec9d92cdc9f6bfdeae23e",
+                "url": "https://api.github.com/repos/bellcom/os2core/zipball/8f49c7e12b14a6d7305059babb63cad862544071",
+                "reference": "8f49c7e12b14a6d7305059babb63cad862544071",
                 "shasum": ""
             },
             "require": {
@@ -10917,7 +10917,7 @@
                 "drupal/embed": "^1.0",
                 "drupal/entity": "^1.0-rc3",
                 "drupal/entity_browser": "2.2.0",
-                "drupal/entity_embed": "1.0",
+                "drupal/entity_embed": "^1.0",
                 "drupal/environment_indicator": "^3.7",
                 "drupal/eu_cookie_compliance": "^1.8",
                 "drupal/extlink": "^1.1",
@@ -10950,9 +10950,9 @@
             "description": "Wrapper over contrib modules used for OS2 Drupal solutions",
             "support": {
                 "issues": "https://github.com/bellcom/os2core/issues",
-                "source": "https://github.com/bellcom/os2core/tree/1.0.4"
+                "source": "https://github.com/bellcom/os2core/tree/1.0.5"
             },
-            "time": "2021-08-27T08:51:23+00:00"
+            "time": "2021-09-16T06:37:29+00:00"
         },
         {
             "name": "os2forms/os2forms",
@@ -17638,5 +17638,5 @@
         "php": ">=7.1"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
