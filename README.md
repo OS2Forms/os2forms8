@@ -190,6 +190,24 @@ composer install --no-dev
    ./vendor/bin/drush en os2forms, os2forms_nemid, os2forms_dawa, os2forms_sbsys
    ```
 
+## Development
+
+During development display of all PHP warnings and errors should be enabled by
+adding
+
+```php
+<?php
+// settings.local.php.
+error_reporting(E_ALL);
+ini_set('display_errors', TRUE);
+ini_set('display_startup_errors', TRUE);
+$config['system.logging']['error_level'] = 'verbose';
+```
+
+to `setttings.local.php`. See [Enable Drupal 8 backend errorlog/debugging
+mode](https://www.drupal.org/forum/support/post-installation/2018-07-18/enable-drupal-8-backend-errorlogdebugging-mode)
+for further details.
+
 ## Contributing
 
 OS2Forms projects is open for new features and os course bugfixes. If you have any suggestion, or you found a bug in project, you are very welcome to create an issue in github repository issue tracker. For issue description there is expected that you will provide clear and sufficient information about your feature request or bug report.
