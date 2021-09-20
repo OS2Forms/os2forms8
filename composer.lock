@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2d1e39d8a6c8669cc385556eaef83465",
+    "content-hash": "392179c89dc96ba627b5763c3f0e093c",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -11164,32 +11164,13 @@
         },
         {
             "name": "os2web/os2web_datalookup",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_datalookup.git",
-                "reference": "8ee393a87ac575bda28288050f824755bca00e34"
+                "reference": "f/CPRQueryService2.0"
             },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_datalookup/zipball/8ee393a87ac575bda28288050f824755bca00e34",
-                "reference": "8ee393a87ac575bda28288050f824755bca00e34",
-                "shasum": ""
-            },
-            "require": {
-                "ext-soap": "*"
-            },
-            "type": "drupal-module",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "EUPL-1.2"
-            ],
-            "description": "Provides integration with Danish data lookup services such as Service platformen or Datafordeler.",
-            "support": {
-                "issues": "https://github.com/OS2web/os2web_datalookup/issues",
-                "source": "https://github.com/OS2web/os2web_datalookup/tree/1.1.0"
-            },
-            "time": "2021-08-26T10:23:03+00:00"
+            "type": "drupal-module"
         },
         {
             "name": "os2web/os2web_logging",

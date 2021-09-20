@@ -13,6 +13,19 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "os2web/os2web_datalookup",
+                "version": "1.1.1",
+                "type": "drupal-module",
+                "source": {
+                    "url": "https://github.com/OS2web/os2web_datalookup.git",
+                    "type": "git",
+                    "reference": "f/CPRQueryService2.0"
+                }
+            }
         }
     ],
     "require": {
