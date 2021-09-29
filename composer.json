@@ -50,6 +50,7 @@
         "os2forms/os2forms_egbolig": "dev-master",
         "os2forms/os2forms_forloeb": "dev-gir_integration",
         "os2web/os2web_logging": "dev-master",
+        "ramsey/uuid": "^4.2",
         "vlucas/phpdotenv": "^4.0",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3",
