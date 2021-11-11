@@ -11,6 +11,7 @@ RUN set -eux; \
 		zip \
 		cron \
 		lsb-release \
+		rsync \
 		gnupg; \
 	docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ && \
 	docker-php-ext-install soap ldap; \
