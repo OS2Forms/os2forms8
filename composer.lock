@@ -2520,17 +2520,17 @@
         },
         {
             "name": "drupal/admin_toolbar",
-            "version": "3.0.2",
+            "version": "3.0.3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/admin_toolbar.git",
-                "reference": "3.0.2"
+                "reference": "3.0.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/admin_toolbar-3.0.2.zip",
-                "reference": "3.0.2",
-                "shasum": "a3b7a8030695d0c1d49ec57786321e2dd142184a"
+                "url": "https://ftp.drupal.org/files/projects/admin_toolbar-3.0.3.zip",
+                "reference": "3.0.3",
+                "shasum": "ce735c931c0bd6da79bd8e45ca459d61015bbe44"
             },
             "require": {
                 "drupal/core": "^8.8.0 || ^9.0"
@@ -2541,8 +2541,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.2",
-                    "datestamp": "1629907124",
+                    "version": "3.0.3",
+                    "datestamp": "1632322497",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2655,17 +2655,17 @@
         },
         {
             "name": "drupal/better_exposed_filters",
-            "version": "4.0.0-beta4",
+            "version": "4.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/better_exposed_filters.git",
-                "reference": "8.x-4.0-beta4"
+                "reference": "8.x-4.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/better_exposed_filters-8.x-4.0-beta4.zip",
-                "reference": "8.x-4.0-beta4",
-                "shasum": "f04180927e2e06fc6c817a82b4ed0bdb6412d64b"
+                "url": "https://ftp.drupal.org/files/projects/better_exposed_filters-8.x-4.0.zip",
+                "reference": "8.x-4.0",
+                "shasum": "f298e83b9ae1c28f4ff54f3c6256146cbc7fc239"
             },
             "require": {
                 "drupal/core": "^8"
@@ -2673,11 +2673,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-4.0-beta4",
-                    "datestamp": "1625666086",
+                    "version": "8.x-4.0",
+                    "datestamp": "1634748844",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -4996,17 +4996,17 @@
         },
         {
             "name": "drupal/entity_print",
-            "version": "2.3.0",
+            "version": "2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/entity_print.git",
-                "reference": "8.x-2.3"
+                "reference": "8.x-2.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/entity_print-8.x-2.3.zip",
-                "reference": "8.x-2.3",
-                "shasum": "d7d094403952aa948f358a2670d690a2d70a357a"
+                "url": "https://ftp.drupal.org/files/projects/entity_print-8.x-2.4.zip",
+                "reference": "8.x-2.4",
+                "shasum": "838fd304a408f8f7620eb26af52046ac9e88eead"
             },
             "require": {
                 "dompdf/dompdf": "~0.8.4 || ^1.0",
@@ -5019,8 +5019,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.3",
-                    "datestamp": "1632108169",
+                    "version": "8.x-2.4",
+                    "datestamp": "1632300401",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5178,26 +5178,26 @@
         },
         {
             "name": "drupal/eu_cookie_compliance",
-            "version": "1.14.0",
+            "version": "1.19.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/eu-cookie-compliance.git",
-                "reference": "8.x-1.14"
+                "reference": "8.x-1.19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/eu_cookie_compliance-8.x-1.14.zip",
-                "reference": "8.x-1.14",
-                "shasum": "37b7d8e33d5bc466272a288dbbb386d8702ed3c1"
+                "url": "https://ftp.drupal.org/files/projects/eu_cookie_compliance-8.x-1.19.zip",
+                "reference": "8.x-1.19",
+                "shasum": "5a13cd53f87a58501cebd6e560c280ad7274035c"
             },
             "require": {
-                "drupal/core": "^8.8 || ^9"
+                "drupal/core": "^8.9 || ^9"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.14",
-                    "datestamp": "1606569775",
+                    "version": "8.x-1.19",
+                    "datestamp": "1633775773",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5227,6 +5227,10 @@
                 {
                     "name": "See other contributors",
                     "homepage": "https://www.drupal.org/node/1538032/committers"
+                },
+                {
+                    "name": "svenryen",
+                    "homepage": "https://www.drupal.org/user/667244"
                 }
             ],
             "description": "This module aims at making the website compliant with the new EU cookie regulation.",
@@ -5548,27 +5552,27 @@
         },
         {
             "name": "drupal/gin",
-            "version": "3.0.0-alpha36",
+            "version": "3.0.0-alpha37",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/gin.git",
-                "reference": "8.x-3.0-alpha36"
+                "reference": "8.x-3.0-alpha37"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/gin-8.x-3.0-alpha36.zip",
-                "reference": "8.x-3.0-alpha36",
-                "shasum": "e0a412e12b000d92e1200c825abaf8ba33df9396"
+                "url": "https://ftp.drupal.org/files/projects/gin-8.x-3.0-alpha37.zip",
+                "reference": "8.x-3.0-alpha37",
+                "shasum": "56f7226618f7e45697ee799e5e02c57d79cb3b1a"
             },
             "require": {
-                "drupal/core": "^8.8 || ^9",
+                "drupal/core": "^8.8 || ^9 || ^10",
                 "drupal/gin_toolbar": "^1.0@beta"
             },
             "type": "drupal-theme",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.0-alpha36",
-                    "datestamp": "1625232245",
+                    "version": "8.x-3.0-alpha37",
+                    "datestamp": "1632767973",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -5609,26 +5613,26 @@
         },
         {
             "name": "drupal/gin_toolbar",
-            "version": "1.0.0-beta19",
+            "version": "1.0.0-beta20",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/gin_toolbar.git",
-                "reference": "8.x-1.0-beta19"
+                "reference": "8.x-1.0-beta20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/gin_toolbar-8.x-1.0-beta19.zip",
-                "reference": "8.x-1.0-beta19",
-                "shasum": "97240fb165600cc32994e7a1cfbc415cfcf28e70"
+                "url": "https://ftp.drupal.org/files/projects/gin_toolbar-8.x-1.0-beta20.zip",
+                "reference": "8.x-1.0-beta20",
+                "shasum": "770d6945de7ae001e3981db83daace610d4db5c4"
             },
             "require": {
-                "drupal/core": "^8 || ^9"
+                "drupal/core": "^8 || ^9 || ^10"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.0-beta19",
-                    "datestamp": "1626682027",
+                    "version": "8.x-1.0-beta20",
+                    "datestamp": "1635149590",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -6186,17 +6190,17 @@
         },
         {
             "name": "drupal/linkit",
-            "version": "5.0.0-beta12",
+            "version": "5.0.0-beta13",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/linkit.git",
-                "reference": "8.x-5.0-beta12"
+                "reference": "8.x-5.0-beta13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/linkit-8.x-5.0-beta12.zip",
-                "reference": "8.x-5.0-beta12",
-                "shasum": "9e03975b476f893112d8b12d8b8610926a4e7f2c"
+                "url": "https://ftp.drupal.org/files/projects/linkit-8.x-5.0-beta13.zip",
+                "reference": "8.x-5.0-beta13",
+                "shasum": "9215fbea84166cabc9b7a2d9a04dedaffb9fc1ed"
             },
             "require": {
                 "drupal/core": "^8.7.7 || ^9"
@@ -6207,8 +6211,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-5.0-beta12",
-                    "datestamp": "1608957625",
+                    "version": "8.x-5.0-beta13",
+                    "datestamp": "1632933670",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -8088,7 +8092,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/typed_data.git",
-                "reference": "d6550fd64428642da9ace9281670e70f7018f0b1"
+                "reference": "d4848b6df120b7272a43e920952dbb2de474d1eb"
             },
             "require": {
                 "drupal/core": "^8.8.2 || ^9"
@@ -8099,8 +8103,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha5+24-dev",
-                    "datestamp": "1623702620",
+                    "version": "8.x-1.0-alpha5+36-dev",
+                    "datestamp": "1635833123",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -8236,6 +8240,10 @@
             ],
             "authors": [
                 {
+                    "name": "VladimirAus",
+                    "homepage": "https://www.drupal.org/user/673120"
+                },
+                {
                     "name": "ajay_reddy",
                     "homepage": "https://www.drupal.org/user/3261994"
                 },
@@ -8272,17 +8280,17 @@
         },
         {
             "name": "drupal/webform",
-            "version": "5.28.0",
+            "version": "5.29.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform.git",
-                "reference": "8.x-5.28"
+                "reference": "8.x-5.29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.28.zip",
-                "reference": "8.x-5.28",
-                "shasum": "31376657f81e50302cc6b89d5094e0b8a0810f57"
+                "url": "https://ftp.drupal.org/files/projects/webform-8.x-5.29.zip",
+                "reference": "8.x-5.29",
+                "shasum": "59e71c4924036bd7de7d93fec1f8d5dd32bbc81d"
             },
             "require": {
                 "drupal/core": "^8.8"
@@ -8323,8 +8331,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-5.28",
-                    "datestamp": "1629909852",
+                    "version": "8.x-5.29",
+                    "datestamp": "1635676451",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -8576,7 +8584,7 @@
         },
         {
             "name": "drupal/webform_node",
-            "version": "6.0.5",
+            "version": "6.1.0",
             "require": {
                 "drupal/core": "^8.8 || ^9",
                 "drupal/webform": "*"
@@ -8584,8 +8592,8 @@
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "6.0.5",
-                    "datestamp": "1629909787",
+                    "version": "6.1.0",
+                    "datestamp": "1635676666",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -8793,17 +8801,17 @@
         },
         {
             "name": "drupal/webform_rest",
-            "version": "4.0.0",
+            "version": "4.0.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform_rest.git",
-                "reference": "4.0.0"
+                "reference": "4.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform_rest-4.0.0.zip",
-                "reference": "4.0.0",
-                "shasum": "44deefd90e9e4c2e53d7785446ae6e74d5a6ab12"
+                "url": "https://ftp.drupal.org/files/projects/webform_rest-4.0.1.zip",
+                "reference": "4.0.1",
+                "shasum": "bc73009fdc347b24c4c0119f1b6a38f2adc7ff61"
             },
             "require": {
                 "drupal/core": "^8 || ^9",
@@ -8813,8 +8821,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "4.0.0",
-                    "datestamp": "1614618512",
+                    "version": "4.0.1",
+                    "datestamp": "1636116585",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -8826,6 +8834,10 @@
                 "GPL-2.0-or-later"
             ],
             "authors": [
+                {
+                    "name": "Nelson Alves",
+                    "homepage": "https://www.drupal.org/user/3557178"
+                },
                 {
                     "name": "dgaspara",
                     "homepage": "https://www.drupal.org/user/3557179"
@@ -8904,7 +8916,7 @@
         },
         {
             "name": "drupal/webform_ui",
-            "version": "6.0.5",
+            "version": "6.1.0",
             "require": {
                 "drupal/core": "^8.8 || ^9",
                 "drupal/webform": "*"
@@ -8912,8 +8924,8 @@
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "6.0.5",
-                    "datestamp": "1629909787",
+                    "version": "6.1.0",
+                    "datestamp": "1635676666",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
