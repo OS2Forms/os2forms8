@@ -5724,26 +5724,26 @@
         },
         {
             "name": "drupal/honeypot",
-            "version": "1.30.0",
+            "version": "1.31.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/honeypot.git",
-                "reference": "8.x-1.30"
+                "reference": "8.x-1.31"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/honeypot-8.x-1.30.zip",
-                "reference": "8.x-1.30",
-                "shasum": "1d7983e8e07feee4f13e4b05c9a10db15ae2097e"
+                "url": "https://ftp.drupal.org/files/projects/honeypot-8.x-1.31.zip",
+                "reference": "8.x-1.31",
+                "shasum": "a0e7fd5cabdf8bbd4ceedc39d0a25f9d54ea3c41"
             },
             "require": {
-                "drupal/core": "~8.0"
+                "drupal/core": "^8.8.2 || ^9"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.30",
-                    "datestamp": "1576274288",
+                    "version": "8.x-1.31",
+                    "datestamp": "1637735546",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5752,13 +5752,17 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
                     "name": "Jeff Geerling",
                     "homepage": "https://www.drupal.org/user/213194",
                     "email": "geerlingguy@mac.com"
+                },
+                {
+                    "name": "TR",
+                    "homepage": "https://www.drupal.org/user/202830"
                 },
                 {
                     "name": "geerlingguy",
@@ -5780,7 +5784,8 @@
                 "spam"
             ],
             "support": {
-                "source": "https://git.drupalcode.org/project/honeypot"
+                "source": "https://git.drupalcode.org/project/honeypot",
+                "issues": "https://www.drupal.org/project/issues/honeypot"
             }
         },
         {
@@ -8634,27 +8639,27 @@
         },
         {
             "name": "drupal/webform_node_element",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform_node_element.git",
-                "reference": "8.x-1.1"
+                "reference": "8.x-1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform_node_element-8.x-1.1.zip",
-                "reference": "8.x-1.1",
-                "shasum": "f9a6a4f163e7e2e3a58d69abc827378d6e9f449d"
+                "url": "https://ftp.drupal.org/files/projects/webform_node_element-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "c0512e9fe437cc5da7d0cd4750388da666b12a4b"
             },
             "require": {
-                "drupal/core": "~8.0",
+                "drupal/core": "^8 || ^9",
                 "drupal/webform": "*"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.1",
-                    "datestamp": "1537539780",
+                    "version": "8.x-1.2",
+                    "datestamp": "1637242231",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -8667,6 +8672,10 @@
             ],
             "authors": [
                 {
+                    "name": "Finn Lewis",
+                    "homepage": "https://www.drupal.org/user/119432"
+                },
+                {
                     "name": "alarcombe",
                     "homepage": "https://www.drupal.org/user/172759"
                 },
@@ -8675,10 +8684,11 @@
                     "homepage": "https://www.drupal.org/user/218525"
                 }
             ],
-            "description": "Displays a node as a webform element.",
+            "description": "Webform Node Element is a module that allows you to include node content in a webform without using the PHP input filter.",
             "homepage": "https://www.drupal.org/project/webform_node_element",
             "support": {
-                "source": "https://git.drupalcode.org/project/webform_node_element"
+                "source": "https://git.drupalcode.org/project/webform_node_element",
+                "issues": "https://www.drupal.org/project/issues/search/webform_node_element"
             }
         },
         {
