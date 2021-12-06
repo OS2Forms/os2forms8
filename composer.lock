@@ -4318,7 +4318,7 @@
             "extra": {
                 "drupal": {
                     "version": "4.1.1",
-                    "datestamp": "1609419527",
+                    "datestamp": "1631968537",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5724,26 +5724,26 @@
         },
         {
             "name": "drupal/honeypot",
-            "version": "1.30.0",
+            "version": "1.31.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/honeypot.git",
-                "reference": "8.x-1.30"
+                "reference": "8.x-1.31"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/honeypot-8.x-1.30.zip",
-                "reference": "8.x-1.30",
-                "shasum": "1d7983e8e07feee4f13e4b05c9a10db15ae2097e"
+                "url": "https://ftp.drupal.org/files/projects/honeypot-8.x-1.31.zip",
+                "reference": "8.x-1.31",
+                "shasum": "a0e7fd5cabdf8bbd4ceedc39d0a25f9d54ea3c41"
             },
             "require": {
-                "drupal/core": "~8.0"
+                "drupal/core": "^8.8.2 || ^9"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.30",
-                    "datestamp": "1576274288",
+                    "version": "8.x-1.31",
+                    "datestamp": "1637735546",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5752,13 +5752,17 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
                     "name": "Jeff Geerling",
                     "homepage": "https://www.drupal.org/user/213194",
                     "email": "geerlingguy@mac.com"
+                },
+                {
+                    "name": "TR",
+                    "homepage": "https://www.drupal.org/user/202830"
                 },
                 {
                     "name": "geerlingguy",
@@ -5780,7 +5784,8 @@
                 "spam"
             ],
             "support": {
-                "source": "https://git.drupalcode.org/project/honeypot"
+                "source": "https://git.drupalcode.org/project/honeypot",
+                "issues": "https://www.drupal.org/project/issues/honeypot"
             }
         },
         {
@@ -8680,27 +8685,27 @@
         },
         {
             "name": "drupal/webform_node_element",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform_node_element.git",
-                "reference": "8.x-1.1"
+                "reference": "8.x-1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform_node_element-8.x-1.1.zip",
-                "reference": "8.x-1.1",
-                "shasum": "f9a6a4f163e7e2e3a58d69abc827378d6e9f449d"
+                "url": "https://ftp.drupal.org/files/projects/webform_node_element-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "c0512e9fe437cc5da7d0cd4750388da666b12a4b"
             },
             "require": {
-                "drupal/core": "~8.0",
+                "drupal/core": "^8 || ^9",
                 "drupal/webform": "*"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.1",
-                    "datestamp": "1537539780",
+                    "version": "8.x-1.2",
+                    "datestamp": "1637242231",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -8713,6 +8718,10 @@
             ],
             "authors": [
                 {
+                    "name": "Finn Lewis",
+                    "homepage": "https://www.drupal.org/user/119432"
+                },
+                {
                     "name": "alarcombe",
                     "homepage": "https://www.drupal.org/user/172759"
                 },
@@ -8721,10 +8730,11 @@
                     "homepage": "https://www.drupal.org/user/218525"
                 }
             ],
-            "description": "Displays a node as a webform element.",
+            "description": "Webform Node Element is a module that allows you to include node content in a webform without using the PHP input filter.",
             "homepage": "https://www.drupal.org/project/webform_node_element",
             "support": {
-                "source": "https://git.drupalcode.org/project/webform_node_element"
+                "source": "https://git.drupalcode.org/project/webform_node_element",
+                "issues": "https://www.drupal.org/project/issues/search/webform_node_element"
             }
         },
         {
@@ -11536,16 +11546,16 @@
         },
         {
             "name": "os2forms/os2forms",
-            "version": "2.7.1",
+            "version": "2.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2Forms/os2forms.git",
-                "reference": "8550601a812a381ac37bed0549f91811729e27c0"
+                "reference": "e5c3e750c3288794dd232215e1ce363985dbae44"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2Forms/os2forms/zipball/8550601a812a381ac37bed0549f91811729e27c0",
-                "reference": "8550601a812a381ac37bed0549f91811729e27c0",
+                "url": "https://api.github.com/repos/OS2Forms/os2forms/zipball/e5c3e750c3288794dd232215e1ce363985dbae44",
+                "reference": "e5c3e750c3288794dd232215e1ce363985dbae44",
                 "shasum": ""
             },
             "require": {
@@ -11593,9 +11603,9 @@
             "description": "Drupal 8 OS2Form module provides advanced webform functionality for Danish Municipalities",
             "support": {
                 "issues": "https://github.com/OS2Forms/os2forms/issues",
-                "source": "https://github.com/OS2Forms/os2forms/tree/2.7.1"
+                "source": "https://github.com/OS2Forms/os2forms/tree/2.8.0"
             },
-            "time": "2021-08-26T12:18:21+00:00"
+            "time": "2021-11-25T09:41:32+00:00"
         },
         {
             "name": "os2forms/os2forms_egbolig",
