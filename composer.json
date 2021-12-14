@@ -11,6 +11,90 @@
     ],
     "repositories": [
         {
+            "type": "vcs",
+            "url": "https://git.drupalcode.org/project/monolog.git"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/webform_embed",
+                "type": "drupal-module",
+                "version": "1.x-dev",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://ftp.drupal.org/files/projects/webform_embed-8.x-1.x-dev.zip",
+                    "shasum": ""
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "drupal/webform_permissions_by_term",
+                "version": "1.2.0",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://ftp.drupal.org/files/projects/webform_permissions_by_term-8.x-1.2.zip",
+                    "reference": "8.x-1.2",
+                    "shasum": "eabcfdbbbc850986fdd0d8b3a26cad8d6b5d675e"
+                },
+                "require": {
+                    "drupal/core": "~8.0 || ^9.0",
+                    "drupal/permissions_by_term": "*"
+                },
+                "type": "drupal-module"
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "os2forms/os2forms_forloeb_profile",
+                "type": "drupal-profile",
+                "description": "This profile adds the configuration and initial install of OS2forms 2.1 med Forløb.",
+                "minimum-stability": "dev",
+                "prefer-stable": true,
+                "license": "EUPL-1.2",
+                "repositories": {
+                    "drupal": {
+                        "type": "composer",
+                        "url": "https://packages.drupal.org/8"
+                    },
+                    "assets": {
+                        "type": "composer",
+                        "url": "https://asset-packagist.org"
+                    }
+                },
+                "require": {
+                    "drupal/gin": "^3.0",
+                    "drupal/core": "^8 || ^9",
+                    "os2forms/os2forms": "^3.0",
+                    "os2forms/os2forms_forloeb": "^1.7",
+                    "os2web/os2web_simplesaml": "8.x-dev"
+                },
+                "extra": {
+                    "composer-exit-on-patch-failure": true,
+                    "patchLevel": {
+                        "test": "-p2"
+                    },
+                    "enable-patching": true,
+                    "patcher": {
+                        "force-reset": true
+                    },
+                    "patches": {
+                        "drupal/dynamic_entity_reference": {
+                            "entityQuery reference JOINs should specify target_type (https://www.drupal.org/project/dynamic_entity_reference/issues/3120952#comment-14141038)": "https://www.drupal.org/files/issues/2021-06-22/entityquery-reference-joins-should-specify-target_type-3120952-24.patch"
+                        }
+                    }
+                },
+                "version": "1.4",
+                "source": {
+                    "url": "https://github.com/OS2Forms/os2forms_forloeb_profile.git",
+                    "type": "git",
+                    "reference": "332e6294c99c7eb5edbb12e01b7e330a81eb8d22"
+                }
+            }
+        },
+        {
             "type": "package",
             "package": {
                 "name": "drupal/rules",
@@ -43,26 +127,97 @@
             }
         },
         {
+            "type": "package",
+            "package": {
+                "name": "os2forms/os2forms_forloeb",
+                "type": "drupal-module",
+                "description": "This module adds Maestro workflow engine and functionality to produce advanced workflows",
+                "minimum-stability": "dev",
+                "prefer-stable": true,
+                "license": "EUPL-1.2",
+                "require": {
+                    "cweagans/composer-patches": "^1.6.5",
+                    "drupal/admin_toolbar": "^3.0",
+                    "drupal/chosen": "2.10.0",
+                    "drupal/ckeditor_a11ychecker": "1.x-dev#a2099d09f362d8b005a53e8f2845858424cac3da",
+                    "drupal/clientside_validation": "3.0.0-rc4",
+                    "drupal/coc_forms_auto_export": "2.0.0-alpha1",
+                    "drupal/config_entity_revisions": "1.7.0",
+                    "drupal/events_logging": "1.5.0",
+                    "drupal/embed": "1.4.0",
+                    "drupal/header_and_footer_scripts": "3.0.0",
+                    "drupal/image_widget_crop": "2.3.0",
+                    "drupal/ldap": "^4.2",
+                    "drupal/ldap_auth": "^1.17",
+                    "drupal/libraries": "3.0.0-beta1",
+                    "drupal/linkit": "^5.0",
+                    "drupal/logging_alerts": "1.0.0",
+                    "drupal/maestro": "3.0.1-rc2",
+                    "drupal/masquerade": "2.0.0-beta4",
+                    "drupal/queue_mail": "1.3.0",
+                    "drupal/queue_ui": "^2.1",
+                    "drupal/r4032login": "^2.1",
+                    "drupal/simple_ldap": "1.0.0-alpha3",
+                    "drupal/simplesamlphp_auth": "3.2.0",
+                    "drupal/switch_page_theme": "1.x-dev#ac38137f43cc72a8efba04bc127b87fbf2c28e06",
+                    "drupal/telephone_validation": "^2.2",
+                    "drupal/ultimate_cron": "2.0.0-alpha5",
+                    "drupal/user_default_page": "2.1",
+                    "drupal/webform_composite": "1.0-rc2",
+                    "drupal/webform_remote_handlers": "^1.6.0",
+                    "drupal/webform_rest": "^4.0.0-beta2",
+                    "drupal/webform_scheduled_tasks": "^2.0",
+                    "drupal/webform_views": "^5.0@alpha",
+                    "drupal/workflow_participants": "^2.4",
+                    "webmozart/path-util": "2.3.0",
+                    "zaporylie/composer-drupal-optimizations": "1.2.0"
+                },
+                "extra": {
+                    "composer-exit-on-patch-failure": true,
+                    "patchLevel": {
+                        "test": "-p2"
+                    },
+                    "enable-patching": true,
+                    "patcher": {
+                        "force-reset": true
+                    },
+                    "patches": {
+                        "drupal/entity_print": {
+                            "2733781 - Add Export to Word Support": "https://www.drupal.org/files/issues/2019-11-22/2733781-47.patch"
+                        },
+                        "drupal/webform": {
+                            "Unlock possibility of using Entity print module export to Word": "https://www.drupal.org/files/issues/2020-02-29/3096552-6.patch"
+                        }
+                    }
+                },
+                "version": "1.9.100",
+                "source": {
+                    "url": "git@github.com:OS2Forms/os2forms_forloeb.git",
+                    "type": "git",
+                    "reference": "develop"
+                }
+            }
+        },
+        {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         }
     ],
     "require": {
         "php": ">=7.1",
-        "composer/installers": "^1.2",
-        "cweagans/composer-patches": "^1.6.5",
+        "composer/installers": "^1.9",
+        "cweagans/composer-patches": "^1.7",
         "drupal/bootstrap": "^3.21",
         "drupal/config_entity_revisions": "1.7.0",
         "drupal/console": "^1.0.2",
-        "drupal/core": "^8.9",
-        "drupal/core-composer-scaffold": "^8.9",
-        "drupal/devel": "^4.1",
+        "drupal/core-composer-scaffold": "^9.1",
+        "drupal/core-recommended": "^9.1",
         "drupal/fontyourface": "^3.2",
-        "drupal/header_and_footer_scripts": "^2.2",
-        "drupal/ldap": "^3.0@beta",
+        "drupal/header_and_footer_scripts": "^3.0",
+        "drupal/ldap": "^4.2",
         "drupal/migrate_tools": "^5.0",
         "drupal/migrate_upgrade": "^3.2",
-        "drupal/permissions_by_term": "2.25",
+        "drupal/permissions_by_term": "^3.1",
         "drupal/queue_mail": "^1.3",
         "drupal/queue_ui": "^2.1",
         "drupal/restui": "^1.20",
@@ -70,23 +225,27 @@
         "drupal/straw": "^1.3",
         "drupal/telephone_validation": "^2.2",
         "drupal/upgrade_status": "^3.12",
-        "drupal/webform_analysis": "^1.0@beta",
+        "drupal/webform_analysis": "1.x-dev#9e34c2617958ab4b5e0632b49ca6c75d4e1d4c00",
         "drupal/webform_composite": "^1.0@RC",
         "drupal/webform_migrate": "^1.2",
         "drupal/webform_node_element": "^1.1",
         "drupal/webform_scheduled_tasks": "^2.0",
         "drupal/webform_views": "^5.0@alpha",
-        "drush/drush": "^9.0.0",
-        "os2core/os2core": "^1.0",
-        "os2forms/os2forms": "^2.5",
+        "drush/drush": "^10",
+        "os2core/os2core": "^2.0",
+        "os2forms/os2forms": "^3.0",
         "os2forms/os2forms_egbolig": "dev-master",
         "os2forms/os2forms_forloeb": "^1.3",
         "os2forms/os2forms_forloeb_profile": "^1.0",
         "os2web/os2web_logging": "dev-master",
         "vlucas/phpdotenv": "^5.1",
-        "webflo/drupal-finder": "^1.0.0",
-        "webmozart/path-util": "^2.3",
-        "zaporylie/composer-drupal-optimizations": "^1.0"
+        "webflo/drupal-finder": "^1.2",
+        "webmozart/path-util": "^2.3"
+    },
+    "require-dev": {
+        "drupal/core-dev": "^9.1",
+        "zaporylie/composer-drupal-optimizations": "^1.2",
+        "drupal/devel": "^4.1"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -143,8 +302,18 @@
             "force-reset": true
         },
         "patches": {
+            "drupal/coc_forms_auto_export": {
+               "3240592 - Problem with phpseclib requirement in 2.x": "https://www.drupal.org/files/issues/2021-10-04/requirement-namespace-3240592-1.patch"
+            },
             "drupal/webform": {
                "Add support for Set to state": "./patches/add-set-to-state-3159806-2-modified-5.19.patch"
+            },
+            "drupal/webform_permissions_by_term": {
+               "3142184 - Automated Drupal 9 compatibility fixes": "https://www.drupal.org/files/issues/2020-06-28/webform_permissions_by_term.1.x-dev.rector.patch",
+               "Enabled D9 support": "patches/webform_permissions_by_term-d9.patch"
+            },
+            "drupal/webform_embed": {
+               "Enabled D9 support": "patches/webform_embed-d9.patch"
             },
             "drupal/webform_migrate": {
                 "Set to support. Checkbox condition fixes": "./patches/setto-and-checkboxes-condition-fix-onlyD7.patch"
