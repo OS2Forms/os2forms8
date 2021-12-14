@@ -48,55 +48,6 @@
         {
             "type": "package",
             "package": {
-                "name": "os2forms/os2forms_forloeb_profile",
-                "type": "drupal-profile",
-                "description": "This profile adds the configuration and initial install of OS2forms 2.1 med Forløb.",
-                "minimum-stability": "dev",
-                "prefer-stable": true,
-                "license": "EUPL-1.2",
-                "repositories": {
-                    "drupal": {
-                        "type": "composer",
-                        "url": "https://packages.drupal.org/8"
-                    },
-                    "assets": {
-                        "type": "composer",
-                        "url": "https://asset-packagist.org"
-                    }
-                },
-                "require": {
-                    "drupal/gin": "^3.0",
-                    "drupal/core": "^8 || ^9",
-                    "os2forms/os2forms": "^3.0",
-                    "os2forms/os2forms_forloeb": "^1.7",
-                    "os2web/os2web_simplesaml": "8.x-dev"
-                },
-                "extra": {
-                    "composer-exit-on-patch-failure": true,
-                    "patchLevel": {
-                        "test": "-p2"
-                    },
-                    "enable-patching": true,
-                    "patcher": {
-                        "force-reset": true
-                    },
-                    "patches": {
-                        "drupal/dynamic_entity_reference": {
-                            "entityQuery reference JOINs should specify target_type (https://www.drupal.org/project/dynamic_entity_reference/issues/3120952#comment-14141038)": "https://www.drupal.org/files/issues/2021-06-22/entityquery-reference-joins-should-specify-target_type-3120952-24.patch"
-                        }
-                    }
-                },
-                "version": "1.4",
-                "source": {
-                    "url": "https://github.com/OS2Forms/os2forms_forloeb_profile.git",
-                    "type": "git",
-                    "reference": "332e6294c99c7eb5edbb12e01b7e330a81eb8d22"
-                }
-            }
-        },
-        {
-            "type": "package",
-            "package": {
                 "name": "drupal/rules",
                 "description": "React on events and conditionally evaluate actions.",
                 "type": "drupal-module",
@@ -123,78 +74,6 @@
                     "url": "https://git.drupalcode.org/project/rules.git",
                     "type": "git",
                     "reference": "b92e91537fcb47e0dfd5eba4e3c5c9b79e543eca"
-                }
-            }
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "os2forms/os2forms_forloeb",
-                "type": "drupal-module",
-                "description": "This module adds Maestro workflow engine and functionality to produce advanced workflows",
-                "minimum-stability": "dev",
-                "prefer-stable": true,
-                "license": "EUPL-1.2",
-                "require": {
-                    "cweagans/composer-patches": "^1.6.5",
-                    "drupal/admin_toolbar": "^3.0",
-                    "drupal/chosen": "2.10.0",
-                    "drupal/ckeditor_a11ychecker": "1.x-dev#a2099d09f362d8b005a53e8f2845858424cac3da",
-                    "drupal/clientside_validation": "3.0.0-rc4",
-                    "drupal/coc_forms_auto_export": "2.0.0-alpha1",
-                    "drupal/config_entity_revisions": "1.7.0",
-                    "drupal/events_logging": "1.5.0",
-                    "drupal/embed": "1.4.0",
-                    "drupal/header_and_footer_scripts": "3.0.0",
-                    "drupal/image_widget_crop": "2.3.0",
-                    "drupal/ldap": "^4.2",
-                    "drupal/ldap_auth": "^1.17",
-                    "drupal/libraries": "3.0.0-beta1",
-                    "drupal/linkit": "^5.0",
-                    "drupal/logging_alerts": "1.0.0",
-                    "drupal/maestro": "3.0.1-rc2",
-                    "drupal/masquerade": "2.0.0-beta4",
-                    "drupal/queue_mail": "1.3.0",
-                    "drupal/queue_ui": "^2.1",
-                    "drupal/r4032login": "^2.1",
-                    "drupal/simple_ldap": "1.0.0-alpha3",
-                    "drupal/simplesamlphp_auth": "3.2.0",
-                    "drupal/switch_page_theme": "1.x-dev#ac38137f43cc72a8efba04bc127b87fbf2c28e06",
-                    "drupal/telephone_validation": "^2.2",
-                    "drupal/ultimate_cron": "2.0.0-alpha5",
-                    "drupal/user_default_page": "2.1",
-                    "drupal/webform_composite": "1.0-rc2",
-                    "drupal/webform_remote_handlers": "^1.6.0",
-                    "drupal/webform_rest": "^4.0.0-beta2",
-                    "drupal/webform_scheduled_tasks": "^2.0",
-                    "drupal/webform_views": "^5.0@alpha",
-                    "drupal/workflow_participants": "^2.4",
-                    "webmozart/path-util": "2.3.0",
-                    "zaporylie/composer-drupal-optimizations": "1.2.0"
-                },
-                "extra": {
-                    "composer-exit-on-patch-failure": true,
-                    "patchLevel": {
-                        "test": "-p2"
-                    },
-                    "enable-patching": true,
-                    "patcher": {
-                        "force-reset": true
-                    },
-                    "patches": {
-                        "drupal/entity_print": {
-                            "2733781 - Add Export to Word Support": "https://www.drupal.org/files/issues/2019-11-22/2733781-47.patch"
-                        },
-                        "drupal/webform": {
-                            "Unlock possibility of using Entity print module export to Word": "https://www.drupal.org/files/issues/2020-02-29/3096552-6.patch"
-                        }
-                    }
-                },
-                "version": "1.9.100",
-                "source": {
-                    "url": "git@github.com:OS2Forms/os2forms_forloeb.git",
-                    "type": "git",
-                    "reference": "develop"
                 }
             }
         },
@@ -235,8 +114,8 @@
         "os2core/os2core": "^2.0",
         "os2forms/os2forms": "^3.0",
         "os2forms/os2forms_egbolig": "dev-master",
-        "os2forms/os2forms_forloeb": "^1.3",
-        "os2forms/os2forms_forloeb_profile": "^1.0",
+        "os2forms/os2forms_forloeb": "dev-d9#d39dedbc008901448cdc4bc5e77fd5b93410e7e3 as 1.7",
+        "os2forms/os2forms_forloeb_profile": "dev-d9#368833db435ed7b9e96b4016175437d7ebfcb149 as 1.4",
         "os2web/os2web_logging": "dev-master",
         "vlucas/phpdotenv": "^5.1",
         "webflo/drupal-finder": "^1.2",

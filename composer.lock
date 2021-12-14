@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "229861e8321734e852365b643d89a6c2",
+    "content-hash": "7261f5617e910bac90b2e4b1fc8c4293",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -11057,11 +11057,17 @@
         },
         {
             "name": "os2forms/os2forms_forloeb",
-            "version": "1.9.100",
+            "version": "dev-d9",
             "source": {
                 "type": "git",
-                "url": "git@github.com:OS2Forms/os2forms_forloeb.git",
-                "reference": "develop"
+                "url": "https://github.com/OS2Forms/os2forms_forloeb.git",
+                "reference": "d39dedbc008901448cdc4bc5e77fd5b93410e7e3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OS2Forms/os2forms_forloeb/zipball/d39dedbc008901448cdc4bc5e77fd5b93410e7e3",
+                "reference": "d39dedbc008901448cdc4bc5e77fd5b93410e7e3",
+                "shasum": ""
             },
             "require": {
                 "cweagans/composer-patches": "^1.6.5",
@@ -11119,18 +11125,30 @@
                     }
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "EUPL-1.2"
             ],
-            "description": "This module adds Maestro workflow engine and functionality to produce advanced workflows"
+            "description": "This module adds Maestro workflow engine and functionality to produce advanced workflows",
+            "support": {
+                "issues": "https://github.com/OS2Forms/os2forms_forloeb/issues",
+                "source": "https://github.com/OS2Forms/os2forms_forloeb/tree/d9"
+            },
+            "time": "2021-12-14T13:06:27+00:00"
         },
         {
             "name": "os2forms/os2forms_forloeb_profile",
-            "version": "1.4",
+            "version": "dev-d9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2Forms/os2forms_forloeb_profile.git",
-                "reference": "332e6294c99c7eb5edbb12e01b7e330a81eb8d22"
+                "reference": "368833db435ed7b9e96b4016175437d7ebfcb149"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OS2Forms/os2forms_forloeb_profile/zipball/368833db435ed7b9e96b4016175437d7ebfcb149",
+                "reference": "368833db435ed7b9e96b4016175437d7ebfcb149",
+                "shasum": ""
             },
             "require": {
                 "drupal/core": "^8 || ^9",
@@ -11155,10 +11173,16 @@
                     }
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "EUPL-1.2"
             ],
-            "description": "This profile adds the configuration and initial install of OS2forms 2.1 med Forløb."
+            "description": "This profile adds the configuration and initial install of OS2forms 2.1 med Forløb.",
+            "support": {
+                "issues": "https://github.com/OS2Forms/os2forms_forloeb_profile/issues",
+                "source": "https://github.com/OS2Forms/os2forms_forloeb_profile/tree/d9"
+            },
+            "time": "2021-12-14T13:10:36+00:00"
         },
         {
             "name": "os2web/os2web_datalookup",
@@ -22854,7 +22878,20 @@
             "time": "2021-07-28T10:34:58+00:00"
         }
     ],
-    "aliases": [],
+    "aliases": [
+        {
+            "package": "os2forms/os2forms_forloeb",
+            "version": "dev-d9",
+            "alias": "1.7",
+            "alias_normalized": "1.7.0.0"
+        },
+        {
+            "package": "os2forms/os2forms_forloeb_profile",
+            "version": "dev-d9",
+            "alias": "1.4",
+            "alias_normalized": "1.4.0.0"
+        }
+    ],
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/simple_ldap": 15,
@@ -22862,6 +22899,8 @@
         "drupal/webform_composite": 5,
         "drupal/webform_views": 15,
         "os2forms/os2forms_egbolig": 20,
+        "os2forms/os2forms_forloeb": 20,
+        "os2forms/os2forms_forloeb_profile": 20,
         "os2web/os2web_logging": 20
     },
     "prefer-stable": true,
