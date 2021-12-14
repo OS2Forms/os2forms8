@@ -309,6 +309,7 @@
                "Add support for Set to state": "./patches/add-set-to-state-3159806-2-modified-5.19.patch"
             },
             "drupal/webform_permissions_by_term": {
+               "3192241 - Too few arguments after Permissions by Term update to 2.28": "https://www.drupal.org/files/issues/2021-12-10/too-few-arguments-access-check_3192241-3.patch",
                "3142184 - Automated Drupal 9 compatibility fixes": "https://www.drupal.org/files/issues/2020-06-28/webform_permissions_by_term.1.x-dev.rector.patch",
                "Enabled D9 support": "patches/webform_permissions_by_term-d9.patch"
             },
