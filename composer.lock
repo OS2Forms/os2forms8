@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7261f5617e910bac90b2e4b1fc8c4293",
+    "content-hash": "5e23599ad8f0caf6de6633bc1d7fa2ef",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2313,11 +2313,17 @@
         },
         {
             "name": "drupal/ckeditor_a11ychecker",
-            "version": "dev-1.x",
+            "version": "2.0.0-alpha1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/ckeditor_a11ychecker.git",
-                "reference": "a2099d09f362d8b005a53e8f2845858424cac3da"
+                "reference": "2.0.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/ckeditor_a11ychecker-2.0.0-alpha1.zip",
+                "reference": "2.0.0-alpha1",
+                "shasum": "5e6d3b654a456aa11483cf67685e75900401d734"
             },
             "require": {
                 "drupal/ckeditor_balloonpanel": "*",
@@ -2325,21 +2331,18 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-1.0+10-dev",
-                    "datestamp": "1591740625",
+                    "version": "2.0.0-alpha1",
+                    "datestamp": "1620155489",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "message": "Alpha releases are not covered by Drupal security advisories."
                     }
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -2353,8 +2356,9 @@
                     "role": "Maintainer"
                 },
                 {
-                    "name": "edmund.dunn",
-                    "homepage": "https://www.drupal.org/user/3534438"
+                    "name": "Edmund Dunn (edmund.dunn)",
+                    "homepage": "https://www.drupal.org/u/edmunddunn",
+                    "role": "Maintainer"
                 },
                 {
                     "name": "pifagor",
@@ -10895,16 +10899,16 @@
         },
         {
             "name": "os2core/os2core",
-            "version": "2.0.0",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bellcom/os2core.git",
-                "reference": "8966d3eb38a7f30f34339d99c388b803b3570fbb"
+                "reference": "9d4ae2d08879c5e14e85fc0e7b32d849ce8ef44a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bellcom/os2core/zipball/8966d3eb38a7f30f34339d99c388b803b3570fbb",
-                "reference": "8966d3eb38a7f30f34339d99c388b803b3570fbb",
+                "url": "https://api.github.com/repos/bellcom/os2core/zipball/9d4ae2d08879c5e14e85fc0e7b32d849ce8ef44a",
+                "reference": "9d4ae2d08879c5e14e85fc0e7b32d849ce8ef44a",
                 "shasum": ""
             },
             "require": {
@@ -10912,7 +10916,7 @@
                 "drupal/admin_toolbar": "^3.0",
                 "drupal/better_exposed_filters": "^5.0@beta",
                 "drupal/chosen": "^2.9",
-                "drupal/ckeditor_a11ychecker": "1.x-dev#a2099d09f362d8b005a53e8f2845858424cac3da",
+                "drupal/ckeditor_a11ychecker": "*",
                 "drupal/ckeditor_entity_link": "^1.0@alpha",
                 "drupal/config_ignore": "^2.1",
                 "drupal/config_split": "^2.0@beta",
@@ -10958,9 +10962,9 @@
             "description": "Wrapper over contrib modules used for OS2 Drupal solutions",
             "support": {
                 "issues": "https://github.com/bellcom/os2core/issues",
-                "source": "https://github.com/bellcom/os2core/tree/2.0.0"
+                "source": "https://github.com/bellcom/os2core/tree/2.0.1"
             },
-            "time": "2021-12-06T16:05:11+00:00"
+            "time": "2021-12-16T08:24:16+00:00"
         },
         {
             "name": "os2forms/os2forms",
@@ -11061,19 +11065,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2Forms/os2forms_forloeb.git",
-                "reference": "d39dedbc008901448cdc4bc5e77fd5b93410e7e3"
+                "reference": "e1a503c10a74ca48749714b3992879e10a3f264d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2Forms/os2forms_forloeb/zipball/d39dedbc008901448cdc4bc5e77fd5b93410e7e3",
-                "reference": "d39dedbc008901448cdc4bc5e77fd5b93410e7e3",
+                "url": "https://api.github.com/repos/OS2Forms/os2forms_forloeb/zipball/e1a503c10a74ca48749714b3992879e10a3f264d",
+                "reference": "e1a503c10a74ca48749714b3992879e10a3f264d",
                 "shasum": ""
             },
             "require": {
                 "cweagans/composer-patches": "^1.6.5",
                 "drupal/admin_toolbar": "^3.0",
                 "drupal/chosen": "2.10.0",
-                "drupal/ckeditor_a11ychecker": "1.x-dev#a2099d09f362d8b005a53e8f2845858424cac3da",
+                "drupal/ckeditor_a11ychecker": "2.0.0-alpha1",
                 "drupal/clientside_validation": "3.0.0-rc4",
                 "drupal/coc_forms_auto_export": "2.0.0-alpha1",
                 "drupal/config_entity_revisions": "1.7.0",
@@ -11134,7 +11138,7 @@
                 "issues": "https://github.com/OS2Forms/os2forms_forloeb/issues",
                 "source": "https://github.com/OS2Forms/os2forms_forloeb/tree/d9"
             },
-            "time": "2021-12-14T13:06:27+00:00"
+            "time": "2021-12-16T08:26:42+00:00"
         },
         {
             "name": "os2forms/os2forms_forloeb_profile",
@@ -11142,19 +11146,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2Forms/os2forms_forloeb_profile.git",
-                "reference": "368833db435ed7b9e96b4016175437d7ebfcb149"
+                "reference": "6b651a295bc109cea862d6f6572de66c6196cd28"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2Forms/os2forms_forloeb_profile/zipball/368833db435ed7b9e96b4016175437d7ebfcb149",
-                "reference": "368833db435ed7b9e96b4016175437d7ebfcb149",
+                "url": "https://api.github.com/repos/OS2Forms/os2forms_forloeb_profile/zipball/6b651a295bc109cea862d6f6572de66c6196cd28",
+                "reference": "6b651a295bc109cea862d6f6572de66c6196cd28",
                 "shasum": ""
             },
             "require": {
                 "drupal/core": "^8 || ^9",
                 "drupal/gin": "^3.0",
                 "os2forms/os2forms": "^3.0",
-                "os2forms/os2forms_forloeb": "^1.7",
+                "os2forms/os2forms_forloeb": "^1.8",
                 "os2web/os2web_simplesaml": "8.x-dev"
             },
             "type": "drupal-profile",
@@ -11182,7 +11186,7 @@
                 "issues": "https://github.com/OS2Forms/os2forms_forloeb_profile/issues",
                 "source": "https://github.com/OS2Forms/os2forms_forloeb_profile/tree/d9"
             },
-            "time": "2021-12-14T13:10:36+00:00"
+            "time": "2021-12-15T12:21:05+00:00"
         },
         {
             "name": "os2web/os2web_datalookup",
@@ -22882,8 +22886,8 @@
         {
             "package": "os2forms/os2forms_forloeb",
             "version": "dev-d9",
-            "alias": "1.7",
-            "alias_normalized": "1.7.0.0"
+            "alias": "1.8",
+            "alias_normalized": "1.8.0.0"
         },
         {
             "package": "os2forms/os2forms_forloeb_profile",
@@ -22909,5 +22913,5 @@
         "php": ">=7.1"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.0.0"
 }
