@@ -1,10 +1,26 @@
-# OS2Forms Drupal 8 project
+# OS2Forms Drupal 8/9 project
 
 [![Build Status](https://travis-ci.org/OS2Forms/os2forms8.svg?branch=master)](https://travis-ci.org/OS2Forms/os2forms8)
 
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
+### Drupal 9 readiness.
+
+At the current moment OS2Forms is ready to install or upgrade to Drupal 9 version.
+
+PLAN THE UPGRADE TO DRUPAL 9 VERSION OF OS2FORMS **AS SOON AS POSSIBLE**
+
+See detailed [steps to update your project to Drupal 9](https://github.com/OS2Forms/os2forms8/tree/develop#upgrade-from-drupal-8-to-drupal-9) below in this page.
+
+Drupal 8 version is still maintained to get bugfixes.
+However, due to EOL of Drupal 8 in November 2021 Drupal core will not get its security update.
+
+If you still use Drupal 8 version of OS2Forms you can use following branches to get updates on bugfixes or other issues:
+- `master-d8`
+- `staging-d8`
+- `develop-d8`
 
 ### Traditional
 
@@ -207,6 +223,59 @@ $config['system.logging']['error_level'] = 'verbose';
 to `setttings.local.php`. See [Enable Drupal 8 backend errorlog/debugging
 mode](https://www.drupal.org/forum/support/post-installation/2018-07-18/enable-drupal-8-backend-errorlogdebugging-mode)
 for further details.
+
+## Upgrade from Drupal 8 to Drupal 9
+
+Upgrading process from 8 to 9 version is not very different from update Drupal from minor versions in Drupal 8.
+However, there is some important steps you should be aware of.
+
+It's recommended to do upgrade first on **TEST** environment before upgrading **PROD** environment.
+
+See following steps to get your project upgraded to Drupal 9.
+
+### 1. System requirements
+Before upgrade to Drupal 9 be sure that your server cover [system requirements for Drupal 9](https://www.drupal.org/docs/understanding-drupal/how-drupal-9-was-made-and-what-is-included/environment-requirements-of-drupal-9)
+The most important of them are:
+- [PHP version](https://www.drupal.org/docs/understanding-drupal/how-drupal-9-was-made-and-what-is-included/environment-requirements-of-drupal-9#s-php-version-requirement)
+- [Mysql db version](https://www.drupal.org/docs/understanding-drupal/how-drupal-9-was-made-and-what-is-included/environment-requirements-of-drupal-9#s-database-backend-and-other-hosting-requirements)
+
+### 2. Making dumps
+
+Before upgrade make sure you get DB dump to be able to roll back your project to stable state in case of unsuccessful upgrade
+
+### 3. Update code
+
+In order to upgrade your project to Drupal 9 get the latest version of `develop`, `staging` or  `master` branch.
+
+Download 3rd party dependencies via composer:
+
+```shell
+composer install
+```
+
+### 4. Rebuild cache and run database update.
+
+Run following commands:
+
+```shell
+drush cr
+drush updb
+```
+
+### 5. Testing
+Test essential functionality in your OS2Forms project.
+OS2Forms has general test cases you can go through to be sure that your project works as it should.
+It includes general Drupal test cases and additional test cases that cover basic OS2Forms functionality.
+Test cases:
+- Frontpage work
+- User can loging
+- User can create webform
+- Webform can be submitted
+- Nemid field can be added
+- User can login via nemid and see prefilled data in nemid fields
+
+NOTE: This list might not include some cases that is crucial for you installation.
+If you think that this list has missing test cases that are crucial for OS2Forms in general, feel free to [submit an issue](https://github.com/OS2Forms/os2forms8/issues) and describe the issue you are missing there.
 
 ## Contributing
 
