@@ -12,7 +12,7 @@ At the current moment OS2Forms is ready to install or upgrade to Drupal 9 versio
 
 PLAN THE UPGRADE TO DRUPAL 9 VERSION OF OS2FORMS **AS SOON AS POSSIBLE**
 
-See detailed steps to update your project to Drupal 9 below in this page.
+See detailed [steps to update your project to Drupal 9](https://github.com/OS2Forms/os2forms8/tree/develop#upgrade-from-drupal-8-to-drupal-9) below in this page.
 
 Drupal 8 version is still maintained to get bugfixes.
 However, due to EOL of Drupal 8 in November 2021 Drupal core will not get its security update.
