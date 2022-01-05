@@ -12,6 +12,10 @@ function white_darkblue_form_alter(array &$form, FormStateInterface $form_state)
     return;
   }
 
+  if (empty($form['actions'])) {
+    return;
+  }
+
   $actions = &$form['actions'];
   $submit = array_filter(Element::children($form['actions']), function($key) use ($actions) {
     if (isset($actions[$key]['#access']) && $actions[$key]['#access'] == FALSE) {
