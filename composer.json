@@ -112,7 +112,8 @@
         },
         "patches": {
             "drupal/webform": {
-               "Add support for Set to state": "./patches/add-set-to-state-3159806-2-modified-5.19.patch"
+               "Add support for Set to state": "./patches/add-set-to-state-3159806-2-modified-5.19.patch",
+               "3259195 Plugin ID scheduled_email was not found.": "./patches/3259195-partial-fix-from-2.patch"
             },
             "drupal/webform_migrate": {
                 "Set to support. Checkbox condition fixes": "./patches/setto-and-checkboxes-condition-fix-onlyD7.patch"
