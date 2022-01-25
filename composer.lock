@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8991f7b936f114f1ce72a9d5b8ba0f4c",
+    "content-hash": "e1ec5152b15885fd9b27c1c89c347673",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -5425,17 +5425,17 @@
         },
         {
             "name": "drupal/jquery_ui_datepicker",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/jquery_ui_datepicker.git",
-                "reference": "8.x-1.1"
+                "reference": "8.x-1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/jquery_ui_datepicker-8.x-1.1.zip",
-                "reference": "8.x-1.1",
-                "shasum": "69f62467f846bb514a10fa93f4c3b34c6275353f"
+                "url": "https://ftp.drupal.org/files/projects/jquery_ui_datepicker-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "19ffa245970ee4e9d908fa0c5d0761f567e487bb"
             },
             "require": {
                 "drupal/core": "^8 || ^9",
@@ -5444,8 +5444,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.1",
-                    "datestamp": "1615962535",
+                    "version": "8.x-1.2",
+                    "datestamp": "1642614454",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5458,8 +5458,9 @@
             ],
             "authors": [
                 {
-                    "name": "bnjmnm",
-                    "homepage": "https://www.drupal.org/user/2369194"
+                    "name": "Andrei Ivnitskii",
+                    "homepage": "https://www.drupal.org/u/ivnish",
+                    "role": "Maintainer"
                 },
                 {
                     "name": "ivnish",
@@ -5481,7 +5482,8 @@
             "description": "Provides jQuery UI Datepicker library.",
             "homepage": "https://www.drupal.org/project/jquery_ui_datepicker",
             "support": {
-                "source": "https://git.drupalcode.org/project/jquery_ui_datepicker"
+                "source": "https://git.drupalcode.org/project/jquery_ui_datepicker",
+                "issues": "https://www.drupal.org/project/issues/jquery_ui_datepicker"
             }
         },
         {
@@ -6762,17 +6764,17 @@
         },
         {
             "name": "drupal/permissions_by_term",
-            "version": "3.1.16",
+            "version": "3.1.17",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/permissions_by_term.git",
-                "reference": "3.1.16"
+                "reference": "3.1.17"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/permissions_by_term-3.1.16.zip",
-                "reference": "3.1.16",
-                "shasum": "4208c34a4399249052bd7b070cd51d7628c6b184"
+                "url": "https://ftp.drupal.org/files/projects/permissions_by_term-3.1.17.zip",
+                "reference": "3.1.17",
+                "shasum": "a392ff9bccbbc2218be2a035017a15782e1150e0"
             },
             "require": {
                 "drupal/core": "^9.0",
@@ -6781,8 +6783,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.1.16",
-                    "datestamp": "1626101110",
+                    "version": "3.1.17",
+                    "datestamp": "1641214540",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -8243,21 +8245,6 @@
                 "source": "https://git.drupalcode.org/project/webform_node_element",
                 "issues": "https://www.drupal.org/project/issues/search/webform_node_element"
             }
-        },
-        {
-            "name": "drupal/webform_permissions_by_term",
-            "version": "1.2.0",
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform_permissions_by_term-8.x-1.2.zip",
-                "reference": "8.x-1.2",
-                "shasum": "eabcfdbbbc850986fdd0d8b3a26cad8d6b5d675e"
-            },
-            "require": {
-                "drupal/core": "~8.0 || ^9.0",
-                "drupal/permissions_by_term": "*"
-            },
-            "type": "drupal-module"
         },
         {
             "name": "drupal/webform_remote_handlers",
@@ -10968,16 +10955,16 @@
         },
         {
             "name": "os2forms/os2forms",
-            "version": "3.0.1",
+            "version": "3.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2Forms/os2forms.git",
-                "reference": "32556309b2a046ff63680a41aefa7f343a63d3e4"
+                "reference": "72110500ad3477eda4a394cfaf6607c9a9056265"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2Forms/os2forms/zipball/32556309b2a046ff63680a41aefa7f343a63d3e4",
-                "reference": "32556309b2a046ff63680a41aefa7f343a63d3e4",
+                "url": "https://api.github.com/repos/OS2Forms/os2forms/zipball/72110500ad3477eda4a394cfaf6607c9a9056265",
+                "reference": "72110500ad3477eda4a394cfaf6607c9a9056265",
                 "shasum": ""
             },
             "require": {
@@ -10987,18 +10974,17 @@
                 "drupal/maillog": "1.x-dev",
                 "drupal/mailsystem": "^4.1",
                 "drupal/pathauto": "^1.5",
-                "drupal/permissions_by_term": "^3.1",
+                "drupal/permissions_by_term": "^3.1 || ^2.25",
                 "drupal/redirect": "^1.4",
                 "drupal/smtp": "^1.0@beta",
                 "drupal/token": "^1.5",
                 "drupal/webform": "^6.1",
                 "drupal/webform_embed": "1.x-dev",
                 "drupal/webform_migrate": "^1.1",
-                "drupal/webform_permissions_by_term": "^1.2",
                 "drupal/webform_validation": "2.0.x-dev",
                 "os2web/os2web_datalookup": "^1.0",
                 "os2web/os2web_nemlogin": "^1.0",
-                "phpoffice/phpword": "^0.17.0",
+                "phpoffice/phpword": "^0.18.2",
                 "tecnickcom/tcpdf": "~6",
                 "vaimo/composer-patches": "^4.20"
             },
@@ -11025,9 +11011,9 @@
             "description": "Drupal 8 OS2Form module provides advanced webform functionality for Danish Municipalities",
             "support": {
                 "issues": "https://github.com/OS2Forms/os2forms/issues",
-                "source": "https://github.com/OS2Forms/os2forms/tree/3.0.1"
+                "source": "https://github.com/OS2Forms/os2forms/tree/3.2.1"
             },
-            "time": "2021-12-09T14:12:43+00:00"
+            "time": "2022-01-19T15:23:36+00:00"
         },
         {
             "name": "os2forms/os2forms_egbolig",
@@ -11452,47 +11438,6 @@
             "time": "2020-10-15T08:29:30+00:00"
         },
         {
-            "name": "pclzip/pclzip",
-            "version": "2.8.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ivanlanin/pclzip.git",
-                "reference": "19dd1de9d3f5fc4d7d70175b4c344dee329f45fd"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ivanlanin/pclzip/zipball/19dd1de9d3f5fc4d7d70175b4c344dee329f45fd",
-                "reference": "19dd1de9d3f5fc4d7d70175b4c344dee329f45fd",
-                "shasum": ""
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "pclzip.lib.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "LGPL-2.1"
-            ],
-            "authors": [
-                {
-                    "name": "Vincent Blavet"
-                }
-            ],
-            "description": "A PHP library that offers compression and extraction functions for Zip formatted archives",
-            "homepage": "http://www.phpconcept.net/pclzip",
-            "keywords": [
-                "php",
-                "zip"
-            ],
-            "support": {
-                "issues": "https://github.com/ivanlanin/pclzip/issues",
-                "source": "https://github.com/ivanlanin/pclzip/tree/master"
-            },
-            "time": "2014-06-05T11:42:24+00:00"
-        },
-        {
             "name": "pear/archive_tar",
             "version": "1.4.14",
             "source": {
@@ -11732,20 +11677,23 @@
         },
         {
             "name": "phenx/php-font-lib",
-            "version": "0.5.2",
+            "version": "0.5.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/PhenX/php-font-lib.git",
-                "reference": "ca6ad461f032145fff5971b5985e5af9e7fa88d8"
+                "url": "https://github.com/dompdf/php-font-lib.git",
+                "reference": "dd448ad1ce34c63d09baccd05415e361300c35b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PhenX/php-font-lib/zipball/ca6ad461f032145fff5971b5985e5af9e7fa88d8",
-                "reference": "ca6ad461f032145fff5971b5985e5af9e7fa88d8",
+                "url": "https://api.github.com/repos/dompdf/php-font-lib/zipball/dd448ad1ce34c63d09baccd05415e361300c35b4",
+                "reference": "dd448ad1ce34c63d09baccd05415e361300c35b4",
                 "shasum": ""
             },
+            "require": {
+                "ext-mbstring": "*"
+            },
             "require-dev": {
-                "phpunit/phpunit": "^4.8.35 || ^5 || ^6 || ^7"
+                "symfony/phpunit-bridge": "^3 || ^4 || ^5"
             },
             "type": "library",
             "autoload": {
@@ -11766,10 +11714,10 @@
             "description": "A library to read, parse, export and make subsets of different types of font files.",
             "homepage": "https://github.com/PhenX/php-font-lib",
             "support": {
-                "issues": "https://github.com/PhenX/php-font-lib/issues",
-                "source": "https://github.com/PhenX/php-font-lib/tree/0.5.2"
+                "issues": "https://github.com/dompdf/php-font-lib/issues",
+                "source": "https://github.com/dompdf/php-font-lib/tree/0.5.4"
             },
-            "time": "2020-03-08T15:31:32+00:00"
+            "time": "2021-12-17T19:44:54+00:00"
         },
         {
             "name": "phenx/php-svg-lib",
@@ -11971,95 +11919,35 @@
             "time": "2021-11-25T16:34:11+00:00"
         },
         {
-            "name": "phpoffice/common",
-            "version": "0.2.9",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/PHPOffice/Common.git",
-                "reference": "edb5d32b1e3400a35a5c91e2539ed6f6ce925e4d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/PHPOffice/Common/zipball/edb5d32b1e3400a35a5c91e2539ed6f6ce925e4d",
-                "reference": "edb5d32b1e3400a35a5c91e2539ed6f6ce925e4d",
-                "shasum": ""
-            },
-            "require": {
-                "pclzip/pclzip": "^2.8",
-                "php": ">=5.3.0"
-            },
-            "require-dev": {
-                "phpdocumentor/phpdocumentor": "2.*",
-                "phploc/phploc": "2.*",
-                "phpmd/phpmd": "2.*",
-                "phpunit/phpunit": "^4.8.36 || ^7.0",
-                "sebastian/phpcpd": "2.*",
-                "squizlabs/php_codesniffer": "2.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "PhpOffice\\Common\\": "src/Common/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "LGPL"
-            ],
-            "authors": [
-                {
-                    "name": "Mark Baker"
-                },
-                {
-                    "name": "Franck Lefevre",
-                    "homepage": "http://rootslabs.net"
-                }
-            ],
-            "description": "PHPOffice Common",
-            "homepage": "http://phpoffice.github.io",
-            "keywords": [
-                "common",
-                "component",
-                "office",
-                "php"
-            ],
-            "support": {
-                "issues": "https://github.com/PHPOffice/Common/issues",
-                "source": "https://github.com/PHPOffice/Common/tree/master"
-            },
-            "time": "2018-07-13T14:12:34+00:00"
-        },
-        {
             "name": "phpoffice/phpword",
-            "version": "0.17.0",
+            "version": "0.18.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPOffice/PHPWord.git",
-                "reference": "b8346af548d399acd9e30fc76ab0c55c2fec03a5"
+                "reference": "aca10785cf68dc95d7f6fac4fe854979fef3f8db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPOffice/PHPWord/zipball/b8346af548d399acd9e30fc76ab0c55c2fec03a5",
-                "reference": "b8346af548d399acd9e30fc76ab0c55c2fec03a5",
+                "url": "https://api.github.com/repos/PHPOffice/PHPWord/zipball/aca10785cf68dc95d7f6fac4fe854979fef3f8db",
+                "reference": "aca10785cf68dc95d7f6fac4fe854979fef3f8db",
                 "shasum": ""
             },
             "require": {
                 "ext-xml": "*",
-                "php": "^5.3.3 || ^7.0",
-                "phpoffice/common": "^0.2.9",
-                "zendframework/zend-escaper": "^2.2"
+                "laminas/laminas-escaper": "^2.2",
+                "php": "^5.3.3 || ^7.0 || ^8.0"
             },
             "require-dev": {
-                "dompdf/dompdf": "0.8.*",
+                "dompdf/dompdf": "0.8.* || 1.0.*",
                 "ext-gd": "*",
                 "ext-zip": "*",
                 "friendsofphp/php-cs-fixer": "^2.2",
-                "mpdf/mpdf": "5.7.4 || 6.* || 7.*",
+                "mpdf/mpdf": "5.7.4 || 6.* || 7.* || 8.*",
                 "php-coveralls/php-coveralls": "1.1.0 || ^2.0",
-                "phploc/phploc": "2.* || 3.* || 4.*",
+                "phploc/phploc": "2.* || 3.* || 4.* || 5.* || 6.* || 7.*",
                 "phpmd/phpmd": "2.*",
                 "phpunit/phpunit": "^4.8.36 || ^7.0",
-                "squizlabs/php_codesniffer": "^2.9",
+                "squizlabs/php_codesniffer": "^2.9 || ^3.5",
                 "tecnickcom/tcpdf": "6.*"
             },
             "suggest": {
@@ -12072,7 +11960,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-develop": "0.18-dev"
+                    "dev-develop": "0.19-dev"
                 }
             },
             "autoload": {
@@ -12138,9 +12026,9 @@
             ],
             "support": {
                 "issues": "https://github.com/PHPOffice/PHPWord/issues",
-                "source": "https://github.com/PHPOffice/PHPWord/tree/develop"
+                "source": "https://github.com/PHPOffice/PHPWord/tree/0.18.2"
             },
-            "time": "2019-10-01T20:43:33+00:00"
+            "time": "2021-06-04T20:58:45+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -15561,16 +15449,16 @@
         },
         {
             "name": "symfony/dom-crawler",
-            "version": "v4.4.30",
+            "version": "v4.4.36",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dom-crawler.git",
-                "reference": "4632ae3567746c7e915c33c67a2fb6ab746090c4"
+                "reference": "42de12bee3b5e594977209bcdf58ec4fef8dde39"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/4632ae3567746c7e915c33c67a2fb6ab746090c4",
-                "reference": "4632ae3567746c7e915c33c67a2fb6ab746090c4",
+                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/42de12bee3b5e594977209bcdf58ec4fef8dde39",
+                "reference": "42de12bee3b5e594977209bcdf58ec4fef8dde39",
                 "shasum": ""
             },
             "require": {
@@ -15615,7 +15503,7 @@
             "description": "Eases DOM navigation for HTML and XML documents",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/dom-crawler/tree/v4.4.30"
+                "source": "https://github.com/symfony/dom-crawler/tree/v4.4.36"
             },
             "funding": [
                 {
@@ -15631,7 +15519,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-08-28T15:40:01+00:00"
+            "time": "2021-12-28T14:48:02+00:00"
         },
         {
             "name": "symfony/error-handler",
@@ -15929,16 +15817,16 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v4.4.30",
+            "version": "v4.4.36",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "70362f1e112280d75b30087c7598b837c1b468b6"
+                "reference": "1fef05633cd61b629e963e5d8200fb6b67ecf42c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/70362f1e112280d75b30087c7598b837c1b468b6",
-                "reference": "70362f1e112280d75b30087c7598b837c1b468b6",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/1fef05633cd61b629e963e5d8200fb6b67ecf42c",
+                "reference": "1fef05633cd61b629e963e5d8200fb6b67ecf42c",
                 "shasum": ""
             },
             "require": {
@@ -15971,7 +15859,7 @@
             "description": "Finds files and directories via an intuitive fluent interface",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/finder/tree/v4.4.30"
+                "source": "https://github.com/symfony/finder/tree/v4.4.36"
             },
             "funding": [
                 {
@@ -15987,7 +15875,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-08-04T20:31:23+00:00"
+            "time": "2021-12-15T10:33:10+00:00"
         },
         {
             "name": "symfony/framework-bundle",
@@ -16949,7 +16837,7 @@
         },
         {
             "name": "symfony/polyfill-php72",
-            "version": "v1.23.0",
+            "version": "v1.24.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php72.git",
@@ -17005,7 +16893,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php72/tree/v1.23.0"
+                "source": "https://github.com/symfony/polyfill-php72/tree/v1.24.0"
             },
             "funding": [
                 {
@@ -17025,16 +16913,16 @@
         },
         {
             "name": "symfony/polyfill-php73",
-            "version": "v1.23.0",
+            "version": "v1.24.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php73.git",
-                "reference": "fba8933c384d6476ab14fb7b8526e5287ca7e010"
+                "reference": "cc5db0e22b3cb4111010e48785a97f670b350ca5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php73/zipball/fba8933c384d6476ab14fb7b8526e5287ca7e010",
-                "reference": "fba8933c384d6476ab14fb7b8526e5287ca7e010",
+                "url": "https://api.github.com/repos/symfony/polyfill-php73/zipball/cc5db0e22b3cb4111010e48785a97f670b350ca5",
+                "reference": "cc5db0e22b3cb4111010e48785a97f670b350ca5",
                 "shasum": ""
             },
             "require": {
@@ -17084,7 +16972,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php73/tree/v1.23.0"
+                "source": "https://github.com/symfony/polyfill-php73/tree/v1.24.0"
             },
             "funding": [
                 {
@@ -17100,7 +16988,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-19T12:13:01+00:00"
+            "time": "2021-06-05T21:20:04+00:00"
         },
         {
             "name": "symfony/polyfill-php80",
@@ -17187,16 +17075,16 @@
         },
         {
             "name": "symfony/polyfill-php81",
-            "version": "v1.23.0",
+            "version": "v1.24.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php81.git",
-                "reference": "e66119f3de95efc359483f810c4c3e6436279436"
+                "reference": "5de4ba2d41b15f9bd0e19b2ab9674135813ec98f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php81/zipball/e66119f3de95efc359483f810c4c3e6436279436",
-                "reference": "e66119f3de95efc359483f810c4c3e6436279436",
+                "url": "https://api.github.com/repos/symfony/polyfill-php81/zipball/5de4ba2d41b15f9bd0e19b2ab9674135813ec98f",
+                "reference": "5de4ba2d41b15f9bd0e19b2ab9674135813ec98f",
                 "shasum": ""
             },
             "require": {
@@ -17246,7 +17134,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php81/tree/v1.23.0"
+                "source": "https://github.com/symfony/polyfill-php81/tree/v1.24.0"
             },
             "funding": [
                 {
@@ -17262,7 +17150,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-05-21T13:25:03+00:00"
+            "time": "2021-09-13T13:58:11+00:00"
         },
         {
             "name": "symfony/process",
@@ -18179,16 +18067,16 @@
         },
         {
             "name": "tecnickcom/tcpdf",
-            "version": "6.4.2",
+            "version": "6.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tecnickcom/TCPDF.git",
-                "reference": "172540dcbfdf8dc983bc2fe78feff48ff7ec1c76"
+                "reference": "42cd0f9786af7e5db4fcedaa66f717b0d0032320"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/172540dcbfdf8dc983bc2fe78feff48ff7ec1c76",
-                "reference": "172540dcbfdf8dc983bc2fe78feff48ff7ec1c76",
+                "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/42cd0f9786af7e5db4fcedaa66f717b0d0032320",
+                "reference": "42cd0f9786af7e5db4fcedaa66f717b0d0032320",
                 "shasum": ""
             },
             "require": {
@@ -18239,7 +18127,7 @@
             ],
             "support": {
                 "issues": "https://github.com/tecnickcom/TCPDF/issues",
-                "source": "https://github.com/tecnickcom/TCPDF/tree/6.4.2"
+                "source": "https://github.com/tecnickcom/TCPDF/tree/6.4.4"
             },
             "funding": [
                 {
@@ -18247,7 +18135,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2021-07-20T14:43:20+00:00"
+            "time": "2021-12-31T08:39:24+00:00"
         },
         {
             "name": "twig/extensions",
@@ -20892,16 +20780,16 @@
         },
         {
             "name": "phpdocumentor/type-resolver",
-            "version": "1.5.1",
+            "version": "1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/TypeResolver.git",
-                "reference": "a12f7e301eb7258bb68acd89d4aefa05c2906cae"
+                "reference": "93ebd0014cab80c4ea9f5e297ea48672f1b87706"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/a12f7e301eb7258bb68acd89d4aefa05c2906cae",
-                "reference": "a12f7e301eb7258bb68acd89d4aefa05c2906cae",
+                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/93ebd0014cab80c4ea9f5e297ea48672f1b87706",
+                "reference": "93ebd0014cab80c4ea9f5e297ea48672f1b87706",
                 "shasum": ""
             },
             "require": {
@@ -20936,9 +20824,9 @@
             "description": "A PSR-5 based resolver of Class names, Types and Structural Element Names",
             "support": {
                 "issues": "https://github.com/phpDocumentor/TypeResolver/issues",
-                "source": "https://github.com/phpDocumentor/TypeResolver/tree/1.5.1"
+                "source": "https://github.com/phpDocumentor/TypeResolver/tree/1.6.0"
             },
-            "time": "2021-10-02T14:08:47+00:00"
+            "time": "2022-01-04T19:58:01+00:00"
         },
         {
             "name": "phpspec/prophecy",
@@ -21327,16 +21215,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "9.5.10",
+            "version": "9.5.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "c814a05837f2edb0d1471d6e3f4ab3501ca3899a"
+                "reference": "597cb647654ede35e43b137926dfdfef0fb11743"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/c814a05837f2edb0d1471d6e3f4ab3501ca3899a",
-                "reference": "c814a05837f2edb0d1471d6e3f4ab3501ca3899a",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/597cb647654ede35e43b137926dfdfef0fb11743",
+                "reference": "597cb647654ede35e43b137926dfdfef0fb11743",
                 "shasum": ""
             },
             "require": {
@@ -21414,11 +21302,11 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.5.10"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.5.13"
             },
             "funding": [
                 {
-                    "url": "https://phpunit.de/donate.html",
+                    "url": "https://phpunit.de/sponsors.html",
                     "type": "custom"
                 },
                 {
@@ -21426,7 +21314,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-09-25T07:38:51+00:00"
+            "time": "2022-01-24T07:33:35+00:00"
         },
         {
             "name": "react/promise",
