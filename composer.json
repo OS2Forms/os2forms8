@@ -50,7 +50,7 @@
         "os2forms/os2forms": "^3.0",
         "os2forms/os2forms_egbolig": "dev-master",
         "os2forms/os2forms_forloeb": "^1.3",
-        "os2forms/os2forms_forloeb_profile": "^1.0",
+        "os2forms/os2forms_forloeb_profile": "^1.3",
         "os2web/os2web_logging": "dev-master",
         "vlucas/phpdotenv": "^5.1",
         "webflo/drupal-finder": "^1.0.0",
