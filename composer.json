@@ -113,8 +113,7 @@
         },
         "patches": {
             "drupal/webform": {
-               "Add support for Set to state": "./patches/add-set-to-state-3159806-2-modified-5.19.patch",
-               "3259195 Plugin ID scheduled_email was not found.": "./patches/3259195-partial-fix-from-2.patch"
+               "Add support for Set to state": "./patches/add-set-to-state-3159806-2-modified-5.19.patch"
             },
             "drupal/webform_permissions_by_term": {
                 "3192241 - Too few arguments after Permissions by Term update to 2.28": "https://www.drupal.org/files/issues/2021-12-10/too-few-arguments-access-check_3192241-3.patch"
