@@ -1,0 +1,24 @@
+name: Docker Image CI
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+
+    - name: Get the tag name
+      id: vars
+      run: echo ::set-output name=tag::$(echo ${GITHUB_REF:10})
+
+    - name: Build the tagged Docker image
+      run: cd .docker/os2forms && chmod +x build.sh && ./build.sh ${{steps.vars.outputs.tag}}
+
+    - name: Login to DockerHub Registry
+      run: echo ${{ secrets.DOCKERHUB_PASSWORD }} | docker login -u ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
+
+    - name: Push the tagged Docker image
+      run: docker push os2forms/os2forms8:${{steps.vars.outputs.tag}}

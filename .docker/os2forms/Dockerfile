@@ -1,4 +1,4 @@
-FROM drupal:8-apache-buster
+FROM drupal:9-php7.4-apache
 
 # Installing additional dependencies.
 RUN set -eux; \
@@ -15,7 +15,8 @@ RUN set -eux; \
 		gnupg; \
 	docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ && \
 	docker-php-ext-install soap ldap; \
-	# Addind mysql-client
+	# Addind mysql-client;
+	apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 467B942D3A79BD29; \
 	wget https://repo.mysql.com//mysql-apt-config_0.8.13-1_all.deb; \
 	echo 4 | dpkg -i mysql-apt-config_0.8.13-1_all.deb; \
 	apt update; \
@@ -44,10 +45,9 @@ WORKDIR /opt/drupal
 
 # Loading composer dependencies and configuring project folders.
 RUN set -eux; \
-	composer self-update --1; \
+	composer self-update --2; \
 	export COMPOSER_HOME="$(mktemp -d)"; \
-	composer global require hirak/prestissimo;\
-	COMPOSER_MEMORY_LIMIT=-1 composer install; \
+	composer install; \
 	chown -R www-data:www-data web/sites web/modules web/themes; \
 	# delete composer cache.
 	rm -rf "$COMPOSER_HOME"
