@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "63c8cbcd35386a60658db39701fa8756",
+    "content-hash": "102051ac2e4063e4d5bd37ceabd73055",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -7984,11 +7984,17 @@
         },
         {
             "name": "drupal/webform_analysis",
-            "version": "dev-1.x",
+            "version": "1.0.0-beta8",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform_analysis.git",
-                "reference": "9e34c2617958ab4b5e0632b49ca6c75d4e1d4c00"
+                "reference": "8.x-1.0-beta8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/webform_analysis-8.x-1.0-beta8.zip",
+                "reference": "8.x-1.0-beta8",
+                "shasum": "b342a88b890058ea8a81807a1528cf2d31ea053f"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9",
@@ -8000,12 +8006,9 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-1.0-beta7+8-dev",
-                    "datestamp": "1643354193",
+                    "version": "8.x-1.0-beta8",
+                    "datestamp": "1643355378",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -23084,7 +23087,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/simple_ldap": 15,
-        "drupal/webform_analysis": 20,
+        "drupal/webform_analysis": 10,
         "drupal/webform_composite": 5,
         "drupal/webform_views": 15,
         "os2forms/os2forms_egbolig": 20,
