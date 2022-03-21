@@ -127,6 +127,9 @@
             },
             "drupal/smtp": {
                 "Duplicated Attachments using webforms": "https://www.drupal.org/files/issues/2020-06-18/smtp-2995290-17.patch"
+            },
+           "drupal/core": {
+                "CKEditor update - SA Moderately critical - Third-party libraries - SA-CORE-2022-005" : "https://www.drupal.org/files/issues/2022-03-17/3270054-SA-CORE-2022-005_2.patch"
             }
         }
     }
