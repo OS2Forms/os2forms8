@@ -129,6 +129,9 @@
             },
            "drupal/core": {
                 "CKEditor update - SA Moderately critical - Third-party libraries - SA-CORE-2022-005" : "https://www.drupal.org/files/issues/2022-03-17/3270054-SA-CORE-2022-005_2.patch"
+            },
+            "drupal/coc_forms_auto_export": {
+                "Download button is not working when Enable Email checkbox is unchecked" : "https://www.drupal.org/files/issues/2022-05-02/coc_forms_auto_export-download_submission_error-3278205-1.patch"
             }
         }
     }
