@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "53f57f1d9e893c0aeb08b8c88c2aaf39",
+    "content-hash": "471b0488f2d397bfedfe19bc0cf27aa6",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -5005,6 +5005,57 @@
                 "source": "https://git.drupalcode.org/project/entity_embed",
                 "issues": "https://www.drupal.org/project/issues/entity_embed",
                 "irc": "irc://irc.freenode.org/drupal-media"
+            }
+        },
+        {
+            "name": "drupal/entity_export_csv",
+            "version": "1.0.0-beta8",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/entity_export_csv.git",
+                "reference": "8.x-1.0-beta8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/entity_export_csv-8.x-1.0-beta8.zip",
+                "reference": "8.x-1.0-beta8",
+                "shasum": "f0de5923d86b0a8b1f90ecfc9f4ab191815abb39"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-beta8",
+                    "datestamp": "1613255109",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "flocondetoile",
+                    "homepage": "https://www.drupal.org/user/2006064"
+                }
+            ],
+            "description": "Export Content Entity to CSV.",
+            "homepage": "https://www.drupal.org/project/entity_export_csv",
+            "keywords": [
+                "CSV",
+                "Content entity",
+                "Drupal",
+                "Export"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/entity_export_csv",
+                "issues": "https://www.drupal.org/project/issues/entity_export_csv"
             }
         },
         {
@@ -17931,6 +17982,7 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/entity_export_csv": 10,
         "drupal/ldap": 10,
         "drupal/simple_ldap": 15,
         "drupal/webform_analysis": 10,
