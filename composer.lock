@@ -11318,12 +11318,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2Forms/os2forms_egbolig.git",
-                "reference": "693292162460c5c06e78697a3f572bdfd298b56d"
+                "reference": "0ac5911feec888f109bc6c70ca7c84a1c79620da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2Forms/os2forms_egbolig/zipball/693292162460c5c06e78697a3f572bdfd298b56d",
-                "reference": "693292162460c5c06e78697a3f572bdfd298b56d",
+                "url": "https://api.github.com/repos/OS2Forms/os2forms_egbolig/zipball/0ac5911feec888f109bc6c70ca7c84a1c79620da",
+                "reference": "0ac5911feec888f109bc6c70ca7c84a1c79620da",
                 "shasum": ""
             },
             "require": {
@@ -11340,7 +11340,7 @@
                 "issues": "https://github.com/OS2Forms/os2forms_egbolig/issues",
                 "source": "https://github.com/OS2Forms/os2forms_egbolig/tree/master"
             },
-            "time": "2021-12-14T09:37:07+00:00"
+            "time": "2022-05-11T10:29:30+00:00"
         },
         {
             "name": "os2forms/os2forms_forloeb",
