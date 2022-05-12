@@ -15,9 +15,10 @@ RUN set -eux; \
 		gnupg; \
 	docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ && \
 	docker-php-ext-install soap ldap; \
-	# Addind mysql-client
-	wget https://repo.mysql.com//mysql-apt-config_0.8.13-1_all.deb; \
-	echo 4 | dpkg -i mysql-apt-config_0.8.13-1_all.deb; \
+	# Adding mysql-client
+	wget https://repo.mysql.com/mysql-apt-config_0.8.20-1_all.deb; \
+	echo 4 | dpkg -i mysql-apt-config_0.8.20-1_all.deb; \
+	apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 467B942D3A79BD29; \
 	apt update; \
 	apt install -qq -y mysql-client; \
 	echo "[client]" >> /etc/mysql/my.cnf; echo "ssl-mode=DISABLED" >> /etc/mysql/my.cnf
