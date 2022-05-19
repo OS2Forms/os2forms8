@@ -132,7 +132,17 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/installers": true,
+            "simplesamlphp/composer-module-installer": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "vaimo/composer-patches": true,
+            "cweagans/composer-patches": true,
+            "zaporylie/composer-drupal-optimizations": true,
+            "drupal/console-extend-plugin": true,
+            "drupal/core-composer-scaffold": true
+        }
     },
     "autoload": {
         "classmap": [
@@ -193,7 +203,8 @@
                "Enabled D9 support": "patches/webform_permissions_by_term-d9.patch"
             },
             "drupal/webform_embed": {
-               "Enabled D9 support": "./patches/webform_embed-d9.patch"
+               "Enabled D9 support": "./patches/webform_embed-d9.patch",
+               "3170384 - Fixed D9 imcopatibility": "https://www.drupal.org/files/issues/2020-09-11/3170384-2.patch"
             },
             "drupal/webform_migrate": {
                 "Set to support. Checkbox condition fixes": "./patches/setto-and-checkboxes-condition-fix-onlyD7.patch"
