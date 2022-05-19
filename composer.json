@@ -112,7 +112,7 @@
         "drupal/webform_views": "^5.0@alpha",
         "drush/drush": "^10",
         "os2core/os2core": "^2.0",
-        "os2forms/os2forms": "^3.0",
+        "os2forms/os2forms": "~3.1",
         "os2forms/os2forms_egbolig": "dev-master",
         "os2forms/os2forms_forloeb": "^1.9",
         "os2forms/os2forms_forloeb_profile": "1.6.0-rc",
@@ -132,7 +132,17 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/installers": true,
+            "simplesamlphp/composer-module-installer": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "vaimo/composer-patches": true,
+            "cweagans/composer-patches": true,
+            "zaporylie/composer-drupal-optimizations": true,
+            "drupal/console-extend-plugin": true,
+            "drupal/core-composer-scaffold": true
+        }
     },
     "autoload": {
         "classmap": [
