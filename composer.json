@@ -214,6 +214,9 @@
             },
             "drupal/smtp": {
                 "Duplicated Attachments using webforms": "https://www.drupal.org/files/issues/2020-06-18/smtp-2995290-17.patch"
+            },
+            "drupal/honeypot" : {
+                "3279917 - LogicException: The database connection is not serializable": "https://www.drupal.org/files/issues/2022-05-12/3279917-4-use_dependency_serialization_trait.patch"
             }
         }
     }
