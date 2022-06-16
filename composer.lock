@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b03e53b20d2650627a2aa684a31c1456",
+    "content-hash": "ef190f93ff6e77dea569ab660b8619d7",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -10960,16 +10960,16 @@
         },
         {
             "name": "os2forms/os2forms",
-            "version": "3.2.3",
+            "version": "3.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2Forms/os2forms.git",
-                "reference": "f76037a0a58e2992234d9bc52777b17b5c5bb0b7"
+                "reference": "c504fa4136cbccdb13c316c93b0101569df40468"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2Forms/os2forms/zipball/f76037a0a58e2992234d9bc52777b17b5c5bb0b7",
-                "reference": "f76037a0a58e2992234d9bc52777b17b5c5bb0b7",
+                "url": "https://api.github.com/repos/OS2Forms/os2forms/zipball/c504fa4136cbccdb13c316c93b0101569df40468",
+                "reference": "c504fa4136cbccdb13c316c93b0101569df40468",
                 "shasum": ""
             },
             "require": {
@@ -11016,9 +11016,9 @@
             "description": "Drupal 8 OS2Form module provides advanced webform functionality for Danish Municipalities",
             "support": {
                 "issues": "https://github.com/OS2Forms/os2forms/issues",
-                "source": "https://github.com/OS2Forms/os2forms/tree/3.2.3"
+                "source": "https://github.com/OS2Forms/os2forms/tree/3.2.4"
             },
-            "time": "2022-02-03T13:37:29+00:00"
+            "time": "2022-06-16T08:34:28+00:00"
         },
         {
             "name": "os2forms/os2forms_egbolig",
