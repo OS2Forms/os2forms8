@@ -113,7 +113,7 @@
         "drupal/webform_views": "^5.0@alpha",
         "drush/drush": "^10",
         "os2core/os2core": "^2.0",
-        "os2forms/os2forms": "^3.0",
+        "os2forms/os2forms": "~3.1",
         "os2forms/os2forms_egbolig": "dev-master",
         "os2forms/os2forms_forloeb": "^1.9",
         "os2forms/os2forms_forloeb_profile": "1.6.0-rc",
@@ -133,7 +133,17 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/installers": true,
+            "simplesamlphp/composer-module-installer": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "vaimo/composer-patches": true,
+            "cweagans/composer-patches": true,
+            "zaporylie/composer-drupal-optimizations": true,
+            "drupal/console-extend-plugin": true,
+            "drupal/core-composer-scaffold": true
+        }
     },
     "autoload": {
         "classmap": [
@@ -195,7 +205,8 @@
                "Enabled D9 support": "patches/webform_permissions_by_term-d9.patch"
             },
             "drupal/webform_embed": {
-               "Enabled D9 support": "./patches/webform_embed-d9.patch"
+               "Enabled D9 support": "./patches/webform_embed-d9.patch",
+               "3170384 - Fixed D9 imcopatibility": "https://www.drupal.org/files/issues/2020-09-11/3170384-2.patch"
             },
             "drupal/webform_migrate": {
                 "Set to support. Checkbox condition fixes": "./patches/setto-and-checkboxes-condition-fix-onlyD7.patch"
@@ -205,6 +216,9 @@
             },
             "drupal/smtp": {
                 "Duplicated Attachments using webforms": "https://www.drupal.org/files/issues/2020-06-18/smtp-2995290-17.patch"
+            },
+            "drupal/honeypot" : {
+                "3279917 - LogicException: The database connection is not serializable": "https://www.drupal.org/files/issues/2022-05-12/3279917-4-use_dependency_serialization_trait.patch"
             }
         }
     }
