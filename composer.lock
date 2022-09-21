@@ -8325,6 +8325,75 @@
             }
         },
         {
+            "name": "drupal/webform_remote_select",
+            "version": "1.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/webform_remote_select.git",
+                "reference": "1.0.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/webform_remote_select-1.0.6.zip",
+                "reference": "1.0.6",
+                "shasum": "3addd231f388a550732efedaf861291ae44c0528"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/webform": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.6",
+                    "datestamp": "1652647777",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Miguelpamferreira",
+                    "homepage": "https://www.drupal.org/user/3548054"
+                },
+                {
+                    "name": "Nelson Alves",
+                    "homepage": "https://www.drupal.org/user/3557178"
+                },
+                {
+                    "name": "dgaspara",
+                    "homepage": "https://www.drupal.org/user/3557179"
+                },
+                {
+                    "name": "joao.figueira",
+                    "homepage": "https://www.drupal.org/user/3605197"
+                },
+                {
+                    "name": "joaomarques736",
+                    "homepage": "https://www.drupal.org/user/3557181"
+                },
+                {
+                    "name": "ricardotenreiro",
+                    "homepage": "https://www.drupal.org/user/213132"
+                },
+                {
+                    "name": "tmiguelv",
+                    "homepage": "https://www.drupal.org/user/3612421"
+                }
+            ],
+            "description": "Provides a Webform Select Element whose options are populated from an endpoint through REST services.",
+            "homepage": "https://www.drupal.org/project/webform_remote_select",
+            "support": {
+                "source": "https://git.drupalcode.org/project/webform_remote_select"
+            }
+        },
+        {
             "name": "drupal/webform_rest",
             "version": "4.0.1",
             "source": {
@@ -10960,16 +11029,16 @@
         },
         {
             "name": "os2forms/os2forms",
-            "version": "3.2.7",
+            "version": "3.2.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2Forms/os2forms.git",
-                "reference": "96cc03245ce35ee885cc54f530aec494a7fce62c"
+                "reference": "0a0652c57166a9345b1869d84c03d7093932f79f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2Forms/os2forms/zipball/96cc03245ce35ee885cc54f530aec494a7fce62c",
-                "reference": "96cc03245ce35ee885cc54f530aec494a7fce62c",
+                "url": "https://api.github.com/repos/OS2Forms/os2forms/zipball/0a0652c57166a9345b1869d84c03d7093932f79f",
+                "reference": "0a0652c57166a9345b1869d84c03d7093932f79f",
                 "shasum": ""
             },
             "require": {
@@ -10986,6 +11055,7 @@
                 "drupal/webform": "^6.1",
                 "drupal/webform_embed": "1.x-dev",
                 "drupal/webform_migrate": "^1.1",
+                "drupal/webform_remote_select": "^1.0.6",
                 "drupal/webform_validation": "2.0.x-dev",
                 "os2web/os2web_datalookup": "^1.0",
                 "os2web/os2web_nemlogin": "^1.0",
@@ -11020,9 +11090,9 @@
             "description": "Drupal 8 OS2Form module provides advanced webform functionality for Danish Municipalities",
             "support": {
                 "issues": "https://github.com/OS2Forms/os2forms/issues",
-                "source": "https://github.com/OS2Forms/os2forms/tree/3.2.7"
+                "source": "https://github.com/OS2Forms/os2forms/tree/3.2.9"
             },
-            "time": "2022-06-29T10:37:55+00:00"
+            "time": "2022-09-21T10:27:16+00:00"
         },
         {
             "name": "os2forms/os2forms_egbolig",
@@ -23086,5 +23156,5 @@
         "php": ">=7.1"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.0.0"
 }
