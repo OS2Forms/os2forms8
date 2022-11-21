@@ -17,4 +17,4 @@ jobs:
         port: ${{ secrets.PORT }}
         script: |
           whoami
-          sh /var/www/test.os2forms.dk/private/os2forms_init/rebuild_installation.sh.sh
+          sh /var/www/test.os2forms.dk/private/os2forms_init/rebuild_installation.sh
