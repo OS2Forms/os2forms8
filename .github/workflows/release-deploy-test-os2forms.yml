@@ -1,7 +1,7 @@
 name: Deploy release to test.os2forms.dk
 on:
   release:
-    types: [created published]
+    types: [created published prereleased edited]
 jobs:
 
   build:
