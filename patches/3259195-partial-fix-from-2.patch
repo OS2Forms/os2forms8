@@ -1,0 +1,13 @@
+diff --git a/modules/webform_scheduled_email/src/Plugin/WebformHandler/ScheduleEmailWebformHandler.php b/modules/webform_scheduled_email/src/Plugin/WebformHandler/ScheduleEmailWebformHandler.php
+index e8b96cc7a..063311834 100644
+--- a/modules/webform_scheduled_email/src/Plugin/WebformHandler/ScheduleEmailWebformHandler.php
++++ b/modules/webform_scheduled_email/src/Plugin/WebformHandler/ScheduleEmailWebformHandler.php
+@@ -385,7 +385,7 @@ class ScheduleEmailWebformHandler extends EmailWebformHandler {
+    * {@inheritdoc}
+    */
+   public function deleteHandler() {
+-    $this->scheduledEmailManager->unschedule($this->webform, $this->getHandlerId());
++    $this->scheduledEmailManager->delete($this->webform, $this->getHandlerId());
+   }
+
+   /**

@@ -20,7 +20,9 @@
 // --------------------------------------------------
 // Styling
 // --------------------------------------------------
-
+html {
+  font-size: 16px;
+}
 body {
   font-weight: 400;
 }
@@ -42,12 +44,24 @@ img {
 }
 
 a {
-
   &:not(.btn) {
     text-decoration: underline;
 
     &:visited {
       color: #800080;
+    }
+  }
+}
+
+.gin--vertical-toolbar {
+  ul.toolbar-menu a {
+    text-decoration: none;
+  }
+  .toolbar-tray-horizontal {
+    ul li.menu-item--expanded ul li.menu-item--expanded::before,
+    .toolbar-menu:not(:first-child) li.menu-item--expanded > a:focus::before {
+      transform: translateY(-50%);
+      top: 50%!important;
     }
   }
 }
