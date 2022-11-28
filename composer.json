@@ -11,6 +11,19 @@
     ],
     "repositories": [
         {
+            "type": "package",
+            "package": {
+                "name": "drupal/webform_validation",
+                "type": "drupal-module",
+                "version": "2.0.x-dev",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://ftp.drupal.org/files/projects/webform_validation-2.0.x-dev.zip",
+                    "shasum": ""
+                }
+            }
+        },
+        {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         }
@@ -128,11 +141,14 @@
             "drupal/smtp": {
                 "Duplicated Attachments using webforms": "https://www.drupal.org/files/issues/2020-06-18/smtp-2995290-17.patch"
             },
-           "drupal/core": {
+            "drupal/core": {
                 "CKEditor update - SA Moderately critical - Third-party libraries - SA-CORE-2022-005" : "https://www.drupal.org/files/issues/2022-03-17/3270054-SA-CORE-2022-005_2.patch"
             },
             "drupal/coc_forms_auto_export": {
-                "Download button is not working when Enable Email checkbox is unchecked" : "https://www.drupal.org/files/issues/2022-05-02/coc_forms_auto_export-download_submission_error-3278205-1.patch"
+                "Download button is not working when Enable Email checkbox is unchecked": "https://www.drupal.org/files/issues/2022-05-02/coc_forms_auto_export-download_submission_error-3278205-1.patch"
+            },
+            "drupal/webform_validation": {
+                "3321208 - fix var type" : "https://www.drupal.org/files/issues/2022-11-15/3321208-var-type-fix.patch"
             }
         }
     }

@@ -69,3 +69,5 @@ COPY apache/000-default.conf /etc/apache2/sites-enabled/000-default.conf
 
 # Adding Drupal settings.
 COPY drupal/settings.local.php /opt/drupal/web/sites/default/
+
+RUN echo 'memory_limit = 1024M' >> /usr/local/etc/php/conf.d/docker-php-memlimit.ini;
