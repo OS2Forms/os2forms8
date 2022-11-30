@@ -351,3 +351,6 @@ See [OS2Forms code review policy](https://github.com/OS2Forms/docs#code-review)
 
 ### Git name convention
 See [OS2Forms git name convention](https://github.com/OS2Forms/docs#git-guideline)
+
+### Github actions created for this porject.
+See: https://github.com/OS2Forms/os2forms8/wiki/Creation-of-a-github-action-workflow
