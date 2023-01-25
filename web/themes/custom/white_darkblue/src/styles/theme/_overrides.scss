@@ -64,10 +64,30 @@ a {
   top: -45px;
   right: 20px;
   background-color: #181f4b;
-  color: white;
+  color: #fff !important;
   text-transform: uppercase;
-  text-decoration: none;
+  text-decoration: none !important;
   padding: 10px 15px;
+  font-weight: 700;
+
+  &:visited {
+    color: #fff !important;
+    text-decoration: none !important;
+  }
+
+  &:before {
+    content: "\e161";
+    color: white;
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: "Glyphicons Halflings";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    padding-right: 20px;
+  }
 }
 
 // --------------------------------------------------
