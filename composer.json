@@ -96,6 +96,7 @@
         "drupal/fontyourface": "^3.2",
         "drupal/header_and_footer_scripts": "^3.0",
         "drupal/ldap": "^4.2",
+        "drupal/menu_link_attributes": "^1.3",
         "drupal/migrate_tools": "^5.0",
         "drupal/migrate_upgrade": "^3.2",
         "drupal/permissions_by_term": "^3.1",
@@ -195,9 +196,6 @@
             "force-reset": true
         },
         "patches": {
-            "drupal/webform": {
-                "Add support for Set to state": "./patches/add-set-to-state-3159806-2-modified-5.19.patch"
-            },
             "drupal/webform_permissions_by_term": {
                 "3192241 - Too few arguments after Permissions by Term update to 2.28": "https://www.drupal.org/files/issues/2021-12-10/too-few-arguments-access-check_3192241-3.patch",
                 "3142184 - Automated Drupal 9 compatibility fixes": "https://www.drupal.org/files/issues/2020-06-28/webform_permissions_by_term.1.x-dev.rector.patch",
@@ -209,9 +207,6 @@
             },
             "drupal/webform_migrate": {
                 "Set to support. Checkbox condition fixes": "./patches/setto-and-checkboxes-condition-fix-onlyD7.patch"
-            },
-            "drupal/queue_mail": {
-                "Admin interface to see queued mail": "https://www.drupal.org/files/issues/2020-06-30/3096917-ui-queue-mail-moderate-5.patch"
             }
         }
     }
