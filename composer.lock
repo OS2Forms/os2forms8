@@ -11456,12 +11456,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_simplesaml.git",
-                "reference": "e92add75730c1e215f466f83e2348781da788b62"
+                "reference": "968a39ecfacfcb5bfb04a4ac2d353aa38575506e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_simplesaml/zipball/e92add75730c1e215f466f83e2348781da788b62",
-                "reference": "e92add75730c1e215f466f83e2348781da788b62",
+                "url": "https://api.github.com/repos/OS2web/os2web_simplesaml/zipball/968a39ecfacfcb5bfb04a4ac2d353aa38575506e",
+                "reference": "968a39ecfacfcb5bfb04a4ac2d353aa38575506e",
                 "shasum": ""
             },
             "require": {
@@ -11478,7 +11478,7 @@
                 "issues": "https://github.com/OS2web/os2web_simplesaml/issues",
                 "source": "https://github.com/OS2web/os2web_simplesaml/tree/8.x"
             },
-            "time": "2023-02-09T12:09:58+00:00"
+            "time": "2023-02-23T10:41:32+00:00"
         },
         {
             "name": "os2web/os2web_simplesaml_checklist",
