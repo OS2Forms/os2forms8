@@ -88,7 +88,6 @@
         "cweagans/composer-patches": "^1.7",
         "drupal/bootstrap": "^3.21",
         "drupal/cache_control_override": "^1.1",
-        "drupal/config_entity_revisions": "1.7.0",
         "drupal/console": "^1.0.2",
         "drupal/core-composer-scaffold": "^9.4",
         "drupal/core-project-message": "^9.4",
