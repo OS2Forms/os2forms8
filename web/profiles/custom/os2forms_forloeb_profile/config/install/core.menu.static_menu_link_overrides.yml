@@ -1,0 +1,13 @@
+definitions:
+  entity__maestro_template__list:
+    menu_name: admin
+    parent: system.admin
+    weight: 0
+    expanded: false
+    enabled: true
+  entity__webform__collection:
+    menu_name: admin
+    parent: system.admin
+    weight: 0
+    expanded: false
+    enabled: true

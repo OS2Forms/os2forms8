@@ -1,0 +1,29 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - maestro_taskconsole
+    - search
+    - system
+    - toolbar
+    - webform
+    - webform_node
+id: medarbejder
+label: Medarbejder
+weight: -3
+is_admin: null
+permissions:
+  - 'access content'
+  - 'access site in maintenance mode'
+  - 'access toolbar'
+  - 'administer webform revisions'
+  - 'edit own webform submission'
+  - 'edit webform submissions any node'
+  - 'edit webform submissions own node'
+  - 'use advanced search'
+  - 'use udgivelse_af_forlob_og_webformularer transition create_new_draft'
+  - 'view maestro task console'
+  - 'view own webform submission'
+  - 'view the administration theme'
+  - 'view webform submissions any node'
+  - 'view webform submissions own node'

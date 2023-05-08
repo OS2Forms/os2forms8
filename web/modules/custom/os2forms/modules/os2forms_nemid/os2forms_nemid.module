@@ -1,0 +1,397 @@
+<?php
+
+/**
+ * @file
+ * OS2Forms NemID functionality module.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Render\Element;
+use Drupal\migrate\Plugin\MigrateSourceInterface;
+use Drupal\migrate\Plugin\MigrationInterface;
+use Drupal\migrate\Row;
+use Drupal\os2forms_nemid\Plugin\WebformElement\NemidElementBase;
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ *
+ * Exposing settings for OS2forms webform settings.
+ */
+function os2forms_nemid_form_webform_os2forms_settings_form_alter(&$form, FormStateInterface $form_state) {
+  os2forms_nemid_webform_third_party_settings_form_alter($form, $form_state);
+}
+
+/**
+ * Implements hook_webform_third_party_settings_form_alter().
+ */
+function os2forms_nemid_webform_third_party_settings_form_alter(&$form, FormStateInterface $form_state) {
+  /** @var \Drupal\webform\WebformInterface $webform */
+  $webform = $form_state->getFormObject()->getEntity();
+  $settings = $webform->getThirdPartySetting('os2forms', 'os2forms_nemid');
+
+  // OS2Forms NemID.
+  $form['third_party_settings']['os2forms']['os2forms_nemid'] = [
+    '#type' => 'details',
+    '#title' => t('OS2Forms session settings'),
+    '#open' => TRUE,
+  ];
+
+  // Session type.
+  /** @var \Drupal\os2web_nemlogin\Service\AuthProviderService $authProviderService */
+  $authProviderService = \Drupal::service('os2web_nemlogin.auth_provider');
+  $session_types = $authProviderService->getInitializedPlugins();
+
+  $form['third_party_settings']['os2forms']['os2forms_nemid']['session_type'] = [
+    '#type' => 'select',
+    '#title' => t('Session type'),
+    '#default_value' => !(empty($settings)) ? $settings['session_type'] : NULL,
+    '#empty_option' => t('Default'),
+    '#options' => $session_types,
+    '#description' => t('Which OS2 session types can be user on this form. Selecting more than one will render a popup for the end user with the choice'),
+  ];
+
+  // Webform type.
+  $webform_types = [
+    NemidElementBase::WEBFORM_TYPE_PERSONAL => t('Personal'),
+    NemidElementBase::WEBFORM_TYPE_COMPANY => t('Company'),
+  ];
+  $form['third_party_settings']['os2forms']['os2forms_nemid']['webform_type'] = [
+    '#type' => 'select',
+    '#title' => t('Webform type'),
+    '#default_value' => !(empty($settings)) ? $settings['webform_type'] : NULL,
+    '#empty_option' => t('Not specified'),
+    '#options' => $webform_types,
+    '#description' => t('Based on the selected type form irrelevant fields will not be shown to the end user'),
+  ];
+
+  // Nemlogin auto redirect.
+  $form['third_party_settings']['os2forms']['os2forms_nemid']['nemlogin_auto_redirect'] = [
+    '#type' => 'checkbox',
+    '#title' => t('Redirect to nemlogin automatically'),
+    '#default_value' => !(empty($settings)) ? $settings['nemlogin_auto_redirect'] : FALSE,
+    '#description' => t('Redirection will happen right after user has is accessing the form, if user is already authenticated via NemID, redirection will not happen.'),
+  ];
+}
+
+/**
+ * Implements hook_webform_submission_form_alter().
+ */
+function os2forms_nemid_webform_submission_form_alter(array &$form, FormStateInterface $form_state, $form_id) {
+  // Getting webform Nemid settings.
+  /** @var \Drupal\webform\WebformSubmissionInterface Interface $webformSubmission */
+  $webformSubmission = $form_state->getFormObject()->getEntity();
+  /** @var \Drupal\webform\WebformInterface $webform */
+  $webform = $webformSubmission->getWebform();
+  $webformNemidSettings = $webform->getThirdPartySetting('os2forms', 'os2forms_nemid');
+
+  $webformShareRoutes = [
+    'entity.webform.share_page',
+    'entity.webform.share_page.javascript',
+  ];
+  $route_name = \Drupal::routeMatch()->getRouteName();
+
+  // Checking if we have a share route.
+  if (in_array($route_name, $webformShareRoutes)) {
+    // Check and automatic nemlogin redirect enabled or
+    // os2forms_nemid_nemlogin_link field.
+    $elementTypes = array_column($webform->getElementsDecodedAndFlattened(), '#type');
+    if ($webformNemidSettings['nemlogin_auto_redirect'] || in_array('os2forms_nemid_nemlogin_link', $elementTypes)) {
+      // Remove all webform elements and add a single nemlogin link.
+      unset($form['elements']);
+      unset($form['actions']);
+
+      $form['elements'][] = [
+        '#type' => 'os2forms_nemid_nemlogin_link',
+      ];
+
+      // As it's a shared/embedded form with no elements, there is no need to
+      // continue further.
+      return;
+    }
+  }
+
+  // Getting webform_type setting.
+  $webform_type = NULL;
+  if (isset($webformNemidSettings['webform_type']) && !empty($webformNemidSettings['webform_type'])) {
+    $webform_type = $webformNemidSettings['webform_type'];
+  }
+
+  // Webform type is set and not empty.
+  if ($webform_type) {
+    // Getting auth plugin ID override.
+    $authPluginId = NULL;
+    if (isset($webformNemidSettings['session_type']) && !empty($webformNemidSettings['session_type'])) {
+      $authPluginId = $webformNemidSettings['session_type'];
+    }
+
+    // Initializing AuthProviderInterface plugin.
+    /** @var \Drupal\os2web_nemlogin\Service\AuthProviderService $authProviderService */
+    $authProviderService = \Drupal::service('os2web_nemlogin.auth_provider');
+
+    /** @var \Drupal\os2web_nemlogin\Plugin\AuthProviderInterface $authProviderPlugin */
+    $authProviderPlugin = ($authPluginId) ? $authProviderService->getPluginInstance($authPluginId) : $authProviderService->getActivePlugin();
+
+    // User is authenticated, check if the form type is corresponding to
+    // authentication type.
+    if ($authProviderPlugin->isAuthenticated()) {
+      if ($authProviderPlugin->isAuthenticatedPerson() && $webform_type !== NemidElementBase::WEBFORM_TYPE_PERSONAL
+        || $authProviderPlugin->isAuthenticatedCompany() && $webform_type !== NemidElementBase::WEBFORM_TYPE_COMPANY) {
+        \Drupal::messenger()
+          ->addWarning(t('Your login type does match the login type required by the webform. Please <a href="@logout">log out</a> and sign in with a different account', [
+            '@logout' => $authProviderService->getLogoutUrl()
+              ->toString(),
+          ]));
+        foreach (Element::children($form['actions']) as $key) {
+          $form['actions'][$key]['#disabled'] = TRUE;
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess().
+ */
+function os2forms_nemid_preprocess(&$variables, $hook) {
+  // Disable caching of 'webform' type field, as that breaks NemID integration.
+  if ($hook == 'field') {
+    $element = $variables['element'];
+    if ($element['#field_type'] == 'webform') {
+      // Disable caching.
+      $variables['#cache']['max-age'] = 0;
+    }
+  }
+}
+
+/**
+ * Helper function to define webform element meta data.
+ *
+ * @param string $markup
+ *   Webform yaml definition in plain text.
+ * @param int $indent
+ *   Indentation value.
+ * @param array $element
+ *   Webform element.
+ */
+function os2forms_nemid_get_settings_from_extras(&$markup, $indent, array $element) {
+  $extra = unserialize($element['extra'], ['allowed_classes' => FALSE]);
+  $options = [
+    'disabled',
+    'readonly',
+    'placehoder',
+    'description',
+  ];
+  foreach ($options as $option) {
+    if (!empty($extra[$option])) {
+      $value = 'true';
+      switch ($option) {
+        case 'description':
+        case 'placeholder':
+          $value = "\"" . str_replace(['"', "\n", "\r"], ["'", '\n', ''], $extra[$option]) . "\"";
+          break;
+      }
+      $markup .= "$indent  #$option: $value\n";
+    }
+  }
+}
+
+/**
+ * Implements hook_webform_migrate_d7_webform_element_ELEMENT_TYPE_alter().
+ *
+ * Not released hook.
+ *
+ * @See https://www.drupal.org/project/webform_migrate/issues/3155073
+ */
+function os2forms_nemid_webform_migrate_d7_webform_element_nemid_address_alter(&$markup, $indent, array $element) {
+  $markup .= "$indent  '#type': os2forms_nemid_address\n";
+  os2forms_nemid_get_settings_from_extras($markup, $indent, $element);
+}
+
+/**
+ * Implements hook_webform_migrate_d7_webform_element_ELEMENT_TYPE_alter().
+ *
+ * Not released hook.
+ *
+ * @See https://www.drupal.org/project/webform_migrate/issues/3155073
+ */
+function os2forms_nemid_webform_migrate_d7_webform_element_nemid_city_alter(&$markup, $indent, array $element) {
+  $markup .= "$indent  '#type': os2forms_nemid_city\n";
+  os2forms_nemid_get_settings_from_extras($markup, $indent, $element);
+}
+
+/**
+ * Implements hook_webform_migrate_d7_webform_element_ELEMENT_TYPE_alter().
+ *
+ * Not released hook.
+ *
+ * @See https://www.drupal.org/project/webform_migrate/issues/3155073
+ */
+function os2forms_nemid_webform_migrate_d7_webform_element_nemid_coaddress_alter(&$markup, $indent, array $element) {
+  $markup .= "$indent  '#type': os2forms_nemid_coaddress\n";
+  os2forms_nemid_get_settings_from_extras($markup, $indent, $element);
+}
+
+/**
+ * Implements hook_webform_migrate_d7_webform_element_ELEMENT_TYPE_alter().
+ *
+ * Not released hook.
+ *
+ * @See https://www.drupal.org/project/webform_migrate/issues/3155073
+ */
+function os2forms_nemid_webform_migrate_d7_webform_element_nemid_com_addr_alter(&$markup, $indent, array $element) {
+  $markup .= "$indent  '#type': os2forms_nemid_company_address\n";
+  os2forms_nemid_get_settings_from_extras($markup, $indent, $element);
+}
+
+/**
+ * Implements hook_webform_migrate_d7_webform_element_ELEMENT_TYPE_alter().
+ *
+ * Not released hook.
+ *
+ * @See https://www.drupal.org/project/webform_migrate/issues/3155073
+ */
+function os2forms_nemid_webform_migrate_d7_webform_element_nemid_com_cvr_alter(&$markup, $indent, array $element) {
+  $markup .= "$indent  '#type': os2forms_nemid_company_cvr\n";
+  os2forms_nemid_get_settings_from_extras($markup, $indent, $element);
+}
+
+/**
+ * Implements hook_webform_migrate_d7_webform_element_ELEMENT_TYPE_alter().
+ *
+ * Not released hook.
+ *
+ * @See https://www.drupal.org/project/webform_migrate/issues/3155073
+ */
+function os2forms_nemid_webform_migrate_d7_webform_element_nemid_com_name_alter(&$markup, $indent, array $element) {
+  $markup .= "$indent  '#type': os2forms_nemid_company_name\n";
+  os2forms_nemid_get_settings_from_extras($markup, $indent, $element);
+}
+
+/**
+ * Implements hook_webform_migrate_d7_webform_element_ELEMENT_TYPE_alter().
+ *
+ * Not released hook.
+ *
+ * @See https://www.drupal.org/project/webform_migrate/issues/3155073
+ */
+function os2forms_nemid_webform_migrate_d7_webform_element_nemid_com_city_alter(&$markup, $indent, array $element) {
+  $markup .= "$indent  '#type': os2forms_nemid_company_city\n";
+  os2forms_nemid_get_settings_from_extras($markup, $indent, $element);
+}
+
+/**
+ * Implements hook_webform_migrate_d7_webform_element_ELEMENT_TYPE_alter().
+ *
+ * Not released hook.
+ *
+ * @See https://www.drupal.org/project/webform_migrate/issues/3155073
+ */
+function os2forms_nemid_webform_migrate_d7_webform_element_nemid_com_rid_alter(&$markup, $indent, array $element) {
+  $markup .= "$indent  '#type': os2forms_nemid_company_rid\n";
+  os2forms_nemid_get_settings_from_extras($markup, $indent, $element);
+}
+
+/**
+ * Implements hook_webform_migrate_d7_webform_element_ELEMENT_TYPE_alter().
+ *
+ * Not released hook.
+ *
+ * @See https://www.drupal.org/project/webform_migrate/issues/3155073
+ */
+function os2forms_nemid_webform_migrate_d7_webform_element_nemid_cpr_alter(&$markup, $indent, array $element) {
+  $markup .= "$indent  '#type': os2forms_nemid_cpr\n";
+  os2forms_nemid_get_settings_from_extras($markup, $indent, $element);
+}
+
+/**
+ * Implements hook_webform_migrate_d7_webform_element_ELEMENT_TYPE_alter().
+ *
+ * Not released hook.
+ *
+ * @See https://www.drupal.org/project/webform_migrate/issues/3155073
+ */
+function os2forms_nemid_webform_migrate_d7_webform_element_nemid_name_alter(&$markup, $indent, array $element) {
+  $markup .= "$indent  '#type': os2forms_nemid_name\n";
+  os2forms_nemid_get_settings_from_extras($markup, $indent, $element);
+}
+
+/**
+ * Implements hook_webform_migrate_d7_webform_element_ELEMENT_TYPE_alter().
+ *
+ * Not released hook.
+ *
+ * @See https://www.drupal.org/project/webform_migrate/issues/3155073
+ */
+function os2forms_nemid_webform_migrate_d7_webform_element_nemid_link_alter(&$markup, $indent, array $element) {
+  $markup .= "$indent  '#type': os2forms_nemid_nemlogin_link\n";
+  os2forms_nemid_get_settings_from_extras($markup, $indent, $element);
+}
+
+/**
+ * Implements hook_webform_migrate_d7_webform_element_ELEMENT_TYPE_alter().
+ *
+ * Not released hook.
+ *
+ * @See https://www.drupal.org/project/webform_migrate/issues/3155073
+ */
+function os2forms_nemid_webform_migrate_d7_webform_element_nemid_pid_alter(&$markup, $indent, array $element) {
+  $markup .= "$indent  '#type': os2forms_nemid_pid\n";
+  os2forms_nemid_get_settings_from_extras($markup, $indent, $element);
+}
+
+/**
+ * Implements hook_migrate_prepare_row().
+ */
+function os2forms_nemid_migrate_prepare_row(Row $row, MigrateSourceInterface $source, MigrationInterface $migration) {
+  $nid = $row->getSourceProperty('nid');
+  $default = $source->getDatabase()->select('os2forms_frontend_webform_settings', 'of')
+    ->fields('of')
+    ->condition('nid', $nid, '=')
+    ->condition('submodule', 'os2forms_nemid', '=')
+    ->execute()
+    ->fetchAssoc();
+
+  if (empty($default['data'])) {
+    return;
+  }
+
+  $data = unserialize($default['data'], ['allowed_classes' => FALSE]);
+  $os2forms_nemid = [];
+  if (!empty($data['webform_type'])) {
+    $os2forms_nemid['webform_type'] = $data['webform_type'];
+  }
+  if (!empty($data['nemid_link_auto_redirect'])) {
+    $os2forms_nemid['nemlogin_auto_redirect'] = (bool) $data['nemid_link_auto_redirect'];
+  }
+  if (!empty($os2forms_nemid)) {
+    $third_party_settings = $row->getDestinationProperty('third_party_settings');
+    $third_party_settings['os2forms']['os2forms_nemid'] = $os2forms_nemid;
+    $row->setDestinationProperty('third_party_settings', $third_party_settings);
+    $dependencies = $row->getDestinationProperty('dependencies');
+    $dependencies['module'][] = 'os2forms';
+    $row->setDestinationProperty('dependencies', $dependencies);
+  }
+}
+
+/**
+ * Add a flag that this webform submission has a protected address field.
+ *
+ * @param array $form
+ *   Form object.
+ * @param \Drupal\Core\Form\FormStateInterface $form_state
+ *   Form state object.
+ *
+ * @throws \Drupal\Core\Entity\EntityStorageException
+ */
+function os2forms_nemid_submission_set_address_protected(array $form, FormStateInterface &$form_state) {
+  /** @var \Drupal\webform\WebformSubmissionForm $webformSubmissionForm */
+  $webformSubmissionForm = $form_state->getFormObject();
+
+  /** @var \Drupal\webform\WebformSubmissionInterface $webformSubmission */
+  $webformSubmission = $webformSubmissionForm->getEntity();
+
+  $data = $webformSubmission->getData();
+  $data['os2forms_nemid_elements_nemid_address_protected'] = TRUE;
+  $webformSubmission->setData($data);
+  $webformSubmission->save();
+}

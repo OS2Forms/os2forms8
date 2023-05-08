@@ -1,0 +1,13 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - eu_cookie_compliance
+    - system
+id: virksomhed
+label: Virksomhed
+weight: -1
+is_admin: null
+permissions:
+  - 'access content'
+  - 'display eu cookie compliance popup'

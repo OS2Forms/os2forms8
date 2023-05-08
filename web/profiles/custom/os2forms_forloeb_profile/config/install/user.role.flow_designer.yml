@@ -1,0 +1,90 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+    - node.type.webform
+  module:
+    - contextual
+    - entity_print
+    - field_ui
+    - filter
+    - honeypot
+    - maestro
+    - maestro_taskconsole
+    - node
+    - search
+    - system
+    - toolbar
+    - webform
+    - webform_node
+id: flow_designer
+label: Flowdesigner
+weight: -6
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access own webform configuration'
+  - 'access site in maintenance mode'
+  - 'access toolbar'
+  - 'access webform overview'
+  - 'add maestro entity identifiers entities'
+  - 'add maestro process entities'
+  - 'add maestro production assignment entities'
+  - 'add maestro queue entities'
+  - 'administer maestro entity identifiers entities'
+  - 'administer maestro production assignment entities'
+  - 'administer maestro queue entities'
+  - 'administer maestro templates'
+  - 'administer maestro_process display'
+  - 'administer maestro_process fields'
+  - 'administer maestro_process form display'
+  - 'bypass entity print access'
+  - 'bypass honeypot protection'
+  - 'create webform'
+  - 'create webform content'
+  - 'delete any webform content'
+  - 'delete maestro entity identifiers entities'
+  - 'delete maestro process entities'
+  - 'delete maestro production assignment entities'
+  - 'delete maestro queue entities'
+  - 'delete own webform'
+  - 'delete own webform content'
+  - 'delete webform revisions'
+  - 'delete webform submissions any node'
+  - 'delete webform submissions own node'
+  - 'edit any webform content'
+  - 'edit maestro entity identifiers entities'
+  - 'edit maestro process entities'
+  - 'edit maestro production assignment entities'
+  - 'edit maestro queue entities'
+  - 'edit own webform'
+  - 'edit own webform content'
+  - 'edit webform submissions any node'
+  - 'edit webform submissions own node'
+  - 'revert webform revisions'
+  - 'search content'
+  - 'start maestro process'
+  - 'start template form_approval_flow'
+  - 'start template simple_parallel_to_serial'
+  - 'start template test_flow'
+  - 'start template tildeling_og_notifikationer'
+  - 'use advanced search'
+  - 'use text format full_html'
+  - 'use udgivelse_af_forlob_og_webformularer transition create_new_draft'
+  - 'use udgivelse_af_forlob_og_webformularer transition publish'
+  - 'use udgivelse_af_forlob_og_webformularer transition unpublish'
+  - 'view any unpublished content'
+  - 'view latest version'
+  - 'view maestro entity identifiers entities'
+  - 'view maestro process entities'
+  - 'view maestro production assignment entities'
+  - 'view maestro queue entities'
+  - 'view maestro task console'
+  - 'view own unpublished content'
+  - 'view own webform submission'
+  - 'view the administration theme'
+  - 'view webform revisions'
+  - 'view webform submissions any node'
+  - 'view webform submissions own node'

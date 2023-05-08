@@ -1,0 +1,40 @@
+language: php
+
+sudo: false
+
+php:
+- 7.4
+
+before_install:
+- echo "memory_limit=2G" >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
+
+install:
+- composer global require drush/drush:8.x-dev drupal/coder mglaman/drupal-check friendsoftwig/twigcs
+- export PATH="$HOME/.config/composer/vendor/bin:$PATH"
+- phpcs --config-set installed_paths ../../drupal/coder/coder_sniffer
+- phpenv rehash
+- nvm install 12.13.0
+- nvm use 12
+- npm install --global yarn
+- cd ../ && composer create-project drupal-composer/drupal-project:8.x-dev drupal --no-interaction
+- cd drupal
+- DRUPAL_ROOT=$(pwd)/web
+- export REPOSITORIES='"repositories":\ \['
+- export REPOSITORIES_REPLACE='"repositories":\[\{"type":"path","url":"..\/os2forms_forloeb","options":\{"symlink":false\}\},'
+- export REQUIRE='"require":\ {'
+- export REQUIRE_REPLACE='"require":{"os2forms\/os2forms_forloeb":"\*",'
+- sed -i "s/$REPOSITORIES/$REPOSITORIES_REPLACE/g" composer.json
+- sed -i "s/$REQUIRE/$REQUIRE_REPLACE/g" composer.json
+- composer update os2forms/os2forms_forloeb
+- PROJECT_PATH=$DRUPAL_ROOT/modules/contrib/os2forms_forloeb
+- cd $DRUPAL_ROOT/core
+- yarn install
+- npm install --global eslint-config-drupal-bundle stylelint
+
+script:
+- phpcs --standard=Drupal --ignore=*.md $PROJECT_PATH
+- twigcs $PROJECT_PATH
+- cd $DRUPAL_ROOT/core
+- eslint $DRUPAL_ROOT/modules/contrib/os2forms_forloeb
+- stylelint --aei $DRUPAL_ROOT/modules/contrib/os2forms_forloeb/**/*.css
+- drupal-check $DRUPAL_ROOT/modules/contrib/os2forms_forloeb

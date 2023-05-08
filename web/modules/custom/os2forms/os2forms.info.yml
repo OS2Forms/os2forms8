@@ -1,0 +1,32 @@
+name: 'OS2Forms'
+type: module
+description: 'Provides advanced webform functionality for Danish Municipalities.'
+package: OS2Forms
+core: 8.x
+core_version_requirement: ^8 || ^9
+
+dependencies:
+  - 'drupal:webform'
+  - 'drupal:webform_ui'
+  - 'drupal:webform_access'
+  - 'drupal:webform_attachment'
+  - 'drupal:webform_entity_print'
+  - 'drupal:webform_entity_print_attachment'
+  - 'drupal:webform_scheduled_email'
+  - 'drupal:webform_submission_export_import'
+  - 'drupal:webform_submission_log'
+  - 'drupal:webform_templates'
+  - 'drupal:webform_composite'
+  - 'drupal:webform_embed'
+  - 'drupal:entity_print'
+  - 'drupal:webform_migrate'
+  - 'drupal:redirect'
+  - 'drupal:pathauto'
+  - 'drupal:token'
+  - 'drupal:smtp'
+  - 'drupal:mailsystem'
+  - 'drupal:honeypot'
+  - 'drupal:eu_cookie_compliance'
+  - 'drupal:taxonomy'
+  - 'drupal:editor'
+  - 'drupal:ckeditor'

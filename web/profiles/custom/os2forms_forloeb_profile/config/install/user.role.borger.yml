@@ -1,0 +1,13 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - eu_cookie_compliance
+    - system
+id: borger
+label: borger
+weight: 0
+is_admin: null
+permissions:
+  - 'access content'
+  - 'display eu cookie compliance popup'

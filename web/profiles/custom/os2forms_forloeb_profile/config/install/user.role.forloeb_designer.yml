@@ -1,0 +1,80 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+    - node.type.webform
+  module:
+    - contextual
+    - entity_print
+    - filter
+    - honeypot
+    - node
+    - search
+    - system
+    - toolbar
+    - webform
+    - webform_node
+    - webform_submission_log
+    - webform_templates
+id: forloeb_designer
+label: Selvbetjeningsdesigner
+weight: -5
+is_admin: null
+permissions:
+  - 'access any webform configuration'
+  - 'access content'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access own webform configuration'
+  - 'access site in maintenance mode'
+  - 'access toolbar'
+  - 'access webform overview'
+  - 'access webform submission log'
+  - 'access webform submission user'
+  - 'administer webform element access'
+  - 'administer webform revisions'
+  - 'administer webform submission'
+  - 'administer webform templates'
+  - 'bypass entity print access'
+  - 'bypass honeypot protection'
+  - 'can be workflow participant'
+  - 'create webform'
+  - 'create webform content'
+  - 'delete any webform'
+  - 'delete any webform content'
+  - 'delete any webform submission'
+  - 'delete own webform'
+  - 'delete own webform content'
+  - 'delete own webform submission'
+  - 'delete side revisions'
+  - 'delete webform revisions'
+  - 'delete webform submissions any node'
+  - 'delete webform submissions own node'
+  - 'edit any webform'
+  - 'edit any webform content'
+  - 'edit any webform submission'
+  - 'edit own webform'
+  - 'edit own webform content'
+  - 'edit own webform submission'
+  - 'edit webform assets'
+  - 'edit webform submissions any node'
+  - 'edit webform submissions own node'
+  - 'edit webform twig'
+  - 'revert webform revisions'
+  - 'search content'
+  - 'use advanced search'
+  - 'use text format full_html'
+  - 'use udgivelse_af_forlob_og_webformularer transition create_new_draft'
+  - 'use udgivelse_af_forlob_og_webformularer transition publish'
+  - 'use udgivelse_af_forlob_og_webformularer transition unpublish'
+  - 'use udgivelse_af_forloeb transition create_new_draft'
+  - 'use udgivelse_af_forloeb transition publish'
+  - 'view any webform submission'
+  - 'view latest version'
+  - 'view own unpublished content'
+  - 'view own webform submission'
+  - 'view the administration theme'
+  - 'view webform revisions'
+  - 'view webform submissions any node'
+  - 'view webform submissions own node'
