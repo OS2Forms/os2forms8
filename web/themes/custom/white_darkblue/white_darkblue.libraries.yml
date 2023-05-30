@@ -2,7 +2,12 @@ styles:
   css:
     theme:
       dist/stylesheets/stylesheet.css: {}
-      css/entity-print.css: {}
+
+print-css:
+  version: 1.x
+  css:
+    theme:
+      css/print.css: {}
 
 javascripts:
   js:
