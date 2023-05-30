@@ -85,3 +85,15 @@ input.form-control[type="file"] {
   color: $text-color;
   font-size: inherit;
 }
+
+details {
+  border: none !important;
+
+  summary {
+    font-size: 20px;
+  }
+}
+
+.webform-section-title {
+  font-size: 14px;
+}
