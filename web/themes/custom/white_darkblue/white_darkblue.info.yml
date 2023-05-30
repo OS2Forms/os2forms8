@@ -20,3 +20,7 @@ regions:
 libraries:
   - 'white_darkblue/styles'
   - 'white_darkblue/javascripts'
+
+stylesheets:
+  all:
+    - css/entity-print.css: {}
