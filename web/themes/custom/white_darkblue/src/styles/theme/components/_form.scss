@@ -86,14 +86,14 @@ input.form-control[type="file"] {
   font-size: inherit;
 }
 
-details {
+details, .claro-details {
   border: none !important;
 
   summary {
-    font-size: 20px;
+    font-size: 20px !important;
   }
 }
 
 .webform-section-title {
-  font-size: 14px;
+  font-size: 14px !important;
 }
