@@ -3,6 +3,12 @@ styles:
     theme:
       dist/stylesheets/stylesheet.css: {}
 
+print-css:
+  version: 1.x
+  css:
+    theme:
+      css/print.css: {}
+
 javascripts:
   js:
     dist/javascripts/app.js: {}
