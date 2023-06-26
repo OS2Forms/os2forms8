@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "68774895908dbc5beef10c6679f06fdd",
+    "content-hash": "d3fc91482fd45755d64b2a159969b4f6",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -7222,27 +7222,27 @@
         },
         {
             "name": "drupal/permissions_by_term",
-            "version": "3.1.22",
+            "version": "3.1.21",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/permissions_by_term.git",
-                "reference": "3.1.22"
+                "reference": "3.1.21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/permissions_by_term-3.1.22.zip",
-                "reference": "3.1.22",
-                "shasum": "f6e04db74773c0c4093ad9284d15a057f40eddf2"
+                "url": "https://ftp.drupal.org/files/projects/permissions_by_term-3.1.21.zip",
+                "reference": "3.1.21",
+                "shasum": "ecd9340f1aac1f183398a571415bb0859fcb6f4c"
             },
             "require": {
-                "drupal/core": "^9 || ^10",
+                "drupal/core": "^9.0",
                 "php": ">=7.1.0"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.1.22",
-                    "datestamp": "1681402062",
+                    "version": "3.1.21",
+                    "datestamp": "1668009531",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -11434,16 +11434,16 @@
         },
         {
             "name": "os2forms/os2forms",
-            "version": "3.6.0",
+            "version": "3.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2Forms/os2forms.git",
-                "reference": "d0e4c9eea2786e280c211fd1d56537eb431663ac"
+                "reference": "fa1069adb20be44884222bd7bd3797dbabfcc237"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2Forms/os2forms/zipball/d0e4c9eea2786e280c211fd1d56537eb431663ac",
-                "reference": "d0e4c9eea2786e280c211fd1d56537eb431663ac",
+                "url": "https://api.github.com/repos/OS2Forms/os2forms/zipball/fa1069adb20be44884222bd7bd3797dbabfcc237",
+                "reference": "fa1069adb20be44884222bd7bd3797dbabfcc237",
                 "shasum": ""
             },
             "require": {
@@ -11539,9 +11539,9 @@
             "description": "Drupal 8 OS2Form module provides advanced webform functionality for Danish Municipalities",
             "support": {
                 "issues": "https://github.com/OS2Forms/os2forms/issues",
-                "source": "https://github.com/OS2Forms/os2forms/tree/3.6.0"
+                "source": "https://github.com/OS2Forms/os2forms/tree/3.7.0"
             },
-            "time": "2023-06-07T12:34:47+00:00"
+            "time": "2023-06-26T10:39:01+00:00"
         },
         {
             "name": "os2forms/os2forms_egbolig",
