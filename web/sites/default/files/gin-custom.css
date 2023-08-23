@@ -93,3 +93,7 @@
 .gin-layer-wrapper {
   width: fit-content !important;
 }
+
+.gin-table-scroll-wrapper {
+  overflow: visible !important;
+}
