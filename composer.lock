@@ -11434,16 +11434,16 @@
         },
         {
             "name": "os2forms/os2forms",
-            "version": "3.8.3",
+            "version": "3.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2Forms/os2forms.git",
-                "reference": "dc017921d1055dd0323bc8b837af9edc5592aaf3"
+                "reference": "af1d24f5218016802d93cc25d9018474d5d07ed9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2Forms/os2forms/zipball/dc017921d1055dd0323bc8b837af9edc5592aaf3",
-                "reference": "dc017921d1055dd0323bc8b837af9edc5592aaf3",
+                "url": "https://api.github.com/repos/OS2Forms/os2forms/zipball/af1d24f5218016802d93cc25d9018474d5d07ed9",
+                "reference": "af1d24f5218016802d93cc25d9018474d5d07ed9",
                 "shasum": ""
             },
             "require": {
@@ -11539,9 +11539,9 @@
             "description": "Drupal 8 OS2Form module provides advanced webform functionality for Danish Municipalities",
             "support": {
                 "issues": "https://github.com/OS2Forms/os2forms/issues",
-                "source": "https://github.com/OS2Forms/os2forms/tree/3.8.3"
+                "source": "https://github.com/OS2Forms/os2forms/tree/3.10.0"
             },
-            "time": "2023-08-17T14:05:56+00:00"
+            "time": "2023-08-23T07:56:34+00:00"
         },
         {
             "name": "os2forms/os2forms_egbolig",
@@ -11618,16 +11618,16 @@
         },
         {
             "name": "os2forms/os2forms_sync",
-            "version": "1.1.0",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/itk-dev/os2forms_sync.git",
-                "reference": "0948458a44bfa29f513f819c14d34359751e152a"
+                "reference": "cb3385f22afb2340bdc5539fa05ac399fc27b300"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/itk-dev/os2forms_sync/zipball/0948458a44bfa29f513f819c14d34359751e152a",
-                "reference": "0948458a44bfa29f513f819c14d34359751e152a",
+                "url": "https://api.github.com/repos/itk-dev/os2forms_sync/zipball/cb3385f22afb2340bdc5539fa05ac399fc27b300",
+                "reference": "cb3385f22afb2340bdc5539fa05ac399fc27b300",
                 "shasum": ""
             },
             "require": {
@@ -11655,9 +11655,9 @@
             "description": "OS2Forms sync",
             "support": {
                 "issues": "https://github.com/itk-dev/os2forms_sync/issues",
-                "source": "https://github.com/itk-dev/os2forms_sync/tree/1.1.0"
+                "source": "https://github.com/itk-dev/os2forms_sync/tree/1.1.2"
             },
-            "time": "2023-02-03T12:12:37+00:00"
+            "time": "2023-06-13T10:18:01+00:00"
         },
         {
             "name": "os2web/os2web_datalookup",
