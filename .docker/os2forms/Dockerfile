@@ -20,7 +20,7 @@ RUN set -eux; \
 	wget https://repo.mysql.com//mysql-apt-config_0.8.13-1_all.deb; \
 	echo 4 | dpkg -i mysql-apt-config_0.8.13-1_all.deb; \
 	apt update; \
-	apt install -qq -y mysql-client; \
+	apt install -qq -y mariadb-client; \
 	echo "[client]" >> /etc/mysql/my.cnf; echo "ssl-mode=DISABLED" >> /etc/mysql/my.cnf
 
 # Removing standard Drupal core and loading OS2Web project.
@@ -48,6 +48,7 @@ RUN set -eux; \
 	composer self-update --1; \
 	export COMPOSER_HOME="$(mktemp -d)"; \
 	composer global require hirak/prestissimo;\
+	rm -f composer.lock; \
 	COMPOSER_MEMORY_LIMIT=-1 composer install; \
 	chown -R www-data:www-data web/sites web/modules web/themes; \
 	# delete composer cache.
