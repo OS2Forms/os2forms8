@@ -1,4 +1,4 @@
-FROM drupal:8-apache-buster
+FROM drupal:9-apache-bullseye
 
 # Installing additional dependencies.
 RUN set -eux; \
@@ -16,6 +16,7 @@ RUN set -eux; \
 	docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ && \
 	docker-php-ext-install soap ldap; \
 	# Addind mysql-client
+        apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 467B942D3A79BD29; \
 	wget https://repo.mysql.com//mysql-apt-config_0.8.13-1_all.deb; \
 	echo 4 | dpkg -i mysql-apt-config_0.8.13-1_all.deb; \
 	apt update; \
