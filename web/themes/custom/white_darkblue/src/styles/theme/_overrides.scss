@@ -200,6 +200,26 @@ summary {
   width: fit-content !important;
 }
 
+.webform-progress-tracker .progress-step .progress-marker {
+  box-shadow: none !important;
+  padding-top: 0 !important;
+  color: white !important;
+  font-weight: 600;
+}
+
+.progress-marker::before {
+  padding-bottom: 0 !important;
+
+}
+
+.progress-marker::after {
+  z-index: 10 !important;
+}
+
+.webform-progress-tracker .progress-step.is-complete .progress-marker {
+  border: none !important;
+}
+
 
 
 // --------------------------------------------------

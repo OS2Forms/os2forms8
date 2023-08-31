@@ -17,3 +17,7 @@ $settings['trusted_host_patterns'] = empty(getenv('DRUPAL_TRUSTED_HOST')) ? NULL
 $settings['config_sync_directory'] = '../config/sync';
 $settings['file_temp_path'] = '../tmp';
 $settings['file_private_path'] = '../private';
+
+if (PHP_SAPI === 'cli') {
+  ini_set('memory_limit', '1024M');
+}
