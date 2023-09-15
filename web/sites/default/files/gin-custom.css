@@ -97,4 +97,6 @@
 
 td > .form-item > .form-element--type-select, td > .ajax-new-content > .form-item > .form-element--type-select {
   min-width: unset !important;
+  width: 100% !important;
 }
+
