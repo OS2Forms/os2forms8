@@ -90,10 +90,14 @@
 
 .menu-item a { font-size: 16px !important; text-decoration: none !important; }
 
-.gin-layer-wrapper {
-  width: fit-content !important;
-}
 
 .gin-table-scroll-wrapper {
   overflow: visible !important;
 }
+
+td > .form-item > .form-element--type-select, td > .ajax-new-content > .form-item > .form-element--type-select {
+  min-width: unset;
+  max-width: none !important;
+  width: 100%;
+}
+
