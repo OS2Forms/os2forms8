@@ -30,6 +30,24 @@
         {
             "type": "package",
             "package": {
+                "name": "drupal/webform_permissions_by_term",
+                "version": "1.2.0",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://ftp.drupal.org/files/projects/webform_permissions_by_term-8.x-1.2.zip",
+                    "reference": "8.x-1.2",
+                    "shasum": "eabcfdbbbc850986fdd0d8b3a26cad8d6b5d675e"
+                },
+                "require": {
+                    "drupal/core": "~8.0 || ^9.0",
+                    "drupal/permissions_by_term": "*"
+                },
+                "type": "drupal-module"
+            }
+        },
+        {
+            "type": "package",
+            "package": {
                 "name": "drupal/rules",
                 "description": "React on events and conditionally evaluate actions.",
                 "type": "drupal-module",
@@ -83,6 +101,7 @@
         "drupal/menu_link_attributes": "^1.3",
         "drupal/migrate_tools": "^5.0",
         "drupal/migrate_upgrade": "^4.0",
+        "drupal/permissions_by_term": "3.1.21",
         "drupal/queue_mail": "^1.3",
         "drupal/queue_ui": "^2.1",
         "drupal/restui": "^1.20",
@@ -94,6 +113,7 @@
         "drupal/webform_composite": "^1.0@RC",
         "drupal/webform_migrate": "^1.2",
         "drupal/webform_node_element": "^1.1",
+        "drupal/webform_permissions_by_term": "^1.2",
         "drupal/webform_scheduled_tasks": "^2.0",
         "drupal/webform_views": "^5.0@alpha",
         "drush/drush": "^11",
@@ -180,6 +200,11 @@
             "force-reset": true
         },
         "patches": {
+            "drupal/webform_permissions_by_term": {
+                "3192241 - Too few arguments after Permissions by Term update to 2.28": "https://www.drupal.org/files/issues/2021-12-10/too-few-arguments-access-check_3192241-3.patch",
+                "3142184 - Automated Drupal 9 compatibility fixes": "https://www.drupal.org/files/issues/2020-06-28/webform_permissions_by_term.1.x-dev.rector.patch",
+                "Enabled D9 support": "patches/webform_permissions_by_term-d9.patch"
+            },
             "drupal/webform_embed": {
                 "Enabled D9 support": "./patches/webform_embed-d9.patch",
                 "3170384 - Fixed D9 imcopatibility": "https://www.drupal.org/files/issues/2020-09-11/3170384-2.patch"
