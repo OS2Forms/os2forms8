@@ -108,3 +108,8 @@ td > .form-item > .form-element--type-select, td > .ajax-new-content > .form-ite
   }
 }
 
+
+.webform-states-table--operator.form-type-select {
+  display: flex;
+  align-items: center;
+}
