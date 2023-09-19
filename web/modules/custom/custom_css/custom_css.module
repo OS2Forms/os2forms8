@@ -1,0 +1,15 @@
+<?php
+
+
+/**
+* @file
+* Custom CSS module.
+*/
+
+/**
+* Implements hook_page_attachments_alter().
+*/
+function custom_css_page_attachments_alter(array &$attachments) {
+// Attach custom CSS globally.
+$attachments['#attached']['library'][] = 'custom_css/custom-css';
+}

@@ -96,8 +96,20 @@
 }
 
 td > .form-item > .form-element--type-select, td > .ajax-new-content > .form-item > .form-element--type-select {
-  min-width: unset;
-  max-width: none !important;
+  min-width: unset !important;
+  max-width: unset !important;
   width: 100%;
 }
 
+@supports (min-width:max-content) {
+  td > .form-item > .form-element--type-select, td > .ajax-new-content > .form-item > .form-element--type-select {
+    width: 100% !important;
+    max-width: unset;
+  }
+}
+
+
+.webform-states-table--operator.form-type-select {
+  display: flex;
+  align-items: center;
+}
