@@ -103,7 +103,7 @@ td > .form-item > .form-element--type-select, td > .ajax-new-content > .form-ite
 
 @supports (min-width:max-content) {
   td > .form-item > .form-element--type-select, td > .ajax-new-content > .form-item > .form-element--type-select {
-    width: 100%;
+    width: 100% !important;
     max-width: unset;
   }
 }
