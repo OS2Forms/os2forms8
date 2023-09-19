@@ -1,0 +1,6 @@
+name: 'Custom CSS'
+type: module
+description: 'Adds custom CSS to the site.'
+core_version_requirement: ^8 || ^9
+package: Custom
+version: 1.0
