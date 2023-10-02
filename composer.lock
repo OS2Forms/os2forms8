@@ -1898,6 +1898,99 @@
             }
         },
         {
+            "name": "drupal/advancedqueue",
+            "version": "1.0.0-rc7",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/advancedqueue.git",
+                "reference": "8.x-1.0-rc7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/advancedqueue-8.x-1.0-rc7.zip",
+                "reference": "8.x-1.0-rc7",
+                "shasum": "b446eda22f5f9a9d13f78f2ce329ff1feef69173"
+            },
+            "require": {
+                "drupal/core": "^9.1 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-rc7",
+                    "datestamp": "1673456946",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^11"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "amitaibu",
+                    "homepage": "https://www.drupal.org/user/57511"
+                },
+                {
+                    "name": "bojanz",
+                    "homepage": "https://www.drupal.org/user/86106"
+                },
+                {
+                    "name": "Damien Tournoud",
+                    "homepage": "https://www.drupal.org/user/22211"
+                },
+                {
+                    "name": "dawehner",
+                    "homepage": "https://www.drupal.org/user/99340"
+                },
+                {
+                    "name": "jcnventura",
+                    "homepage": "https://www.drupal.org/user/122464"
+                },
+                {
+                    "name": "jsacksick",
+                    "homepage": "https://www.drupal.org/user/972218"
+                },
+                {
+                    "name": "Kazanir",
+                    "homepage": "https://www.drupal.org/user/2279698"
+                },
+                {
+                    "name": "laurentchardin",
+                    "homepage": "https://www.drupal.org/user/87775"
+                },
+                {
+                    "name": "mglaman",
+                    "homepage": "https://www.drupal.org/user/2416470"
+                },
+                {
+                    "name": "pjcdawkins",
+                    "homepage": "https://www.drupal.org/user/1025236"
+                },
+                {
+                    "name": "rszrama",
+                    "homepage": "https://www.drupal.org/user/49344"
+                },
+                {
+                    "name": "skipyT",
+                    "homepage": "https://www.drupal.org/user/350126"
+                }
+            ],
+            "description": "Provides a better Queue API.",
+            "homepage": "https://www.drupal.org/project/advancedqueue",
+            "support": {
+                "source": "https://git.drupalcode.org/project/advancedqueue"
+            }
+        },
+        {
             "name": "drupal/authorization",
             "version": "1.0.0",
             "source": {
@@ -11445,22 +11538,23 @@
         },
         {
             "name": "os2forms/os2forms",
-            "version": "3.11.0",
+            "version": "3.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2Forms/os2forms.git",
-                "reference": "ee64b99552bef29f9ec5d35a7c735e0c3bd41fc2"
+                "reference": "faad1266ef6476ccc31cf4578e38b8cca654ab9b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2Forms/os2forms/zipball/ee64b99552bef29f9ec5d35a7c735e0c3bd41fc2",
-                "reference": "ee64b99552bef29f9ec5d35a7c735e0c3bd41fc2",
+                "url": "https://api.github.com/repos/OS2Forms/os2forms/zipball/faad1266ef6476ccc31cf4578e38b8cca654ab9b",
+                "reference": "faad1266ef6476ccc31cf4578e38b8cca654ab9b",
                 "shasum": ""
             },
             "require": {
                 "cweagans/composer-patches": "^1.6.5",
                 "dompdf/dompdf": "^2.0",
                 "drupal/admin_toolbar": "^3.0",
+                "drupal/advancedqueue": "^1.0",
                 "drupal/chosen": "^2.10",
                 "drupal/ckeditor_a11ychecker": "^2.0@alpha",
                 "drupal/clientside_validation": "^3.0",
@@ -11481,7 +11575,7 @@
                 "drupal/libraries": "^3.0@beta",
                 "drupal/linkit": "^5.0",
                 "drupal/logging_alerts": "^2.0",
-                "drupal/maestro": "^3.0",
+                "drupal/maestro": "^3.1",
                 "drupal/mailsystem": "^4.1",
                 "drupal/masquerade": "^2.0@RC",
                 "drupal/pathauto": "^1.5",
@@ -11521,6 +11615,9 @@
                 "drupal/coder": "^8.3",
                 "drupal/maillog": "^1.0"
             },
+            "suggest": {
+                "os2forms/os2forms_digital_post": "Send Maestro notifications via digital post (see https://github.com/itk-dev/os2forms_digital_post/blob/main/README.md)"
+            },
             "type": "drupal-module",
             "extra": {
                 "composer-exit-on-patch-failure": false,
@@ -11550,9 +11647,9 @@
             "description": "Drupal 8 OS2Form module provides advanced webform functionality for Danish Municipalities",
             "support": {
                 "issues": "https://github.com/OS2Forms/os2forms/issues",
-                "source": "https://github.com/OS2Forms/os2forms/tree/3.11.0"
+                "source": "https://github.com/OS2Forms/os2forms/tree/3.12.0"
             },
-            "time": "2023-09-25T11:45:01+00:00"
+            "time": "2023-10-02T10:28:18+00:00"
         },
         {
             "name": "os2forms/os2forms_egbolig",
@@ -11672,16 +11769,16 @@
         },
         {
             "name": "os2web/os2web_datalookup",
-            "version": "1.8.0",
+            "version": "1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_datalookup.git",
-                "reference": "e401e3042bf895ae1ecd2e7881bb36e1e1fc9592"
+                "reference": "c57d0046b878b201ce26e4f646c81765ebeb0596"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_datalookup/zipball/e401e3042bf895ae1ecd2e7881bb36e1e1fc9592",
-                "reference": "e401e3042bf895ae1ecd2e7881bb36e1e1fc9592",
+                "url": "https://api.github.com/repos/OS2web/os2web_datalookup/zipball/c57d0046b878b201ce26e4f646c81765ebeb0596",
+                "reference": "c57d0046b878b201ce26e4f646c81765ebeb0596",
                 "shasum": ""
             },
             "require": {
@@ -11695,9 +11792,9 @@
             "description": "Provides integration with Danish data lookup services such as Service platformen or Datafordeler.",
             "support": {
                 "issues": "https://github.com/OS2web/os2web_datalookup/issues",
-                "source": "https://github.com/OS2web/os2web_datalookup/tree/1.8.0"
+                "source": "https://github.com/OS2web/os2web_datalookup/tree/1.9.0"
             },
-            "time": "2023-08-14T10:41:18+00:00"
+            "time": "2023-09-28T11:32:20+00:00"
         },
         {
             "name": "os2web/os2web_logging",
