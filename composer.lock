@@ -11538,16 +11538,16 @@
         },
         {
             "name": "os2forms/os2forms",
-            "version": "3.12.1",
+            "version": "3.12.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2Forms/os2forms.git",
-                "reference": "13f794e8d6f1e3c850eca4657811ff8f4547369c"
+                "reference": "5a69f1118ba44a0206580e5340e6314a7b83f4b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2Forms/os2forms/zipball/13f794e8d6f1e3c850eca4657811ff8f4547369c",
-                "reference": "13f794e8d6f1e3c850eca4657811ff8f4547369c",
+                "url": "https://api.github.com/repos/OS2Forms/os2forms/zipball/5a69f1118ba44a0206580e5340e6314a7b83f4b8",
+                "reference": "5a69f1118ba44a0206580e5340e6314a7b83f4b8",
                 "shasum": ""
             },
             "require": {
@@ -11647,9 +11647,9 @@
             "description": "Drupal 8 OS2Form module provides advanced webform functionality for Danish Municipalities",
             "support": {
                 "issues": "https://github.com/OS2Forms/os2forms/issues",
-                "source": "https://github.com/OS2Forms/os2forms/tree/3.12.1"
+                "source": "https://github.com/OS2Forms/os2forms/tree/3.12.2"
             },
-            "time": "2023-10-02T13:15:44+00:00"
+            "time": "2023-10-03T09:19:25+00:00"
         },
         {
             "name": "os2forms/os2forms_egbolig",
@@ -11683,20 +11683,21 @@
         },
         {
             "name": "os2forms/os2forms_forloeb_profile",
-            "version": "1.13.0",
+            "version": "1.14.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2Forms/os2forms_forloeb_profile.git",
-                "reference": "d63509ea1dd4a30938cb49798a2bbafc2a89d2e2"
+                "reference": "e4d043923f7d27757fc7b388080d2b102e590440"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2Forms/os2forms_forloeb_profile/zipball/d63509ea1dd4a30938cb49798a2bbafc2a89d2e2",
-                "reference": "d63509ea1dd4a30938cb49798a2bbafc2a89d2e2",
+                "url": "https://api.github.com/repos/OS2Forms/os2forms_forloeb_profile/zipball/e4d043923f7d27757fc7b388080d2b102e590440",
+                "reference": "e4d043923f7d27757fc7b388080d2b102e590440",
                 "shasum": ""
             },
             "require": {
                 "cweagans/composer-patches": "^1.6.5",
+                "drupal/cache_control_override": "^1.1|^2.0",
                 "drupal/core": "^9",
                 "drupal/gin": "^3.0-rc",
                 "drush/drush": "^11.4",
@@ -11720,9 +11721,9 @@
             "description": "This profile adds the configuration and initial install of OS2forms 2.1 med Forløb.",
             "support": {
                 "issues": "https://github.com/OS2Forms/os2forms_forloeb_profile/issues",
-                "source": "https://github.com/OS2Forms/os2forms_forloeb_profile/tree/1.13.0"
+                "source": "https://github.com/OS2Forms/os2forms_forloeb_profile/tree/1.14.0"
             },
-            "time": "2023-09-25T12:55:16+00:00"
+            "time": "2023-10-03T09:12:30+00:00"
         },
         {
             "name": "os2forms/os2forms_sync",
