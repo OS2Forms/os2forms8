@@ -6506,17 +6506,17 @@
         },
         {
             "name": "drupal/maestro",
-            "version": "3.1.0-rc1",
+            "version": "3.1.0-rc3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/maestro.git",
-                "reference": "3.1.0-rc1"
+                "reference": "3.1.0-rc3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/maestro-3.1.0-rc1.zip",
-                "reference": "3.1.0-rc1",
-                "shasum": "a8ca32127f5d795a065ac38bd27aa487c5142251"
+                "url": "https://ftp.drupal.org/files/projects/maestro-3.1.0-rc3.zip",
+                "reference": "3.1.0-rc3",
+                "shasum": "74fd4a7d8b8bb5cf97f8e1f24151e29a6f5237da"
             },
             "require": {
                 "drupal/core": "^9.4 || ^10"
@@ -6528,8 +6528,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.1.0-rc1",
-                    "datestamp": "1671216754",
+                    "version": "3.1.0-rc3",
+                    "datestamp": "1695912922",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -11683,16 +11683,16 @@
         },
         {
             "name": "os2forms/os2forms_forloeb_profile",
-            "version": "1.14.0",
+            "version": "1.14.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2Forms/os2forms_forloeb_profile.git",
-                "reference": "e4d043923f7d27757fc7b388080d2b102e590440"
+                "reference": "1881f6cf2aa64a5d890ca287011feadd00ef67fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2Forms/os2forms_forloeb_profile/zipball/e4d043923f7d27757fc7b388080d2b102e590440",
-                "reference": "e4d043923f7d27757fc7b388080d2b102e590440",
+                "url": "https://api.github.com/repos/OS2Forms/os2forms_forloeb_profile/zipball/1881f6cf2aa64a5d890ca287011feadd00ef67fc",
+                "reference": "1881f6cf2aa64a5d890ca287011feadd00ef67fc",
                 "shasum": ""
             },
             "require": {
@@ -11721,9 +11721,9 @@
             "description": "This profile adds the configuration and initial install of OS2forms 2.1 med Forløb.",
             "support": {
                 "issues": "https://github.com/OS2Forms/os2forms_forloeb_profile/issues",
-                "source": "https://github.com/OS2Forms/os2forms_forloeb_profile/tree/1.14.0"
+                "source": "https://github.com/OS2Forms/os2forms_forloeb_profile/tree/1.14.1"
             },
-            "time": "2023-10-03T09:12:30+00:00"
+            "time": "2023-10-05T13:46:03+00:00"
         },
         {
             "name": "os2forms/os2forms_sync",
