@@ -13,6 +13,6 @@
 }
 
 .webform-scale-options input:checked + label {
-  color: #000;
-  border-color: #0074bd;
+  color: #000 !important;
+  border-color: #0074bd !important;
 }
