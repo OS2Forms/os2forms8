@@ -1,0 +1,18 @@
+.webform-scale-option .form-item label.control-label {
+  width: 36px;
+  height: 36px;
+  margin: 0;
+  text-align: center;
+  color: #666;
+  border: 3px solid #ccc;
+  border-radius: 50%;
+  background-color: #fff;
+  font-size: 1.2em;
+  line-height: 36px;
+  padding: 0;
+}
+
+.webform-scale-options input:checked + label {
+  color: #000;
+  border-color: #0074bd;
+}

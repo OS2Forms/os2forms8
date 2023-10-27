@@ -2,6 +2,7 @@ styles:
   css:
     theme:
       dist/stylesheets/stylesheet.css: {}
+      css/overrides-webform.css: {}
 
 print-css:
   version: 1.x
