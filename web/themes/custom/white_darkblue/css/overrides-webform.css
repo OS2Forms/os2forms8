@@ -12,22 +12,22 @@
   padding: 0;
 }
 
-.webform-scale-options input:hover + label {
+.webform-scale-options input:hover ~ label {
   color: #333;
   border-color: #999 !important;
 }
 
-.webform-scale-options input:focus + label {
+.webform-scale-options input:focus ~ label {
   color: #333;
   border-color: #999 !important;
   box-shadow: 0 0 5px #999 !important;
 }
 
-.webform-scale-options input:checked + label {
+.webform-scale-options input:checked ~ label {
   color: #000;
   border-color: #0074bd !important;
 }
 
-.webform-scale-options input:checked:focus + label {
+.webform-scale-options input:checked:focus ~ label {
   box-shadow: 0 0 5px #0074bd !important;
 }
