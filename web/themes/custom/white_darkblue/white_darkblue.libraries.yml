@@ -2,6 +2,7 @@ styles:
   css:
     theme:
       dist/stylesheets/stylesheet.css: {}
+      css/overrides-webform.css: {}
 
 print-css:
   version: 1.x
@@ -12,6 +13,7 @@ print-css:
 javascripts:
   js:
     dist/javascripts/app.js: {}
+    js/webform-enhancements.js: {}
   dependencies:
     - core/drupal
     - core/jquery

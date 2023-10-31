@@ -1,0 +1,24 @@
+.webform-scale-option .form-item label {
+  width: 36px;
+  height: 36px;
+  margin: 0;
+  text-align: center;
+  color: #666;
+  border: 3px solid #ccc;
+  border-radius: 50%;
+  background-color: #fff;
+  font-size: 1.2em;
+  line-height: 36px;
+  padding: 0;
+}
+
+.webform-scale-option .form-item label:hover {
+  border-color: #999;
+  color: #333;
+}
+
+.active-label {
+  border-color: #0074bd !important;
+  color: #000 !important;
+}
+
