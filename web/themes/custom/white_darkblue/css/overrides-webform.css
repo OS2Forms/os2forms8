@@ -12,22 +12,13 @@
   padding: 0;
 }
 
-.webform-scale-options input:hover ~ label {
+.webform-scale-option .form-item label:hover {
+  border-color: #999;
   color: #333;
-  border-color: #999 !important;
 }
 
-.webform-scale-options input:focus ~ label {
-  color: #333;
-  border-color: #999 !important;
-  box-shadow: 0 0 5px #999 !important;
-}
-
-.webform-scale-options input:checked ~ label {
-  color: #000;
+.active-label {
   border-color: #0074bd !important;
+  color: #000 !important;
 }
 
-.webform-scale-options input:checked:focus ~ label {
-  box-shadow: 0 0 5px #0074bd !important;
-}
