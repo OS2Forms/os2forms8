@@ -1,14 +1,9 @@
 .webform-scale-option .form-item label {
-  width: 36px;
-  height: 36px;
   margin: 0;
   text-align: center;
   color: #666;
   border: 3px solid #ccc;
-  border-radius: 50%;
   background-color: #fff;
-  font-size: 1.2em;
-  line-height: 36px;
   padding: 0;
 }
 
@@ -22,3 +17,37 @@
   color: #000 !important;
 }
 
+.webform-scale-medium .form-item label {
+  width: 36px;
+  height: 36px;
+  font-size: 1.2em;
+  line-height: 36px;
+}
+
+.webform-scale-circle .form-item label {
+  border-radius: 50%;
+}
+
+.webform-scale-small .form-item label {
+  width: 24px;
+  height: 24px;
+  font-size: 1.1em;
+  line-height: 24px;
+  border-width: 2px;
+}
+
+.webform-scale-large .form-item label {
+  width: 48px;
+  height: 48px;
+  font-size: 1.5em;
+  line-height: 48px;
+}
+
+.webform-scale-square .form-item label {
+  border-radius: 3px;
+}
+
+.webform-scale-flexbox .form-item label {
+  width: 100% !important;
+  border-radius: 3px;
+}
