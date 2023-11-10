@@ -212,9 +212,6 @@
             },
             "drupal/webform_migrate": {
                 "Set to support. Checkbox condition fixes": "./patches/setto-and-checkboxes-condition-fix-onlyD7.patch"
-            },
-            "drupal/gin_toolbar": {
-                "Hiding edit link in breadcrumb region of gin theme": "https://www.drupal.org/files/issues/2022-11-07/3319445-edit-link-in-breadcrumb-region-no-permission-3.patch"
             }
         }
     }
