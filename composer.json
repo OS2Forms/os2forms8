@@ -101,14 +101,14 @@
         "drupal/menu_link_attributes": "^1.3",
         "drupal/migrate_tools": "^5.0",
         "drupal/migrate_upgrade": "^4.0",
-        "drupal/permissions_by_term": "3.1.21",
+        "drupal/permissions_by_term": "^3.1",
         "drupal/queue_mail": "^1.3",
         "drupal/queue_ui": "^2.1",
         "drupal/restui": "^1.20",
         "drupal/simple_ldap": "^1.0@alpha",
         "drupal/straw": "^1.3",
         "drupal/telephone_validation": "^2.2",
-        "drupal/upgrade_status": "^3.12",
+        "drupal/upgrade_status": "^4.0",
         "drupal/webform_analysis": "^1.0@beta",
         "drupal/webform_composite": "^1.0@RC",
         "drupal/webform_migrate": "^1.2",
@@ -118,10 +118,9 @@
         "drupal/webform_views": "^5.0@alpha",
         "drush/drush": "^11",
         "os2core/os2core": "^2.0",
-        "os2forms/os2forms": "~3.1",
-        "os2forms/os2forms_digital_post": "^3.0",
-        "os2forms/os2forms_egbolig": "dev-master",
-        "os2forms/os2forms_forloeb_profile": "^1.9.0",
+        "os2forms/os2forms": "dev-f/d10_readiness",
+        "os2forms/os2forms_egbolig": "dev-f/d10_readiness",
+        "os2forms/os2forms_forloeb_profile": "dev-f/d10_readiness",
         "os2forms/os2forms_sync": "^1.1",
         "os2web/os2web_logging": "dev-master",
         "simplesamlphp/simplesamlphp": "^1.19",
@@ -131,8 +130,8 @@
     },
     "require-dev": {
         "drupal/core-dev": "^9.1",
-        "zaporylie/composer-drupal-optimizations": "^1.2",
-        "drupal/devel": "^4.1"
+        "drupal/devel": "^5.0",
+        "zaporylie/composer-drupal-optimizations": "^1.2"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -201,6 +200,12 @@
             "force-reset": true
         },
         "patches": {
+            "drupal/coc_forms_auto_export" : {
+                "3286562 - Automated Drupal 10 compatibility fixes" : "https://www.drupal.org/files/issues/2022-06-15/coc_forms_auto_export.2.0.x-dev.rector.patch"
+            },
+            "drupal/config_entity_revisions" : {
+                "3373931 D10 compatability fix" : "https://www.drupal.org/files/issues/2023-09-05/3373931-config_entity_revisions_drupal_10-3.patch"
+            },
             "drupal/webform_permissions_by_term": {
                 "3192241 - Too few arguments after Permissions by Term update to 2.28": "https://www.drupal.org/files/issues/2021-12-10/too-few-arguments-access-check_3192241-3.patch",
                 "3142184 - Automated Drupal 9 compatibility fixes": "https://www.drupal.org/files/issues/2020-06-28/webform_permissions_by_term.1.x-dev.rector.patch",
