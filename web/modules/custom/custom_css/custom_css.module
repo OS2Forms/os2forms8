@@ -13,3 +13,16 @@ function custom_css_page_attachments_alter(array &$attachments) {
 // Attach custom CSS globally.
 $attachments['#attached']['library'][] = 'custom_css/custom-css';
 }
+
+/**
+ * Implements hook_form_alter().
+ *
+ * Fixes textformat issues for auto_csv_export module.
+ */
+function custom_css_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if ($form_id == 'webform_results_export') {
+    if (isset($form['auto_csv_export']['email_body'])) {
+      $form['auto_csv_export']['email_body']['#format'] = 'restricted_html';
+    }
+  }
+}

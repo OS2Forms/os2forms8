@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "28e78251555b0e63e68baa105410d9f8",
+    "content-hash": "3a4a6ff5f4d24120e254d86696d78792",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -12335,16 +12335,16 @@
         },
         {
             "name": "os2web/os2web_datalookup",
-            "version": "1.9.0",
+            "version": "1.11.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_datalookup.git",
-                "reference": "c57d0046b878b201ce26e4f646c81765ebeb0596"
+                "reference": "f0a39488237101a9e6871db631ba60b12e3890d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_datalookup/zipball/c57d0046b878b201ce26e4f646c81765ebeb0596",
-                "reference": "c57d0046b878b201ce26e4f646c81765ebeb0596",
+                "url": "https://api.github.com/repos/OS2web/os2web_datalookup/zipball/f0a39488237101a9e6871db631ba60b12e3890d7",
+                "reference": "f0a39488237101a9e6871db631ba60b12e3890d7",
                 "shasum": ""
             },
             "require": {
@@ -12358,9 +12358,9 @@
             "description": "Provides integration with Danish data lookup services such as Service platformen or Datafordeler.",
             "support": {
                 "issues": "https://github.com/OS2web/os2web_datalookup/issues",
-                "source": "https://github.com/OS2web/os2web_datalookup/tree/1.9.0"
+                "source": "https://github.com/OS2web/os2web_datalookup/tree/1.11.3"
             },
-            "time": "2023-09-28T11:32:20+00:00"
+            "time": "2024-02-15T11:53:51+00:00"
         },
         {
             "name": "os2web/os2web_logging",
@@ -12395,16 +12395,16 @@
         },
         {
             "name": "os2web/os2web_nemlogin",
-            "version": "1.2.4",
+            "version": "1.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_nemlogin.git",
-                "reference": "a7ab1f52adbea7dd6a5fb055fcbeaaadfb11ba95"
+                "reference": "553e7c05cbf8974f121be664dd904a93172bb3ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_nemlogin/zipball/a7ab1f52adbea7dd6a5fb055fcbeaaadfb11ba95",
-                "reference": "a7ab1f52adbea7dd6a5fb055fcbeaaadfb11ba95",
+                "url": "https://api.github.com/repos/OS2web/os2web_nemlogin/zipball/553e7c05cbf8974f121be664dd904a93172bb3ce",
+                "reference": "553e7c05cbf8974f121be664dd904a93172bb3ce",
                 "shasum": ""
             },
             "type": "drupal-module",
@@ -12415,9 +12415,9 @@
             "description": "Provide authentication via Nemlogin",
             "support": {
                 "issues": "https://github.com/OS2web/os2web_nemlogin/issues",
-                "source": "https://github.com/OS2web/os2web_nemlogin/tree/1.2.4"
+                "source": "https://github.com/OS2web/os2web_nemlogin/tree/1.2.6"
             },
-            "time": "2023-10-18T08:32:47+00:00"
+            "time": "2024-03-27T11:50:34+00:00"
         },
         {
             "name": "os2web/os2web_simplesaml",

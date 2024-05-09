@@ -103,3 +103,71 @@ h1, h2, h3, h4, h5, h6, p, legend, strong, b, cite, var, address, dfn {
   -moz-font-feature-settings: "kern";
   -moz-font-feature-settings: "kern=1";
 }
+
+@font-face {
+  font-family: 'Riona Sans';
+  src: url('../fonts/RionaSans/RionaSansW04-Medium.eot');
+  src: url('../fonts/RionaSans/RionaSansW04-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/RionaSans/RionaSansW04-Medium.woff2') format('woff2'),
+  url('../fonts/RionaSans/RionaSansW04-Medium.woff') format('woff'),
+  url('../fonts/RionaSans/RionaSansW04-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Riona Sans';
+  src: url('../fonts/RionaSans/RionaSansW04-Bold.eot');
+  src: url('../fonts/RionaSans/RionaSansW04-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/RionaSans/RionaSansW04-Bold.woff2') format('woff2'),
+  url('../fonts/RionaSans/RionaSansW04-Bold.woff') format('woff'),
+  url('../fonts/RionaSans/RionaSansW04-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Riona Sans';
+  src: url('../fonts/RionaSans/RionaSansW04-BoldItalic.eot');
+  src: url('../fonts/RionaSans/RionaSansW04-BoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/RionaSans/RionaSansW04-BoldItalic.woff2') format('woff2'),
+  url('../fonts/RionaSans/RionaSansW04-BoldItalic.woff') format('woff'),
+  url('../fonts/RionaSans/RionaSansW04-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Riona Sans';
+  src: url('../fonts/RionaSans/RionaSansW04-MediumItalic.eot');
+  src: url('../fonts/RionaSans/RionaSansW04-MediumItalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/RionaSans/RionaSansW04-MediumItalic.woff2') format('woff2'),
+  url('../fonts/RionaSans/RionaSansW04-MediumItalic.woff') format('woff'),
+  url('../fonts/RionaSans/RionaSansW04-MediumItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Riona Sans';
+  src: url('../fonts/RionaSans/RionaSansW04-Light.eot');
+  src: url('../fonts/RionaSans/RionaSansW04-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/RionaSans/RionaSansW04-Light.woff2') format('woff2'),
+  url('../fonts/RionaSans/RionaSansW04-Light.woff') format('woff'),
+  url('../fonts/RionaSans/RionaSansW04-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Riona Sans';
+  src: url('../fonts/RionaSans/RionaSansW04-LightItalic.eot');
+  src: url('../fonts/RionaSans/RionaSansW04-LightItalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/RionaSans/RionaSansW04-LightItalic.woff2') format('woff2'),
+  url('../fonts/RionaSans/RionaSansW04-LightItalic.woff') format('woff'),
+  url('../fonts/RionaSans/RionaSansW04-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+

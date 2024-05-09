@@ -217,6 +217,9 @@
             },
             "drupal/webform_migrate": {
                 "Set to support. Checkbox condition fixes": "./patches/setto-and-checkboxes-condition-fix-onlyD7.patch"
+            },
+            "drupal/coc_forms_auto_export" : {
+                "3259009 - PHP Warnings/Notices on Download Page" : "https://git.drupalcode.org/project/coc_forms_auto_export/-/merge_requests/1.diff"
             }
         }
     }
