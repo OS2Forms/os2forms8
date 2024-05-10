@@ -1,8 +1,7 @@
 name: 'White darkblue theme'
 type: theme
 description: 'Custom white darkblue theme.'
-# core: 8.x
-core_version_requirement: ^8.8 || ^9
+core_version_requirement: ^9 || ^10
 base theme: bootstrap
 package: Custom
 
