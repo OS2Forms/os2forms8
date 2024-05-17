@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e34583c32fe0d4aed31cb83317086240",
+    "content-hash": "3558cb4098dcec7eea798866a747825b",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2423,27 +2423,27 @@
         },
         {
             "name": "drupal/chosen",
-            "version": "4.0.0",
+            "version": "4.0.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/chosen.git",
-                "reference": "4.0.0"
+                "reference": "4.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/chosen-4.0.0.zip",
-                "reference": "4.0.0",
-                "shasum": "6355b49a1dc90f372d38b0e100745e387cad3423"
+                "url": "https://ftp.drupal.org/files/projects/chosen-4.0.1.zip",
+                "reference": "4.0.1",
+                "shasum": "03ec154a6e2994873efc57d974cb535dd3bf9629"
             },
             "require": {
                 "drupal/chosen_lib": "*",
-                "drupal/core": "^9.2 || ^10"
+                "drupal/core": "^9.2 || ^10 || ^11"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "4.0.0",
-                    "datestamp": "1680955162",
+                    "version": "4.0.1",
+                    "datestamp": "1715856677",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2500,25 +2500,19 @@
         },
         {
             "name": "drupal/chosen_lib",
-            "version": "4.0.0",
+            "version": "4.0.1",
             "require": {
                 "drupal/chosen": "^4",
-                "drupal/core": "^9.2 || ^10",
-                "php": ">=5.6.0"
+                "drupal/core": "^9.2 || ^10 || ^11"
             },
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "4.0.0",
-                    "datestamp": "1680955162",
+                    "version": "4.0.1",
+                    "datestamp": "1715856677",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
-                    }
-                },
-                "drush": {
-                    "services": {
-                        "drush.services.yml": "^9 || ^10 || ^11"
                     }
                 }
             },
@@ -2564,7 +2558,7 @@
                     "homepage": "https://www.drupal.org/user/235438"
                 }
             ],
-            "description": "This module provides the basic integration with the Chosen jQuery plugin.",
+            "description": "Add <a href=\"https://github.com/JJJ/chosen\">chosen</a> library definition.",
             "homepage": "https://www.drupal.org/project/chosen",
             "support": {
                 "source": "https://git.drupalcode.org/project/chosen"
@@ -4345,6 +4339,80 @@
             }
         },
         {
+            "name": "drupal/encrypt",
+            "version": "3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/encrypt.git",
+                "reference": "8.x-3.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/encrypt-8.x-3.1.zip",
+                "reference": "8.x-3.1",
+                "shasum": "357ca7fcf9879af66b5d0c5593da080f19664f17"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9 || ^10",
+                "drupal/key": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-3.1",
+                    "datestamp": "1669655248",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9 || ^10 || ^11"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "alexpott",
+                    "homepage": "https://www.drupal.org/user/157725"
+                },
+                {
+                    "name": "gisle",
+                    "homepage": "https://www.drupal.org/user/409554"
+                },
+                {
+                    "name": "greggles",
+                    "homepage": "https://www.drupal.org/user/36762"
+                },
+                {
+                    "name": "nerdstein",
+                    "homepage": "https://www.drupal.org/user/1557710"
+                },
+                {
+                    "name": "rlhawk",
+                    "homepage": "https://www.drupal.org/user/352283"
+                },
+                {
+                    "name": "theunraveler",
+                    "homepage": "https://www.drupal.org/user/71548"
+                },
+                {
+                    "name": "zzolo",
+                    "homepage": "https://www.drupal.org/user/147331"
+                }
+            ],
+            "description": "Provides an API for two-way encryption.",
+            "homepage": "https://www.drupal.org/project/encrypt",
+            "support": {
+                "source": "https://git.drupalcode.org/project/encrypt"
+            }
+        },
+        {
             "name": "drupal/entity",
             "version": "1.4.0",
             "source": {
@@ -5988,6 +6056,71 @@
             "support": {
                 "source": "https://www.drupal.org/project/jquery_ui_touch_punch",
                 "issues": "https://www.drupal.org/project/issues/jquery_ui_touch_punch"
+            }
+        },
+        {
+            "name": "drupal/key",
+            "version": "1.17.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/key.git",
+                "reference": "8.x-1.17"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/key-8.x-1.17.zip",
+                "reference": "8.x-1.17",
+                "shasum": "fa9f606d2ba0e20693e12040004e2ed31302ed03"
+            },
+            "require": {
+                "drupal/core": ">=8.9 <11"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.17",
+                    "datestamp": "1674343967",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": ">=9"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Cellar Door",
+                    "homepage": "https://www.drupal.org/user/658076"
+                },
+                {
+                    "name": "crashtest_",
+                    "homepage": "https://www.drupal.org/user/261457"
+                },
+                {
+                    "name": "nerdstein",
+                    "homepage": "https://www.drupal.org/user/1557710"
+                },
+                {
+                    "name": "rlhawk",
+                    "homepage": "https://www.drupal.org/user/352283"
+                }
+            ],
+            "description": "Provides the ability to manage site-wide keys",
+            "homepage": "http://drupal.org/project/key",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/key",
+                "issues": "http://drupal.org/project/key"
             }
         },
         {
@@ -7805,6 +7938,58 @@
             }
         },
         {
+            "name": "drupal/sodium",
+            "version": "2.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/sodium.git",
+                "reference": "8.x-2.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/sodium-8.x-2.4.zip",
+                "reference": "8.x-2.4",
+                "shasum": "64e6a527797a8ed192e4e19e6abf288c104a64b5"
+            },
+            "require": {
+                "drupal/core": "^8.9.0 || ^9.0 || ^10",
+                "drupal/encrypt": "^3.0",
+                "drupal/key": "^1.0",
+                "paragonie/halite": "^4.1 || ^5.0",
+                "php": ">=7.2"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.4",
+                    "datestamp": "1674407491",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "rlhawk",
+                    "homepage": "https://www.drupal.org/user/352283"
+                },
+                {
+                    "name": "rtackett",
+                    "homepage": "https://www.drupal.org/user/157847"
+                }
+            ],
+            "description": "Allows data to be encrypted and decrypted using Libsodium.",
+            "homepage": "https://www.drupal.org/project/sodium",
+            "support": {
+                "source": "https://git.drupalcode.org/project/sodium"
+            }
+        },
+        {
             "name": "drupal/switch_page_theme",
             "version": "4.0.1",
             "source": {
@@ -8410,32 +8595,105 @@
             }
         },
         {
-            "name": "drupal/webform_migrate",
-            "version": "1.2.0",
+            "name": "drupal/webform_encrypt",
+            "version": "2.0.0-alpha1",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/project/webform_migrate.git",
-                "reference": "8.x-1.2"
+                "url": "https://git.drupalcode.org/project/webform_encrypt.git",
+                "reference": "2.0.0-alpha1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform_migrate-8.x-1.2.zip",
-                "reference": "8.x-1.2",
-                "shasum": "5bdd71ec318a51f5ebc20f30054eadbe14a2d1f0"
+                "url": "https://ftp.drupal.org/files/projects/webform_encrypt-2.0.0-alpha1.zip",
+                "reference": "2.0.0-alpha1",
+                "shasum": "d33028a4b6cc6395ba6850144dc1cc941d390610"
             },
             "require": {
-                "drupal/core": "^8.8 || ^9",
+                "drupal/core": "^8 || ^9 || ^10",
+                "drupal/encrypt": "3.*",
+                "drupal/webform": "^6.2"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0-alpha1",
+                    "datestamp": "1684791212",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Tushar Thatikonda (th_tushar)",
+                    "homepage": "https://www.drupal.org/u/th_tushar",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Manuel Garcia (Manuel Garcia)",
+                    "homepage": "https://www.drupal.org/u/manuel-garcia",
+                    "role": "Co-maintainer"
+                },
+                {
+                    "name": "Vijaya Chandran Mani (vijaycs85)",
+                    "homepage": "https://www.drupal.org/u/vijaycs85",
+                    "role": "Co-maintainer"
+                },
+                {
+                    "name": "Saul Willers (fenstrat)",
+                    "homepage": "https://www.drupal.org/u/fenstrat",
+                    "role": "Co-maintainer"
+                },
+                {
+                    "name": "Rob Holmes (Rob Holmes)",
+                    "homepage": "https://www.drupal.org/u/rob-holmes",
+                    "role": "Co-maintainer"
+                },
+                {
+                    "name": "Jean Ribeiro (jribeiro)",
+                    "homepage": "https://www.drupal.org/u/jribeiro",
+                    "role": "Co-maintainer"
+                }
+            ],
+            "description": "Provides encryption for webform components.",
+            "homepage": "https://drupal.org/project/webform_encrypt",
+            "support": {
+                "source": "http://cgit.drupalcode.org/webform_encrypt",
+                "issues": "https://drupal.org/project/issues/webform_encrypt"
+            }
+        },
+        {
+            "name": "drupal/webform_migrate",
+            "version": "2.0.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/webform_migrate.git",
+                "reference": "2.0.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/webform_migrate-2.0.0-alpha1.zip",
+                "reference": "2.0.0-alpha1",
+                "shasum": "5800f34891f01814afdbdd6039857c8aad1f7ddd"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9 || ^10",
                 "drupal/webform": "*",
                 "drupal/webform_node": "*"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.2",
-                    "datestamp": "1615806788",
+                    "version": "2.0.0-alpha1",
+                    "datestamp": "1712317890",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -8581,27 +8839,27 @@
         },
         {
             "name": "drupal/webform_remote_handlers",
-            "version": "1.9.0",
+            "version": "3.0.3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform_remote_handlers.git",
-                "reference": "8.x-1.9"
+                "reference": "3.0.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform_remote_handlers-8.x-1.9.zip",
-                "reference": "8.x-1.9",
-                "shasum": "225811dfefa72a77ae9ffb8527f4996fb27aac91"
+                "url": "https://ftp.drupal.org/files/projects/webform_remote_handlers-3.0.3.zip",
+                "reference": "3.0.3",
+                "shasum": "c0113d8961aa7f40506b5ebe2e6ccffbb598017a"
             },
             "require": {
-                "drupal/core": "^8 || ^9",
+                "drupal/core": "^8 || ^9 || ^10",
                 "drupal/webform": "*"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.9",
-                    "datestamp": "1614945152",
+                    "version": "3.0.3",
+                    "datestamp": "1687168695",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -8654,27 +8912,27 @@
         },
         {
             "name": "drupal/webform_remote_select",
-            "version": "1.0.8",
+            "version": "1.0.9",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform_remote_select.git",
-                "reference": "1.0.8"
+                "reference": "1.0.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform_remote_select-1.0.8.zip",
-                "reference": "1.0.8",
-                "shasum": "59b7973b3b032d8418682fc962efed8b4c87eab3"
+                "url": "https://ftp.drupal.org/files/projects/webform_remote_select-1.0.9.zip",
+                "reference": "1.0.9",
+                "shasum": "7cb6b32da4fc8ca3d2a9936d7c6128b382a2eeaa"
             },
             "require": {
-                "drupal/core": "^8 || ^9 || ^10",
+                "drupal/core": "^8 || ^9 || ^10 || ^11",
                 "drupal/webform": "*"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "1.0.8",
-                    "datestamp": "1679574157",
+                    "version": "1.0.9",
+                    "datestamp": "1715894737",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -9509,16 +9767,16 @@
         },
         {
             "name": "giggsey/libphonenumber-for-php",
-            "version": "8.13.36",
+            "version": "8.13.37",
             "source": {
                 "type": "git",
                 "url": "https://github.com/giggsey/libphonenumber-for-php.git",
-                "reference": "9ca4179e4332d21578cb29f0c0406f0a2b8803e3"
+                "reference": "536c747ff1af433dddc615b26b9674047e013076"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/9ca4179e4332d21578cb29f0c0406f0a2b8803e3",
-                "reference": "9ca4179e4332d21578cb29f0c0406f0a2b8803e3",
+                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/536c747ff1af433dddc615b26b9674047e013076",
+                "reference": "536c747ff1af433dddc615b26b9674047e013076",
                 "shasum": ""
             },
             "require": {
@@ -9580,7 +9838,7 @@
                 "issues": "https://github.com/giggsey/libphonenumber-for-php/issues",
                 "source": "https://github.com/giggsey/libphonenumber-for-php"
             },
-            "time": "2024-05-03T06:27:03+00:00"
+            "time": "2024-05-16T09:01:39+00:00"
         },
         {
             "name": "giggsey/locale",
@@ -11011,16 +11269,16 @@
         },
         {
             "name": "mglaman/phpstan-drupal",
-            "version": "1.2.10",
+            "version": "1.2.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mglaman/phpstan-drupal.git",
-                "reference": "cdafb3285beeb5fadf25a43e18fee6f80bb14575"
+                "reference": "e624a4b64de5b91a0c56852635af2115e9a6e08c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mglaman/phpstan-drupal/zipball/cdafb3285beeb5fadf25a43e18fee6f80bb14575",
-                "reference": "cdafb3285beeb5fadf25a43e18fee6f80bb14575",
+                "url": "https://api.github.com/repos/mglaman/phpstan-drupal/zipball/e624a4b64de5b91a0c56852635af2115e9a6e08c",
+                "reference": "e624a4b64de5b91a0c56852635af2115e9a6e08c",
                 "shasum": ""
             },
             "require": {
@@ -11035,10 +11293,10 @@
                 "behat/mink": "^1.8",
                 "composer/installers": "^1.9",
                 "drupal/core-recommended": "^10",
-                "drush/drush": "^10.0 || ^11 || ^12",
+                "drush/drush": "^10.0 || ^11 || ^12 || ^13@beta",
                 "phpstan/extension-installer": "^1.1",
                 "phpstan/phpstan-strict-rules": "^1.0",
-                "phpunit/phpunit": "^8.5 || ^9",
+                "phpunit/phpunit": "^8.5 || ^9 || ^10 || ^11",
                 "slevomat/coding-standard": "^7.1",
                 "squizlabs/php_codesniffer": "^3.3",
                 "symfony/phpunit-bridge": "^4.4 || ^5.4 || ^6.0 || ^7.0"
@@ -11095,7 +11353,7 @@
             "description": "Drupal extension and rules for PHPStan",
             "support": {
                 "issues": "https://github.com/mglaman/phpstan-drupal/issues",
-                "source": "https://github.com/mglaman/phpstan-drupal/tree/1.2.10"
+                "source": "https://github.com/mglaman/phpstan-drupal/tree/1.2.11"
             },
             "funding": [
                 {
@@ -11111,7 +11369,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-04-02T17:27:29+00:00"
+            "time": "2024-05-10T17:22:10+00:00"
         },
         {
             "name": "mkalkbrenner/php-htmldiff-advanced",
@@ -11386,12 +11644,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2Forms/os2forms.git",
-                "reference": "30167fb4b44b49718b3fde3fe8429f744cace871"
+                "reference": "fdccb8e5905186bfb635d140bd1c8c69f6eff15e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2Forms/os2forms/zipball/30167fb4b44b49718b3fde3fe8429f744cace871",
-                "reference": "30167fb4b44b49718b3fde3fe8429f744cace871",
+                "url": "https://api.github.com/repos/OS2Forms/os2forms/zipball/fdccb8e5905186bfb635d140bd1c8c69f6eff15e",
+                "reference": "fdccb8e5905186bfb635d140bd1c8c69f6eff15e",
                 "shasum": ""
             },
             "require": {
@@ -11425,6 +11683,7 @@
                 "drupal/redirect": "^1.4",
                 "drupal/simplesamlphp_auth": "^4.0",
                 "drupal/smtp": "^1.0@beta",
+                "drupal/sodium": "^2.4",
                 "drupal/switch_page_theme": "^4.0",
                 "drupal/telephone_validation": "^2.2",
                 "drupal/token": "^1.5",
@@ -11432,9 +11691,10 @@
                 "drupal/user_default_page": "^9.0",
                 "drupal/webform": "^6.1",
                 "drupal/webform_composite": "^1.0@RC",
-                "drupal/webform_migrate": "^1.1",
+                "drupal/webform_encrypt": "^2.0@alpha",
+                "drupal/webform_migrate": "^2.0@alpha",
                 "drupal/webform_node_element": "^1.2",
-                "drupal/webform_remote_handlers": "^1.6.0",
+                "drupal/webform_remote_handlers": "^3.0",
                 "drupal/webform_remote_select": "^1.0.6",
                 "drupal/webform_rest": "^4.0.0-beta2",
                 "drupal/webform_validation": "^2.0",
@@ -11478,7 +11738,15 @@
                         "Unlock possibility of using Entity print module export to Word": "https://www.drupal.org/files/issues/2020-02-29/3096552-6.patch"
                     },
                     "drupal/coc_forms_auto_export": {
-                        "3240592 - Problem with phpseclib requirement in 2.x (https://www.drupal.org/project/coc_forms_auto_export/issues/3240592)": "https://www.drupal.org/files/issues/2021-10-04/requirement-namespace-3240592-1.patch"
+                        "3240592 - Problem with phpseclib requirement in 2.x (https://www.drupal.org/project/coc_forms_auto_export/issues/3240592)": "https://www.drupal.org/files/issues/2021-10-04/requirement-namespace-3240592-1.patch",
+                        "3286562 - Automated Drupal 10 compatibility fixes": "https://www.drupal.org/files/issues/2022-06-15/coc_forms_auto_export.2.0.x-dev.rector.patch",
+                        "3259009 - PHP Warnings/Notices on Download Page": "https://git.drupalcode.org/project/coc_forms_auto_export/-/merge_requests/1.diff"
+                    },
+                    "drupal/webform_node_element": {
+                        "3290637 - Automated Drupal 10 compatibility fixes": "https://www.drupal.org/files/issues/2023-05-12/webform_node_element_d10-3290637-11.patch"
+                    },
+                    "drupal/webform_encrypt": {
+                        "Ensure data is base64 encoded (https://www.drupal.org/project/webform_encrypt/issues/3399414)": "https://git.drupalcode.org/project/webform_encrypt/-/merge_requests/4.patch"
                     }
                 }
             },
@@ -11491,7 +11759,7 @@
                 "issues": "https://github.com/OS2Forms/os2forms/issues",
                 "source": "https://github.com/OS2Forms/os2forms/tree/f/d10_readiness"
             },
-            "time": "2024-05-10T12:40:13+00:00"
+            "time": "2024-05-17T10:05:16+00:00"
         },
         {
             "name": "os2forms/os2forms_egbolig",
@@ -11499,12 +11767,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2Forms/os2forms_egbolig.git",
-                "reference": "749050c00799a9ca5ed12c0ae268a3dfe8ae92b1"
+                "reference": "3cc9f963c5c0944a6c67753c5337a9647389db60"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2Forms/os2forms_egbolig/zipball/749050c00799a9ca5ed12c0ae268a3dfe8ae92b1",
-                "reference": "749050c00799a9ca5ed12c0ae268a3dfe8ae92b1",
+                "url": "https://api.github.com/repos/OS2Forms/os2forms_egbolig/zipball/3cc9f963c5c0944a6c67753c5337a9647389db60",
+                "reference": "3cc9f963c5c0944a6c67753c5337a9647389db60",
                 "shasum": ""
             },
             "require": {
@@ -11520,7 +11788,7 @@
                 "issues": "https://github.com/OS2Forms/os2forms_egbolig/issues",
                 "source": "https://github.com/OS2Forms/os2forms_egbolig/tree/f/d10_readiness"
             },
-            "time": "2024-05-10T10:13:25+00:00"
+            "time": "2024-05-17T10:39:28+00:00"
         },
         {
             "name": "os2forms/os2forms_forloeb_profile",
@@ -11528,12 +11796,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2Forms/os2forms_forloeb_profile.git",
-                "reference": "b0aa9b05bd8a226829ecbdfa9755d39085f42f07"
+                "reference": "44a0f9834ec51bc5ebfb050a9ef5f7a24dee4aa5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2Forms/os2forms_forloeb_profile/zipball/b0aa9b05bd8a226829ecbdfa9755d39085f42f07",
-                "reference": "b0aa9b05bd8a226829ecbdfa9755d39085f42f07",
+                "url": "https://api.github.com/repos/OS2Forms/os2forms_forloeb_profile/zipball/44a0f9834ec51bc5ebfb050a9ef5f7a24dee4aa5",
+                "reference": "44a0f9834ec51bc5ebfb050a9ef5f7a24dee4aa5",
                 "shasum": ""
             },
             "require": {
@@ -11564,7 +11832,7 @@
                 "issues": "https://github.com/OS2Forms/os2forms_forloeb_profile/issues",
                 "source": "https://github.com/OS2Forms/os2forms_forloeb_profile/tree/f/d10_readiness"
             },
-            "time": "2024-05-10T07:57:36+00:00"
+            "time": "2024-05-10T13:39:53+00:00"
         },
         {
             "name": "os2forms/os2forms_sync",
@@ -11671,16 +11939,16 @@
         },
         {
             "name": "os2web/os2web_nemlogin",
-            "version": "1.2.6",
+            "version": "1.2.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_nemlogin.git",
-                "reference": "553e7c05cbf8974f121be664dd904a93172bb3ce"
+                "reference": "0e94852fd7337cae8fad4795efdbe4f5fd607d39"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_nemlogin/zipball/553e7c05cbf8974f121be664dd904a93172bb3ce",
-                "reference": "553e7c05cbf8974f121be664dd904a93172bb3ce",
+                "url": "https://api.github.com/repos/OS2web/os2web_nemlogin/zipball/0e94852fd7337cae8fad4795efdbe4f5fd607d39",
+                "reference": "0e94852fd7337cae8fad4795efdbe4f5fd607d39",
                 "shasum": ""
             },
             "type": "drupal-module",
@@ -11691,9 +11959,9 @@
             "description": "Provide authentication via Nemlogin",
             "support": {
                 "issues": "https://github.com/OS2web/os2web_nemlogin/issues",
-                "source": "https://github.com/OS2web/os2web_nemlogin/tree/1.2.6"
+                "source": "https://github.com/OS2web/os2web_nemlogin/tree/1.2.7"
             },
-            "time": "2024-03-27T11:50:34+00:00"
+            "time": "2024-05-10T12:56:29+00:00"
         },
         {
             "name": "os2web/os2web_simplesaml",
@@ -11701,12 +11969,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_simplesaml.git",
-                "reference": "dcffcb8cbbb666e10adfaf8d84d601d94be3e575"
+                "reference": "546cf2fa81428f79a3b873623adcf587b22e9f13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_simplesaml/zipball/dcffcb8cbbb666e10adfaf8d84d601d94be3e575",
-                "reference": "dcffcb8cbbb666e10adfaf8d84d601d94be3e575",
+                "url": "https://api.github.com/repos/OS2web/os2web_simplesaml/zipball/546cf2fa81428f79a3b873623adcf587b22e9f13",
+                "reference": "546cf2fa81428f79a3b873623adcf587b22e9f13",
                 "shasum": ""
             },
             "require": {
@@ -11720,9 +11988,9 @@
             "description": "Enhances integration with simplesamlphp_auth module, by force triggering SimpleSAML auth page redirect when certain criteria are met",
             "support": {
                 "issues": "https://github.com/OS2web/os2web_simplesaml/issues",
-                "source": "https://github.com/OS2web/os2web_simplesaml/tree/drupal10"
+                "source": "https://github.com/OS2web/os2web_simplesaml/tree/master"
             },
-            "time": "2024-04-29T08:35:01+00:00"
+            "time": "2024-05-17T10:42:06+00:00"
         },
         {
             "name": "os2web/os2web_simplesaml_checklist",
@@ -11821,6 +12089,129 @@
             "time": "2024-05-08T12:18:48+00:00"
         },
         {
+            "name": "paragonie/halite",
+            "version": "v5.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/paragonie/halite.git",
+                "reference": "aee234711b29cccb4a17aaaf6104fc542862fc1e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/paragonie/halite/zipball/aee234711b29cccb4a17aaaf6104fc542862fc1e",
+                "reference": "aee234711b29cccb4a17aaaf6104fc542862fc1e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "paragonie/constant_time_encoding": "^2|^3",
+                "paragonie/hidden-string": "^1|^2",
+                "paragonie/sodium_compat": "^1|^2",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9",
+                "vimeo/psalm": "^4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ParagonIE\\Halite\\": "./src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Paragon Initiative Enterprises",
+                    "email": "info@paragonie.com",
+                    "homepage": "https://paragonie.com"
+                }
+            ],
+            "description": "High-level cryptography interface powered by libsodium",
+            "homepage": "https://github.com/paragonie/halite",
+            "keywords": [
+                "Argon2i",
+                "BLAKE",
+                "BLAKE2",
+                "BLAKE2b",
+                "Curve25519",
+                "Ed25519",
+                "X25519",
+                "Xsalsa20",
+                "argon2",
+                "cryptography",
+                "encryption",
+                "ext-sodium",
+                "hashing",
+                "libsodium",
+                "password",
+                "public-key",
+                "signatures",
+                "sodium"
+            ],
+            "support": {
+                "docs": "https://github.com/paragonie/halite/tree/master/doc",
+                "issues": "https://github.com/paragonie/halite/issues",
+                "source": "https://github.com/paragonie/halite/tree/v5.1.2"
+            },
+            "time": "2024-05-08T12:59:43+00:00"
+        },
+        {
+            "name": "paragonie/hidden-string",
+            "version": "v2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/paragonie/hidden-string.git",
+                "reference": "87886ab8ed7abb61c8bcf8d67cd3d3527feedbf7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/paragonie/hidden-string/zipball/87886ab8ed7abb61c8bcf8d67cd3d3527feedbf7",
+                "reference": "87886ab8ed7abb61c8bcf8d67cd3d3527feedbf7",
+                "shasum": ""
+            },
+            "require": {
+                "paragonie/constant_time_encoding": "^2|^3",
+                "php": "^7.4|^8"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5",
+                "vimeo/psalm": "^4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ParagonIE\\HiddenString\\": "./src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Paragon Initiative Enterprises",
+                    "email": "info@paragonie.com",
+                    "homepage": "https://paragonie.com"
+                }
+            ],
+            "description": "Encapsulate strings in an object to hide them from stack traces",
+            "homepage": "https://github.com/paragonie/hidden-string",
+            "keywords": [
+                "hidden",
+                "stack trace",
+                "string"
+            ],
+            "support": {
+                "issues": "https://github.com/paragonie/hidden-string/issues",
+                "source": "https://github.com/paragonie/hidden-string/tree/v2.2.0"
+            },
+            "time": "2024-05-08T12:45:06+00:00"
+        },
+        {
             "name": "paragonie/random_compat",
             "version": "v9.99.100",
             "source": {
@@ -11869,6 +12260,92 @@
                 "source": "https://github.com/paragonie/random_compat"
             },
             "time": "2020-10-15T08:29:30+00:00"
+        },
+        {
+            "name": "paragonie/sodium_compat",
+            "version": "v2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/paragonie/sodium_compat.git",
+                "reference": "f65c82939ab17aeff538f9bf6d582f65cc7f255e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/paragonie/sodium_compat/zipball/f65c82939ab17aeff538f9bf6d582f65cc7f255e",
+                "reference": "f65c82939ab17aeff538f9bf6d582f65cc7f255e",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1",
+                "php-64bit": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7|^8|^9",
+                "vimeo/psalm": "^4|^5"
+            },
+            "suggest": {
+                "ext-sodium": "Better performance, password hashing (Argon2i), secure memory management (memzero), and better security."
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "autoload.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "ISC"
+            ],
+            "authors": [
+                {
+                    "name": "Paragon Initiative Enterprises",
+                    "email": "security@paragonie.com"
+                },
+                {
+                    "name": "Frank Denis",
+                    "email": "jedisct1@pureftpd.org"
+                }
+            ],
+            "description": "Pure PHP implementation of libsodium; uses the PHP extension if it exists",
+            "keywords": [
+                "Authentication",
+                "BLAKE2b",
+                "ChaCha20",
+                "ChaCha20-Poly1305",
+                "Chapoly",
+                "Curve25519",
+                "Ed25519",
+                "EdDSA",
+                "Edwards-curve Digital Signature Algorithm",
+                "Elliptic Curve Diffie-Hellman",
+                "Poly1305",
+                "Pure-PHP cryptography",
+                "RFC 7748",
+                "RFC 8032",
+                "Salpoly",
+                "Salsa20",
+                "X25519",
+                "XChaCha20-Poly1305",
+                "XSalsa20-Poly1305",
+                "Xchacha20",
+                "Xsalsa20",
+                "aead",
+                "cryptography",
+                "ecdh",
+                "elliptic curve",
+                "elliptic curve cryptography",
+                "encryption",
+                "libsodium",
+                "php",
+                "public-key cryptography",
+                "secret-key cryptography",
+                "side-channel resistant"
+            ],
+            "support": {
+                "issues": "https://github.com/paragonie/sodium_compat/issues",
+                "source": "https://github.com/paragonie/sodium_compat/tree/v2.0.1"
+            },
+            "time": "2024-04-24T12:06:31+00:00"
         },
         {
             "name": "pear/archive_tar",
@@ -12879,16 +13356,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.10.67",
+            "version": "1.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "16ddbe776f10da6a95ebd25de7c1dbed397dc493"
+                "reference": "e524358f930e41a2b4cca1320e3b04fc26b39e0b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/16ddbe776f10da6a95ebd25de7c1dbed397dc493",
-                "reference": "16ddbe776f10da6a95ebd25de7c1dbed397dc493",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/e524358f930e41a2b4cca1320e3b04fc26b39e0b",
+                "reference": "e524358f930e41a2b4cca1320e3b04fc26b39e0b",
                 "shasum": ""
             },
             "require": {
@@ -12933,29 +13410,28 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-04-16T07:22:02+00:00"
+            "time": "2024-05-15T08:00:59+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",
-            "version": "1.1.4",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan-deprecation-rules.git",
-                "reference": "089d8a8258ed0aeefdc7b68b6c3d25572ebfdbaa"
+                "reference": "fa8cce7720fa782899a0aa97b6a41225d1bb7b26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan-deprecation-rules/zipball/089d8a8258ed0aeefdc7b68b6c3d25572ebfdbaa",
-                "reference": "089d8a8258ed0aeefdc7b68b6c3d25572ebfdbaa",
+                "url": "https://api.github.com/repos/phpstan/phpstan-deprecation-rules/zipball/fa8cce7720fa782899a0aa97b6a41225d1bb7b26",
+                "reference": "fa8cce7720fa782899a0aa97b6a41225d1bb7b26",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.2 || ^8.0",
-                "phpstan/phpstan": "^1.10.3"
+                "phpstan/phpstan": "^1.11"
             },
             "require-dev": {
                 "php-parallel-lint/php-parallel-lint": "^1.2",
-                "phpstan/phpstan-php-parser": "^1.1",
                 "phpstan/phpstan-phpunit": "^1.0",
                 "phpunit/phpunit": "^9.5"
             },
@@ -12979,9 +13455,9 @@
             "description": "PHPStan rules for detecting usage of deprecated classes, methods, properties, constants and traits.",
             "support": {
                 "issues": "https://github.com/phpstan/phpstan-deprecation-rules/issues",
-                "source": "https://github.com/phpstan/phpstan-deprecation-rules/tree/1.1.4"
+                "source": "https://github.com/phpstan/phpstan-deprecation-rules/tree/1.2.0"
             },
-            "time": "2023-08-05T09:02:04+00:00"
+            "time": "2024-04-20T06:39:48+00:00"
         },
         {
             "name": "politsin/jquery-ui-touch-punch",

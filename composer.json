@@ -103,8 +103,6 @@
         "drupal/upgrade_status": "^4.0",
         "drupal/webform_analysis": "^1.0@beta",
         "drupal/webform_composite": "^1.0@RC",
-        "drupal/webform_migrate": "^1.2",
-        "drupal/webform_node_element": "^1.1",
         "drupal/webform_views": "^5.0@alpha",
         "drush/drush": "^11",
         "os2core/os2core": "dev-drupal10",
@@ -190,9 +188,6 @@
             "force-reset": true
         },
         "patches": {
-            "drupal/coc_forms_auto_export" : {
-                "3286562 - Automated Drupal 10 compatibility fixes" : "https://www.drupal.org/files/issues/2022-06-15/coc_forms_auto_export.2.0.x-dev.rector.patch"
-            },
             "drupal/config_entity_revisions" : {
                 "3373931 D10 compatability fix" : "https://www.drupal.org/files/issues/2023-09-05/3373931-config_entity_revisions_drupal_10-3.patch"
             },
@@ -204,12 +199,6 @@
             "drupal/webform_embed": {
                 "Enabled D9 support": "./patches/webform_embed-d9.patch",
                 "3170384 - Fixed D9 imcopatibility": "https://www.drupal.org/files/issues/2020-09-11/3170384-2.patch"
-            },
-            "drupal/webform_migrate": {
-                "Set to support. Checkbox condition fixes": "./patches/setto-and-checkboxes-condition-fix-onlyD7.patch"
-            },
-            "drupal/coc_forms_auto_export" : {
-                "3259009 - PHP Warnings/Notices on Download Page" : "https://git.drupalcode.org/project/coc_forms_auto_export/-/merge_requests/1.diff"
             }
         }
     }
