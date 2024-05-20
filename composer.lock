@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ab109ac3afab4de3694d6c28cb7b6966",
+    "content-hash": "6e30f5080567b4af30355263136aaee9",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -11056,12 +11056,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2Forms/os2forms.git",
-                "reference": "9a8f9c5a962d5196972faec8c9149fe02f1b9314"
+                "reference": "e36cbd553d9c520a224c7cff37966aca8133158c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2Forms/os2forms/zipball/9a8f9c5a962d5196972faec8c9149fe02f1b9314",
-                "reference": "9a8f9c5a962d5196972faec8c9149fe02f1b9314",
+                "url": "https://api.github.com/repos/OS2Forms/os2forms/zipball/e36cbd553d9c520a224c7cff37966aca8133158c",
+                "reference": "e36cbd553d9c520a224c7cff37966aca8133158c",
                 "shasum": ""
             },
             "require": {
@@ -11164,7 +11164,8 @@
                 },
                 "drupal-lenient": {
                     "allowed-list": [
-                        "drupal/coc_forms_auto_export"
+                        "drupal/coc_forms_auto_export",
+                        "drupal/webform_node_element"
                     ]
                 }
             },
@@ -11177,7 +11178,7 @@
                 "issues": "https://github.com/OS2Forms/os2forms/issues",
                 "source": "https://github.com/OS2Forms/os2forms/tree/f/d10_readiness"
             },
-            "time": "2024-05-20T10:31:20+00:00"
+            "time": "2024-05-20T11:04:21+00:00"
         },
         {
             "name": "os2forms/os2forms_egbolig",
@@ -18772,7 +18773,8 @@
         "os2forms/os2forms": 20,
         "os2forms/os2forms_egbolig": 20,
         "os2forms/os2forms_forloeb_profile": 20,
-        "os2web/os2web_logging": 20
+        "os2web/os2web_logging": 20,
+        "drupal/coc_forms_auto_export": 15
     },
     "prefer-stable": true,
     "prefer-lowest": false,
