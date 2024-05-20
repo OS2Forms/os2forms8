@@ -2813,7 +2813,12 @@
                     "role": "Maintainer"
                 },
                 {
-                    "name": "Mohamed Sathik"
+                    "name": "Mohamed Sathik",
+                    "homepage": "https://www.drupal.org/user/130909"
+                },
+                {
+                    "name": "ozwebapps",
+                    "homepage": "https://www.drupal.org/user/101029"
                 }
             ],
             "description": "Adds the ability to automate export of Webform results and email or SFTP generated CSV files.",
@@ -8967,27 +8972,27 @@
         },
         {
             "name": "drupal/webform_remote_handlers",
-            "version": "3.0.3",
+            "version": "3.0.4",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform_remote_handlers.git",
-                "reference": "3.0.3"
+                "reference": "3.0.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform_remote_handlers-3.0.3.zip",
-                "reference": "3.0.3",
-                "shasum": "c0113d8961aa7f40506b5ebe2e6ccffbb598017a"
+                "url": "https://ftp.drupal.org/files/projects/webform_remote_handlers-3.0.4.zip",
+                "reference": "3.0.4",
+                "shasum": "1966994de0cb809136b4d97e7276ad81d876fd9a"
             },
             "require": {
-                "drupal/core": "^8 || ^9 || ^10",
+                "drupal/core": "^8 || ^9 || ^10 || ^11",
                 "drupal/webform": "*"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.3",
-                    "datestamp": "1687168695",
+                    "version": "3.0.4",
+                    "datestamp": "1715957771",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -9815,16 +9820,16 @@
         },
         {
             "name": "gettext/gettext",
-            "version": "v4.8.11",
+            "version": "v4.8.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-gettext/Gettext.git",
-                "reference": "b632aaf5e4579d0b2ae8bc61785e238bff4c5156"
+                "reference": "11af89ee6c087db3cf09ce2111a150bca5c46e12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-gettext/Gettext/zipball/b632aaf5e4579d0b2ae8bc61785e238bff4c5156",
-                "reference": "b632aaf5e4579d0b2ae8bc61785e238bff4c5156",
+                "url": "https://api.github.com/repos/php-gettext/Gettext/zipball/11af89ee6c087db3cf09ce2111a150bca5c46e12",
+                "reference": "11af89ee6c087db3cf09ce2111a150bca5c46e12",
                 "shasum": ""
             },
             "require": {
@@ -9876,7 +9881,7 @@
             "support": {
                 "email": "oom@oscarotero.com",
                 "issues": "https://github.com/oscarotero/Gettext/issues",
-                "source": "https://github.com/php-gettext/Gettext/tree/v4.8.11"
+                "source": "https://github.com/php-gettext/Gettext/tree/v4.8.12"
             },
             "funding": [
                 {
@@ -9892,7 +9897,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2023-08-14T15:15:05+00:00"
+            "time": "2024-05-18T10:25:07+00:00"
         },
         {
             "name": "gettext/languages",
@@ -11847,12 +11852,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2Forms/os2forms.git",
-                "reference": "fdccb8e5905186bfb635d140bd1c8c69f6eff15e"
+                "reference": "a10579cbb5923996a9c5d7158993ba7ec45027b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2Forms/os2forms/zipball/fdccb8e5905186bfb635d140bd1c8c69f6eff15e",
-                "reference": "fdccb8e5905186bfb635d140bd1c8c69f6eff15e",
+                "url": "https://api.github.com/repos/OS2Forms/os2forms/zipball/a10579cbb5923996a9c5d7158993ba7ec45027b5",
+                "reference": "a10579cbb5923996a9c5d7158993ba7ec45027b5",
                 "shasum": ""
             },
             "require": {
@@ -11962,7 +11967,7 @@
                 "issues": "https://github.com/OS2Forms/os2forms/issues",
                 "source": "https://github.com/OS2Forms/os2forms/tree/f/d10_readiness"
             },
-            "time": "2024-05-17T10:05:16+00:00"
+            "time": "2024-05-17T10:51:45+00:00"
         },
         {
             "name": "os2forms/os2forms_egbolig",
