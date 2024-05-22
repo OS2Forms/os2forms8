@@ -125,16 +125,16 @@
         },
         {
             "name": "chi-teck/drupal-code-generator",
-            "version": "3.5.0",
+            "version": "3.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Chi-teck/drupal-code-generator.git",
-                "reference": "74c2dc687e124bfc4001e73e9346b33067e2ec2b"
+                "reference": "7794c268309a6fd7aeecfd1246a01238c14384c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Chi-teck/drupal-code-generator/zipball/74c2dc687e124bfc4001e73e9346b33067e2ec2b",
-                "reference": "74c2dc687e124bfc4001e73e9346b33067e2ec2b",
+                "url": "https://api.github.com/repos/Chi-teck/drupal-code-generator/zipball/7794c268309a6fd7aeecfd1246a01238c14384c4",
+                "reference": "7794c268309a6fd7aeecfd1246a01238c14384c4",
                 "shasum": ""
             },
             "require": {
@@ -179,9 +179,9 @@
             "description": "Drupal code generator",
             "support": {
                 "issues": "https://github.com/Chi-teck/drupal-code-generator/issues",
-                "source": "https://github.com/Chi-teck/drupal-code-generator/tree/3.5.0"
+                "source": "https://github.com/Chi-teck/drupal-code-generator/tree/3.6.0"
             },
-            "time": "2024-04-11T11:23:44+00:00"
+            "time": "2024-05-20T12:50:42+00:00"
         },
         {
             "name": "commerceguys/addressing",
@@ -11255,16 +11255,16 @@
         },
         {
             "name": "os2forms/os2forms_sync",
-            "version": "1.1.3",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/itk-dev/os2forms_sync.git",
-                "reference": "641a043bd3b5d9ec825d6c84f3b19d82a6080823"
+                "reference": "6194b5101fd27a5a7023e7ddfcfbf96d1752ec6f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/itk-dev/os2forms_sync/zipball/641a043bd3b5d9ec825d6c84f3b19d82a6080823",
-                "reference": "641a043bd3b5d9ec825d6c84f3b19d82a6080823",
+                "url": "https://api.github.com/repos/itk-dev/os2forms_sync/zipball/6194b5101fd27a5a7023e7ddfcfbf96d1752ec6f",
+                "reference": "6194b5101fd27a5a7023e7ddfcfbf96d1752ec6f",
                 "shasum": ""
             },
             "require": {
@@ -11292,9 +11292,9 @@
             "description": "OS2Forms sync",
             "support": {
                 "issues": "https://github.com/itk-dev/os2forms_sync/issues",
-                "source": "https://github.com/itk-dev/os2forms_sync/tree/1.1.3"
+                "source": "https://github.com/itk-dev/os2forms_sync/tree/1.2.0"
             },
-            "time": "2023-08-31T09:07:10+00:00"
+            "time": "2024-05-21T08:54:29+00:00"
         },
         {
             "name": "os2web/os2web_datalookup",
