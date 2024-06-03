@@ -11056,12 +11056,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2Forms/os2forms.git",
-                "reference": "e36cbd553d9c520a224c7cff37966aca8133158c"
+                "reference": "dc46fb61ffbfcc0aa3ed98530ade74ac603cf078"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2Forms/os2forms/zipball/e36cbd553d9c520a224c7cff37966aca8133158c",
-                "reference": "e36cbd553d9c520a224c7cff37966aca8133158c",
+                "url": "https://api.github.com/repos/OS2Forms/os2forms/zipball/dc46fb61ffbfcc0aa3ed98530ade74ac603cf078",
+                "reference": "dc46fb61ffbfcc0aa3ed98530ade74ac603cf078",
                 "shasum": ""
             },
             "require": {
@@ -11160,6 +11160,9 @@
                     },
                     "drupal/webform_encrypt": {
                         "Ensure data is base64 encoded (https://www.drupal.org/project/webform_encrypt/issues/3399414)": "https://git.drupalcode.org/project/webform_encrypt/-/merge_requests/4.patch"
+                    },
+                    "drupal/config_entity_revisions": {
+                        "Entity queries must explicitly set whether the query should be access checked or not": "https://www.drupal.org/files/issues/2024-06-03/accessCheck.patch"
                     }
                 },
                 "drupal-lenient": {
@@ -11178,7 +11181,7 @@
                 "issues": "https://github.com/OS2Forms/os2forms/issues",
                 "source": "https://github.com/OS2Forms/os2forms/tree/f/d10_readiness"
             },
-            "time": "2024-05-20T11:04:21+00:00"
+            "time": "2024-06-03T12:59:00+00:00"
         },
         {
             "name": "os2forms/os2forms_egbolig",
