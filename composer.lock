@@ -10169,16 +10169,16 @@
         },
         {
             "name": "itk-dev/beskedfordeler-drupal",
-            "version": "1.1.1",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/itk-dev/beskedfordeler-drupal.git",
-                "reference": "8fdab703b1bcfbc3ccc16b26ed98d9caa41994eb"
+                "reference": "4967ca4aa8e36a721fa6fab843682671b51de56a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/itk-dev/beskedfordeler-drupal/zipball/8fdab703b1bcfbc3ccc16b26ed98d9caa41994eb",
-                "reference": "8fdab703b1bcfbc3ccc16b26ed98d9caa41994eb",
+                "url": "https://api.github.com/repos/itk-dev/beskedfordeler-drupal/zipball/4967ca4aa8e36a721fa6fab843682671b51de56a",
+                "reference": "4967ca4aa8e36a721fa6fab843682671b51de56a",
                 "shasum": ""
             },
             "require": {
@@ -10210,9 +10210,9 @@
             "description": "Beskedfordeler for Drupal",
             "support": {
                 "issues": "https://github.com/itk-dev/beskedfordeler-drupal/issues",
-                "source": "https://github.com/itk-dev/beskedfordeler-drupal/tree/1.1.1"
+                "source": "https://github.com/itk-dev/beskedfordeler-drupal/tree/1.2.0"
             },
-            "time": "2023-08-09T11:18:46+00:00"
+            "time": "2024-06-04T07:15:53+00:00"
         },
         {
             "name": "itk-dev/serviceplatformen",
