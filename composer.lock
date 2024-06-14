@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "92f554319000c4d3faf1d0496d701e14",
+    "content-hash": "4bbd9f7cc335b16a2eb99ea942639636",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3385,20 +3385,20 @@
         },
         {
             "name": "drupal/diff",
-            "version": "1.4.0",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/diff.git",
-                "reference": "8.x-1.4"
+                "reference": "8.x-1.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/diff-8.x-1.4.zip",
-                "reference": "8.x-1.4",
-                "shasum": "8f1e95e6c7f576999c5b2880023de2c2aaaf99b3"
+                "url": "https://ftp.drupal.org/files/projects/diff-8.x-1.7.zip",
+                "reference": "8.x-1.7",
+                "shasum": "d282bdf3350ac71f95b38576a9f397bdbab8d249"
             },
             "require": {
-                "drupal/core": "^9.3 || ^10 || ^11",
+                "drupal/core": "^10 || ^11",
                 "mkalkbrenner/php-htmldiff-advanced": "~0.0.8",
                 "php": "^8.1"
             },
@@ -3415,8 +3415,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.4",
-                    "datestamp": "1717130431",
+                    "version": "8.x-1.7",
+                    "datestamp": "1718073570",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5621,21 +5621,21 @@
         },
         {
             "name": "drupal/ldap",
-            "version": "4.10.0",
+            "version": "4.11.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/ldap.git",
-                "reference": "8.x-4.10"
+                "reference": "8.x-4.11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ldap-8.x-4.10.zip",
-                "reference": "8.x-4.10",
-                "shasum": "4f6c9a3a0333fef24acc9b463ccb82407e98602d"
+                "url": "https://ftp.drupal.org/files/projects/ldap-8.x-4.11.zip",
+                "reference": "8.x-4.11",
+                "shasum": "24f146d6ab404d78efd4224a2e364c49330945b6"
             },
             "require": {
                 "drupal/authorization": "^1.0",
-                "drupal/core": "^9.3 || ^10",
+                "drupal/core": "^9.3 || ^10 || ^11",
                 "drupal/externalauth": "^2.0",
                 "drupal/ldap_servers": "*",
                 "symfony/ldap": "^5.4 || ^6.0"
@@ -5653,8 +5653,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-4.10",
-                    "datestamp": "1714677786",
+                    "version": "8.x-4.11",
+                    "datestamp": "1718038941",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5759,17 +5759,17 @@
         },
         {
             "name": "drupal/ldap_servers",
-            "version": "4.10.0",
+            "version": "4.11.0",
             "require": {
-                "drupal/core": "^9.3 || ^10",
+                "drupal/core": "^9.3 || ^10 || ^11",
                 "drupal/externalauth": "*",
                 "drupal/ldap": "^4"
             },
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "8.x-4.10",
-                    "datestamp": "1714677786",
+                    "version": "8.x-4.11",
+                    "datestamp": "1718038941",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -11204,7 +11204,7 @@
         },
         {
             "name": "os2forms/os2forms_egbolig",
-            "version": "dev-f/d10_readiness",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2Forms/os2forms_egbolig.git",
@@ -11219,6 +11219,7 @@
             "require": {
                 "os2forms/os2forms": "^2.1 || ^3.0 || dev-f/d10_readiness"
             },
+            "default-branch": true,
             "type": "drupal-module",
             "notification-url": "https://packagist.org/downloads/",
             "license": [

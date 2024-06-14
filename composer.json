@@ -111,7 +111,7 @@
         "mglaman/composer-drupal-lenient": "^1.0",
         "os2core/os2core": "^3.0",
         "os2forms/os2forms": "dev-f/d10_readiness",
-        "os2forms/os2forms_egbolig": "dev-f/d10_readiness",
+        "os2forms/os2forms_egbolig": "dev-master",
         "os2forms/os2forms_forloeb_profile": "dev-f/d10_readiness",
         "os2forms/os2forms_sync": "^1.1",
         "os2web/os2web_logging": "dev-master",
