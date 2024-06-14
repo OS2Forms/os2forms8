@@ -87,6 +87,7 @@
         "composer/installers": "^1.9",
         "cweagans/composer-patches": "^1.7",
         "drupal/bootstrap": "^3.21",
+        "drupal/coc_forms_auto_export": "^2.0@alpha",
         "drupal/color": "^1.0",
         "drupal/core-composer-scaffold": "^10",
         "drupal/core-project-message": "^10",
@@ -104,9 +105,11 @@
         "drupal/telephone_validation": "^2.2",
         "drupal/webform_analysis": "^1.0@beta",
         "drupal/webform_composite": "^1.0@RC",
+        "drupal/webform_node_element": "^1.2",
         "drupal/webform_views": "^5.0@alpha",
         "drush/drush": "^12",
-        "os2core/os2core": "dev-drupal10",
+        "mglaman/composer-drupal-lenient": "^1.0",
+        "os2core/os2core": "^3.0",
         "os2forms/os2forms": "dev-f/d10_readiness",
         "os2forms/os2forms_egbolig": "dev-f/d10_readiness",
         "os2forms/os2forms_forloeb_profile": "dev-f/d10_readiness",
@@ -115,10 +118,7 @@
         "simplesamlphp/simplesamlphp": "^2.0",
         "vlucas/phpdotenv": "^5.1",
         "webflo/drupal-finder": "^1.2",
-        "webmozart/path-util": "^2.3",
-        "mglaman/composer-drupal-lenient": "^1.0",
-        "drupal/coc_forms_auto_export": "^2.0@alpha",
-        "drupal/webform_node_element": "^1.2"
+        "webmozart/path-util": "^2.3"
     },
     "require-dev": {
         "drupal/devel": "^5.0",
