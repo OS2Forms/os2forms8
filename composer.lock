@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1e0b2b5801e26f8916e837e3a76706b6",
+    "content-hash": "d7bf7b69210cd883477f3cfbb0399a1f",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -12357,16 +12357,16 @@
         },
         {
             "name": "os2forms/os2forms",
-            "version": "3.15.1",
+            "version": "3.15.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2Forms/os2forms.git",
-                "reference": "2c1ee57adaf2542b900af7baa060f9e8b2c75675"
+                "reference": "e07f4040d50c31cb584826668fc67029c19b019f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2Forms/os2forms/zipball/2c1ee57adaf2542b900af7baa060f9e8b2c75675",
-                "reference": "2c1ee57adaf2542b900af7baa060f9e8b2c75675",
+                "url": "https://api.github.com/repos/OS2Forms/os2forms/zipball/e07f4040d50c31cb584826668fc67029c19b019f",
+                "reference": "e07f4040d50c31cb584826668fc67029c19b019f",
                 "shasum": ""
             },
             "require": {
@@ -12471,7 +12471,8 @@
                         "entityQuery reference JOINs should specify target_type (https://www.drupal.org/project/dynamic_entity_reference/issues/3120952#comment-14141038)": "https://www.drupal.org/files/issues/2021-06-22/entityquery-reference-joins-should-specify-target_type-3120952-24.patch"
                     },
                     "drupal/webform_encrypt": {
-                        "Ensure data is base64 encoded (https://www.drupal.org/project/webform_encrypt/issues/3399414)": "https://git.drupalcode.org/project/webform_encrypt/-/merge_requests/4.patch"
+                        "Ensure data is base64 encoded (https://www.drupal.org/project/webform_encrypt/issues/3399414)": "https://git.drupalcode.org/project/webform_encrypt/-/merge_requests/4.patch",
+                        "PHP Warning if unserialize fails (https://www.drupal.org/project/webform_encrypt/issues/3292305)": "https://www.drupal.org/files/issues/2022-06-23/unserialize-php-notice.patch"
                     }
                 }
             },
@@ -12482,9 +12483,9 @@
             "description": "Drupal 8 OS2Form module provides advanced webform functionality for Danish Municipalities",
             "support": {
                 "issues": "https://github.com/OS2Forms/os2forms/issues",
-                "source": "https://github.com/OS2Forms/os2forms/tree/3.15.1"
+                "source": "https://github.com/OS2Forms/os2forms/tree/3.15.3"
             },
-            "time": "2024-05-14T08:23:08+00:00"
+            "time": "2024-06-25T08:54:11+00:00"
         },
         {
             "name": "os2forms/os2forms_egbolig",
@@ -25498,7 +25499,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=7.1"
+        "php": ">=7.4"
     },
     "platform-dev": [],
     "plugin-api-version": "2.3.0"
