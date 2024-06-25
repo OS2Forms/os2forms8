@@ -113,3 +113,8 @@ td > .form-item > .form-element--type-select, td > .ajax-new-content > .form-ite
   display: flex;
   align-items: center;
 }
+
+.webform-likert-table .js-form-type-radio {
+  display: flex;
+  justify-content: center;
+}
