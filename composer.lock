@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d7bf7b69210cd883477f3cfbb0399a1f",
+    "content-hash": "bdb379c69fff7d890004acee4fd4ad96",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -12357,16 +12357,16 @@
         },
         {
             "name": "os2forms/os2forms",
-            "version": "3.15.3",
+            "version": "3.15.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2Forms/os2forms.git",
-                "reference": "e07f4040d50c31cb584826668fc67029c19b019f"
+                "reference": "e1eb43c490283efa6773dac693ec9d76992bd22f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2Forms/os2forms/zipball/e07f4040d50c31cb584826668fc67029c19b019f",
-                "reference": "e07f4040d50c31cb584826668fc67029c19b019f",
+                "url": "https://api.github.com/repos/OS2Forms/os2forms/zipball/e1eb43c490283efa6773dac693ec9d76992bd22f",
+                "reference": "e1eb43c490283efa6773dac693ec9d76992bd22f",
                 "shasum": ""
             },
             "require": {
@@ -12459,7 +12459,8 @@
                         "2733781 - Add Export to Word Support": "https://www.drupal.org/files/issues/2019-11-22/2733781-47.patch"
                     },
                     "drupal/webform": {
-                        "Unlock possibility of using Entity print module export to Word": "https://www.drupal.org/files/issues/2020-02-29/3096552-6.patch"
+                        "Unlock possibility of using Entity print module export to Word": "https://www.drupal.org/files/issues/2020-02-29/3096552-6.patch",
+                        "Webform computed element post save alter": "https://www.drupal.org/files/issues/2024-06-25/webform_computed_post_save_field_alter.patch"
                     },
                     "drupal/user_default_page": {
                         "Warning: in_array() expects parameter 2 to be array, null given in user_default_page_user_logout() (https://www.drupal.org/node/3246986)": "https://www.drupal.org/files/issues/2021-11-01/user_default_page-3246986-2.patch"
@@ -12483,9 +12484,9 @@
             "description": "Drupal 8 OS2Form module provides advanced webform functionality for Danish Municipalities",
             "support": {
                 "issues": "https://github.com/OS2Forms/os2forms/issues",
-                "source": "https://github.com/OS2Forms/os2forms/tree/3.15.3"
+                "source": "https://github.com/OS2Forms/os2forms/tree/3.15.6"
             },
-            "time": "2024-06-25T08:54:11+00:00"
+            "time": "2024-07-16T11:11:31+00:00"
         },
         {
             "name": "os2forms/os2forms_egbolig",
