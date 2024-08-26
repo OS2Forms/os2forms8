@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5c597515064b53fd03f1c95d6e3fb3db",
+    "content-hash": "1c1eaaaa4788a350e95ff4422ee64457",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4142,6 +4142,57 @@
             "homepage": "https://www.drupal.org/project/entity_embed",
             "support": {
                 "source": "https://git.drupalcode.org/project/entity_embed"
+            }
+        },
+        {
+            "name": "drupal/entity_export_csv",
+            "version": "2.0.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/entity_export_csv.git",
+                "reference": "2.0.0-beta1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/entity_export_csv-2.0.0-beta1.zip",
+                "reference": "2.0.0-beta1",
+                "shasum": "a4dfc637a9b0098a613e8fee9172b4e9f0b20423"
+            },
+            "require": {
+                "drupal/core": "^9.3 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0-beta1",
+                    "datestamp": "1699451709",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "flocondetoile",
+                    "homepage": "https://www.drupal.org/user/2006064"
+                }
+            ],
+            "description": "Export Content Entity to CSV.",
+            "homepage": "https://www.drupal.org/project/entity_export_csv",
+            "keywords": [
+                "CSV",
+                "Content entity",
+                "Drupal",
+                "Export"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/entity_export_csv",
+                "issues": "https://www.drupal.org/project/issues/entity_export_csv"
             }
         },
         {
