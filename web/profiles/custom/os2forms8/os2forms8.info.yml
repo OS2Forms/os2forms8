@@ -1,7 +1,7 @@
 name: OS2Forms
 type: profile
 description: 'OS2Forms installation profile (based on OS2Core)'
-core_version_requirement: '^8.9 || ^9'
+core_version_requirement: '^9 || ^10'
 install:
   # Drupal core
   - node

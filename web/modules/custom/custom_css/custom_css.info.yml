@@ -1,6 +1,6 @@
 name: 'OS2Forms Custom CSS'
 type: module
 description: 'Adds custom CSS to the site, to fix some theme issues.'
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^8 || ^9 || ^10
 package: OS2Forms
 version: 1.0
