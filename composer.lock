@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1c1eaaaa4788a350e95ff4422ee64457",
+    "content-hash": "499f67e9de4921a7a64b43d6a6a86c25",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -7628,54 +7628,58 @@
         },
         {
             "name": "drupal/straw",
-            "version": "1.4.0",
+            "version": "2.0.0-beta1",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/project/sodium.git",
-                "reference": "8.x-2.4"
+                "url": "https://git.drupalcode.org/project/straw.git",
+                "reference": "2.0.0-beta1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/sodium-8.x-2.4.zip",
-                "reference": "8.x-2.4",
-                "shasum": "64e6a527797a8ed192e4e19e6abf288c104a64b5"
+                "url": "https://ftp.drupal.org/files/projects/straw-2.0.0-beta1.zip",
+                "reference": "2.0.0-beta1",
+                "shasum": "c52f76962eb236057ed2505b2016d71984797f26"
             },
             "require": {
-                "drupal/core": "^8.9.0 || ^9.0 || ^10",
-                "drupal/encrypt": "^3.0",
-                "drupal/key": "^1.0",
-                "paragonie/halite": "^4.1 || ^5.0",
-                "php": ">=7.2"
+                "drupal/core": "^9 || ^10 || ^11"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.4",
-                    "datestamp": "1674407491",
+                    "version": "2.0.0-beta1",
+                    "datestamp": "1717271050",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
                     }
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
-                    "name": "rlhawk",
-                    "homepage": "https://www.drupal.org/user/352283"
+                    "name": "brian.seek",
+                    "homepage": "https://www.drupal.org/user/2625761"
                 },
                 {
-                    "name": "rtackett",
-                    "homepage": "https://www.drupal.org/user/157847"
+                    "name": "camprandall",
+                    "homepage": "https://www.drupal.org/user/1837862"
+                },
+                {
+                    "name": "jcnventura",
+                    "homepage": "https://www.drupal.org/user/122464"
+                },
+                {
+                    "name": "mikeegoulding",
+                    "homepage": "https://www.drupal.org/user/2867877"
                 }
             ],
-            "description": "Allows data to be encrypted and decrypted using Libsodium.",
-            "homepage": "https://www.drupal.org/project/sodium",
+            "description": "Adds a form widget for seeing and editing the whole term hierarchy in an autocomplete.",
+            "homepage": "https://drupal.org/project/straw",
             "support": {
-                "source": "https://git.drupalcode.org/project/sodium"
+                "source": "https://git.drupalcode.org/project/straw"
             }
         },
         {
@@ -18901,6 +18905,7 @@
     "stability-flags": {
         "drupal/coc_forms_auto_export": 15,
         "drupal/entity_export_csv": 10,
+        "drupal/straw": 10,
         "drupal/webform_analysis": 10,
         "drupal/webform_composite": 5,
         "drupal/webform_views": 15,
@@ -18912,7 +18917,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=7.4"
+        "php": ">=7.1"
     },
     "platform-dev": [],
     "plugin-api-version": "2.3.0"

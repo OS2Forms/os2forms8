@@ -103,6 +103,7 @@
         "drupal/queue_ui": "^3.1",
         "drupal/rdf": "^2.0",
         "drupal/restui": "^1.20",
+        "drupal/straw": "^2.0@beta",
         "drupal/telephone_validation": "^2.2",
         "drupal/webform_analysis": "^1.0@beta",
         "drupal/webform_composite": "^1.0@RC",
