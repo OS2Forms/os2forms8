@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "499f67e9de4921a7a64b43d6a6a86c25",
+    "content-hash": "234724b14a368bf8112a14ceee5dedb7",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -11182,16 +11182,16 @@
         },
         {
             "name": "os2forms/os2forms",
-            "version": "dev-f/d10_readiness",
+            "version": "3.16.0-beta1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2Forms/os2forms.git",
-                "reference": "a552b9af9e62694552c9a993a6dfd79835c97a9b"
+                "reference": "1f4ada55413904930037225e4368dd23f4450ab8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2Forms/os2forms/zipball/a552b9af9e62694552c9a993a6dfd79835c97a9b",
-                "reference": "a552b9af9e62694552c9a993a6dfd79835c97a9b",
+                "url": "https://api.github.com/repos/OS2Forms/os2forms/zipball/1f4ada55413904930037225e4368dd23f4450ab8",
+                "reference": "1f4ada55413904930037225e4368dd23f4450ab8",
                 "shasum": ""
             },
             "require": {
@@ -11308,9 +11308,9 @@
             "description": "Drupal 8 OS2Form module provides advanced webform functionality for Danish Municipalities",
             "support": {
                 "issues": "https://github.com/OS2Forms/os2forms/issues",
-                "source": "https://github.com/OS2Forms/os2forms/tree/develop"
+                "source": "https://github.com/OS2Forms/os2forms/tree/3.16.0-beta1"
             },
-            "time": "2024-08-27T07:46:59+00:00"
+            "time": "2024-09-02T06:55:40+00:00"
         },
         {
             "name": "os2forms/os2forms_egbolig",
@@ -18909,7 +18909,6 @@
         "drupal/webform_analysis": 10,
         "drupal/webform_composite": 5,
         "drupal/webform_views": 15,
-        "os2forms/os2forms": 20,
         "os2forms/os2forms_egbolig": 20,
         "os2forms/os2forms_forloeb_profile": 20,
         "os2web/os2web_logging": 20
