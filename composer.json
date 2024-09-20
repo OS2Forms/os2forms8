@@ -110,6 +110,7 @@
         "drupal/webform_analysis": "^1.0@beta",
         "drupal/webform_composite": "^1.0@RC",
         "drupal/webform_node_element": "^1.2",
+        "drupal/webform_scheduled_tasks": "^3.0@RC",
         "drupal/webform_views": "^5.0@alpha",
         "drush/drush": "^12",
         "mglaman/composer-drupal-lenient": "^1.0",

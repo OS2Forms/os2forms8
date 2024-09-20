@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d92d3f9d76744adc321ada51c6176735",
+    "content-hash": "89d7694d897e9d01ed0e62d0e59e7c4f",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -8801,6 +8801,67 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/webform_rest",
                 "issues": "https://www.drupal.org/project/issues/webform_rest"
+            }
+        },
+        {
+            "name": "drupal/webform_scheduled_tasks",
+            "version": "3.0.0-rc1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/webform_scheduled_tasks.git",
+                "reference": "3.0.0-rc1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/webform_scheduled_tasks-3.0.0-rc1.zip",
+                "reference": "3.0.0-rc1",
+                "shasum": "93369a8e556c52362029711430c245f9443352e4"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9 || ^10",
+                "drupal/webform": ">=6.0"
+            },
+            "require-dev": {
+                "drupal/healthz": "^2.0@beta",
+                "drupal/webform": "^6"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "3.0.0-rc1",
+                    "datestamp": "1701355296",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Drupal Community",
+                    "homepage": "https://www.drupal.org/user/3539361"
+                },
+                {
+                    "name": "mohit_aghera",
+                    "homepage": "https://www.drupal.org/user/639098"
+                },
+                {
+                    "name": "paul_senior",
+                    "homepage": "https://www.drupal.org/user/3553075"
+                },
+                {
+                    "name": "Sam152",
+                    "homepage": "https://www.drupal.org/user/1485048"
+                }
+            ],
+            "description": "Schedule tasks to run on groups of webform submissions.",
+            "homepage": "https://www.drupal.org/project/webform_scheduled_tasks",
+            "support": {
+                "source": "https://git.drupalcode.org/project/webform_scheduled_tasks"
             }
         },
         {
