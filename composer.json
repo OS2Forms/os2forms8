@@ -115,7 +115,7 @@
         "drush/drush": "^12",
         "mglaman/composer-drupal-lenient": "^1.0",
         "os2core/os2core": "^3.0",
-        "os2forms/os2forms": "3.16.0-beta1",
+        "os2forms/os2forms": "^3.16.0",
         "os2forms/os2forms_egbolig": "dev-master",
         "os2forms/os2forms_forloeb_profile": "dev-f/d10_readiness",
         "os2forms/os2forms_sync": "^1.1",
