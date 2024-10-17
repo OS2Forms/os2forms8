@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e6a8dc648df02a0be305d8ae701e86ba",
+    "content-hash": "e0339f2982b73a6e0b93b63932defc21",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1916,27 +1916,30 @@
         },
         {
             "name": "drupal/bootstrap",
-            "version": "3.30.0",
+            "version": "3.32.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/bootstrap.git",
-                "reference": "8.x-3.30"
+                "reference": "8.x-3.32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/bootstrap-8.x-3.30.zip",
-                "reference": "8.x-3.30",
-                "shasum": "37a44a677163d2e82f1a8b55bd5feddb88918ad2"
+                "url": "https://ftp.drupal.org/files/projects/bootstrap-8.x-3.32.zip",
+                "reference": "8.x-3.32",
+                "shasum": "978295ab3f539ef7584d898269c4f9d91aa3147d"
             },
             "require": {
                 "drupal/core": "^9.5 || ^10",
+                "drupal/jquery_ui": "^1.6.0",
+                "drupal/jquery_ui_draggable": "^2.0.0",
+                "drupal/jquery_ui_resizable": "^2.0.0",
                 "php": ">=8.1.0"
             },
             "type": "drupal-theme",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.30",
-                    "datestamp": "1707842525",
+                    "version": "8.x-3.32",
+                    "datestamp": "1723065851",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5501,6 +5504,59 @@
             }
         },
         {
+            "name": "drupal/jquery_ui_draggable",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/jquery_ui_draggable.git",
+                "reference": "2.1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/jquery_ui_draggable-2.1.0.zip",
+                "reference": "2.1.0",
+                "shasum": "0d014cfff20993d8051efb8f6c9093a4fe5136f3"
+            },
+            "require": {
+                "drupal/core": "^9.2 || ^10 || ^11",
+                "drupal/jquery_ui": "^1.7"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.1.0",
+                    "datestamp": "1717015492",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "bnjmnm",
+                    "homepage": "https://www.drupal.org/user/2369194"
+                },
+                {
+                    "name": "lauriii",
+                    "homepage": "https://www.drupal.org/user/1078742"
+                },
+                {
+                    "name": "zrpnr",
+                    "homepage": "https://www.drupal.org/user/1448368"
+                }
+            ],
+            "description": "Provides jQuery UI Draggable library.",
+            "homepage": "https://www.drupal.org/project/jquery_ui_draggable",
+            "support": {
+                "source": "https://git.drupalcode.org/project/jquery_ui_draggable"
+            }
+        },
+        {
             "name": "drupal/jquery_ui_menu",
             "version": "2.1.0",
             "source": {
@@ -5563,6 +5619,67 @@
             "homepage": "https://www.drupal.org/project/jquery_ui_menu",
             "support": {
                 "source": "https://git.drupalcode.org/project/jquery_ui_menu"
+            }
+        },
+        {
+            "name": "drupal/jquery_ui_resizable",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/jquery_ui_resizable.git",
+                "reference": "2.1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/jquery_ui_resizable-2.1.0.zip",
+                "reference": "2.1.0",
+                "shasum": "f1f15c5fe01f11e5348d502e2df836d0c492f507"
+            },
+            "require": {
+                "drupal/core": "^9.2 || ^10 || ^11",
+                "drupal/jquery_ui": "^1.7"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.1.0",
+                    "datestamp": "1717031358",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "bnjmnm",
+                    "homepage": "https://www.drupal.org/user/2369194"
+                },
+                {
+                    "name": "lauriii",
+                    "homepage": "https://www.drupal.org/user/1078742"
+                },
+                {
+                    "name": "nod_",
+                    "homepage": "https://www.drupal.org/user/598310"
+                },
+                {
+                    "name": "phenaproxima",
+                    "homepage": "https://www.drupal.org/user/205645"
+                },
+                {
+                    "name": "zrpnr",
+                    "homepage": "https://www.drupal.org/user/1448368"
+                }
+            ],
+            "description": "Provides jQuery UI Resizable library.",
+            "homepage": "https://www.drupal.org/project/jquery_ui_resizable",
+            "support": {
+                "source": "https://git.drupalcode.org/project/jquery_ui_resizable"
             }
         },
         {
