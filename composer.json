@@ -217,6 +217,9 @@
             "drupal/webform": {
                 "3458611 Removing the polyfill-fastly.io library of webform.libraries.yml": "https://www.drupal.org/files/issues/2024-07-02/3458611-removing-the-polyfill-io.patch",
                 "3415445 - Search Chinese in /admin/structure/webform cause error: Illegal mix of collations": "https://www.drupal.org/files/issues/2024-02-26/3415445-cant-load-non-english_0.patch"
+            },
+            "drupal/monolog": {
+                "3366135 NullLogger not implements LoggerChannelInterface" : "https://www.drupal.org/files/issues/2023-06-12/monolog.patch"
             }
         },
         "drupal-lenient": {
