@@ -86,7 +86,7 @@
         "php": ">=7.1",
         "composer/installers": "^1.9",
         "cweagans/composer-patches": "^1.7",
-        "drupal/bootstrap": "^3.21",
+        "drupal/bootstrap": "^3.32",
         "drupal/ckeditor_a11ychecker": "^3.0",
         "drupal/coc_forms_auto_export": "^2.0@alpha",
         "drupal/color": "^1.0",
@@ -110,11 +110,12 @@
         "drupal/webform_analysis": "^1.0@beta",
         "drupal/webform_composite": "^1.0@RC",
         "drupal/webform_node_element": "^1.2",
+        "drupal/webform_scheduled_tasks": "^3.0@RC",
         "drupal/webform_views": "^5.0@alpha",
         "drush/drush": "^12",
         "mglaman/composer-drupal-lenient": "^1.0",
         "os2core/os2core": "^3.0",
-        "os2forms/os2forms": "3.16.0-beta1",
+        "os2forms/os2forms": "^3.16.0",
         "os2forms/os2forms_egbolig": "dev-master",
         "os2forms/os2forms_forloeb_profile": "dev-f/d10_readiness",
         "os2forms/os2forms_sync": "^1.1",
@@ -216,6 +217,9 @@
             "drupal/webform": {
                 "3458611 Removing the polyfill-fastly.io library of webform.libraries.yml": "https://www.drupal.org/files/issues/2024-07-02/3458611-removing-the-polyfill-io.patch",
                 "3415445 - Search Chinese in /admin/structure/webform cause error: Illegal mix of collations": "https://www.drupal.org/files/issues/2024-02-26/3415445-cant-load-non-english_0.patch"
+            },
+            "drupal/monolog": {
+                "3366135 NullLogger not implements LoggerChannelInterface" : "https://www.drupal.org/files/issues/2023-06-12/monolog.patch"
             }
         },
         "drupal-lenient": {
