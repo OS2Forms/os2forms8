@@ -118,3 +118,8 @@ td > .form-item > .form-element--type-select, td > .ajax-new-content > .form-ite
   display: flex;
   justify-content: center;
 }
+
+
+.webform-submission-bulk-form {
+  overflow-x: scroll;
+}
