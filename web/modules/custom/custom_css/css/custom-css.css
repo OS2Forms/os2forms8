@@ -123,3 +123,35 @@ td > .form-item > .form-element--type-select, td > .ajax-new-content > .form-ite
 .webform-submission-bulk-form {
   overflow-x: scroll;
 }
+
+
+.js-webform-select-other {
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+
+}
+
+.js-webform-select-other .panel-heading {
+  background-color: transparent;
+  color: #333;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.js-webform-select-other .panel-heading .panel-title {
+  font-weight: 600;
+  font-size: 16px;
+  padding: 0;
+  margin: 0 0 5px 0;
+}
+
+
+
+
+.js-webform-select-other .panel-body {
+  padding: 0;
+}
+
