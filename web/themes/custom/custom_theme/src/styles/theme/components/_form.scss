@@ -52,3 +52,33 @@ details, .claro-details {
 .webform-section-title {
   font-size: 14px !important;
 }
+
+
+
+.js-webform-select-other {
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+
+  .panel-heading {
+    background-color: transparent;
+    color: #333;
+    border: none;
+    padding: 0;
+    margin: 0;
+
+    .panel-title {
+      font-weight: 600;
+      font-size: 16px;
+      padding: 0;
+      margin: 0 0 5px 0;
+    }
+
+
+  }
+
+  .panel-body {
+    padding: 0;
+  }
+}
