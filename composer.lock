@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e0339f2982b73a6e0b93b63932defc21",
+    "content-hash": "a43fea8da9483112d0821ee99ae025c9",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -6817,7 +6817,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/monolog.git",
-                "reference": "4a9ac12680868ddcc67265a4f5e215959aaa5edc"
+                "reference": "3f6898792fd91a54a6798ecbb5d10fdff91ff51e"
             },
             "require": {
                 "monolog/monolog": "^2.8.0",
@@ -6849,7 +6849,7 @@
             "support": {
                 "issues": "http://drupal.org/project/issues/monolog"
             },
-            "time": "2022-09-02T10:01:37+00:00"
+            "time": "2024-09-19T16:06:05+00:00"
         },
         {
             "name": "drupal/paragraphs",
@@ -19212,5 +19212,5 @@
         "php": ">=7.1"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }
