@@ -113,7 +113,7 @@
         "drush/drush": "^12",
         "mglaman/composer-drupal-lenient": "^1.0",
         "os2core/os2core": "^3.0",
-        "os2forms/os2forms": "^3.16.0",
+        "os2forms/os2forms": "^3.21.2",
         "os2forms/os2forms_egbolig": "dev-master",
         "os2forms/os2forms_forloeb_profile": "dev-f/d10_readiness",
         "os2forms/os2forms_sync": "^1.1",
@@ -145,7 +145,8 @@
             "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true,
             "drupal/core-vendor-hardening": true,
-            "mglaman/composer-drupal-lenient": true
+            "mglaman/composer-drupal-lenient": true,
+            "simplesamlphp/composer-xmlprovider-installer": true
         }
     },
     "autoload": {
