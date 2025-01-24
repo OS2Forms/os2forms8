@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1abd27bbfdff94c28606b9d489ece3f1",
+    "content-hash": "626a550d0c56c66ed8ed577a88d0e89a",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -11800,16 +11800,16 @@
         },
         {
             "name": "os2web/os2web_nemlogin",
-            "version": "1.2.7",
+            "version": "1.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_nemlogin.git",
-                "reference": "0e94852fd7337cae8fad4795efdbe4f5fd607d39"
+                "reference": "ba1c94713a7a32fc9a1880bc949f0352c78f6dc8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_nemlogin/zipball/0e94852fd7337cae8fad4795efdbe4f5fd607d39",
-                "reference": "0e94852fd7337cae8fad4795efdbe4f5fd607d39",
+                "url": "https://api.github.com/repos/OS2web/os2web_nemlogin/zipball/ba1c94713a7a32fc9a1880bc949f0352c78f6dc8",
+                "reference": "ba1c94713a7a32fc9a1880bc949f0352c78f6dc8",
                 "shasum": ""
             },
             "type": "drupal-module",
@@ -11820,9 +11820,9 @@
             "description": "Provide authentication via Nemlogin",
             "support": {
                 "issues": "https://github.com/OS2web/os2web_nemlogin/issues",
-                "source": "https://github.com/OS2web/os2web_nemlogin/tree/1.2.7"
+                "source": "https://github.com/OS2web/os2web_nemlogin/tree/1.2.8"
             },
-            "time": "2024-05-10T12:56:29+00:00"
+            "time": "2025-01-24T15:00:36+00:00"
         },
         {
             "name": "os2web/os2web_simplesaml",
