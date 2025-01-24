@@ -219,6 +219,9 @@
             },
             "drupal/user_default_page": {
                 "3351887 - Deprecated function: strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in user_default_page_user_login()": "https://www.drupal.org/files/issues/2023-04-19/added_condition_to_check_null-3351887-1.patch"
+            },
+            "drupal/environment_indicator": {
+                "3336512 - Gin Compatibility: Account for \"open\" vertical toolbar": "https://git.drupalcode.org/project/environment_indicator/-/merge_requests/15.diff"
             }
         },
         "drupal-lenient": {
