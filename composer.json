@@ -216,6 +216,9 @@
             "drupal/webform": {
                 "3458611 Removing the polyfill-fastly.io library of webform.libraries.yml": "https://www.drupal.org/files/issues/2024-07-02/3458611-removing-the-polyfill-io.patch",
                 "3415445 - Search Chinese in /admin/structure/webform cause error: Illegal mix of collations": "https://www.drupal.org/files/issues/2024-02-26/3415445-cant-load-non-english_0.patch"
+            },
+            "drupal/user_default_page": {
+                "3351887 - Deprecated function: strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in user_default_page_user_login()": "https://www.drupal.org/files/issues/2023-04-19/added_condition_to_check_null-3351887-1.patch"
             }
         },
         "drupal-lenient": {
