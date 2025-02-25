@@ -87,7 +87,7 @@
         "composer/installers": "^1.9",
         "cweagans/composer-patches": "^1.7",
         "drupal/bootstrap": "^3.32",
-        "drupal/ckeditor_a11ychecker": "^3.0",
+        "drupal/ckeditor": "^1.0",
         "drupal/coc_forms_auto_export": "^2.0@alpha",
         "drupal/color": "^1.0",
         "drupal/core-composer-scaffold": "^10",
@@ -98,7 +98,6 @@
         "drupal/entity_export_csv": "^2.0@beta",
         "drupal/fontyourface": "^4.0",
         "drupal/ldap": "^4.2",
-        "drupal/maillog": "^1.0",
         "drupal/menu_link_attributes": "^1.3",
         "drupal/permissions_by_term": "^3.1",
         "drupal/queue_mail": "^1.3",
@@ -115,8 +114,7 @@
         "drupal/webform_views": "^5.0@alpha",
         "drush/drush": "^12",
         "mglaman/composer-drupal-lenient": "^1.0",
-        "os2core/os2core": "^3.0",
-        "os2forms/os2forms": "^3.16.0",
+        "os2forms/os2forms": "^3.21.2",
         "os2forms/os2forms_egbolig": "dev-master",
         "os2forms/os2forms_forloeb_profile": "dev-f/d10_readiness",
         "os2forms/os2forms_sync": "^1.1",
@@ -148,7 +146,8 @@
             "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true,
             "drupal/core-vendor-hardening": true,
-            "mglaman/composer-drupal-lenient": true
+            "mglaman/composer-drupal-lenient": true,
+            "simplesamlphp/composer-xmlprovider-installer": true
         }
     },
     "autoload": {
@@ -218,6 +217,12 @@
             "drupal/webform": {
                 "3458611 Removing the polyfill-fastly.io library of webform.libraries.yml": "https://www.drupal.org/files/issues/2024-07-02/3458611-removing-the-polyfill-io.patch",
                 "3415445 - Search Chinese in /admin/structure/webform cause error: Illegal mix of collations": "https://www.drupal.org/files/issues/2024-02-26/3415445-cant-load-non-english_0.patch"
+            },
+            "drupal/user_default_page": {
+                "3351887 - Deprecated function: strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in user_default_page_user_login()": "https://www.drupal.org/files/issues/2023-04-19/added_condition_to_check_null-3351887-1.patch"
+            },
+            "drupal/environment_indicator": {
+                "3336512 - Gin Compatibility: Account for \"open\" vertical toolbar": "https://git.drupalcode.org/project/environment_indicator/-/merge_requests/15.diff"
             }
         },
         "drupal-lenient": {
