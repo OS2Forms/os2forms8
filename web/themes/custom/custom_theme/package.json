@@ -25,7 +25,7 @@
     "gulp-babel": "^7.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-debug": "^3.2.0",
-    "gulp-modernizr": "^2.0.0",
+    "gulp-modernizr": "^4.0.3",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.5",
     "run-sequence": "^2.2.1"
