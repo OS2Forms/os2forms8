@@ -114,7 +114,7 @@
         "drupal/webform_views": "^5.0@alpha",
         "drush/drush": "^12",
         "mglaman/composer-drupal-lenient": "^1.0",
-        "os2forms/os2forms": "^3.21.2",
+        "os2forms/os2forms": "^4.0",
         "os2forms/os2forms_egbolig": "dev-master",
         "os2forms/os2forms_forloeb_profile": "dev-f/d10_readiness",
         "os2forms/os2forms_sync": "^1.1",
