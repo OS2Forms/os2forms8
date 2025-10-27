@@ -99,7 +99,7 @@
         "os2forms/os2forms": "^4.0",
         "os2forms/os2forms_egbolig": "dev-master",
         "os2forms/os2forms_forloeb_profile": "dev-f/d10_readiness",
-        "os2forms/os2forms_sync": "^1.1",
+        "os2forms/os2forms_sync": "^1.2",
         "os2web/os2web_logging": "dev-master",
         "simplesamlphp/simplesamlphp": "^2.0",
         "vlucas/phpdotenv": "^5.1",

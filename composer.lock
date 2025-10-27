@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "10328790eb46caa297dbec23411f359d",
+    "content-hash": "f6963260279cac5276ad556b645c09bc",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -8969,16 +8969,16 @@
         },
         {
             "name": "os2forms/os2forms_sync",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/itk-dev/os2forms_sync.git",
-                "reference": "6194b5101fd27a5a7023e7ddfcfbf96d1752ec6f"
+                "url": "https://github.com/OS2Forms/os2forms_sync.git",
+                "reference": "86702399501995016462afe59b7f7135d80d4969"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/itk-dev/os2forms_sync/zipball/6194b5101fd27a5a7023e7ddfcfbf96d1752ec6f",
-                "reference": "6194b5101fd27a5a7023e7ddfcfbf96d1752ec6f",
+                "url": "https://api.github.com/repos/OS2Forms/os2forms_sync/zipball/86702399501995016462afe59b7f7135d80d4969",
+                "reference": "86702399501995016462afe59b7f7135d80d4969",
                 "shasum": ""
             },
             "require": {
@@ -8990,6 +8990,7 @@
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
                 "drupal/coder": "^8.3",
                 "mglaman/drupal-check": "^1.4",
+                "mglaman/phpstan-drupal": "~1.2.0",
                 "phpunit/phpunit": "^9.5"
             },
             "type": "drupal-module",
@@ -9005,10 +9006,10 @@
             ],
             "description": "OS2Forms sync",
             "support": {
-                "issues": "https://github.com/itk-dev/os2forms_sync/issues",
-                "source": "https://github.com/itk-dev/os2forms_sync/tree/1.2.0"
+                "issues": "https://github.com/OS2Forms/os2forms_sync/issues",
+                "source": "https://github.com/OS2Forms/os2forms_sync/tree/1.2.1"
             },
-            "time": "2024-05-21T08:54:29+00:00"
+            "time": "2025-07-30T06:42:09+00:00"
         },
         {
             "name": "os2web/os2web_audit",
