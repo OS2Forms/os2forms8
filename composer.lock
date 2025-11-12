@@ -9101,16 +9101,16 @@
         },
         {
             "name": "os2forms/os2forms_sync",
-            "version": "1.2.1",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2Forms/os2forms_sync.git",
-                "reference": "86702399501995016462afe59b7f7135d80d4969"
+                "reference": "82a6a457c118e53c0908f154ed6f006127eefdd2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2Forms/os2forms_sync/zipball/86702399501995016462afe59b7f7135d80d4969",
-                "reference": "86702399501995016462afe59b7f7135d80d4969",
+                "url": "https://api.github.com/repos/OS2Forms/os2forms_sync/zipball/82a6a457c118e53c0908f154ed6f006127eefdd2",
+                "reference": "82a6a457c118e53c0908f154ed6f006127eefdd2",
                 "shasum": ""
             },
             "require": {
@@ -9139,9 +9139,9 @@
             "description": "OS2Forms sync",
             "support": {
                 "issues": "https://github.com/OS2Forms/os2forms_sync/issues",
-                "source": "https://github.com/OS2Forms/os2forms_sync/tree/1.2.1"
+                "source": "https://github.com/OS2Forms/os2forms_sync/tree/1.3.0"
             },
-            "time": "2025-07-30T06:42:09+00:00"
+            "time": "2025-11-11T13:22:31+00:00"
         },
         {
             "name": "os2web/os2web_audit",
