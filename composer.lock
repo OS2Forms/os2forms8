@@ -4302,43 +4302,46 @@
         },
         {
             "name": "drupal/monolog",
-            "version": "2.x-dev",
+            "version": "3.0.7",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/monolog.git",
-                "reference": "7b1dedaa7cbd26be91a9e21eff58814f75c115f2"
+                "reference": "104ac809651b5e9f09cf17c671dced859afc5a78"
             },
             "require": {
-                "monolog/monolog": "^2.8.0",
-                "php": "^7.4|^8"
+                "monolog/monolog": "^3.2.0",
+                "php": "^8.1.0"
+            },
+            "require-dev": {
+                "mglaman/phpstan-drupal": "^1.2 || ^2",
+                "phpstan/extension-installer": "^1.3",
+                "phpstan/phpstan": "^1.11 || ^2",
+                "phpstan/phpstan-deprecation-rules": "*",
+                "phpstan/phpstan-strict-rules": "^1.5 || ^2",
+                "previousnext/coding-standard": "^1.0"
             },
             "type": "drupal-module",
-            "autoload": {
-                "psr-0": {
-                    "Drupal\\Monolog": "src/"
-                }
-            },
             "license": [
                 "GPL-2.0"
             ],
             "authors": [
                 {
-                    "name": "Chris Pliakas",
-                    "email": "opensource@chrispliakas.com",
+                    "name": "Luca Lusso",
+                    "email": "lussoluca@gmail.com",
                     "role": "Project Lead"
                 },
                 {
                     "name": "See contributors",
-                    "homepage": "http://drupal.org/node/1937716/committers",
+                    "homepage": "https://drupal.org/node/1937716/committers",
                     "role": "Developer"
                 }
             ],
             "description": "A Framework for integrating with the Monolog library.",
-            "homepage": "http://drupal.org/project/monolog",
+            "homepage": "https://drupal.org/project/monolog",
             "support": {
-                "issues": "http://drupal.org/project/issues/monolog"
+                "issues": "https://drupal.org/project/issues/monolog"
             },
-            "time": "2025-11-13T10:33:04+00:00"
+            "time": "2025-09-29T13:56:37+00:00"
         },
         {
             "name": "drupal/pathauto",
@@ -8683,42 +8686,43 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "2.10.0",
+            "version": "3.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "5cf826f2991858b54d5c3809bee745560a1042a7"
+                "reference": "b321dd6749f0bf7189444158a3ce785cc16d69b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/5cf826f2991858b54d5c3809bee745560a1042a7",
-                "reference": "5cf826f2991858b54d5c3809bee745560a1042a7",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/b321dd6749f0bf7189444158a3ce785cc16d69b0",
+                "reference": "b321dd6749f0bf7189444158a3ce785cc16d69b0",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.2",
-                "psr/log": "^1.0.1 || ^2.0 || ^3.0"
+                "php": ">=8.1",
+                "psr/log": "^2.0 || ^3.0"
             },
             "provide": {
-                "psr/log-implementation": "1.0.0 || 2.0.0 || 3.0.0"
+                "psr/log-implementation": "3.0.0"
             },
             "require-dev": {
-                "aws/aws-sdk-php": "^2.4.9 || ^3.0",
+                "aws/aws-sdk-php": "^3.0",
                 "doctrine/couchdb": "~1.0@dev",
                 "elasticsearch/elasticsearch": "^7 || ^8",
                 "ext-json": "*",
-                "graylog2/gelf-php": "^1.4.2 || ^2@dev",
-                "guzzlehttp/guzzle": "^7.4",
+                "graylog2/gelf-php": "^1.4.2 || ^2.0",
+                "guzzlehttp/guzzle": "^7.4.5",
                 "guzzlehttp/psr7": "^2.2",
-                "mongodb/mongodb": "^1.8",
+                "mongodb/mongodb": "^1.8 || ^2.0",
                 "php-amqplib/php-amqplib": "~2.4 || ^3",
-                "phpspec/prophecy": "^1.15",
-                "phpstan/phpstan": "^1.10",
-                "phpunit/phpunit": "^8.5.38 || ^9.6.19",
-                "predis/predis": "^1.1 || ^2.0",
-                "rollbar/rollbar": "^1.3 || ^2 || ^3",
-                "ruflin/elastica": "^7",
-                "swiftmailer/swiftmailer": "^5.3|^6.0",
+                "php-console/php-console": "^3.1.8",
+                "phpstan/phpstan": "^2",
+                "phpstan/phpstan-deprecation-rules": "^2",
+                "phpstan/phpstan-strict-rules": "^2",
+                "phpunit/phpunit": "^10.5.17 || ^11.0.7",
+                "predis/predis": "^1.1 || ^2",
+                "rollbar/rollbar": "^4.0",
+                "ruflin/elastica": "^7 || ^8",
                 "symfony/mailer": "^5.4 || ^6",
                 "symfony/mime": "^5.4 || ^6"
             },
@@ -8741,7 +8745,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "2.x-dev"
+                    "dev-main": "3.x-dev"
                 }
             },
             "autoload": {
@@ -8769,7 +8773,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Seldaek/monolog/issues",
-                "source": "https://github.com/Seldaek/monolog/tree/2.10.0"
+                "source": "https://github.com/Seldaek/monolog/tree/3.10.0"
             },
             "funding": [
                 {
@@ -8781,7 +8785,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-11-12T12:43:37+00:00"
+            "time": "2026-01-02T08:56:05+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -9230,16 +9234,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_logging.git",
-                "reference": "21a49daa9efc36a3579af22fd265410f5d9e3ae9"
+                "reference": "67bdf1c0a7529916c8e6bd9b79176c406036c2f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_logging/zipball/21a49daa9efc36a3579af22fd265410f5d9e3ae9",
-                "reference": "21a49daa9efc36a3579af22fd265410f5d9e3ae9",
+                "url": "https://api.github.com/repos/OS2web/os2web_logging/zipball/67bdf1c0a7529916c8e6bd9b79176c406036c2f7",
+                "reference": "67bdf1c0a7529916c8e6bd9b79176c406036c2f7",
                 "shasum": ""
             },
             "require": {
-                "drupal/monolog": "2.x-dev"
+                "drupal/monolog": "2.x-dev || ^3.0"
             },
             "default-branch": true,
             "type": "drupal-module",
@@ -9252,7 +9256,7 @@
                 "issues": "https://github.com/OS2web/os2web_logging/issues",
                 "source": "https://github.com/OS2web/os2web_logging/tree/master"
             },
-            "time": "2025-02-03T09:26:49+00:00"
+            "time": "2026-04-27T10:36:46+00:00"
         },
         {
             "name": "os2web/os2web_nemlogin",
