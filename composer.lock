@@ -9234,12 +9234,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_logging.git",
-                "reference": "c966859683c0fd5fd201c4dfcf7e7a8c93a709af"
+                "reference": "01e613f83ff9137260fe2a9a15c9a8b78c5a39ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_logging/zipball/c966859683c0fd5fd201c4dfcf7e7a8c93a709af",
-                "reference": "c966859683c0fd5fd201c4dfcf7e7a8c93a709af",
+                "url": "https://api.github.com/repos/OS2web/os2web_logging/zipball/01e613f83ff9137260fe2a9a15c9a8b78c5a39ef",
+                "reference": "01e613f83ff9137260fe2a9a15c9a8b78c5a39ef",
                 "shasum": ""
             },
             "require": {
@@ -9256,7 +9256,7 @@
                 "issues": "https://github.com/OS2web/os2web_logging/issues",
                 "source": "https://github.com/OS2web/os2web_logging/tree/master"
             },
-            "time": "2026-04-28T11:42:51+00:00"
+            "time": "2026-05-07T12:53:52+00:00"
         },
         {
             "name": "os2web/os2web_nemlogin",
