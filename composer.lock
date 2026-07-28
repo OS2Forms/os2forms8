@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ca150c2e7da7b9835a16fb3ace9457a7",
+    "content-hash": "294b971208ce27e3f330e978c2754ab9",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -6050,67 +6050,6 @@
             }
         },
         {
-            "name": "drupal/webform_scheduled_tasks",
-            "version": "3.0.0-rc1",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/webform_scheduled_tasks.git",
-                "reference": "3.0.0-rc1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform_scheduled_tasks-3.0.0-rc1.zip",
-                "reference": "3.0.0-rc1",
-                "shasum": "93369a8e556c52362029711430c245f9443352e4"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9 || ^10",
-                "drupal/webform": ">=6.0"
-            },
-            "require-dev": {
-                "drupal/healthz": "^2.0@beta",
-                "drupal/webform": "^6"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "3.0.0-rc1",
-                    "datestamp": "1701355296",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "RC releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Drupal Community",
-                    "homepage": "https://www.drupal.org/user/3539361"
-                },
-                {
-                    "name": "mohit_aghera",
-                    "homepage": "https://www.drupal.org/user/639098"
-                },
-                {
-                    "name": "paul_senior",
-                    "homepage": "https://www.drupal.org/user/3553075"
-                },
-                {
-                    "name": "Sam152",
-                    "homepage": "https://www.drupal.org/user/1485048"
-                }
-            ],
-            "description": "Schedule tasks to run on groups of webform submissions.",
-            "homepage": "https://www.drupal.org/project/webform_scheduled_tasks",
-            "support": {
-                "source": "https://git.drupalcode.org/project/webform_scheduled_tasks"
-            }
-        },
-        {
             "name": "drupal/webform_ui",
             "version": "6.2.10",
             "require": {
@@ -8914,36 +8853,6 @@
                 "source": "https://github.com/OS2Forms/os2forms/tree/5.1.0"
             },
             "time": "2026-06-03T09:51:46+00:00"
-        },
-        {
-            "name": "os2forms/os2forms_egbolig",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/OS2Forms/os2forms_egbolig.git",
-                "reference": "3b80c49f2bb6950d62e5cbc546f6e468eaa60e53"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/OS2Forms/os2forms_egbolig/zipball/3b80c49f2bb6950d62e5cbc546f6e468eaa60e53",
-                "reference": "3b80c49f2bb6950d62e5cbc546f6e468eaa60e53",
-                "shasum": ""
-            },
-            "require": {
-                "os2forms/os2forms": "^2.1 || ^3.0 || ^4.0 || ^5.0"
-            },
-            "default-branch": true,
-            "type": "drupal-module",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "EUPL-1.2"
-            ],
-            "description": "Provides advanced webform for EGBolig",
-            "support": {
-                "issues": "https://github.com/OS2Forms/os2forms_egbolig/issues",
-                "source": "https://github.com/OS2Forms/os2forms_egbolig/tree/master"
-            },
-            "time": "2025-11-18T15:15:17+00:00"
         },
         {
             "name": "os2forms/os2forms_forloeb_profile",
@@ -16964,9 +16873,7 @@
         "drupal/straw": 10,
         "drupal/webform_analysis": 10,
         "drupal/webform_composite": 5,
-        "drupal/webform_scheduled_tasks": 5,
         "drupal/webform_views": 15,
-        "os2forms/os2forms_egbolig": 20,
         "os2web/os2web_logging": 20
     },
     "prefer-stable": true,
