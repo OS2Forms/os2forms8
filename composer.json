@@ -142,19 +142,26 @@
                 "3170384 - Fixed D9 imcopatibility": "https://www.drupal.org/files/issues/2020-09-11/3170384-2.patch"
             },
             "drupal/webform_node_element": {
-                "3290637 - Automated Drupal 10 compatibility fixes": "https://www.drupal.org/files/issues/2023-05-12/webform_node_element_d10-3290637-11.patch"
+                "3495835 - Drupal 11 compatibility fixes for Webform Node Element": "https://git.drupalcode.org/project/webform_node_element/-/merge_requests/5.diff"
             },
             "drupal/user_default_page": {
                 "3351887 - Deprecated function: strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in user_default_page_user_login()": "https://www.drupal.org/files/issues/2023-04-19/added_condition_to_check_null-3351887-1.patch"
             },
             "drupal/environment_indicator": {
                 "3336512 - Gin Compatibility: Account for \"open\" vertical toolbar": "https://git.drupalcode.org/project/environment_indicator/-/merge_requests/15.diff"
+            },
+            "drupal/events_logging" : {
+                "3430351 - Automated Drupal 11 compatibility fixes for events_logging": "https://www.drupal.org/files/issues/2024-03-17/events_logging.2.0.0-beta2.rector.patch"
+            },
+            "drupal/switch_page_theme" : {
+                "3489081 - Drupal 11 compatibility for Switch Page Theme" : "https://www.drupal.org/files/issues/2025-10-30/switch_page_theme-3489081-20.patch"
             }
         },
         "drupal-lenient": {
             "allowed-list": [
                 "drupal/coc_forms_auto_export",
-                "drupal/webform_node_element"
+                "drupal/webform_node_element",
+                "drupal/switch_page_theme"
             ]
         }
     }
