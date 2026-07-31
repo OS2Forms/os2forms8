@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "86d4a0a99456036a83bd91d851fe6e96",
+    "content-hash": "c4e58e2641467a2d88ad71a74deed0bf",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3033,7 +3033,7 @@
                 "shasum": "8336d7268ffd641b3eeaa3f748971bf853c2eead"
             },
             "require": {
-                "drupal/core": "^8 || ^9 || ^10 || ^11 || ^12",
+                "drupal/core": "^8 || ^9 || ^10",
                 "drupal/token": "*"
             },
             "require-dev": {
@@ -7959,20 +7959,20 @@
         },
         {
             "name": "itk-dev/beskedfordeler-drupal",
-            "version": "1.2.1",
+            "version": "dev-f/drupal11",
             "source": {
                 "type": "git",
-                "url": "https://github.com/itk-dev/beskedfordeler-drupal.git",
-                "reference": "db7d3bd13045724ad6d285755caa6a2e75bc6e7f"
+                "url": "https://github.com/stankut/beskedfordeler-drupal.git",
+                "reference": "ba22d50ffcb82d79f6ed93330270974b6591f71c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/itk-dev/beskedfordeler-drupal/zipball/db7d3bd13045724ad6d285755caa6a2e75bc6e7f",
-                "reference": "db7d3bd13045724ad6d285755caa6a2e75bc6e7f",
+                "url": "https://api.github.com/repos/stankut/beskedfordeler-drupal/zipball/ba22d50ffcb82d79f6ed93330270974b6591f71c",
+                "reference": "ba22d50ffcb82d79f6ed93330270974b6591f71c",
                 "shasum": ""
             },
             "require": {
-                "drush/drush": "^11 || ^12"
+                "drush/drush": "^11 || ^12 || ^13"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
@@ -7988,7 +7988,27 @@
                     "ItkDev\\Beskedfordeler\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "scripts": {
+                "code-analysis/drupal-check": [
+                    "# @see https://github.com/mglaman/drupal-check/issues/261#issuecomment-1030141772 for details on exclude-dir value",
+                    "drupal-check --deprecations --analysis --exclude-dir='vendor' src"
+                ],
+                "code-analysis": [
+                    "@code-analysis/drupal-check"
+                ],
+                "coding-standards-check/phpcs": [
+                    "phpcs --standard=phpcs.xml.dist"
+                ],
+                "coding-standards-check": [
+                    "@coding-standards-check/phpcs"
+                ],
+                "coding-standards-apply/phpcs": [
+                    "phpcbf --standard=phpcs.xml.dist"
+                ],
+                "coding-standards-apply": [
+                    "@coding-standards-apply/phpcs"
+                ]
+            },
             "license": [
                 "MIT"
             ],
@@ -8000,10 +8020,9 @@
             ],
             "description": "Beskedfordeler for Drupal",
             "support": {
-                "issues": "https://github.com/itk-dev/beskedfordeler-drupal/issues",
-                "source": "https://github.com/itk-dev/beskedfordeler-drupal/tree/1.2.1"
+                "source": "https://github.com/stankut/beskedfordeler-drupal/tree/f/drupal11"
             },
-            "time": "2024-11-12T15:00:02+00:00"
+            "time": "2026-07-30T13:43:27+00:00"
         },
         {
             "name": "itk-dev/serviceplatformen",
@@ -9029,12 +9048,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2Forms/os2forms.git",
-                "reference": "29c3118739e4d69b0884f33c0348fa89cac8e945"
+                "reference": "975ccc127b882d443785435e983ba2e66b5d18d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2Forms/os2forms/zipball/29c3118739e4d69b0884f33c0348fa89cac8e945",
-                "reference": "29c3118739e4d69b0884f33c0348fa89cac8e945",
+                "url": "https://api.github.com/repos/OS2Forms/os2forms/zipball/975ccc127b882d443785435e983ba2e66b5d18d4",
+                "reference": "975ccc127b882d443785435e983ba2e66b5d18d4",
                 "shasum": ""
             },
             "require": {
@@ -9085,12 +9104,12 @@
                 "ext-soap": "*",
                 "fig/http-message-util": "^1.1",
                 "http-interop/http-factory-guzzle": "^1.0.0",
-                "itk-dev/beskedfordeler-drupal": "^1.0",
+                "itk-dev/beskedfordeler-drupal": "^1.0 || dev-f/drupal11",
                 "itk-dev/serviceplatformen": "^1.7.1",
                 "mglaman/composer-drupal-lenient": "^1.0",
                 "os2web/os2web_audit": "^1.0",
-                "os2web/os2web_datalookup": "^3.0",
-                "os2web/os2web_key": "^1.0",
+                "os2web/os2web_datalookup": "^3.0 || dev-f/drupal11",
+                "os2web/os2web_key": "^1.0 || dev-f/drupal11",
                 "os2web/os2web_nemlogin": "^1.0",
                 "os2web/os2web_simplesaml": "dev-master",
                 "php": "^8.1",
@@ -9154,7 +9173,7 @@
                 "issues": "https://github.com/OS2Forms/os2forms/issues",
                 "source": "https://github.com/OS2Forms/os2forms/tree/f/drupal11"
             },
-            "time": "2026-07-29T12:00:31+00:00"
+            "time": "2026-07-31T08:07:19+00:00"
         },
         {
             "name": "os2forms/os2forms_forloeb_profile",
@@ -9162,12 +9181,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2Forms/os2forms_forloeb_profile.git",
-                "reference": "c081781aed045756af8ec6c31bccbc5abe94511d"
+                "reference": "44221f1b98250306b5c8379fb507bda4103ec777"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2Forms/os2forms_forloeb_profile/zipball/c081781aed045756af8ec6c31bccbc5abe94511d",
-                "reference": "c081781aed045756af8ec6c31bccbc5abe94511d",
+                "url": "https://api.github.com/repos/OS2Forms/os2forms_forloeb_profile/zipball/44221f1b98250306b5c8379fb507bda4103ec777",
+                "reference": "44221f1b98250306b5c8379fb507bda4103ec777",
                 "shasum": ""
             },
             "require": {
@@ -9175,7 +9194,7 @@
                 "drupal/cache_control_override": "^1.1|^2.0",
                 "drupal/core": "^9 || ^10 || ^11",
                 "drupal/gin": "^3.0-rc",
-                "drush/drush": "^11.4 || ^12",
+                "drush/drush": "^11.4 || ^12 || ^13",
                 "os2forms/os2forms": "^5 || dev-f/drupal11",
                 "os2web/os2web_simplesaml": "8.x-dev || master"
             },
@@ -9198,7 +9217,7 @@
                 "issues": "https://github.com/OS2Forms/os2forms_forloeb_profile/issues",
                 "source": "https://github.com/OS2Forms/os2forms_forloeb_profile/tree/f/drupal11"
             },
-            "time": "2026-07-29T10:42:18+00:00"
+            "time": "2026-07-30T13:40:07+00:00"
         },
         {
             "name": "os2forms/os2forms_sync",
@@ -10780,11 +10799,11 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "2.2.6",
+            "version": "2.2.7",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/a6e9b5a9420f6109c091e87d82683bd1a80b87ed",
-                "reference": "a6e9b5a9420f6109c091e87d82683bd1a80b87ed",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/692db47b9dddb0487934e5236e77d48594aef921",
+                "reference": "692db47b9dddb0487934e5236e77d48594aef921",
                 "shasum": ""
             },
             "require": {
@@ -10840,7 +10859,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-07-26T21:22:49+00:00"
+            "time": "2026-07-29T17:39:32+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",
@@ -17360,6 +17379,7 @@
         "drupal/webform_views": 15,
         "os2forms/os2forms": 20,
         "os2forms/os2forms_forloeb_profile": 20,
+        "os2forms/os2forms_sync": 20,
         "os2web/os2web_logging": 20
     },
     "prefer-stable": true,
