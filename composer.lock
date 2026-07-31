@@ -9244,12 +9244,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_datalookup.git",
-                "reference": "e5a3451072ad405d551bba29bd09532dc2b9e163"
+                "reference": "6bdefe3ffdde905d753edacf20023f99007d0bde"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_datalookup/zipball/e5a3451072ad405d551bba29bd09532dc2b9e163",
-                "reference": "e5a3451072ad405d551bba29bd09532dc2b9e163",
+                "url": "https://api.github.com/repos/OS2web/os2web_datalookup/zipball/6bdefe3ffdde905d753edacf20023f99007d0bde",
+                "reference": "6bdefe3ffdde905d753edacf20023f99007d0bde",
                 "shasum": ""
             },
             "require": {
@@ -9273,7 +9273,7 @@
                 "issues": "https://github.com/OS2web/os2web_datalookup/issues",
                 "source": "https://github.com/OS2web/os2web_datalookup/tree/f/drupal11"
             },
-            "time": "2026-07-31T08:06:28+00:00"
+            "time": "2026-07-31T14:53:03+00:00"
         },
         {
             "name": "os2web/os2web_key",
