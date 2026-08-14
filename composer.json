@@ -12,18 +12,6 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "git@github.com:stankut/serviceplatformen.git"
-        },
-        {
-            "type": "vcs",
-            "url": "git@github.com:stankut/AzureKeyVaultPhp.git"
-        },
-        {
-            "type": "vcs",
-            "url": "git@github.com:stankut/beskedfordeler-drupal.git"
-        },
-        {
-            "type": "vcs",
             "url": "https://git.drupalcode.org/project/monolog.git"
         },
         {
@@ -63,7 +51,7 @@
         "mglaman/composer-drupal-lenient": "^1.0",
         "os2forms/os2forms": "dev-f/drupal11",
         "os2forms/os2forms_forloeb_profile": "dev-f/drupal11",
-        "os2forms/os2forms_sync": "dev-f/drupal11",
+        "os2forms/os2forms_sync": "^1.2",
         "os2web/os2web_logging": "dev-master",
         "simplesamlphp/simplesamlphp": "^2.0",
         "vlucas/phpdotenv": "^5.1",
