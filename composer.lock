@@ -8875,12 +8875,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2Forms/os2forms.git",
-                "reference": "eea54d4c6571dee321b7dc49637356ea0d4aec27"
+                "reference": "109000048d2d7d712a17f326e81d41466ba1b272"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2Forms/os2forms/zipball/eea54d4c6571dee321b7dc49637356ea0d4aec27",
-                "reference": "eea54d4c6571dee321b7dc49637356ea0d4aec27",
+                "url": "https://api.github.com/repos/OS2Forms/os2forms/zipball/109000048d2d7d712a17f326e81d41466ba1b272",
+                "reference": "109000048d2d7d712a17f326e81d41466ba1b272",
                 "shasum": ""
             },
             "require": {
@@ -8999,7 +8999,7 @@
                 "issues": "https://github.com/OS2Forms/os2forms/issues",
                 "source": "https://github.com/OS2Forms/os2forms/tree/f/drupal11"
             },
-            "time": "2026-08-14T15:50:19+00:00"
+            "time": "2026-08-19T11:40:09+00:00"
         },
         {
             "name": "os2forms/os2forms_forloeb_profile",
@@ -9091,16 +9091,16 @@
         },
         {
             "name": "os2web/os2web_audit",
-            "version": "1.2.0",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_audit.git",
-                "reference": "6b494c277944f7f7aa154e3078c1a14265774c45"
+                "reference": "ec5f51b4cc3e6d70b69fff64619c1e2acfd14f13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_audit/zipball/6b494c277944f7f7aa154e3078c1a14265774c45",
-                "reference": "6b494c277944f7f7aa154e3078c1a14265774c45",
+                "url": "https://api.github.com/repos/OS2web/os2web_audit/zipball/ec5f51b4cc3e6d70b69fff64619c1e2acfd14f13",
+                "reference": "ec5f51b4cc3e6d70b69fff64619c1e2acfd14f13",
                 "shasum": ""
             },
             "require": {
@@ -9130,9 +9130,9 @@
             "description": "Drupal OS2 module that provides audit logging for Danish Municipalities",
             "support": {
                 "issues": "https://github.com/OS2web/os2web_audit/issues",
-                "source": "https://github.com/OS2web/os2web_audit/tree/1.2.0"
+                "source": "https://github.com/OS2web/os2web_audit/tree/1.3.0"
             },
-            "time": "2025-07-04T11:34:14+00:00"
+            "time": "2026-08-19T11:47:01+00:00"
         },
         {
             "name": "os2web/os2web_datalookup",
