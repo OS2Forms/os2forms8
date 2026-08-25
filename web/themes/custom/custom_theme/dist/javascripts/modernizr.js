@@ -1,6 +1,6 @@
 /*!
  * modernizr v3.13.1
- * Build https://modernizr.com/download?-arrow-contains-proxy-svg-target-template-addtest-fnbind-printshiv-setclasses-testprop-dontmin
+ * Build https://modernizr.com/download?-arrow-svg-addtest-fnbind-printshiv-setclasses-testprop-dontmin
  *
  * Copyright (c)
  *  Faruk Ates
@@ -1478,92 +1478,6 @@ Check if browser implements ECMAScript 6 Arrow Functions per specification.
     }
     return true;
   });
-
-/*!
-{
-  "name": "Proxy Object",
-  "property": "proxy",
-  "caniuse": "proxy",
-  "authors": ["Brock Beaudry"],
-  "notes": [{
-    "name": "MDN Docs",
-    "href": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy"
-  }],
-  "polyfills": [
-    "harmony-reflect"
-  ]
-}
-!*/
-/* DOC
-Detects support for the Proxy object which is used to create dynamic proxies.
-*/
-
-  Modernizr.addTest('proxy', 'Proxy' in window);
-
-/*!
-{
-  "name": "CSS :target pseudo-class",
-  "caniuse": "css-sel3",
-  "property": "target",
-  "tags": ["css"],
-  "notes": [{
-    "name": "MDN Docs",
-    "href": "https://developer.mozilla.org/en-US/docs/Web/CSS/:target"
-  }],
-  "authors": ["@zachleat"],
-  "warnings": ["Opera Mini supports :target but doesn't update the hash for anchor links."]
-}
-!*/
-/* DOC
-Detects support for the ':target' CSS pseudo-class.
-*/
-
-  // querySelector
-  Modernizr.addTest('target', function() {
-    var doc = window.document;
-    if (!('querySelectorAll' in doc)) {
-      return false;
-    }
-
-    try {
-      doc.querySelectorAll(':target');
-      return true;
-    } catch (e) {
-      return false;
-    }
-  });
-
-/*!
-{
-  "name": "Template Tag",
-  "property": "template",
-  "caniuse": "template",
-  "tags": ["elem"],
-  "notes": [{
-    "name": "HTML5Rocks Article",
-    "href": "https://www.html5rocks.com/en/tutorials/webcomponents/template/"
-  }, {
-    "name": "W3C Spec",
-    "href": "https://web.archive.org/web/20171130222649/http://www.w3.org/TR/html5/scripting-1.html"
-  }]
-}
-!*/
-
-  Modernizr.addTest('template', 'content' in createElement('template'));
-
-/*!
-{
-  "name": "ES5 String.prototype.contains",
-  "property": "contains",
-  "authors": ["Robert Kowalski"],
-  "tags": ["es6"]
-}
-!*/
-/* DOC
-Check if browser implements ECMAScript 6 `String.prototype.contains` per specification.
-*/
-
-  Modernizr.addTest('contains', is(String.prototype.contains, 'function'));
 
 
   // Run each test

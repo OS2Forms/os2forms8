@@ -10,3 +10,4 @@ javascripts:
   dependencies:
     - core/drupal
     - core/jquery
+    - bootstrap/framework
