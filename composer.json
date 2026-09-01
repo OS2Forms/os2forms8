@@ -118,17 +118,18 @@
         "sort-packages": true,
         "allow-plugins": {
             "composer/installers": true,
-            "simplesamlphp/composer-module-installer": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true,
-            "vaimo/composer-patches": true,
             "cweagans/composer-patches": true,
-            "zaporylie/composer-drupal-optimizations": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
             "drupal/console-extend-plugin": true,
             "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true,
             "drupal/core-vendor-hardening": true,
             "mglaman/composer-drupal-lenient": true,
-            "simplesamlphp/composer-xmlprovider-installer": true
+            "simplesamlphp/composer-module-installer": true,
+            "simplesamlphp/composer-xmlprovider-installer": true,
+            "symfony/runtime": true,
+            "vaimo/composer-patches": true,
+            "zaporylie/composer-drupal-optimizations": true
         }
     },
     "autoload": {
