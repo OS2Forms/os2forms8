@@ -11685,16 +11685,16 @@
         },
         {
             "name": "simplesamlphp/simplesamlphp",
-            "version": "v2.4.8",
+            "version": "v2.4.9.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/simplesamlphp/simplesamlphp.git",
-                "reference": "b21d3dfdf3713aa929f5f9388d8c9c528ad6c9ef"
+                "reference": "6a6102a7fa4451ffeeb9f92b3a2989bb2d277018"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/simplesamlphp/simplesamlphp/zipball/b21d3dfdf3713aa929f5f9388d8c9c528ad6c9ef",
-                "reference": "b21d3dfdf3713aa929f5f9388d8c9c528ad6c9ef",
+                "url": "https://api.github.com/repos/simplesamlphp/simplesamlphp/zipball/6a6102a7fa4451ffeeb9f92b3a2989bb2d277018",
+                "reference": "6a6102a7fa4451ffeeb9f92b3a2989bb2d277018",
                 "shasum": ""
             },
             "require": {
@@ -11813,7 +11813,7 @@
                 "issues": "https://github.com/simplesamlphp/simplesamlphp/issues",
                 "source": "https://github.com/simplesamlphp/simplesamlphp"
             },
-            "time": "2026-07-06T21:57:22+00:00"
+            "time": "2026-08-09T19:28:31+00:00"
         },
         {
             "name": "simplesamlphp/simplesamlphp-assets-base",
