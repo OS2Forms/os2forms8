@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "700dcec33798f73adc74220899dc2013",
+    "content-hash": "3e72fdcdb654ad36665b8d279bcf2031",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -11853,6 +11853,60 @@
                 "source": "https://github.com/simplesamlphp/simplesamlphp-assets-base/tree/v2.4.8"
             },
             "time": "2026-05-31T18:02:29+00:00"
+        },
+        {
+            "name": "simplesamlphp/simplesamlphp-module-metarefresh",
+            "version": "v1.2.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/simplesamlphp/simplesamlphp-module-metarefresh.git",
+                "reference": "28ab14b468336dfcb1bda620ee815664dbf27eeb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/simplesamlphp/simplesamlphp-module-metarefresh/zipball/28ab14b468336dfcb1bda620ee815664dbf27eeb",
+                "reference": "28ab14b468336dfcb1bda620ee815664dbf27eeb",
+                "shasum": ""
+            },
+            "require": {
+                "ext-libxml": "*",
+                "php": "^8.1",
+                "simplesamlphp/assert": "~1.8",
+                "simplesamlphp/composer-module-installer": "~1.4",
+                "simplesamlphp/simplesamlphp": "~2.4",
+                "simplesamlphp/xml-common": "~1.25",
+                "symfony/http-foundation": "~6.4",
+                "symfony/var-exporter": "~6.4"
+            },
+            "require-dev": {
+                "simplesamlphp/simplesamlphp-test-framework": "~1.9"
+            },
+            "type": "simplesamlphp-module",
+            "autoload": {
+                "psr-4": {
+                    "SimpleSAML\\Module\\metarefresh\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Andreas Åkre Solberg",
+                    "email": "andreas.solberg@uninett.no"
+                }
+            ],
+            "description": "The metarefresh module will download and parse metadata documents and store them locally",
+            "keywords": [
+                "metarefresh",
+                "simplesamlphp"
+            ],
+            "support": {
+                "issues": "https://github.com/simplesamlphp/simplesamlphp-module-metarefresh/issues",
+                "source": "https://github.com/simplesamlphp/simplesamlphp-module-metarefresh"
+            },
+            "time": "2025-12-08T16:09:52+00:00"
         },
         {
             "name": "simplesamlphp/xml-common",
