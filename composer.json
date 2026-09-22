@@ -101,6 +101,7 @@
         "os2forms/os2forms_sync": "^1.2",
         "os2web/os2web_logging": "dev-master",
         "simplesamlphp/simplesamlphp": "^2.0",
+        "simplesamlphp/simplesamlphp-module-metarefresh": "1.2.6",
         "vlucas/phpdotenv": "^5.1",
         "webflo/drupal-finder": "^1.2",
         "webmozart/path-util": "^2.3"
