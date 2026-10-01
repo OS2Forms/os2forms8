@@ -5013,20 +5013,20 @@
         },
         {
             "name": "drupal/sodium",
-            "version": "3.0.1",
+            "version": "3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/sodium.git",
-                "reference": "3.0.1"
+                "reference": "3.0.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/sodium-3.0.1.zip",
-                "reference": "3.0.1",
-                "shasum": "d2145816e157d853bdb021cfa83337ec4279caa5"
+                "url": "https://ftp.drupal.org/files/projects/sodium-3.0.2.zip",
+                "reference": "3.0.2",
+                "shasum": "3b8f56d801d97bcd9861fe02dc988057710509d4"
             },
             "require": {
-                "drupal/core": "^10.3 || ^11",
+                "drupal/core": "^10.3 || ^11 || ^12",
                 "drupal/encrypt": "^3.2",
                 "drupal/key": "^1.0",
                 "paragonie/halite": "^5.1",
@@ -5035,8 +5035,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.1",
-                    "datestamp": "1783292221",
+                    "version": "3.0.2",
+                    "datestamp": "1789285956",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
