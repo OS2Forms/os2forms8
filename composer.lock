@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fd1e5170ffd992e2150eb0a85bd86c18",
+    "content-hash": "1f69acf85d659b32331c7112466fd1f7",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -8876,16 +8876,16 @@
         },
         {
             "name": "os2forms/os2forms",
-            "version": "dev-f/drupal11",
+            "version": "6.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2Forms/os2forms.git",
-                "reference": "109000048d2d7d712a17f326e81d41466ba1b272"
+                "reference": "1bb1ae47c13bbad4a6668641bc525758bc6b575a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2Forms/os2forms/zipball/109000048d2d7d712a17f326e81d41466ba1b272",
-                "reference": "109000048d2d7d712a17f326e81d41466ba1b272",
+                "url": "https://api.github.com/repos/OS2Forms/os2forms/zipball/1bb1ae47c13bbad4a6668641bc525758bc6b575a",
+                "reference": "1bb1ae47c13bbad4a6668641bc525758bc6b575a",
                 "shasum": ""
             },
             "require": {
@@ -8914,7 +8914,7 @@
                 "drupal/r4032login": "^2.1",
                 "drupal/redirect": "^1.4",
                 "drupal/simplesamlphp_auth": "^4.0",
-                "drupal/smtp": "^1.0@beta",
+                "drupal/smtp": "^1.0@dev",
                 "drupal/sodium": "^2.4 || ^3.0",
                 "drupal/switch_page_theme": "^4.0",
                 "drupal/telephone_validation": "^2.2",
@@ -8957,7 +8957,7 @@
                 "mglaman/phpstan-drupal": "^1.1",
                 "phpstan/extension-installer": "^1.3",
                 "phpstan/phpstan-deprecation-rules": "^1.1",
-                "phpunit/phpunit": "^9.5",
+                "phpunit/phpunit": "^9.6 || ^10.5 || ^11.5",
                 "wsdltophp/packagegenerator": "^4.0"
             },
             "type": "drupal-module",
@@ -8974,9 +8974,15 @@
                     "drupal/entity_print": {
                         "2733781 - Add Export to Word Support": "https://www.drupal.org/files/issues/2019-11-22/2733781-47.patch"
                     },
+                    "drupal/events_logging": {
+                        "3430351 - Automated Drupal 11 compatibility fixes for events_logging": "https://www.drupal.org/files/issues/2024-03-17/events_logging.2.0.0-beta2.rector.patch"
+                    },
                     "drupal/webform_encrypt": {
                         "Ensure data is base64 encoded (https://www.drupal.org/project/webform_encrypt/issues/3399414)": "https://www.drupal.org/files/issues/2026-02-06/patch.diff",
                         "PHP Warning if unserialize fails (https://www.drupal.org/project/webform_encrypt/issues/3292305)": "https://www.drupal.org/files/issues/2022-06-23/unserialize-php-notice.patch"
+                    },
+                    "drupal/switch_page_theme": {
+                        "3489081 - Drupal 11 compatibility for Switch Page Theme": "https://www.drupal.org/files/issues/2025-10-30/switch_page_theme-3489081-20.patch"
                     },
                     "drupal/webform_node_element": {
                         "3495835 - Drupal 11 compatibility fixes for Webform Node Element": "https://git.drupalcode.org/project/webform_node_element/-/merge_requests/5.diff"
@@ -8989,7 +8995,9 @@
                 "drupal-lenient": {
                     "allowed-list": [
                         "drupal/coc_forms_auto_export",
-                        "drupal/webform_node_element"
+                        "drupal/webform_node_element",
+                        "drupal/events_logging",
+                        "drupal/switch_page_theme"
                     ]
                 },
                 "enable-patching": true,
@@ -9002,22 +9010,22 @@
             "description": "Drupal 10 OS2Form module provides advanced webform functionality for Danish Municipalities",
             "support": {
                 "issues": "https://github.com/OS2Forms/os2forms/issues",
-                "source": "https://github.com/OS2Forms/os2forms/tree/f/drupal11"
+                "source": "https://github.com/OS2Forms/os2forms/tree/6.0.0"
             },
-            "time": "2026-08-19T11:40:09+00:00"
+            "time": "2026-09-30T13:44:08+00:00"
         },
         {
             "name": "os2forms/os2forms_forloeb_profile",
-            "version": "dev-f/drupal11",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2Forms/os2forms_forloeb_profile.git",
-                "reference": "44221f1b98250306b5c8379fb507bda4103ec777"
+                "reference": "fbf1818d84b48df3979f1159024bab8febbd1170"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2Forms/os2forms_forloeb_profile/zipball/44221f1b98250306b5c8379fb507bda4103ec777",
-                "reference": "44221f1b98250306b5c8379fb507bda4103ec777",
+                "url": "https://api.github.com/repos/OS2Forms/os2forms_forloeb_profile/zipball/fbf1818d84b48df3979f1159024bab8febbd1170",
+                "reference": "fbf1818d84b48df3979f1159024bab8febbd1170",
                 "shasum": ""
             },
             "require": {
@@ -9026,7 +9034,7 @@
                 "drupal/core": "^9 || ^10 || ^11",
                 "drupal/gin": "^3.0-rc",
                 "drush/drush": "^11.4 || ^12 || ^13",
-                "os2forms/os2forms": "^5 || dev-f/drupal11",
+                "os2forms/os2forms": "^5 || ^6 || dev-develop",
                 "os2web/os2web_simplesaml": "8.x-dev || master"
             },
             "require-dev": {
@@ -9046,9 +9054,9 @@
             "description": "This profile adds the configuration and initial install of OS2forms 2.1 med Forløb.",
             "support": {
                 "issues": "https://github.com/OS2Forms/os2forms_forloeb_profile/issues",
-                "source": "https://github.com/OS2Forms/os2forms_forloeb_profile/tree/f/drupal11"
+                "source": "https://github.com/OS2Forms/os2forms_forloeb_profile/tree/2.0.0"
             },
-            "time": "2026-07-30T13:40:07+00:00"
+            "time": "2026-10-01T08:49:41+00:00"
         },
         {
             "name": "os2forms/os2forms_sync",
@@ -18050,8 +18058,6 @@
         "drupal/webform_analysis": 10,
         "drupal/webform_composite": 5,
         "drupal/webform_views": 15,
-        "os2forms/os2forms": 20,
-        "os2forms/os2forms_forloeb_profile": 20,
         "os2web/os2web_logging": 20
     },
     "prefer-stable": true,
