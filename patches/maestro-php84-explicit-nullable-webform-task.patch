@@ -1,0 +1,19 @@
+diff --git a/modules/maestro_webform/src/Plugin/EngineTasks/MaestroWebformTask.php b/modules/maestro_webform/src/Plugin/EngineTasks/MaestroWebformTask.php
+--- a/modules/maestro_webform/src/Plugin/EngineTasks/MaestroWebformTask.php
++++ b/modules/maestro_webform/src/Plugin/EngineTasks/MaestroWebformTask.php
+@@ -34,13 +34,13 @@ class MaestroWebformTask extends PluginBase implements MaestroEngineTaskInterface
+   /**
+    * Constructor.
+    *
+-   * @param array $configuration
++   * @param array|null $configuration
+    *   The incoming configuration information from the engine execution.
+    *   [0] - is the process ID
+    *   [1] - is the queue ID
+    *   The processID and queueID properties are defined in the MaestroTaskTrait.
+    */
+-  public function __construct(array $configuration = NULL) {
++  public function __construct(?array $configuration = NULL) {
+     if (is_array($configuration)) {
+       $this->processID = $configuration[0];
+       $this->queueID = $configuration[1];

@@ -20,33 +20,17 @@ function swallowError(error) {
 // Load plugins
 const gulp = require('gulp');
 const babel = require('gulp-babel');
-const styles = require('gulp-sass');
+const styles = require('gulp-sass')(require('sass'));
 const del = require('del');
 const modernizr = require('gulp-modernizr');
 const autoprefixer = require('gulp-autoprefixer');
 const concat = require('gulp-concat');
 const browserSync = require('browser-sync').create();
 const sourcemaps = require('gulp-sourcemaps');
-const runSequence = require('run-sequence');
-
-
-// Builders
-gulp.task('build:modernizr', (callback) => {
-    runSequence(['build:javascripts', 'build:styles'], 'clean:modernizr', 'process:modernizr', callback);
-});
-gulp.task('build:styles', (callback) => {
-    runSequence('clean:styles', 'process:styles', callback);
-});
-gulp.task('build:javascripts', (callback) => {
-    runSequence('clean:javascripts', 'process:javascripts', callback);
-});
-gulp.task('build:fonts', (callback) => {
-    runSequence('clean:fonts', 'process:fonts', callback);
-});
 
 
 // Processors
-gulp.task('process:modernizr', () => {
+function processModernizr() {
     return gulp.src(['dist/stylesheets/*.css', 'dist/javascripts/*.js', '!dist/javascripts/modernizr.js'])
         .pipe(modernizr({
             'cache': true,
@@ -63,11 +47,14 @@ gulp.task('process:modernizr', () => {
             ]
         }))
         .pipe(gulp.dest('dist/javascripts'));
-});
-gulp.task('process:styles', () => {
+}
+function processStyles() {
     return gulp.src(compileConfig.settings.styles)
         .pipe(sourcemaps.init())
-        .pipe(styles().on('error', swallowError))
+        .pipe(styles({
+            quietDeps: true,
+            silenceDeprecations: ['legacy-js-api', 'import', 'slash-div', 'global-builtin', 'color-functions', 'if-function']
+        }).on('error', swallowError))
         .pipe(autoprefixer({
             browsers: ['last 4 versions'],
             cascade: false
@@ -75,8 +62,8 @@ gulp.task('process:styles', () => {
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('dist/stylesheets'))
         .pipe(browserSync.stream({match: '**/*.css'}));
-});
-gulp.task('process:javascripts', () => {
+}
+function processJavascripts() {
     return gulp.src(compileConfig.settings.javascripts)
         .on('error', swallowError)
         .pipe(sourcemaps.init())
@@ -86,71 +73,83 @@ gulp.task('process:javascripts', () => {
         .pipe(concat('app.js'))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('dist/javascripts'));
-});
-gulp.task('process:fonts', () => {
+}
+function processFonts() {
     return gulp.src(compileConfig.settings.fonts)
         .pipe(gulp.dest('dist/fonts'));
-});
+}
 
 
 // Cleaners
-gulp.task('clean:modernizr', () => {
+function cleanModernizr() {
     return del(['dist/javascripts/modernizr.js']);
-});
-gulp.task('clean:styles', () => {
+}
+function cleanStyles() {
     return del(['dist/stylesheets']);
-});
-gulp.task('clean:javascripts', () => {
+}
+function cleanJavascripts() {
     return del(['dist/javascripts/*.js', '!dist/javascripts/modernizr.js']);
-});
-gulp.task('clean:fonts', () => {
+}
+function cleanFonts() {
     return del(['dist/fonts']);
-});
+}
 
 
 // Reloaders
-gulp.task('reload:javascripts', () => {
-    return browserSync.reload();
-});
-gulp.task('reload:fonts', () => {
-    return browserSync.reload();
-});
-gulp.task('reload:template', () => {
-    return browserSync.reload();
-});
+function reloadJavascripts(done) {
+    browserSync.reload();
+    done();
+}
+function reloadFonts(done) {
+    browserSync.reload();
+    done();
+}
+function reloadTemplate(done) {
+    browserSync.reload();
+    done();
+}
 
 
-// Watchers
-gulp.task('watcher:styles', (callback) => {
-    runSequence('build:styles', callback);
-});
-gulp.task('watcher:javascripts', (callback) => {
-    runSequence('build:javascripts', 'reload:javascripts', callback);
-});
-gulp.task('watcher:fonts', (callback) => {
-    runSequence('build:fonts', 'reload:fonts', callback);
-});
-gulp.task('watcher:templates', (callback) => {
-    runSequence('reload:template', callback);
-});
+// Builders
+const buildStyles = gulp.series(cleanStyles, processStyles);
+const buildJavascripts = gulp.series(cleanJavascripts, processJavascripts);
+const buildFonts = gulp.series(cleanFonts, processFonts);
+const buildModernizr = gulp.series(
+    gulp.parallel(buildJavascripts, buildStyles),
+    cleanModernizr,
+    processModernizr
+);
+const build = gulp.parallel(buildModernizr, buildFonts);
 
 
-// Tasks
-gulp.task('default', (callback) => {
-    runSequence('build', 'watch', callback);
-});
-
-gulp.task('watch', ['build'], () => {
-    gulp.watch('src/styles/**/*.scss', ['watcher:styles']);
-    gulp.watch('src/javascripts/**/*.js', ['watcher:javascripts']);
-    gulp.watch('src/fonts/**/*.+(eot|svg|ttf|woff|woff2)', ['watcher:fonts']);
-    gulp.watch('**/*.+(twig|twig.html|tpl|tpl.php|html)', ['watcher:templates']);
+// Watch
+function watch(done) {
+    gulp.watch('src/styles/**/*.scss', buildStyles);
+    gulp.watch('src/javascripts/**/*.js', gulp.series(buildJavascripts, reloadJavascripts));
+    gulp.watch('src/fonts/**/*.+(eot|svg|ttf|woff|woff2)', gulp.series(buildFonts, reloadFonts));
+    gulp.watch('**/*.+(twig|twig.html|tpl|tpl.php|html)', reloadTemplate);
 
     // Browser sync
     browserSync.init(['dist/stylesheets/*.css', 'dist/javascripts/*.js'], {
         proxy: gulpConfig.settings.options.proxy
     });
-});
-gulp.task('build', (callback) => {
-    runSequence(['build:modernizr', 'build:fonts'], callback);
-});
+    done();
+}
+
+
+// Tasks
+gulp.task('process:modernizr', processModernizr);
+gulp.task('process:styles', processStyles);
+gulp.task('process:javascripts', processJavascripts);
+gulp.task('process:fonts', processFonts);
+gulp.task('clean:modernizr', cleanModernizr);
+gulp.task('clean:styles', cleanStyles);
+gulp.task('clean:javascripts', cleanJavascripts);
+gulp.task('clean:fonts', cleanFonts);
+gulp.task('build:styles', buildStyles);
+gulp.task('build:javascripts', buildJavascripts);
+gulp.task('build:fonts', buildFonts);
+gulp.task('build:modernizr', buildModernizr);
+gulp.task('build', build);
+gulp.task('watch', gulp.series(build, watch));
+gulp.task('default', gulp.series(build, watch));

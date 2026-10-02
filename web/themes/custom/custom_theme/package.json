@@ -1,11 +1,11 @@
 {
   "private": true,
   "scripts": {
-    "dev": "npm run development",
+    "dev": "cross-env NODE_ENV=development gulp build",
     "development": "cross-env NODE_ENV=development gulp build",
     "watch": "cross-env NODE_ENV=development gulp watch",
-    "prod": "npm run production",
-    "production": "cross-env NODE_ENV=production"
+    "prod": "cross-env NODE_ENV=production gulp build",
+    "production": "cross-env NODE_ENV=production gulp build"
   },
   "dependencies": {
     "babel-preset-es2015": "^6.24.1",
@@ -26,8 +26,8 @@
     "gulp-concat": "^2.6.1",
     "gulp-debug": "^3.2.0",
     "gulp-modernizr": "^2.0.0",
-    "gulp-sass": "^3.1.0",
+    "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^2.6.5",
-    "run-sequence": "^2.2.1"
+    "sass": "^1.77.8"
   }
 }

@@ -15,51 +15,6 @@
             "url": "https://git.drupalcode.org/project/monolog.git"
         },
         {
-            "type": "package",
-            "package": {
-                "name": "drupal/webform_embed",
-                "type": "drupal-module",
-                "version": "1.x-dev",
-                "dist": {
-                    "type": "zip",
-                    "url": "https://ftp.drupal.org/files/projects/webform_embed-8.x-1.x-dev.zip",
-                    "shasum": ""
-                }
-            }
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "drupal/rules",
-                "description": "React on events and conditionally evaluate actions.",
-                "type": "drupal-module",
-                "license": "GPL-2.0-or-later",
-                "homepage": "https://www.drupal.org/project/rules",
-                "support": {
-                    "issues": "https://www.drupal.org/project/issues/rules",
-                    "source": "https://git.drupalcode.org/project/rules"
-                },
-                "require": {
-                    "drupal/core": "^8.8.2 || ^9",
-                    "drupal/typed_data": "^1.0"
-                },
-                "minimum-stability": "dev",
-                "extra": {
-                    "drush": {
-                        "services": {
-                            "drush.services.yml": "^9 || ^10"
-                        }
-                    }
-                },
-                "version": "3.0.0-alpha6",
-                "source": {
-                    "url": "https://git.drupalcode.org/project/rules.git",
-                    "type": "git",
-                    "reference": "b92e91537fcb47e0dfd5eba4e3c5c9b79e543eca"
-                }
-            }
-        },
-        {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         }
@@ -69,11 +24,11 @@
         "composer/installers": "^1.9",
         "cweagans/composer-patches": "^1.7",
         "doctrine/annotations": "^2.0",
-        "drupal/bootstrap": "^3.32",
-        "drupal/color": "^1.0",
-        "drupal/core-composer-scaffold": "10.6.17",
-        "drupal/core-project-message": "10.6.17",
-        "drupal/core-recommended": "10.6.17",
+        "drupal/bootstrap": "^3.40",
+        "drupal/color": "^2.0@alpha",
+        "drupal/core-composer-scaffold": "^11",
+        "drupal/core-project-message": "^11",
+        "drupal/core-recommended": "^11",
         "drupal/core-vendor-hardening": "^9.4",
         "drupal/email_tfa": "^2.0",
         "drupal/entity_export_csv": "^2.0@beta",
@@ -83,28 +38,25 @@
         "drupal/permissions_by_term": "^3.1",
         "drupal/queue_mail": "^1.3",
         "drupal/queue_ui": "^3.1",
-        "drupal/rdf": "^2.0",
+        "drupal/rdf": "^2.0 || ^4.0",
         "drupal/restui": "^1.20",
         "drupal/single_content_sync": "^1.4",
+        "drupal/sodium": "^3.0.2",
         "drupal/straw": "^2.0@beta",
         "drupal/telephone_validation": "^2.2",
         "drupal/webform_analysis": "^1.0@beta",
         "drupal/webform_composite": "^1.0@RC",
         "drupal/webform_node_element": "^1.2",
-        "drupal/webform_scheduled_tasks": "^3.0@RC",
         "drupal/webform_views": "^5.0@alpha",
-        "drush/drush": "^12",
+        "drush/drush": "^13",
         "mglaman/composer-drupal-lenient": "^1.0",
-        "os2forms/os2forms": "^5.0",
-        "os2forms/os2forms_egbolig": "dev-master",
-        "os2forms/os2forms_forloeb_profile": "^1",
+        "os2forms/os2forms": "^6.0",
+        "os2forms/os2forms_forloeb_profile": "^2.0",
         "os2forms/os2forms_sync": "^1.2",
         "os2web/os2web_logging": "dev-master",
         "simplesamlphp/simplesamlphp": "^2.0",
-        "simplesamlphp/simplesamlphp-module-metarefresh": "1.2.6",
         "vlucas/phpdotenv": "^5.1",
-        "webflo/drupal-finder": "^1.2",
-        "webmozart/path-util": "^2.3"
+        "webflo/drupal-finder": "^1.2"
     },
     "require-dev": {
         "drupal/devel": "^5.0",
@@ -180,6 +132,9 @@
             "force-reset": true
         },
         "patches": {
+            "drupal/maestro": {
+                "PHP 8.4 explicit nullable constructor configuration for MaestroWebformTask": "patches/maestro-php84-explicit-nullable-webform-task.patch"
+            },
             "drupal/webform_permissions_by_term": {
                 "3192241 - Too few arguments after Permissions by Term update to 2.28": "https://www.drupal.org/files/issues/2021-12-10/too-few-arguments-access-check_3192241-3.patch",
                 "3142184 - Automated Drupal 9 compatibility fixes": "https://www.drupal.org/files/issues/2020-06-28/webform_permissions_by_term.1.x-dev.rector.patch",
@@ -190,19 +145,27 @@
                 "3170384 - Fixed D9 imcopatibility": "https://www.drupal.org/files/issues/2020-09-11/3170384-2.patch"
             },
             "drupal/webform_node_element": {
-                "3290637 - Automated Drupal 10 compatibility fixes": "https://www.drupal.org/files/issues/2023-05-12/webform_node_element_d10-3290637-11.patch"
+                "3495835 - Drupal 11 compatibility fixes for Webform Node Element": "https://git.drupalcode.org/project/webform_node_element/-/merge_requests/5.diff"
             },
             "drupal/user_default_page": {
                 "3351887 - Deprecated function: strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in user_default_page_user_login()": "https://www.drupal.org/files/issues/2023-04-19/added_condition_to_check_null-3351887-1.patch"
             },
             "drupal/environment_indicator": {
                 "3336512 - Gin Compatibility: Account for \"open\" vertical toolbar": "https://git.drupalcode.org/project/environment_indicator/-/merge_requests/15.diff"
+            },
+            "drupal/events_logging" : {
+                "3430351 - Automated Drupal 11 compatibility fixes for events_logging": "https://www.drupal.org/files/issues/2024-03-17/events_logging.2.0.0-beta2.rector.patch"
+            },
+            "drupal/switch_page_theme" : {
+                "3489081 - Drupal 11 compatibility for Switch Page Theme" : "https://www.drupal.org/files/issues/2025-10-30/switch_page_theme-3489081-20.patch"
             }
         },
         "drupal-lenient": {
             "allowed-list": [
                 "drupal/coc_forms_auto_export",
-                "drupal/webform_node_element"
+                "drupal/webform_node_element",
+                "drupal/switch_page_theme",
+                "drupal/events_logging"
             ]
         }
     }

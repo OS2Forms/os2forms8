@@ -1,6 +1,5 @@
 {
   "javascripts": [
-    "node_modules/bootstrap-sass/assets/javascripts/bootstrap.js",
     "src/javascripts/app.js"
   ],
   "styles": [
