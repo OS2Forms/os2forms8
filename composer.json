@@ -167,6 +167,9 @@
                 "drupal/switch_page_theme",
                 "drupal/events_logging"
             ]
+        },
+        "drupal-core-vendor-hardening": {
+            "symfony/validator": false
         }
     }
 }
