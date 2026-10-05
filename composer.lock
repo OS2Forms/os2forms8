@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1f69acf85d659b32331c7112466fd1f7",
+    "content-hash": "5b45dcf38ef042a6ba23372b6e8249df",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2217,25 +2217,28 @@
         },
         {
             "name": "drupal/core-vendor-hardening",
-            "version": "9.5.11",
+            "version": "11.4.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-vendor-hardening.git",
-                "reference": "8293a845c64f1faad0d44955611f8cce69320274"
+                "reference": "1df275fca6b89c94cc32a432023c6a4456cc4f47"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-vendor-hardening/zipball/8293a845c64f1faad0d44955611f8cce69320274",
-                "reference": "8293a845c64f1faad0d44955611f8cce69320274",
+                "url": "https://api.github.com/repos/drupal/core-vendor-hardening/zipball/1df275fca6b89c94cc32a432023c6a4456cc4f47",
+                "reference": "1df275fca6b89c94cc32a432023c6a4456cc4f47",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^1.1 || ^2",
+                "composer-plugin-api": "^2",
                 "php": ">=7.3.0"
             },
             "type": "composer-plugin",
             "extra": {
-                "class": "Drupal\\Composer\\Plugin\\VendorHardening\\VendorHardeningPlugin"
+                "class": "Drupal\\Composer\\Plugin\\VendorHardening\\VendorHardeningPlugin",
+                "branch-alias": {
+                    "dev-main": "11.x-dev"
+                }
             },
             "autoload": {
                 "psr-4": {
@@ -2252,9 +2255,9 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-vendor-hardening/tree/9.5.11"
+                "source": "https://github.com/drupal/core-vendor-hardening/tree/11.4.8"
             },
-            "time": "2022-12-07T11:22:43+00:00"
+            "time": "2026-01-07T19:00:53+00:00"
         },
         {
             "name": "drupal/ctools",

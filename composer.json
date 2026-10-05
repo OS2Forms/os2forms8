@@ -29,7 +29,7 @@
         "drupal/core-composer-scaffold": "^11",
         "drupal/core-project-message": "^11",
         "drupal/core-recommended": "^11",
-        "drupal/core-vendor-hardening": "^9.4",
+        "drupal/core-vendor-hardening": "^11.2.3",
         "drupal/email_tfa": "^2.0",
         "drupal/entity_export_csv": "^2.0@beta",
         "drupal/fontyourface": "^4.0",
