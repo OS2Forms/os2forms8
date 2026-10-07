@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.compact
+  module:
+    - image
+    - user
+id: user.user.compact
+targetEntityType: user
+bundle: user
+mode: compact
+hidden:
+  member_for: true

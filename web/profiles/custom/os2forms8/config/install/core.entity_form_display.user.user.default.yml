@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - image
+    - user
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  account:
+    weight: -10
+    region: content
+  language:
+    weight: 0
+    region: content
+  timezone:
+    weight: 6
+    region: content
+hidden: {  }
