@@ -3732,17 +3732,17 @@
         },
         {
             "name": "drupal/leaflet",
-            "version": "10.4.10",
+            "version": "10.4.13",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/leaflet.git",
-                "reference": "10.4.10"
+                "reference": "10.4.13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/leaflet-10.4.10.zip",
-                "reference": "10.4.10",
-                "shasum": "752e2ce6f645d0b87993b3f6815a07995e7441db"
+                "url": "https://ftp.drupal.org/files/projects/leaflet-10.4.13.zip",
+                "reference": "10.4.13",
+                "shasum": "077dd415f4ac2c594655a61983209df3ed61e36a"
             },
             "require": {
                 "drupal/core": "^10.3 || ^11",
@@ -3751,8 +3751,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "10.4.10",
-                    "datestamp": "1786117064",
+                    "version": "10.4.13",
+                    "datestamp": "1791390446",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4127,17 +4127,17 @@
         },
         {
             "name": "drupal/menu_link_attributes",
-            "version": "1.7.0",
+            "version": "1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/menu_link_attributes.git",
-                "reference": "8.x-1.7"
+                "reference": "8.x-1.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/menu_link_attributes-8.x-1.7.zip",
-                "reference": "8.x-1.7",
-                "shasum": "ae473541208cbe18130cb4b75104b55a9b80d073"
+                "url": "https://ftp.drupal.org/files/projects/menu_link_attributes-8.x-1.8.zip",
+                "reference": "8.x-1.8",
+                "shasum": "fa43877ea827230cf02b3e7284b21746e0188b7f"
             },
             "require": {
                 "drupal/core": "^8 || ^9 || ^10 || ^11"
@@ -4145,8 +4145,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.7",
-                    "datestamp": "1774255144",
+                    "version": "8.x-1.8",
+                    "datestamp": "1791390832",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
