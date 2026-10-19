@@ -1,0 +1,26 @@
+diff --git a/core/misc/dialog/dialog.position.js b/core/misc/dialog/dialog.position.js
+index 9866221..728e519 100644
+--- a/core/misc/dialog/dialog.position.js
++++ b/core/misc/dialog/dialog.position.js
+@@ -119,10 +119,20 @@
+   }
+ 
+   window.addEventListener('dialog:aftercreate', (e) => {
+-    const autoResize = debounce(resetSize, 20);
+     const $element = $(e.target);
+     const { settings } = e;
+     const eventData = { settings, $element };
++    const autoResize = debounce((event) => {
++      // debounce/viewport events can fire without jQuery event.data.
++      // Re-attach the dialog context so resetSize can still apply maxHeight.
++      if (!$element.data('ui-dialog')) {
++        return;
++      }
++      if (!event.data) {
++        event.data = eventData;
++      }
++      resetSize(event);
++    }, 20);
+ 
+     if (settings.autoResize === true || settings.autoResize === 'true') {
+       const uiDialog = $element

@@ -133,6 +133,9 @@
             "force-reset": true
         },
         "patches": {
+            "drupal/core": {
+                "3356667 - Dialog resetSize missing event.data prevents modal resize/scroll": "patches/core-dialog-position-undefined-settings-3356667.patch"
+            },
             "drupal/maestro": {
                 "PHP 8.4 explicit nullable constructor configuration for MaestroWebformTask": "patches/maestro-php84-explicit-nullable-webform-task.patch"
             },
