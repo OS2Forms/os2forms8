@@ -46,6 +46,7 @@
         "drupal/telephone_validation": "^2.2",
         "drupal/webform_analysis": "^1.0@beta",
         "drupal/webform_composite": "^1.0@RC",
+        "drupal/webform_encrypt": "2.0.0-alpha2",
         "drupal/webform_node_element": "^1.2",
         "drupal/webform_views": "^5.0@alpha",
         "drush/drush": "^13",
