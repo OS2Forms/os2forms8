@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "404de24ca84e32293b4b9c5386dffcdf",
+    "content-hash": "c4f81780d34693bfc2f761c05a5cb04d",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3032,83 +3032,6 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/externalauth",
                 "issues": "https://www.drupal.org/project/issues/externalauth"
-            }
-        },
-        {
-            "name": "drupal/fontyourface",
-            "version": "4.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/fontyourface.git",
-                "reference": "4.2.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/fontyourface-4.2.0.zip",
-                "reference": "4.2.0",
-                "shasum": "59569fb06b8efe0b484bfa5447337b12d7530bd5"
-            },
-            "require": {
-                "drupal/core": "^10.2 || ^11.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "4.2.0",
-                    "datestamp": "1772018724",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Neslee Canil Pinto",
-                    "homepage": "https://www.drupal.org/u/neslee-canil-pinto",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "btmash",
-                    "homepage": "https://www.drupal.org/user/60422"
-                },
-                {
-                    "name": "Drave Robber",
-                    "homepage": "https://www.drupal.org/user/984338"
-                },
-                {
-                    "name": "hmendes",
-                    "homepage": "https://www.drupal.org/user/3673677"
-                },
-                {
-                    "name": "mandclu",
-                    "homepage": "https://www.drupal.org/user/52136"
-                },
-                {
-                    "name": "neslee canil pinto",
-                    "homepage": "https://www.drupal.org/user/3580850"
-                },
-                {
-                    "name": "podarok",
-                    "homepage": "https://www.drupal.org/user/116002"
-                },
-                {
-                    "name": "sreynen",
-                    "homepage": "https://www.drupal.org/user/109890"
-                }
-            ],
-            "description": "Web font management tools.",
-            "homepage": "https://www.drupal.org/project/fontyourface",
-            "keywords": [
-                "Drupal"
-            ],
-            "support": {
-                "source": "https://git.drupalcode.org/project/fontyourface",
-                "issues": "https://drupal.org/project/issues/fontyourface"
             }
         },
         {
