@@ -9199,16 +9199,16 @@
         },
         {
             "name": "os2web/os2web_datalookup",
-            "version": "3.5.0",
+            "version": "3.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/OS2web/os2web_datalookup.git",
-                "reference": "843c41b7d77aac8f67995dea9747d33811439765"
+                "reference": "ddb5644333cda219742c5f99168feef3a9dfc939"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/OS2web/os2web_datalookup/zipball/843c41b7d77aac8f67995dea9747d33811439765",
-                "reference": "843c41b7d77aac8f67995dea9747d33811439765",
+                "url": "https://api.github.com/repos/OS2web/os2web_datalookup/zipball/ddb5644333cda219742c5f99168feef3a9dfc939",
+                "reference": "ddb5644333cda219742c5f99168feef3a9dfc939",
                 "shasum": ""
             },
             "require": {
@@ -9230,9 +9230,9 @@
             "description": "Provides integration with Danish data lookup services such as Service platformen or Datafordeler.",
             "support": {
                 "issues": "https://github.com/OS2web/os2web_datalookup/issues",
-                "source": "https://github.com/OS2web/os2web_datalookup/tree/3.5.0"
+                "source": "https://github.com/OS2web/os2web_datalookup/tree/3.6.0"
             },
-            "time": "2026-10-20T12:18:18+00:00"
+            "time": "2026-11-05T14:39:45+00:00"
         },
         {
             "name": "os2web/os2web_key",
