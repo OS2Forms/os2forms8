@@ -2767,17 +2767,17 @@
         },
         {
             "name": "drupal/entity_print",
-            "version": "2.19.0",
+            "version": "2.20.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/entity_print.git",
-                "reference": "8.x-2.19"
+                "reference": "8.x-2.20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/entity_print-8.x-2.19.zip",
-                "reference": "8.x-2.19",
-                "shasum": "c18628ca0641639d08eac111db722db094194118"
+                "url": "https://ftp.drupal.org/files/projects/entity_print-8.x-2.20.zip",
+                "reference": "8.x-2.20",
+                "shasum": "e89ff5234eb1dd4d2f6e500cdf594272c9f216a1"
             },
             "require": {
                 "dompdf/dompdf": ">=2.0.7",
@@ -2793,8 +2793,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.19",
-                    "datestamp": "1787298442",
+                    "version": "8.x-2.20",
+                    "datestamp": "1794419450",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2821,14 +2821,6 @@
                 {
                     "name": "jsacksick",
                     "homepage": "https://www.drupal.org/user/972218"
-                },
-                {
-                    "name": "larowlan",
-                    "homepage": "https://www.drupal.org/user/395439"
-                },
-                {
-                    "name": "pameeela",
-                    "homepage": "https://www.drupal.org/user/1431110"
                 },
                 {
                     "name": "sam152",
@@ -4124,17 +4116,17 @@
         },
         {
             "name": "drupal/menu_link_attributes",
-            "version": "1.8.0",
+            "version": "1.10.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/menu_link_attributes.git",
-                "reference": "8.x-1.8"
+                "reference": "8.x-1.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/menu_link_attributes-8.x-1.8.zip",
-                "reference": "8.x-1.8",
-                "shasum": "fa43877ea827230cf02b3e7284b21746e0188b7f"
+                "url": "https://ftp.drupal.org/files/projects/menu_link_attributes-8.x-1.10.zip",
+                "reference": "8.x-1.10",
+                "shasum": "84cacbda3a6a3998aad5abd4ea2af99b9c310ced"
             },
             "require": {
                 "drupal/core": "^8 || ^9 || ^10 || ^11"
@@ -4142,8 +4134,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.8",
-                    "datestamp": "1791390832",
+                    "version": "8.x-1.10",
+                    "datestamp": "1791530764",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4166,6 +4158,10 @@
                 {
                     "name": "jcnventura",
                     "homepage": "https://www.drupal.org/user/122464"
+                },
+                {
+                    "name": "norman.lol",
+                    "homepage": "https://www.drupal.org/user/2482808"
                 },
                 {
                     "name": "yannickoo",
@@ -4862,21 +4858,22 @@
         },
         {
             "name": "drupal/single_content_sync",
-            "version": "1.4.16",
+            "version": "1.4.19",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/single_content_sync.git",
-                "reference": "1.4.16"
+                "reference": "1.4.19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/single_content_sync-1.4.16.zip",
-                "reference": "1.4.16",
-                "shasum": "8c60af2946d2ac1c41290deecf1195aeb6bb06e2"
+                "url": "https://ftp.drupal.org/files/projects/single_content_sync-1.4.19.zip",
+                "reference": "1.4.19",
+                "shasum": "c97c5bb07d1644ad9f711a5939a8cec1791b2bd8"
             },
             "require": {
                 "drupal/core": "^9.3 || ^10 || ^11",
                 "ext-dom": "*",
+                "ext-fileinfo": "*",
                 "ext-zip": "*",
                 "php": ">=7.4"
             },
@@ -4902,8 +4899,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "1.4.16",
-                    "datestamp": "1783972617",
+                    "version": "1.4.19",
+                    "datestamp": "1793207832",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5598,21 +5595,20 @@
         },
         {
             "name": "drupal/webform_analysis",
-            "version": "1.2.0",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform_analysis.git",
-                "reference": "8.x-1.2"
+                "reference": "8.x-1.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform_analysis-8.x-1.2.zip",
-                "reference": "8.x-1.2",
-                "shasum": "2127a9dbf4ec675d2ff522386cdd3cebea6f4a33"
+                "url": "https://ftp.drupal.org/files/projects/webform_analysis-8.x-1.3.zip",
+                "reference": "8.x-1.3",
+                "shasum": "91bd568567ebc1ecc6e129f736dde06945dafe50"
             },
             "require": {
-                "drupal/core": " ^9.5 || ^10 || ^11",
-                "drupal/webform": "*"
+                "drupal/core": " ^9.5 || ^10 || ^11"
             },
             "require-dev": {
                 "drupal/webform": "^5.6 || ^6",
@@ -5621,8 +5617,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.2",
-                    "datestamp": "1751008383",
+                    "version": "8.x-1.3",
+                    "datestamp": "1787171162",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
